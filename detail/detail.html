@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/9be338970f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- custom CSS & JS -->
     <link rel="stylesheet" href="./styles/detail.css" />
     <script defer src="./js/script.js"></script>
@@ -11,6 +16,79 @@
     <title>상세페이지</title>
   </head>
   <body>
-    <h1>상세페이지</h1>
+    <main class="detail_main">
+      <section class="detail_section">
+        <figure class="detail_figure">
+          <img
+            class="detail_image"
+            src="https://placehold.co/560x560"
+            alt="유기농 찰토마토"
+          />
+        </figure>
+        <article class="detail_article">
+          <header class="detail_header">
+            <h2 class="detail_title">유기농 찰토마토 2kg</h2>
+            <p class="detail_subtitle">탄탄하고 찰진 식감의 유기농 토마토</p>
+          </header>
+          <section class="detail_price">
+            <p>
+              <span class="detail_discount"
+                >29<span class="discount_percent">%</span></span
+              >
+              <span class="detail_final-price"
+                >25,489<span class="price_won">원</span></span
+              >
+            </p>
+            <p class="detail_original-price">
+              <del>원가 35,900원</del>
+            </p>
+          </section>
+          <section class="detail_review">
+            <span>
+              <i class="fas fa-star"></i>
+              <span class="detail_rating">4.2</span>
+              <span class="detail_view">리뷰:</span> 232건
+              <p><strong>원산지:</strong> 국산</p>
+            </span>
+          </section>
+          <section class="detail_origin"></section>
+          <section class="detail_info">
+            <ul class="detail_list">
+              <li>
+                <strong>재배환경:</strong>
+                <span>무농약, 화학농약X, 생장촉진제X</span>
+              </li>
+              <li>
+                <strong>판매단위:</strong>
+                <span>1팩</span>
+              </li>
+              <li>
+                <strong>배송비:</strong>
+                <span>무료 배송</span>
+              </li>
+              <li>
+                <strong>배송:</strong>
+                <span>
+                  23시 전 주 시 수도권/충청 내일 아침 7시 전 도착<br />(그 외
+                  지역 아침 8시 전 도착)
+                </span>
+              </li>
+              <li>
+                <strong>안내사항:</strong>
+                <span>
+                  신선식품 특성상 원물마다 크기 및 형태가 일정하지 않을 수
+                  있습니다.<br />신선식품 특성상 3% 중량의 차이가 있을 수
+                  있습니다.
+                </span>
+              </li>
+            </ul>
+          </section>
+          <footer class="detail_footer">
+            <button class="detail_button" type="button">장바구니에 담기</button>
+          </footer>
+        </article>
+      </section>
+      <!-- 추가적인 4개 섹션이 여기에 들어갑니다 -->
+    </main>
   </body>
 </html>
