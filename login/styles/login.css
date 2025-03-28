@@ -12,6 +12,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+<<<<<<< HEAD
 }
 
 header {
@@ -125,4 +126,6 @@ header .header_inner .header_inner_logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+=======
+>>>>>>> 545b68924d45230967e98164238cfc4c7cf07da5
 }
