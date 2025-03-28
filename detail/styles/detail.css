@@ -13,3 +13,131 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-family: pretendard;
+}
+
+.detail_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.detail_main .detail_section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 50px;
+}
+.detail_main .detail_figure {
+  width: 560px;
+  height: 560px;
+  position: relative;
+  overflow: hidden;
+}
+.detail_main .detail_figure .detail_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+.detail_main .detail_article {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail_main .detail_article .detail_header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.detail_main .detail_article .detail_header .detail_title {
+  text-align: center;
+  color: #000;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.detail_main .detail_article .detail_header .detail_subtitle {
+  color: #999;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.detail_main .detail_article .detail_price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.detail_main .detail_article .detail_price .detail_discount {
+  color: #f37100;
+  font-size: 30px;
+  font-weight: 700;
+}
+.detail_main .detail_article .detail_price .detail_discount .discount_percent {
+  font-size: 1.6rem;
+}
+.detail_main .detail_article .detail_price .detail_final-price {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.detail_main .detail_article .detail_price .detail_final-price .price_won {
+  font-size: 1.8rem;
+}
+.detail_main .detail_article .detail_price .detail_original-price del {
+  color: #999;
+}
+.detail_main .detail_article .detail_review {
+  display: flex;
+}
+.detail_main .detail_article .detail_review span .detail_rating {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 30px;
+}
+.detail_main .detail_article .detail_review span .detail_view {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.detail_main .detail_article .detail_review span p {
+  margin-top: 10px;
+}
+.detail_main .detail_article .detail_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail_main .detail_article .detail_info .detail_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.detail_main .detail_article .detail_footer {
+  height: 60px;
+  background: #ff9900;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_main .detail_article .detail_footer .detail_button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
