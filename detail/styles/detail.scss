@@ -1,148 +1,453 @@
 @import "../../styles/reset.scss";
 @import "../../styles/variables.scss";
 
+@mixin product-thumb {
+  .thumb_one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    & p {
+      width: 50px;
+      height: 50px;
+      background: map-get($map: $color, $key: main-02);
+      border-radius: 9999px;
+      color: map-get($map: $color, $key: light);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & h4 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: map-get($map: $color, $key: dark);
+    }
+
+    & span {
+      width: 800px;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2rem;
+      color: map-get($map: $color, $key: dark);
+    }
+
+    & img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+    }
+  }
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6rem;
-  width: 100%;
-  height: 100%;
   font-family: map-get($map: $font, $key: pretendard);
 }
 
-.detail_main {
+.detail_container {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.detail_line {
+  width: 1050px;
+  height: 2px;
+  background-color: map-get($map: $color, $key: main-01);
+  border: none;
+  margin: 0 auto;
+}
+.detail_review,
+.detail_product,
+.detail_faq,
+.detail_policy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+/* info */
+.detail_info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
   gap: 50px;
-  text-align-last: left;
-
-  .detail_section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 50px;
+  img {
+    border-radius: 10px;
   }
-
-  .detail_figure {
-    width: 560px;
-    height: 560px;
-    position: relative;
-    overflow: hidden;
-
-    .detail_image {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border-radius: 10px;
-    }
-  }
-
-  .detail_article {
-    width: 440px;
+  & .img_info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
-    .detail_header {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-
-      .detail_title {
-        text-align: center;
-        color: map-get($map: $color, $key: dark);
-        font-size: 5rem;
-        font-weight: 700;
-      }
-
-      .detail_subtitle {
-        color: map-get($map: $color, $key: gray-999);
-        font-size: 2rem;
-        font-weight: 300;
+  }
+  .info_title {
+    margin-bottom: 30px;
+    & h1 {
+      font-size: 4rem;
+    }
+    & p {
+      font-size: 2.2rem;
+      color: map-get($map: $color, $key: gray-999);
+    }
+  }
+  .info_price {
+    & .price_one {
+      font-size: 4rem;
+      font-weight: bold;
+      color: map-get($map: $color, $key: main-01);
+      & .price_sub {
+        font-size: 2.4rem;
       }
     }
-
-    .detail_price {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-
-      .detail_discount {
-        color: map-get($map: $color, $key: main-01);
-        font-size: 30px;
-        font-weight: 700;
-        .discount_percent {
-          font-size: 1.6rem;
-        }
-      }
-
-      .detail_final-price {
-        color: map-get($map: $color, $key: dark);
-        font-size: 3rem;
-        font-weight: 700;
-        .price_won {
-          font-size: 1.8rem;
-        }
-      }
-      .detail_original-price {
-        del {
-          color: map-get($map: $color, $key: gray-999);
-        }
+    & .price_two {
+      font-size: 4rem;
+      font-weight: bold;
+      & .price_sub {
+        font-size: 2.4rem;
       }
     }
-
-    .detail_review {
-      display: flex;
-      span {
-        .detail_rating {
-          font-size: 1.8rem;
-          font-weight: 700;
-          margin-right: 30px;
-        }
-        .detail_view {
-          font-size: 1.8rem;
-          font-weight: 700;
-        }
-        p {
-          margin-top: 10px;
-        }
-      }
+    & .price_three {
+      font-size: 1.2rem;
+      color: map-get($map: $color, $key: gray-999);
+      margin-bottom: 10px;
     }
-
-    .detail_info {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      .detail_list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: space-between;
-      }
+  }
+  .info_review {
+    margin-bottom: 40px;
+    & .fa-star {
+      font-size: 2.4rem;
+      background: linear-gradient(to right, #c1d95b, #ffd6b0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
     }
-
-    .detail_footer {
-      height: 60px;
-      background: map-get($map: $color, $key: main-02);
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .detail_button {
-        color: map-get($map: $color, $key: light);
-        font-size: 20px;
-        font-weight: 700;
-        background: none;
-        border: none;
-        cursor: pointer;
+    & .review_rating {
+      font-weight: bold;
+      font-size: 2.4rem;
+      margin-right: 30px;
+    }
+    & .review_re {
+      font-weight: bold;
+      font-size: 2.2rem;
+    }
+    & .review_few {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .info_btns {
+    gap: 10px;
+    margin-bottom: 20px;
+    & .organic_btn {
+      font-weight: bold;
+      border: 1px solid map-get($map: $color, $key: main-01);
+      border-radius: 20px;
+      padding: 6px 18px;
+      background: map-get($map: $color, $key: light);
+      color: map-get($map: $color, $key: main-01);
+      cursor: pointer;
+    }
+    & .event_btn {
+      font-weight: bold;
+      border: none;
+      padding: 6px 18px;
+      border-radius: 20px;
+      background: linear-gradient(to right, #c1d95b, #ffd6b0);
+      color: map-get($map: $color, $key: light);
+      cursor: pointer;
+    }
+  }
+  .info_option {
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 1rem;
+      th {
+        text-align: left;
+        padding-right: 3rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      td {
+        font-size: 1.2rem;
       }
     }
   }
+  .info_purchase {
+    margin-bottom: 10px;
+    button {
+      border: none;
+      border-radius: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: map-get($map: $color, $key: light);
+      background: map-get($map: $color, $key: main-01);
+      padding: 15px 157px;
+      cursor: pointer;
+    }
+  }
+}
+/* review */
+.detail_review {
+  width: 1050px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  .review_text {
+    text-align: left;
+    & .text_review {
+      font-size: 3rem;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+    & .text_few {
+      color: map-get($map: $color, $key: main-01);
+      font-size: 2.4rem;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+  }
+  .review_star {
+    width: 1050px;
+    height: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background: map-get($map: $color, $key: sub-03);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    & .star {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+    & .rating {
+      font-size: 1.6rem;
+      font-weight: 400;
+      .rating_one {
+        font-weight: 700;
+        color: map-get($map: $color, $key: main-01);
+      }
+    }
+  }
+  .review_member {
+    width: 1050px;
+    height: 100%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    & > div:first-child {
+      cursor: pointer;
+      p {
+        font-size: 1.8rem;
+        & span {
+          color: map-get($map: $color, $key: yellow);
+        }
+      }
+      .member_content {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        font-size: 1.15rem;
+        & img {
+          border-radius: 10px;
+        }
+        & > div {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 1rem;
+            color: map-get($map: $color, $key: gray-999);
+            margin: 20px 0px 0px;
+          }
+        }
+      }
+    }
+    & > div:last-child {
+      cursor: pointer;
+      p {
+        font-size: 1.8rem;
+        & span {
+          color: map-get($map: $color, $key: yellow);
+        }
+      }
+      .member_content {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        font-size: 1.15rem;
+        & img {
+          border-radius: 10px;
+        }
+        & > div {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 1rem;
+            color: map-get($map: $color, $key: gray-999);
+            margin: 20px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+  .review_more {
+    width: 100%;
+    height: 100%;
+    border: 1px solid map-get($map: $color, $key: gray-858585);
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: map-get($map: $color, $key: light);
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 80px;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+}
+/* product */
+.detail_product {
+  width: 1050px;
+  margin: 0 auto;
+  flex-direction: column;
+  .product_title {
+    margin-bottom: 80px;
+    h1 {
+      font-size: 3rem;
+      display: inline-block;
+      position: relative;
+      margin-bottom: 30px;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: map-get($map: $color, $key: main-01);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+    img {
+      border-radius: 30px;
+    }
+  }
+  .product_thumb {
+    @include product-thumb;
+  }
+}
+/* faq */
+.detail_faq {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  & .faq_title {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    & > span {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    & > button {
+      width: 150px;
+      height: 40px;
+      background: map-get($map: $color, $key: main-01);
+      color: map-get($map: $color, $key: light);
+      font-size: 1.6rem;
+      font-weight: 700;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  & .faq_subTitle {
+    width: 100%;
+    text-align: left;
+  }
+  & > table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 1px solid map-get($map: $color, $key: main-01);
+    th {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: map-get($map: $color, $key: main-01);
+      padding: 10px;
+      border-top: 2px solid map-get($map: $color, $key: main-01);
+      border-bottom: 1px solid map-get($map: $color, $key: main-01);
+    }
+
+    td {
+      font-size: 2rem;
+      font-weight: 400;
+      color: map-get($map: $color, $key: dark);
+      padding: 30px 0;
+      cursor: pointer;
+      & .fa-lock {
+        font-size: 1.3rem;
+        width: 13px;
+        height: 16px;
+        margin-left: 20px;
+        color: map-get($map: $color, $key: gray-858585);
+      }
+    }
+  }
+  & .faq_number {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin: 50px 0px 80px 0px;
+
+    div {
+      font-size: 22px;
+      font-weight: 400;
+      color: black;
+      cursor: pointer;
+
+      &:first-child {
+        color: #f37100;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+/* policy */
+.detail_policy {
 }
