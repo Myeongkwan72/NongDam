@@ -4,6 +4,948 @@
 // variables
 @import "./styles/variables.scss";
 
+// font
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import "./mixin.scss";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: map-get($map: $font, $key: pretendard);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  #main_con1 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 3rem;
+      }
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type1 {
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            margin-bottom: 15px;
+          }
+          .main_info {
+            width: 240px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            .main_title {
+              font-size: 1.8rem;
+            }
+            .main_shopping {
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+              p {
+                font-size: 2.2rem;
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con2 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 3rem;
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type1 {
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            margin-bottom: 15px;
+          }
+          .main_info {
+            width: 240px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            .main_title {
+              font-size: 1.8rem;
+            }
+            .main_shopping {
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+              p {
+                font-size: 2.2rem;
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con3 {
+    width: 100%;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    background: map-get($map: $color, $key: sub-03);
+    .main_inner {
+      width: 1050px;
+      // border: 1px solid #f00;
+      display: flex;
+      .main_title2 {
+        .main_title3 {
+          font-size: 3rem;
+          b {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+        .line {
+          width: 220px;
+          height: 1px;
+          background-color: map-get($map: $color, $key: main-01);
+        }
+        p {
+          margin-top: 15px;
+        }
+      }
+      .main_recipe {
+        display: flex;
+        gap: 30px;
+        .main_item {
+          width: 240px;
+          height: 304px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: brightness(70%);
+          }
+          .recipe_info {
+            color: map-get($map: $color, $key: light);
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .recipe_title {
+              .fa-heart {
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: right;
+                margin-bottom: 10px;
+                cursor: pointer;
+              }
+              h4 {
+                font-size: 1.6rem;
+                margin-bottom: 6px;
+              }
+              button {
+                border: none;
+                border-radius: 12px;
+                padding: 8px;
+                color: map-get($map: $color, $key: light);
+                font-size: 1rem;
+                font-family: map-get($map: $font, $key: pretendard);
+                background: rgba($color: #000000, $alpha: 0.6);
+              }
+            }
+            .recipe_text {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .recipe_line {
+                width: 204px;
+                height: 1px;
+                background-color: map-get($map: $color, $key: light);
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con4 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: map-get($map: $color, $key: main-01);
+      }
+      .main_sale_title {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          font-size: 3rem;
+        }
+        .sale_time {
+          color: map-get($map: $color, $key: light);
+          background: map-get($map: $color, $key: main-01);
+          font-size: 1.6rem;
+          border-radius: 10px;
+          padding: 10px 15px;
+        }
+      }
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// font
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import "./mixin.scss";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: map-get($map: $font, $key: pretendard);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  #main_con1 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 3rem;
+      }
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type1 {
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            margin-bottom: 15px;
+          }
+          .main_info {
+            width: 240px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            .main_title {
+              font-size: 1.8rem;
+            }
+            .main_shopping {
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+              p {
+                font-size: 2.2rem;
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con2 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 3rem;
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type1 {
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            margin-bottom: 15px;
+          }
+          .main_info {
+            width: 240px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            .main_title {
+              font-size: 1.8rem;
+            }
+            .main_shopping {
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+              p {
+                font-size: 2.2rem;
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con3 {
+    width: 100%;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    background: map-get($map: $color, $key: sub-03);
+    .main_inner {
+      width: 1050px;
+      // border: 1px solid #f00;
+      display: flex;
+      .main_title2 {
+        .main_title3 {
+          font-size: 3rem;
+          b {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+        .line {
+          width: 220px;
+          height: 1px;
+          background-color: map-get($map: $color, $key: main-01);
+        }
+        p {
+          margin-top: 15px;
+        }
+      }
+      .main_recipe {
+        display: flex;
+        gap: 30px;
+        .main_item {
+          width: 240px;
+          height: 304px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: brightness(70%);
+          }
+          .recipe_info {
+            color: map-get($map: $color, $key: light);
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .recipe_title {
+              .fa-heart {
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: right;
+                margin-bottom: 10px;
+                cursor: pointer;
+              }
+              h4 {
+                font-size: 1.6rem;
+                margin-bottom: 6px;
+              }
+              button {
+                border: none;
+                border-radius: 12px;
+                padding: 8px;
+                color: map-get($map: $color, $key: light);
+                font-size: 1rem;
+                font-family: map-get($map: $font, $key: pretendard);
+                background: rgba($color: #000000, $alpha: 0.6);
+              }
+            }
+            .recipe_text {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .recipe_line {
+                width: 204px;
+                height: 1px;
+                background-color: map-get($map: $color, $key: light);
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main_con4 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    .main_inner {
+      width: 1050px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: map-get($map: $color, $key: main-01);
+      }
+      .main_sale_title {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          font-size: 3rem;
+        }
+        .sale_time {
+          color: map-get($map: $color, $key: light);
+          background: map-get($map: $color, $key: main-01);
+          font-size: 1.6rem;
+          border-radius: 10px;
+          padding: 10px 15px;
+        }
+      }
+      .main_it {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        .main_type2 {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .img {
+            width: 240px;
+            height: 240px;
+            border: 1px solid #f00;
+            position: relative;
+            button {
+              @include button;
+            }
+          }
+          .main_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 240px;
+            height: 80px;
+            h3 {
+              font-size: 1.8rem;
+            }
+            .main_tag {
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              .main_sale {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 10px;
+                .main_percent {
+                  display: flex;
+                  p {
+                    b {
+                      font-size: 3.6rem;
+                    }
+                    color: map-get($map: $color, $key: main-01);
+                    font-size: 1.8rem;
+                  }
+                }
+                .main_price {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: map-get($map: $color, $key: gray-ccc);
+                    text-decoration: line-through;
+                  }
+                  p {
+                    font-size: 2.2rem;
+                    color: map-get($map: $color, $key: dark);
+                  }
+                }
+              }
+              .icon {
+                display: flex;
+                justify-content: right;
+                gap: 5px;
+                .fa-heart {
+                  @include icon;
+                }
+                .fa-cart-shopping {
+                  @include icon;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // header
 header {
   width: 100%;
