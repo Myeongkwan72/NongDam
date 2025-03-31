@@ -9,8 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom css & js -->
-    <link rel="stylesheet" href="./styles/login.css" />
-    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./styles/mypage.css" />
+    <script src="./js/mypage.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -56,39 +56,60 @@
       </div>
     </header>
     <main id="container">
-      <div class="login_inner">
-        <section class="login_01">
-          <h2>로그인</h2>
-          <div class="login_input">
-            <input type="text" placeholder="아이디를 입력해주세요." />
-            <div class="login_pw">
-              <input type="password" placeholder="비밀번호를 입력해주세요." />
-              <i class="fas fa-eye"></i>
-            </div>
+      <div class="mypage_inner">
+        <section class="mypage">
+          <h2>내정보</h2>
+          <div class="mypage_data">
+            <ul class="mypage_info">
+              <li>아이디</li>
+              <li>비밀번호</li>
+              <li>이름</li>
+              <li>생년월일</li>
+              <li>이메일</li>
+              <li>연락처</li>
+              <li>배송지 주소</li>
+            </ul>
+            <ul class="mypage_detail">
+              <li>
+                <p class="mypage_id">nmixx**@naver.com</p>
+              </li>
+              <li>
+                <p class="mypage_pw">********</p>
+                <button class="mypage_modify">수정</button>
+              </li>
+              <li>
+                <p class="mypage_name">설윤아</p>
+              </li>
+              <li>
+                <p class="mypage_birth">2004년 01월 26일</p>
+              </li>
+              <li>
+                <p class="mypage_email">nmixx**@naver.com</p>
+                <button class="mypage_modify">수정</button>
+              </li>
+              <li>
+                <p class="mypage_call">010-1234-5678</p>
+                <button class="mypage_modify">수정</button>
+              </li>
+              <li>
+                <p class="mypage_address">서울특별시 강동구 강동대로 205</p>
+                <button class="mypage_modify">수정</button>
+              </li>
+            </ul>
           </div>
-          <button>로그인</button>
-          <ul>
-            <li>회원가입</li>
-            <p>|</p>
-            <li>아이디 찾기</li>
-            <p>|</p>
-            <li>비밀번호 찾기</li>
-          </ul>
         </section>
-        <section class="login_02">
-          <div class="login_social_title">
-            <hr />
-            <p>간편 로그인</p>
+        <section class="mypage_policy">
+          <h2>약관 및 정책</h2>
+          <div class="policy_personal">
+            <p>개인정보 처리 방침</p>
+            <button>보기</button>
           </div>
-          <button class="login_social_kakao">
-            <img src="./img/logo_kakao.png" alt="kakao" />
-            <p>카카오 계정으로 로그인</p>
-          </button>
-          <button class="login_social_naver">
-            <img src="./img/logo_naver.png" alt="naver" />
-            <p>네이버 계정으로 로그인</p>
-          </button>
+          <div class="policy_service">
+            <p>서비스 이용 약관</p>
+            <button>보기</button>
+          </div>
         </section>
+        <p class="mypage_quit">계정 탈퇴하기</p>
       </div>
     </main>
     <footer>
