@@ -116,29 +116,60 @@ header .header_inner .header_inner_right .inner_right_bottom .search_bar input {
   opacity: 1;
   font-family: pretendard;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus {
   outline: none;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::-moz-placeholder {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::placeholder {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  .fa-magnifying-glass {
   cursor: pointer;
 }
-header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .basket
+  .fa-cart-shopping {
   width: 40px;
   height: 32px;
   font-size: 32px;
   position: relative;
   cursor: pointer;
 }
-header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping p {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .basket
+  .fa-cart-shopping
+  p {
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -375,15 +406,29 @@ footer .footer_inner .footer_inner_right .inner_right_bottom {
   display: flex;
   gap: 5px;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left
+  li:nth-child(1) {
   font-size: 1.6rem;
   font-weight: bold;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left
+  li:nth-child(2) {
   font-size: 1.2rem;
 }
