@@ -1,6 +1,8 @@
+/* Reset & Variables */
 @import "../../styles/reset.scss";
 @import "../../styles/variables.scss";
 
+/* Product Thumbnail */
 @mixin product-thumb {
   .thumb_one {
     width: 100%;
@@ -46,6 +48,27 @@
     }
   }
 }
+/* Review Content */
+@mixin member-content {
+  .member_content {
+    margin: 20px auto;
+    gap: 20px;
+    display: flex;
+    font-size: 1.15rem;
+    & img {
+      border-radius: 10px;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 1rem;
+        color: map-get($map: $color, $key: gray-999);
+        margin: 20px 0px 0px;
+      }
+    }
+  }
+}
 
 html {
   font-size: 62.5%;
@@ -56,13 +79,18 @@ body {
   font-family: map-get($map: $font, $key: pretendard);
 }
 
+/* main */
 .detail_container {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 100px auto 270px auto;
 }
+
+/* hr */
 .detail_line {
   width: 1050px;
   height: 2px;
@@ -70,6 +98,9 @@ body {
   border: none;
   margin: 0 auto;
 }
+
+/* 5 Section */
+.detail_info,
 .detail_review,
 .detail_product,
 .detail_faq,
@@ -81,6 +112,7 @@ body {
   align-items: center;
   padding-top: 40px;
 }
+
 /* info */
 .detail_info {
   width: 100%;
@@ -206,6 +238,7 @@ body {
     }
   }
 }
+
 /* review */
 .detail_review {
   width: 1050px;
@@ -267,24 +300,7 @@ body {
           color: map-get($map: $color, $key: yellow);
         }
       }
-      .member_content {
-        margin: 20px auto;
-        gap: 20px;
-        display: flex;
-        font-size: 1.15rem;
-        & img {
-          border-radius: 10px;
-        }
-        & > div {
-          display: flex;
-          flex-direction: column;
-          p {
-            font-size: 1rem;
-            color: map-get($map: $color, $key: gray-999);
-            margin: 20px 0px 0px;
-          }
-        }
-      }
+      @include member-content;
     }
     & > div:last-child {
       cursor: pointer;
@@ -294,24 +310,7 @@ body {
           color: map-get($map: $color, $key: yellow);
         }
       }
-      .member_content {
-        margin: 20px auto;
-        gap: 20px;
-        display: flex;
-        font-size: 1.15rem;
-        & img {
-          border-radius: 10px;
-        }
-        & > div {
-          display: flex;
-          flex-direction: column;
-          p {
-            font-size: 1rem;
-            color: map-get($map: $color, $key: gray-999);
-            margin: 20px 0px 0px;
-          }
-        }
-      }
+      @include member-content;
     }
   }
   .review_more {
@@ -330,6 +329,7 @@ body {
     cursor: pointer;
   }
 }
+
 /* product */
 .detail_product {
   width: 1050px;
@@ -361,6 +361,7 @@ body {
     @include product-thumb;
   }
 }
+
 /* faq */
 .detail_faq {
   width: 100%;
@@ -448,6 +449,115 @@ body {
     }
   }
 }
+
 /* policy */
 .detail_policy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  gap: 60px;
+
+  .policy_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 1050px;
+
+    & > h1 {
+      font-size: 3rem;
+      font-family: map-get($font, pretendard);
+      font-weight: 700;
+      color: map-get($color, dark);
+    }
+
+    & > p {
+      width: 906px;
+      font-size: 1.6rem;
+      font-family: map-get($font, pretendard);
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: map-get($color, dark);
+    }
+  }
+
+  .policy_contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+    & .policy_first,
+    & .policy_last {
+      width: 505px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 14px;
+
+      & > h2 {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        outline: 1px solid map-get($color, gray-858585);
+        outline-offset: -1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: map-get($font, pretendard);
+        font-weight: 500;
+        text-align: center;
+        color: map-get($color, dark);
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-family: map-get($font, pretendard);
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: map-get($color, dark);
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        line-height: 1rem;
+        margin: 0px 0px 30px -14px;
+        li {
+          font-size: 1.4rem;
+          font-family: map-get($font, pretendard);
+          font-weight: 300;
+          line-height: 1rem;
+          color: map-get($color, dark);
+          padding-left: 15px;
+          text-align: left;
+        }
+      }
+    }
+    & .policy_last {
+      table {
+        tr {
+          td {
+            font-size: 1.4rem;
+            font-family: map-get($map: $font, $key: pretendard);
+            font-weight: 400;
+            line-height: 3.3rem;
+            color: map-get($map: $color, $key: dark);
+          }
+        }
+      }
+    }
+  }
 }
