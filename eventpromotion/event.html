@@ -3,11 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="./styles/event.css" />
     <script defer src="./js/script.js"></script>
     <title>Event page</title>
   </head>
   <body>
-    <h1>JHello</h1>
+    <main id="event_page">
+      <header>
+        <div class="header_event">
+          <p>
+            지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
+            <i class="fa-solid fa-chevron-right"></i>
+          </p>
+        </div>
+
+      </header>
+
+      <!-- event main section -->
+      <section id="event_main_section">
+
+        <div class="inner">
+          <div id="event_main">
+            <div id="event_main_text">
+              <h4>농담 회원이라면 누구나 참여 가능</h4>
+              <span id="underline"></span>
+              <h2><b>100%</b> 당첨 확정!</h2>
+              <h3>매일매일 <b>룰렛이벤트</b></h3>
+              <span>타 쿠폰과 중복 적용 가능 / 일부 상품 제외</span>
+            </div>
+            <div id="event_roulette">
+              <img src="../imgs/Coin-1.png" alt="Coin-1">
+              <img src="../imgs/Coin-2.png" alt="Coin-2">
+              <img src="../imgs/Coin-3.png" alt="Coin-3">
+              <img src="../imgs/Coin-4.png" alt="Coin-4">
+              <img src="../imgs/roulette_arr.png" alt="roulette_arr">
+              <img src="../imgs/event_titlesub.png" alt="">
+              <img src="../imgs/event_roulette.png" alt="event_roulette">
+            </div>
+            <div id="event_down_text">
+              <div id="roulette_uparr">
+                <img src="../imgs/roulette_uparr.png" alt="roulette_uparr">
+              </div>
+              <span>룰렛 가운데 START 버튼을 눌러보세요</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- event middle plus -->
+      <div id="event_middle_plus">
+        <div class="middle_plus"></div>
+        <div class="middle_plus"></div>
+      </div>
+      <!-- event product -->
+      <section id="event_product">
+        <div class="inner">
+          <div id="event_product_up">
+            <div class="product_title_line"></div>
+            <div id="event_product_title">
+              <h4>쿠폰과 함께쓰면 대폭 할인!</h4>
+              <h3>농담 PICK 추천상품</h3>
+            </div>
+            <div class="product_title_line"></div>
+          </div>
+          <span id="event_product_subtext">이벤트 쿠폰과 중복할인 가능</span>
+          <ul>
+            <li>
+              <img src="../imgs/event_product_1.jpg" alt="event_product_1">
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>10<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>유기농 송이 어글리바나나</span>
+                  <h3>어글리 바나나 1.5kg</h3>
+                  <div class="product_text_price">
+                    <h2>16,200원</h2>
+                    <span>18,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img class="product_godet_arr" src="../imgs/product_godet_arr.png" alt="product_godet_arr">
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_2.jpg" alt="event_product_1">
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>취향껏 골라먹는 파프리카 2종과 당조고추</span>
+                  <h3>파프리카 2종/당조고추</h3>
+                  <div class="product_text_price">
+                    <h2>13,300원</h2>
+                    <span>14,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img class="product_godet_arr" src="../imgs/product_godet_arr.png" alt="product_godet_arr">
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_3.jpg" alt="event_product_1">
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>못난이 무농약 토마토로 만들었어요</span>
+                  <h3>그대로 토마토</h3>
+                  <div class="product_text_price">
+                    <h2>30,400원</h2>
+                    <span>32,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img class="product_godet_arr" src="../imgs/product_godet_arr.png" alt="product_godet_arr">
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_4.jpg" alt="event_product_1">
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>향긋한 제철 진주 딸기</span>
+                  <h3>진주 딸기 1kg</h3>
+                  <div class="product_text_price">
+                    <h2>20,900원</h2>
+                    <span>22,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img class="product_godet_arr" src="../imgs/product_godet_arr.png" alt="product_godet_arr">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="event_product_banner">
+            <span>지금 농담에 신규가입하면</span>
+            <div id="product_banner_title">
+              <div></div> 
+              <h4>인기상품 10종이 <b>100원부터</b></h4>
+              <img src="../imgs/product_godet_warr.png" alt="product_godet_warr">
+            </div> 
+            <img id="product_banner_img" src="../imgs/event_product_banner.png" alt="event_product_banner">
+          </div>
+        </div>
+      </section>
+
+      <!-- event caution -->
+      <section id="event_caution">
+        <div class="inner">
+          <h4>꼭 읽어주세요</h4>
+          <p>
+            • 본 이벤트는 농담 회원을 대상으로 진행됩니다.<br>• 추가 참여 기회는 아래의 경우에만 제공되므로 반드시 양지 부탁드립니다.<br><span class="space">• </span>1) 초대를 받은 친구가 기존 회원인 경우: 로그인 후 이벤트 참여까지 완료시 참여 기회 추가 제공<br><span class="space">• </span>2) 초대를 받은 친구가 농담 회원이 아닌 경우: 공유 버튼을 눌러 복사된 링크를 통해<br>• 초대를 받은 대상자가 공유버튼을 눌러 복사된 링크를 통해 가입하지 않고, 이외 경로로 가입한 경우 추가 참여 기회는 인정되지 않습니다.<br>• 초대를 받은 대상자가 일반회원이 아닌 통합회원 SNS 회원으로 가입 시 추가 참여 기회는 인정되지 않습니다.<br>• 친구 초대로 최대 10번의 추가 참여 기회를 받을 수 있으나, 초대를 한 10명의 대상자는 모두 달라야 합니다.<br>• 지급된 포인트는 [마이페이지] - [혜택이벤트]에서 확인하실 수 있습니다.<br>• 지급된 포인트는 타인에게 양도할 수 없으며, 유효기간이 만료되는 경우 사용이 불가합니다.<br>• 정상적인 방법으로 참여하지 않았음이 확인된 경우, 혜택 지급은 제한되며 지급된 혜택은 회수됩니다.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
