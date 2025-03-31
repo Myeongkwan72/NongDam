@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/81c26bcbac.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./styles/sign.css" />
+    <script src="./js/sign.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_event">
+        <p>
+          지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
+          <i class="fa-solid fa-chevron-right"></i>
+        </p>
+      </div>
+      <div class="header_inner">
+        <div class="header_inner_left">
+          <ul>
+            <li>과일</li>
+            <li>채소</li>
+            <li>가공식품 / 기타</li>
+            <li>이벤트</li>
+          </ul>
+        </div>
+        <div class="header_inner_right">
+          <div class="inner_right_top">
+            <ul>
+              <li>로그인</li>
+              <p>|</p>
+              <li>마이페이지</li>
+              <p>|</p>
+              <li>회원가입</li>
+            </ul>
+          </div>
+          <div class="inner_right_bottom">
+            <div class="search_bar">
+              <input type="text" placeholder="검색어를 입력해주세요." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="basket">
+              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+            </div>
+          </div>
+        </div>
+        <div class="header_inner_logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+      </div>
+    </header>
+    <main id="container">
+      <div class="sign_inner">
+        <section class="sign">
+          <div class="sign_title">
+            <h2>회원가입</h2>
+            <p>* 표시된 항목은 필수사항입니다.</p>
+          </div>
+          <div class="sign_id">
+            <div class="sign_id_text">
+              <h2>아이디 <b>*</b></h2>
+              <p>아이디가 올바르지 않습니다.</p>
+            </div>
+            <div class="id_input">
+              <input type="text" placeholder="아이디를 입력해주세요." />
+            </div>
+          </div>
+          <div class="sign_pw">
+            <div class="sign_pw_text">
+              <h2>비밀번호 <b>*</b></h2>
+              <p>비밀번호가 올바르지 않습니다.</p>
+            </div>
+            <div class="pw_input">
+              <input
+                type="password"
+                placeholder="비밀번호를 입력해주세요. (영문+숫자 8~12자리)"
+              />
+              <i class="fas fa-eye-slash"></i>
+            </div>
+          </div>
+          <div class="sign_pw_again">
+            <div class="sign_pw_again_text">
+              <h2>비밀번호 확인 <b>*</b></h2>
+              <p>비밀번호가 일치하지 않습니다.</p>
+            </div>
+            <div class="pw_input">
+              <input type="password" placeholder="비밀번호를 재입력해주세요." />
+              <i class="fas fa-eye-slash"></i>
+            </div>
+          </div>
+          <div class="sign_name">
+            <div class="sign_name_text">
+              <h2>이름 <b>*</b></h2>
+              <p>이름이 올바르지 않습니다.</p>
+            </div>
+            <div class="id_input">
+              <input type="text" placeholder="이름을 입력해주세요." />
+            </div>
+          </div>
+          <div class="sign_date">
+            <div class="sign_date_text">
+              <h2>생년월일</h2>
+            </div>
+            <div class="date_select">
+              <select class="date_select_year">
+                <option selected disabled>YYYY년</option>
+              </select>
+              <select class="date_select_month">
+                <option selected disabled>MM월</option>
+              </select>
+              <select class="date_select_day">
+                <option selected disabled>DD일</option>
+              </select>
+            </div>
+          </div>
+          <div class="sign_email">
+            <div class="sign_email_text">
+              <h2>이메일 <b>*</b></h2>
+              <p>이메일이 올바르지 않습니다.</p>
+            </div>
+            <div class="email_input">
+              <input type="text" placeholder="이메일을 입력해주세요." />
+              <p>@</p>
+              <select class="email_list">
+                <option selected disabled>----------</option>
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="nate">nate.com</option>
+                <option value="gmail">gmail.com</option>
+              </select>
+            </div>
+          </div>
+          <div class="sign_call">
+            <div class="sign_call_text">
+              <h2>연락처 <b>*</b></h2>
+              <p>연락처가 올바르지 않습니다.</p>
+            </div>
+            <div class="call_input">
+              <input
+                type="tel"
+                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
+                placeholder="연락처를 입력해주세요."
+              />
+            </div>
+          </div>
+          <div class="sign_address">
+            <div class="sign_address_text">
+              <h2>배송지 주소</h2>
+            </div>
+            <div class="address_input">
+              <input type="text" placeholder="배송지 주소를 입력해주세요." />
+            </div>
+          </div>
+        </section>
+        <div class="sign_checkbox"></div>
+        <button>가입하기</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <div class="footer_inner_left">
+          <img src="/img/logo_02.png" alt="logo_02" />
+          <p>ⓒ 농담 All rights reserved</p>
+        </div>
+        <div class="footer_inner_center">
+          <ul>
+            <li>법인명 (상호) : 주식회사 농담 | 대표이사 : 송명관</li>
+            <li>사업자등록번호 : 123-45-67890</li>
+            <li>주소지 : 서울시 서초구 서초대로77길 41 대동2빌딩 9층</li>
+            <li>서비스 이용약관 | 개인정보 처리방침</li>
+          </ul>
+        </div>
+        <div class="footer_inner_right">
+          <div class="inner_right_top">
+            <ul>
+              <li>고객센터</li>
+              <li>02-1234-5678</li>
+            </ul>
+          </div>
+          <div class="inner_right_bottom">
+            <ul class="right_bottom_left">
+              <li>고객센터 운영시간 :</li>
+              <li>(운영시간에 순차적 답변)</li>
+            </ul>
+            <ul class="right_bottom_right">
+              <li>월 ~ 토요일 | 오전 7시 ~ 오후 6시</li>
+              <li>일 & 공휴일 | 오전 7시 ~ 오후 4시</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

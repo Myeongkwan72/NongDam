@@ -9,8 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom css & js -->
-    <link rel="stylesheet" href="./styles/login.css" />
-    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./styles/find.css" />
+    <script src="./js/find.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -56,38 +56,34 @@
       </div>
     </header>
     <main id="container">
-      <div class="login_inner">
-        <section class="login_01">
-          <h2>로그인</h2>
-          <div class="login_input">
-            <input type="text" placeholder="아이디를 입력해주세요." />
-            <div class="login_pw">
-              <input type="password" placeholder="비밀번호를 입력해주세요." />
-              <i class="fas fa-eye"></i>
+      <div class="find_inner">
+        <section class="find_id">
+          <h2>아이디 찾기</h2>
+          <div class="find_switch">
+            <div class="find_switch_call">
+              <p class="active">휴대폰 인증</p>
+              <hr class="active" />
+            </div>
+            <div class="find_switch_email">
+              <p>이메일 인증</p>
+              <hr />
             </div>
           </div>
-          <button>로그인</button>
-          <ul>
-            <li>회원가입</li>
-            <p>|</p>
-            <li>아이디 찾기</li>
-            <p>|</p>
-            <li>비밀번호 찾기</li>
-          </ul>
-        </section>
-        <section class="login_02">
-          <div class="login_social_title">
-            <hr />
-            <p>간편 로그인</p>
+          <div class="find_input_name">
+            <p>이름</p>
+            <input
+              type="text"
+              placeholder="가입 시 등록한 이름을 입력해주세요."
+            />
           </div>
-          <button class="login_social_kakao">
-            <img src="./img/logo_kakao.png" alt="kakao" />
-            <p>카카오 계정으로 로그인</p>
-          </button>
-          <button class="login_social_naver">
-            <img src="./img/logo_naver.png" alt="naver" />
-            <p>네이버 계정으로 로그인</p>
-          </button>
+          <div class="find_input_call">
+            <p>연락처</p>
+            <input
+              type="text"
+              placeholder="가입 시 등록한 연락처를 입력해주세요."
+            />
+          </div>
+          <button>인증번호 받기</button>
         </section>
       </div>
     </main>

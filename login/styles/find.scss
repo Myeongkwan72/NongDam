@@ -161,12 +161,11 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  .login_inner {
+  .find_inner {
     width: 1050px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    .login_01 {
+    .find_id {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -177,30 +176,113 @@ header {
         font-size: 3.4rem;
         font-weight: bold;
       }
-      .login_input {
+      .find_switch {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .find_switch_call {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: map-get($map: $color, $key: gray-ccc);
+            &.active {
+              color: map-get($map: $color, $key: main-01);
+            }
+            cursor: pointer;
+          }
+          hr {
+            width: 225px;
+            height: 2px;
+            border: none;
+            background: map-get($map: $color, $key: gray-ccc);
+            &.active {
+              height: 5px;
+              background: map-get($map: $color, $key: main-01);
+            }
+          }
+        }
+        .find_switch_email {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: map-get($map: $color, $key: gray-ccc);
+            &.active {
+              color: map-get($map: $color, $key: main-01);
+            }
+            cursor: pointer;
+          }
+          hr {
+            width: 225px;
+            height: 2px;
+            border: none;
+            background: map-get($map: $color, $key: gray-ccc);
+            &.active {
+              height: 5px;
+              background: map-get($map: $color, $key: main-01);
+            }
+          }
+        }
+      }
+      .find_input_name {
+        width: 450px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        .login_pw {
-          display: flex;
-          position: relative;
-          .fa-eye {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            color: map-get($map: $color, $key: gray-999);
-          }
+        gap: 10px;
+        p {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.8rem;
         }
         input {
           width: 450px;
           height: 60px;
-          border-radius: 10px;
           padding: 10px 20px;
+          border: 1px solid map-get($map: $color, $key: gray-999);
+          border-radius: 10px;
+          opacity: 1;
           font-family: map-get($map: $font, $key: pretendard);
           font-size: 1.8rem;
-          color: map-get($map: $color, $key: gray-999);
+          color: map-get($map: $color, $key: gray-ccc);
+          &:focus {
+            color: map-get($map: $color, $key: dark);
+            &::placeholder {
+              transition: all 0.3s;
+              opacity: 0;
+            }
+          }
+        }
+      }
+      .find_input_call {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.8rem;
+        }
+        input {
+          width: 450px;
+          height: 60px;
+          padding: 10px 20px;
           border: 1px solid map-get($map: $color, $key: gray-999);
+          border-radius: 10px;
+          opacity: 1;
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.8rem;
+          color: map-get($map: $color, $key: gray-ccc);
           &:focus {
             color: map-get($map: $color, $key: dark);
             &::placeholder {
@@ -213,87 +295,16 @@ header {
       button {
         width: 450px;
         height: 60px;
-        background: map-get($map: $color, $key: main-01);
-        color: map-get($map: $color, $key: light);
+        background: map-get($map: $color, $key: gray-ccc);
         border: none;
         border-radius: 10px;
+        color: map-get($map: $color, $key: light);
         font-family: map-get($map: $font, $key: pretendard);
         font-size: 2rem;
         font-weight: bold;
         cursor: pointer;
-      }
-      ul {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        li {
-          font-family: map-get($map: $font, $key: pretendard);
-          font-size: 1.4rem;
-          color: map-get($map: $color, $key: gray-666);
-          cursor: pointer;
-        }
-      }
-    }
-    .login_02 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      .login_social_title {
-        width: 450px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        hr {
-          width: 100%;
-          position: absolute;
-          top: 50%;
-          border: 1px solid map-get($map: $color, $key: main-02);
-        }
-        p {
-          padding: 10px;
-          font-family: map-get($map: $font, $key: pretendard);
-          font-size: 1.4rem;
-          font-weight: bold;
-          background: map-get($map: $color, $key: light);
-          color: map-get($map: $color, $key: main-02);
-          z-index: 1;
-        }
-      }
-      .login_social_kakao {
-        width: 450px;
-        height: 60px;
-        border: none;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        background: #fee500;
-        cursor: pointer;
-        p {
-          font-family: map-get($map: $color, $key: pretendard);
-          font-size: 1.8rem;
-          color: map-get($map: $color, $key: dark);
-        }
-      }
-      .login_social_naver {
-        width: 450px;
-        height: 60px;
-        border: none;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        background: #03c75a;
-        cursor: pointer;
-        p {
-          font-family: map-get($map: $color, $key: pretendard);
-          font-size: 1.8rem;
-          color: map-get($map: $color, $key: light);
+        &.active {
+          background: map-get($map: $color, $key: main-01);
         }
       }
     }
