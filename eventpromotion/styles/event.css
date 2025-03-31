@@ -1,0 +1,357 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: pretendard;
+}
+
+#event_page {
+  width: 100%;
+  height: 100%;
+}
+#event_page #event_main_section {
+  width: 100%;
+  height: 1800px;
+  background: url("../../imgs/event_topbg.jpg") center/cover no-repeat;
+}
+#event_page #event_main_section .inner {
+  width: 1050px;
+  margin: 0 auto;
+}
+#event_page #event_main_section .inner #event_main {
+  top: 173px;
+  height: 1400px;
+  position: relative;
+}
+#event_page #event_main_section .inner #event_main #event_main_text {
+  top: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#event_page #event_main_section .inner #event_main #event_main_text h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+#event_page #event_main_section .inner #event_main #event_main_text #underline {
+  width: 315px;
+  height: 1px;
+  background: #000;
+  margin: 2px auto 43px;
+}
+#event_page #event_main_section .inner #event_main #event_main_text h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#event_page #event_main_section .inner #event_main #event_main_text h2 b {
+  color: #ff9900;
+  font-weight: bold;
+}
+#event_page #event_main_section .inner #event_main #event_main_text h3 {
+  font-size: 6.4rem;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+#event_page #event_main_section .inner #event_main #event_main_text h3 b {
+  color: #2e8632;
+  font-weight: bold;
+}
+#event_page #event_main_section .inner #event_main #event_main_text span {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img {
+  position: absolute;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:first-child {
+  top: 54px;
+  left: 158px;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:nth-child(2) {
+  bottom: 258px;
+  left: 152px;
+  z-index: 1;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:nth-child(3) {
+  bottom: 358px;
+  right: 25px;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:nth-child(4) {
+  bottom: 290px;
+  right: 87px;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:nth-child(5) {
+  top: 513px;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 1;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:nth-child(6) {
+  top: 234px;
+  right: 268px;
+}
+#event_page #event_main_section .inner #event_main #event_roulette img:last-child {
+  top: 538px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#event_page #event_main_section .inner #event_main #event_down_text {
+  position: absolute;
+  bottom: 83px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#event_page #event_main_section .inner #event_main #event_down_text #roulette_uparr {
+  width: 50px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#event_page #event_main_section .inner #event_main #event_down_text #roulette_uparr img {
+  width: 100%;
+  object-fit: cover;
+}
+#event_page #event_main_section .inner #event_main #event_down_text span {
+  font-size: 3rem;
+  bottom: 83px;
+}
+#event_page #event_middle_plus {
+  width: 76px;
+  height: 76px;
+  border-radius: 38px;
+  background: #f37100;
+  z-index: 1;
+  position: absolute;
+  top: 2020px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#event_page #event_middle_plus .middle_plus {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#event_page #event_middle_plus .middle_plus:first-child {
+  width: 6px;
+  height: 40px;
+}
+#event_page #event_product {
+  width: 100%;
+  height: 2407px;
+  background: #fffaf1;
+}
+#event_page #event_product .inner {
+  width: 1050px;
+  height: 100%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+#event_page #event_product .inner #event_product_up {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#event_page #event_product .inner #event_product_up .product_title_line {
+  width: 310px;
+  height: 2px;
+  background: #f37100;
+}
+#event_page #event_product .inner #event_product_up #event_product_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f37100;
+}
+#event_page #event_product .inner #event_product_up #event_product_title h4 {
+  font-size: 3rem;
+}
+#event_page #event_product .inner #event_product_up #event_product_title h3 {
+  font-size: 4rem;
+}
+#event_page #event_product .inner #event_product_subtext {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  margin: 60px auto 10px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+#event_page #event_product .inner ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#event_page #event_product .inner ul li {
+  width: 100%;
+  height: 340px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+#event_page #event_product .inner ul li:first-child .event_product_inner .event_product_sale {
+  background: #ff9900;
+}
+#event_page #event_product .inner ul li .event_product_inner {
+  width: 425px;
+  height: 260px;
+  margin: 40px 60px;
+  position: relative;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_sale {
+  position: absolute;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: #ffc164;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_sale h2 {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_sale h2 span {
+  font-size: 2.4rem;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text {
+  position: absolute;
+  top: 70px;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text span {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #999;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text .product_text_price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text .product_text_price h2 {
+  font-size: 4rem;
+  line-height: 6.5rem;
+  color: #f37100;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_text .product_text_price span {
+  font-size: 2rem;
+  color: #999;
+  text-decoration: line-through;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_godet {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#event_page #event_product .inner ul li .event_product_inner .event_product_godet span {
+  font-size: 1.8rem;
+}
+#event_page #event_product .inner #event_product_banner {
+  width: 100%;
+  height: 450px;
+  margin-top: 60px;
+  background: linear-gradient(90deg, rgb(151, 210, 118) 0%, rgb(110, 171, 77) 100%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+#event_page #event_product .inner #event_product_banner span {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 2.4rem;
+  color: #fff;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_title {
+  margin-left: 50px;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_title div {
+  position: absolute;
+  top: 123px;
+  left: 291px;
+  width: 164px;
+  height: 23px;
+  background: #a4ff24;
+  opacity: 0.4;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_title h4 {
+  position: absolute;
+  top: 103px;
+  left: 50px;
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_title h4 b {
+  font-weight: bold;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_title img {
+  position: absolute;
+  top: 126px;
+  left: 469px;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_img {
+  position: absolute;
+  bottom: 40px;
+}
+#event_page #event_caution .inner {
+  width: 1050px;
+  height: 100%;
+  padding: 100px 0 120px;
+  margin: 0 auto;
+}
+#event_page #event_caution .inner h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+#event_page #event_caution .inner p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4.8rem;
+}
+#event_page #event_caution .inner p .space {
+  color: #fff;
+}

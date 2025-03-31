@@ -1,0 +1,551 @@
+// reset
+@import "../../styles/reset.scss";
+
+// variables
+@import "../../styles/variables.scss";
+
+// mixin
+@mixin type-01 {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  :nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.8rem;
+      font-weight: bold;
+      b {
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: map-get($map: $color, $key: red);
+      }
+    }
+    p {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.4rem;
+      color: map-get($map: $color, $key: red);
+    }
+  }
+  :nth-of-type(2) {
+    border: 1px solid map-get($map: $color, $key: gray-999);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    input {
+      height: 60px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      opacity: 1;
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.8rem;
+      &:focus {
+        &::placeholder {
+          transition: all 0.3s;
+          opacity: 0;
+        }
+      }
+    }
+    ::placeholder {
+      color: map-get($map: $color, $key: gray-ccc);
+    }
+  }
+}
+
+@mixin type-02 {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  :nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.8rem;
+      font-weight: bold;
+      b {
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: map-get($map: $color, $key: red);
+      }
+    }
+    p {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.4rem;
+      color: map-get($map: $color, $key: red);
+    }
+  }
+  :nth-of-type(2) {
+    border: 1px solid map-get($map: $color, $key: gray-999);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    input {
+      height: 60px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 60px 10px 20px;
+      opacity: 1;
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.8rem;
+      &:focus {
+        &::placeholder {
+          transition: all 0.3s;
+          opacity: 0;
+        }
+      }
+    }
+    ::placeholder {
+      color: map-get($map: $color, $key: gray-ccc);
+    }
+    i {
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: map-get($map: $color, $key: gray-999);
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+}
+
+@mixin type-03 {
+  width: 140px;
+  height: 60px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid map-get($map: $color, $key: gray-999);
+  border-radius: 10px;
+  background: url(../img/arrow.png) no-repeat right 30px center / 1rem;
+  // color: map-get($map: $color, $key: gray-ccc);
+  font-family: map-get($map: $font, $key: pretendard);
+  font-size: 1.8rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+// common
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  font-size: 1.6rem;
+}
+
+// header
+header {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: map-get($map: $color, $key: light);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
+  // position: sticky;
+  // top: 0;
+  .header_event {
+    width: 100%;
+    height: 60px;
+    background: map-get($map: $color, $key: main-01);
+    color: map-get($map: $color, $key: light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: map-get($map: $font, $key: pretendard);
+    font-size: 2rem;
+    .fa-chevron-right {
+      cursor: pointer;
+    }
+  }
+  .header_inner {
+    width: 1650px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    .header_inner_left {
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      ul {
+        display: flex;
+        gap: 60px;
+        li {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 2.8rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .header_inner_right {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 95px;
+      position: absolute;
+      right: 0;
+      .inner_right_top {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.8rem;
+          li {
+            cursor: pointer;
+          }
+        }
+      }
+      .inner_right_bottom {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .search_bar {
+          width: 280px;
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px;
+          border-radius: 40px;
+          background: map-get($map: $color, $key: gray-f5f5f5);
+          input {
+            width: 90%;
+            background: inherit;
+            border: none;
+            opacity: 1;
+            font-family: map-get($map: $font, $key: pretendard);
+            &:focus {
+              outline: none;
+              &::placeholder {
+                transition: all 0.3s;
+                opacity: 0;
+              }
+            }
+          }
+          .fa-magnifying-glass {
+            cursor: pointer;
+          }
+        }
+        .basket {
+          .fa-cart-shopping {
+            width: 40px;
+            height: 32px;
+            font-size: 32px;
+            position: relative;
+            cursor: pointer;
+            p {
+              // width: 20px;
+              // height: 20px;
+              padding: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: map-get($map: $color, $key: main-01);
+              color: map-get($map: $color, $key: light);
+              border-radius: 50%;
+              position: absolute;
+              top: -5px;
+              right: -5px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .header_inner_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// main
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  .sign_inner {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .sign {
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 30px;
+      .sign_title {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2 {
+          width: 450px;
+          display: flex;
+          justify-content: center;
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 3.4rem;
+          font-weight: bold;
+        }
+        p {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: map-get($map: $color, $key: red);
+        }
+      }
+      .sign_id {
+        @include type-01;
+      }
+      .sign_pw {
+        @include type-02;
+      }
+      .sign_pw_again {
+        @include type-02;
+      }
+      .sign_name {
+        @include type-01;
+      }
+      .sign_date {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .sign_date_text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            font-weight: bold;
+            b {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: map-get($map: $color, $key: red);
+            }
+          }
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.4rem;
+            color: map-get($map: $color, $key: red);
+          }
+        }
+        .date_select {
+          width: 450px;
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .date_select_year {
+            @include type-03;
+          }
+          .date_select_month {
+            @include type-03;
+          }
+          .date_select_day {
+            @include type-03;
+          }
+        }
+      }
+      .sign_email {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        :nth-child(1) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            font-weight: bold;
+            b {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: map-get($map: $color, $key: red);
+            }
+          }
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.4rem;
+            color: map-get($map: $color, $key: red);
+          }
+        }
+        .email_input {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          input {
+            width: 260px;
+            height: 60px;
+            border: 1px solid map-get($map: $color, $key: gray-999);
+            border-radius: 10px;
+            padding: 10px 20px;
+            opacity: 1;
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            &:focus {
+              &::placeholder {
+                transition: all 0.3s;
+                opacity: 0;
+              }
+            }
+          }
+          ::placeholder {
+            color: map-get($map: $color, $key: gray-ccc);
+          }
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 2rem;
+          }
+          select {
+            width: 140px;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 4rem;
+            border: 1px solid map-get($map: $color, $key: gray-999);
+            border-radius: 10px;
+            background: url(../img/arrow.png) no-repeat right 20px center / 1rem;
+            // color: map-get($map: $color, $key: gray-ccc);
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            -webkit-appearance: none;
+            appearance: none;
+          }
+        }
+      }
+      .sign_call {
+        @include type-01;
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: map-get($map: $color, $key: gray-f5f5f5);
+  color: map-get($map: $color, $key: gray-858585);
+  .footer_inner {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_inner_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      img {
+        width: 170px;
+        height: 80px;
+      }
+      p {
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 1.4rem;
+      }
+    }
+    .footer_inner_center {
+      display: flex;
+      flex-direction: column;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        li {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.6rem;
+          &:last-child {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .footer_inner_right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: map-get($map: $font, $key: pretendard);
+      .inner_right_top {
+        display: flex;
+        flex-direction: column;
+        ul {
+          li {
+            &:nth-child(1) {
+              font-size: 2.2rem;
+              font-weight: bold;
+            }
+            &:nth-child(2) {
+              font-size: 3.6rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .inner_right_bottom {
+        display: flex;
+        gap: 5px;
+        .right_bottom_left {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          li {
+            &:nth-child(1) {
+              font-size: 1.6rem;
+              font-weight: bold;
+            }
+            &:nth-child(2) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
