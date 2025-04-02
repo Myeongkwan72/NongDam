@@ -4,13 +4,19 @@
 // variables
 @import "../../styles/variables.scss";
 
+// header
+@import "../../styles/header.scss";
+
+// footer
+@import "../../styles/footer.scss";
+
 // mixin
 @mixin type-01 {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  :nth-child(1) {
+  & > :nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +37,14 @@
       color: map-get($map: $color, $key: red);
     }
   }
-  :nth-of-type(2) {
+  & > :nth-child(2) {
+    width: 450px;
     border: 1px solid map-get($map: $color, $key: gray-999);
     border-radius: 10px;
     display: flex;
     align-items: center;
     input {
+      width: 100%;
       height: 60px;
       border: none;
       border-radius: 10px;
@@ -62,7 +70,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  :nth-child(1) {
+  & > :nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +91,8 @@
       color: map-get($map: $color, $key: red);
     }
   }
-  :nth-of-type(2) {
+  & > :nth-child(2) {
+    width: 450px;
     border: 1px solid map-get($map: $color, $key: gray-999);
     border-radius: 10px;
     display: flex;
@@ -91,6 +100,7 @@
     align-items: center;
     position: relative;
     input {
+      width: 100%;
       height: 60px;
       border: none;
       border-radius: 10px;
@@ -116,7 +126,6 @@
       transform: translateY(-50%);
       color: map-get($map: $color, $key: gray-999);
       cursor: pointer;
-      z-index: 1;
     }
   }
 }
@@ -130,7 +139,8 @@
   align-items: center;
   border: 1px solid map-get($map: $color, $key: gray-999);
   border-radius: 10px;
-  background: url(../img/arrow.png) no-repeat right 30px center / 1rem;
+  background: url(/login/login_imgs/arrow.png) no-repeat right 30px center /
+    1rem;
   // color: map-get($map: $color, $key: gray-ccc);
   font-family: map-get($map: $font, $key: pretendard);
   font-size: 1.8rem;
@@ -150,141 +160,6 @@ body {
   flex-direction: column;
   gap: 100px;
   font-size: 1.6rem;
-}
-
-// header
-header {
-  width: 100%;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: map-get($map: $color, $key: light);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
-  // position: sticky;
-  // top: 0;
-  .header_event {
-    width: 100%;
-    height: 60px;
-    background: map-get($map: $color, $key: main-01);
-    color: map-get($map: $color, $key: light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: map-get($map: $font, $key: pretendard);
-    font-size: 2rem;
-    .fa-chevron-right {
-      cursor: pointer;
-    }
-  }
-  .header_inner {
-    width: 1650px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    position: relative;
-    .header_inner_left {
-      display: flex;
-      justify-content: start;
-      align-items: end;
-      position: absolute;
-      left: 0;
-      bottom: 20px;
-      ul {
-        display: flex;
-        gap: 60px;
-        li {
-          font-family: map-get($map: $font, $key: pretendard);
-          font-size: 2.8rem;
-          cursor: pointer;
-        }
-      }
-    }
-    .header_inner_right {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 95px;
-      position: absolute;
-      right: 0;
-      .inner_right_top {
-        ul {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          font-family: map-get($map: $font, $key: pretendard);
-          font-size: 1.8rem;
-          li {
-            cursor: pointer;
-          }
-        }
-      }
-      .inner_right_bottom {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        .search_bar {
-          width: 280px;
-          height: 40px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 25px;
-          border-radius: 40px;
-          background: map-get($map: $color, $key: gray-f5f5f5);
-          input {
-            width: 90%;
-            background: inherit;
-            border: none;
-            opacity: 1;
-            font-family: map-get($map: $font, $key: pretendard);
-            &:focus {
-              outline: none;
-              &::placeholder {
-                transition: all 0.3s;
-                opacity: 0;
-              }
-            }
-          }
-          .fa-magnifying-glass {
-            cursor: pointer;
-          }
-        }
-        .basket {
-          .fa-cart-shopping {
-            width: 40px;
-            height: 32px;
-            font-size: 32px;
-            position: relative;
-            cursor: pointer;
-            p {
-              // width: 20px;
-              // height: 20px;
-              padding: 5px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: map-get($map: $color, $key: main-01);
-              color: map-get($map: $color, $key: light);
-              border-radius: 50%;
-              position: absolute;
-              top: -5px;
-              right: -5px;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-    .header_inner_logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
 }
 
 // main
@@ -446,7 +321,8 @@ header {
             line-height: 4rem;
             border: 1px solid map-get($map: $color, $key: gray-999);
             border-radius: 10px;
-            background: url(../img/arrow.png) no-repeat right 20px center / 1rem;
+            background: url(/login/login_imgs/arrow.png) no-repeat right 20px
+              center / 1rem;
             // color: map-get($map: $color, $key: gray-ccc);
             font-family: map-get($map: $font, $key: pretendard);
             font-size: 1.8rem;
@@ -458,94 +334,65 @@ header {
       .sign_call {
         @include type-01;
       }
-    }
-  }
-}
-
-// footer
-footer {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: map-get($map: $color, $key: gray-f5f5f5);
-  color: map-get($map: $color, $key: gray-858585);
-  .footer_inner {
-    width: 1050px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .footer_inner_left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      img {
-        width: 170px;
-        height: 80px;
-      }
-      p {
-        font-family: map-get($map: $font, $key: pretendard);
-        font-size: 1.4rem;
+      .sign_address {
+        @include type-01;
       }
     }
-    .footer_inner_center {
+    .sign_checkbox {
+      width: 450px;
       display: flex;
       flex-direction: column;
-      ul {
+      justify-content: center;
+      align-items: start;
+      gap: 10px;
+      div {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        li {
+        gap: 10px;
+        .checkbox {
+          width: 20px;
+          height: 20px;
+          appearance: none;
+          border: 2px solid map-get($map: $color, $key: gray-ccc);
+          border-radius: 4px;
+          background: #fff;
+          position: relative;
+          cursor: pointer;
+        }
+        .checkbox:checked {
+          background: map-get($map: $color, $key: main-01);
+          border: map-get($map: $color, $key: main-01);
+        }
+        .checkbox:checked::after {
+          content: "\2714";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: map-get($map: $color, $key: light);
+          font-size: 1.8rem;
+        }
+        p {
           font-family: map-get($map: $font, $key: pretendard);
           font-size: 1.6rem;
-          &:last-child {
-            font-size: 2rem;
-            font-weight: bold;
+          b {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.6rem;
+            color: map-get($map: $color, $key: red);
           }
         }
       }
     }
-    .footer_inner_right {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    button {
+      width: 450px;
+      height: 60px;
+      border: none;
+      border-radius: 10px;
+      background: map-get($map: $color, $key: gray-ccc);
+      color: map-get($map: $color, $key: light);
       font-family: map-get($map: $font, $key: pretendard);
-      .inner_right_top {
-        display: flex;
-        flex-direction: column;
-        ul {
-          li {
-            &:nth-child(1) {
-              font-size: 2.2rem;
-              font-weight: bold;
-            }
-            &:nth-child(2) {
-              font-size: 3.6rem;
-              font-weight: bold;
-            }
-          }
-        }
-      }
-      .inner_right_bottom {
-        display: flex;
-        gap: 5px;
-        .right_bottom_left {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          li {
-            &:nth-child(1) {
-              font-size: 1.6rem;
-              font-weight: bold;
-            }
-            &:nth-child(2) {
-              font-size: 1.2rem;
-            }
-          }
-        }
-      }
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
     }
   }
 }
