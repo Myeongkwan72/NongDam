@@ -11,7 +11,9 @@
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/sign.css" />
     <script src="./js/sign.js"></script>
-    <title>Document</title>
+    <!-- domain icon -->
+    <link rel="icon" type="images/png" href="../logo/logo.png" />
+    <title>회원가입</title>
   </head>
   <body>
     <header>
@@ -46,12 +48,13 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="basket">
-              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+              <i class="fa-solid fa-cart-shopping"> </i>
+              <p>1</p>
             </div>
           </div>
         </div>
         <div class="header_inner_logo">
-          <img src="./img/logo.png" alt="logo" />
+          <img src="../imgs/logo.png" alt="logo" />
         </div>
       </div>
     </header>
@@ -158,14 +161,31 @@
             </div>
           </div>
         </section>
-        <div class="sign_checkbox"></div>
+        <div class="sign_checkbox">
+          <div class="checkbox_all">
+            <input class="checkbox" type="checkbox" />
+            <p>전체 약관에 동의합니다.</p>
+          </div>
+          <div class="checkbox_service">
+            <input class="checkbox" type="checkbox" />
+            <p>서비스 이용 약관 동의<b>*</b></p>
+          </div>
+          <div class="checkbox_privacy">
+            <input class="checkbox" type="checkbox" />
+            <p>개인정보 수집 및 이용 동의<b>*</b></p>
+          </div>
+          <div class="checkbox_event">
+            <input class="checkbox" type="checkbox" />
+            <p>이벤트 정보 수신 동의</p>
+          </div>
+        </div>
         <button>가입하기</button>
       </div>
     </main>
     <footer>
       <div class="footer_inner">
         <div class="footer_inner_left">
-          <img src="/img/logo_02.png" alt="logo_02" />
+          <img src="../imgs/logo_02.png" alt="logo_02" />
           <p>ⓒ 농담 All rights reserved</p>
         </div>
         <div class="footer_inner_center">
