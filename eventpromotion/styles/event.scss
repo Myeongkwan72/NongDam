@@ -28,7 +28,7 @@ body {
       margin: 0 auto;
       #event_main {
         top: 173px;
-        height:1400px;
+        height: 1400px;
         position: relative;
         #event_main_text {
           top: 190px;
@@ -53,7 +53,7 @@ body {
             font-size: 4.8rem;
             font-weight: 400;
             margin-bottom: 10px;
-            b{
+            b {
               color: map-get($map: $color, $key: main-02);
               font-weight: bold;
             }
@@ -62,8 +62,8 @@ body {
             font-size: 6.4rem;
             font-weight: 400;
             margin-bottom: 18px;
-            b{
-              color: map-get($map: $color, $key:  green-2e8632);
+            b {
+              color: map-get($map: $color, $key: green-2e8632);
               font-weight: bold;
             }
           }
@@ -80,17 +80,17 @@ body {
               left: 158px;
             }
             &:nth-child(2) {
-            bottom: 258px;
-            left: 152px;
-            z-index: 1;
+              bottom: 258px;
+              left: 152px;
+              z-index: 1;
             }
             &:nth-child(3) {
-            bottom: 358px;
-            right: 25px;
+              bottom: 358px;
+              right: 25px;
             }
             &:nth-child(4) {
-            bottom: 290px;
-            right: 87px;
+              bottom: 290px;
+              right: 87px;
             }
             &:nth-child(5) {
               top: 513px;
@@ -101,7 +101,7 @@ body {
             &:nth-child(6) {
               top: 234px;
               right: 268px;
-              }
+            }
             &:last-child {
               top: 538px;
               left: 50%;
@@ -140,7 +140,7 @@ body {
     width: 76px;
     height: 76px;
     border-radius: 38px;
-    background: map-get($map: $color, $key:  main-01);
+    background: map-get($map: $color, $key: main-01);
     z-index: 1;
     position: absolute;
     top: 2020px;
@@ -154,7 +154,7 @@ body {
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       &:first-child {
         width: 6px;
         height: 40px;
@@ -203,7 +203,7 @@ body {
         font-size: 2rem;
         font-weight: 200;
       }
-      ul{
+      ul {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -289,7 +289,11 @@ body {
         width: 100%;
         height: 450px;
         margin-top: 60px;
-        background: linear-gradient(90deg, rgba(151,210,118,1) 0%, rgba(110,171,77,1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(151, 210, 118, 1) 0%,
+          rgba(110, 171, 77, 1) 100%
+        );
         border-radius: 20px;
         position: relative;
         overflow: hidden;
@@ -328,7 +332,7 @@ body {
             left: 469px;
           }
         }
-        #product_banner_img{
+        #product_banner_img {
           position: absolute;
           bottom: 40px;
         }
@@ -340,7 +344,7 @@ body {
     .inner {
       width: 1050px;
       height: 100%;
-      padding: 100px 0 120px; 
+      padding: 100px 0 120px;
       margin: 0 auto;
       h4 {
         font-size: 3rem;

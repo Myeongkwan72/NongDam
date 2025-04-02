@@ -7,12 +7,12 @@
 // footer
 footer {
   width: 100%;
-  height: 300px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: map-get($map: $color, $key: gray-f5f5f5);
-  color: map-get($map: $color, $key: gray-858585);
+  color: map-get($map: $color, $key: gray-999);
   .footer_inner {
     width: 1050px;
     display: flex;
@@ -21,11 +21,11 @@ footer {
     .footer_inner_left {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 30px;
+      align-items: start;
+      gap: 10px;
       img {
-        width: 170px;
-        height: 80px;
+        width: 140px;
+        height: 66px;
       }
       p {
         font-family: map-get($map: $font, $key: pretendard);
@@ -38,12 +38,12 @@ footer {
       ul {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 9px;
         li {
           font-family: map-get($map: $font, $key: pretendard);
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           &:last-child {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: bold;
           }
         }
@@ -52,7 +52,7 @@ footer {
     .footer_inner_right {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 8px;
       font-family: map-get($map: $font, $key: pretendard);
       .inner_right_top {
         display: flex;
@@ -60,11 +60,11 @@ footer {
         ul {
           li {
             &:nth-child(1) {
-              font-size: 2.2rem;
+              font-size: 1.6rem;
               font-weight: bold;
             }
             &:nth-child(2) {
-              font-size: 3.6rem;
+              font-size: 2.6rem;
               font-weight: bold;
             }
           }
@@ -72,20 +72,24 @@ footer {
       }
       .inner_right_bottom {
         display: flex;
-        gap: 5px;
+        gap: 10px;
         .right_bottom_left {
           display: flex;
           flex-direction: column;
           gap: 5px;
           li {
             &:nth-child(1) {
-              font-size: 1.6rem;
+              font-size: 1.4rem;
               font-weight: bold;
             }
             &:nth-child(2) {
-              font-size: 1.2rem;
+              font-size: 1rem;
             }
           }
+        }
+        .right_bottom_right {
+          font-size: 1.4rem;
+          line-height: 150%;
         }
       }
     }
