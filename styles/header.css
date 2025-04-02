@@ -16,7 +16,7 @@ a {
 
 header {
   width: 100%;
-  height: 260px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,20 +29,22 @@ header {
 }
 header .header_event {
   width: 100%;
-  height: 60px;
+  height: 50px;
   background: #f37100;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: pretendard;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 header .header_event .fa-chevron-right {
+  margin-left: 10px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 header .header_inner {
-  width: 1650px;
+  width: 1400px;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -59,30 +61,39 @@ header .header_inner .header_inner_left {
 }
 header .header_inner .header_inner_left ul {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 header .header_inner .header_inner_left ul li {
   font-family: pretendard;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_left ul li:hover {
+  color: #f37100;
 }
 header .header_inner .header_inner_right {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 95px;
+  gap: 65px;
   position: absolute;
   right: 0;
+  bottom: 20px;
 }
 header .header_inner .header_inner_right .inner_right_top ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   font-family: pretendard;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 header .header_inner .header_inner_right .inner_right_top ul li {
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_right .inner_right_top ul li:hover {
+  color: #f37100;
 }
 header .header_inner .header_inner_right .inner_right_bottom {
   display: flex;
@@ -126,8 +137,8 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
-  height: 32px;
-  font-size: 32px;
+  height: 34px;
+  font-size: 28px;
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
