@@ -166,145 +166,163 @@ header .header_inner .header_inner_logo {
   align-items: center;
   gap: 30px;
 }
-#container .login_inner {
+#container .find_inner {
   width: 1050px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
-#container .login_inner .login_01 {
+#container .find_inner .find_id {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-#container .login_inner .login_01 h2 {
+#container .find_inner .find_id h2 {
   font-family: pretendard;
   font-size: 3.4rem;
   font-weight: bold;
 }
-#container .login_inner .login_01 .login_input {
+#container .find_inner .find_id .find_switch {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container .find_inner .find_id .find_switch .find_switch_call {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-#container .login_inner .login_01 .login_input .login_pw {
+#container .find_inner .find_id .find_switch .find_switch_call p {
+  font-family: pretendard;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+}
+#container .find_inner .find_id .find_switch .find_switch_call p.active {
+  color: #f37100;
+}
+#container .find_inner .find_id .find_switch .find_switch_call hr {
+  width: 225px;
+  height: 2px;
+  border: none;
+  background: #ccc;
+}
+#container .find_inner .find_id .find_switch .find_switch_call hr.active {
+  height: 5px;
+  background: #f37100;
+}
+#container .find_inner .find_id .find_switch .find_switch_email {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-#container .login_inner .login_01 .login_input .login_pw .fa-eye {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  color: #999;
+#container .find_inner .find_id .find_switch .find_switch_email p {
+  font-family: pretendard;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
 }
-#container .login_inner .login_01 .login_input input {
+#container .find_inner .find_id .find_switch .find_switch_email p.active {
+  color: #f37100;
+}
+#container .find_inner .find_id .find_switch .find_switch_email hr {
+  width: 225px;
+  height: 2px;
+  border: none;
+  background: #ccc;
+}
+#container .find_inner .find_id .find_switch .find_switch_email hr.active {
+  height: 5px;
+  background: #f37100;
+}
+#container .find_inner .find_id .find_input_name {
   width: 450px;
-  height: 60px;
-  border-radius: 10px;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#container .find_inner .find_id .find_input_name p {
   font-family: pretendard;
   font-size: 1.8rem;
-  color: #999;
-  border: 1px solid #999;
 }
-#container .login_inner .login_01 .login_input input:focus {
+#container .find_inner .find_id .find_input_name input {
+  width: 450px;
+  height: 60px;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  opacity: 1;
+  font-family: pretendard;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+#container .find_inner .find_id .find_input_name input:focus {
   color: #000;
 }
-#container .login_inner .login_01 .login_input input:focus::-moz-placeholder {
+#container .find_inner .find_id .find_input_name input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .login_inner .login_01 .login_input input:focus::placeholder {
+#container .find_inner .find_id .find_input_name input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .login_inner .login_01 button {
+#container .find_inner .find_id .find_input_call {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#container .find_inner .find_id .find_input_call p {
+  font-family: pretendard;
+  font-size: 1.8rem;
+}
+#container .find_inner .find_id .find_input_call input {
   width: 450px;
   height: 60px;
-  background: #f37100;
-  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  opacity: 1;
+  font-family: pretendard;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+#container .find_inner .find_id .find_input_call input:focus {
+  color: #000;
+}
+#container .find_inner .find_id .find_input_call input:focus::-moz-placeholder {
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .find_inner .find_id .find_input_call input:focus::placeholder {
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .find_inner .find_id button {
+  width: 450px;
+  height: 60px;
+  background: #ccc;
   border: none;
   border-radius: 10px;
+  color: #fff;
   font-family: pretendard;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
 }
-#container .login_inner .login_01 ul {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#container .login_inner .login_01 ul li {
-  font-family: pretendard;
-  font-size: 1.4rem;
-  color: #666;
-  cursor: pointer;
-}
-#container .login_inner .login_02 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-#container .login_inner .login_02 .login_social_title {
-  width: 450px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#container .login_inner .login_02 .login_social_title hr {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  border: 1px solid #ff9900;
-}
-#container .login_inner .login_02 .login_social_title p {
-  padding: 10px;
-  font-family: pretendard;
-  font-size: 1.4rem;
-  font-weight: bold;
-  background: #fff;
-  color: #ff9900;
-  z-index: 1;
-}
-#container .login_inner .login_02 .login_social_kakao {
-  width: 450px;
-  height: 60px;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: #fee500;
-  cursor: pointer;
-}
-#container .login_inner .login_02 .login_social_kakao p {
-  font-size: 1.8rem;
-  color: #000;
-}
-#container .login_inner .login_02 .login_social_naver {
-  width: 450px;
-  height: 60px;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: #03c75a;
-  cursor: pointer;
-}
-#container .login_inner .login_02 .login_social_naver p {
-  font-size: 1.8rem;
-  color: #fff;
+#container .find_inner .find_id button.active {
+  background: #f37100;
 }
 
 footer {
