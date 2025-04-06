@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <!-- Slick CSS & JS -->
+    <link rel="stylesheet" href="./slick-slider/slick.css" />
+    <link rel="stylesheet" href="./slick-slider/slick-theme.css" />
+    <script src="./slick-slider/slick.js"></script>
+    <script src="./slick-slider/slick.min.js"></script>
     <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/afd4c8363e.js"
@@ -11,6 +18,8 @@
     <!-- custom CSS & JS-->
     <link rel="stylesheet" href="style.css" />
     <script defer src="./script.js"></script>
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="./res_style.css" />
     <!-- domain icon -->
     <link rel="icon" type="images/png" href="./logo/logo.png" />
     <title>main</title>
@@ -53,17 +62,20 @@
           </div>
         </div>
         <div class="header_inner_logo">
-          <img src="./login/login_imgs/logo.png" alt="logo" />
+          <img src="./imgs/logo.png" alt="logo" />
         </div>
       </div>
     </header>
     <main>
+      <section id="tttt" style="display: none"></section>
       <section id="main_con1">
         <div class="main_inner">
           <h1>농담이 자신있게 추천해요</h1>
-          <div class="main_it">
-            <div class="main_type1">
-              <div class="img"></div>
+          <ul class="main_it">
+            <li class="main_type1">
+              <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
+              </div>
               <div class="main_info">
                 <h3 class="main_title">어글리바나나</h3>
                 <div class="main_shopping">
@@ -74,9 +86,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>10% 할인</button>
               </div>
               <div class="main_info">
@@ -100,9 +113,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
               <div class="main_info">
                 <h3 class="main_title">제주 못난이 천혜향 2kg</h3>
                 <div class="main_shopping">
@@ -113,9 +126,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
               <div class="main_info">
                 <h3 class="main_title">성주 고당도 못난이 참외 1kg</h3>
                 <div class="main_shopping">
@@ -126,9 +139,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
               <div class="main_info">
                 <h3 class="main_title">제주 못난이 한라봉 5kg, 1박스</h3>
                 <div class="main_shopping">
@@ -139,9 +152,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>67% 할인</button>
               </div>
               <div class="main_info">
@@ -165,9 +179,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>62% 할인</button>
               </div>
               <div class="main_info">
@@ -191,9 +206,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
               <div class="main_info">
                 <h3 class="main_title">못난이 레드자몽 기스 흠집</h3>
                 <div class="main_shopping">
@@ -204,16 +219,70 @@
                   </div>
                 </div>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_banner">
+        <div class="main_innerbanner1">
+          <img src="./imgs/banner1.png" alt="banner1" />
+          <div class="banner_text">
+            <div class="banner_tag">
+              <span>지구를 위해 건강을 위해</span>
+              <div class="banner_title">
+                <h2>못생겨도 괜찮아!</h2>
+                <p>농부만의 소싱철학 알아보기 ></p>
+              </div>
             </div>
+            <div class="banner_text1">
+              <p>
+                농산물의 품질은 외형이 아닌 <b>신선함, 맛</b><br />그리고
+                <b>건강한 생산 과정</b>에 있다는 믿음으로<br />
+                <b>“농부”</b>가 탄생했습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main_innerbanner2">
+          <img src="./imgs/banner2.png" alt="banner2" />
+          <div class="banner2_text">
+            <span>못생긴 채소로 예쁜 샐러드를</span>
+            <h2>
+              <b>신선한</b>
+              샐러드 보울 레시피
+            </h2>
+            <p>농부만의 특별 레시피 만나러 가기 ></p>
+          </div>
+        </div>
+        <div class="main_innerbanner3">
+          <img src="./imgs/banner3.png" alt="banner3" />
+          <div class="banner3_text">
+            <p>농담은 <b>365</b>일 전 상품</p>
+            <h2>무 료 배 송</h2>
+          </div>
+        </div>
+        <div class="main_innerbanner4">
+          <img src="./imgs/banner4.jpg" alt="banner4" />
+          <div class="banner4_text">
+            <p>농담 회원이라면 누구나 참여 가능</p>
+            <span>100% 당첨 확정!</span>
+            <h2>매일매일 <b>룰렛이벤트</b></h2>
+            <p>타 쿠폰과 중복 적용 가능 / 일부 상품 제외</p>
+            <div class="banner_time">00 : 12 : 34 : 12</div>
           </div>
         </div>
       </section>
       <section id="main_con2">
         <div class="main_inner">
-          <h1>신상품 <img src="./imgs/main_arrow.png" alt="arrow" /></h1>
-          <div class="main_it">
-            <div class="main_type1">
-              <div class="img"></div>
+          <div class="main_con2title">
+            <h1>신상품</h1>
+            <img src="./imgs/main_arrow.png" alt="arrow" />
+          </div>
+          <ul class="main_it">
+            <li class="main_type1">
+              <div class="img">
+                <img src="./imgs/item1.png" alt="" />
+              </div>
               <div class="main_info">
                 <h3 class="main_title">햇감자 1kg</h3>
                 <div class="main_shopping">
@@ -224,9 +293,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="" />
                 <button>10% 할인</button>
               </div>
               <div class="main_info">
@@ -250,9 +320,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img">
+                <img src="./imgs/item1.png" alt="" />
+              </div>
               <div class="main_info">
                 <h3 class="main_title">상주 흑침 오이 5개입</h3>
                 <div class="main_shopping">
@@ -263,9 +335,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="" />
                 <button>20% 할인</button>
               </div>
               <div class="main_info">
@@ -289,9 +362,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="" />
                 <button>66% 할인</button>
               </div>
               <div class="main_info">
@@ -315,9 +389,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img">
+                <img src="./imgs/item1.png" alt="" />
+              </div>
               <div class="main_info">
                 <h3 class="main_title">친환경 파프리카 1.5kg</h3>
                 <div class="main_shopping">
@@ -328,9 +404,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="" />
                 <button>44% 할인</button>
               </div>
               <div class="main_info">
@@ -354,9 +431,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type1">
-              <div class="img"></div>
+            </li>
+            <li class="main_type1">
+              <div class="img">
+                <img src="./imgs/item1.png" alt="" />
+              </div>
               <div class="main_info">
                 <h3 class="main_title">못생겨도 맛있는 표고버섯</h3>
                 <div class="main_shopping">
@@ -367,8 +446,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="main_con3">
@@ -397,7 +476,7 @@
               </div>
             </div>
             <div class="main_item">
-              <img src="./imgs/recipe2.jpg" alt="img1" />
+              <img src="./imgs/recipe2.jpg" alt="img2" />
               <div class="recipe_info">
                 <div class="recipe_title">
                   <i class="fa-regular fa-heart"></i>
@@ -414,7 +493,7 @@
               </div>
             </div>
             <div class="main_item">
-              <img src="./imgs/recipe3.jpg" alt="img1" />
+              <img src="./imgs/recipe3.jpg" alt="img3" />
               <div class="recipe_info">
                 <div class="recipe_title">
                   <i class="fa-regular fa-heart"></i>
@@ -430,19 +509,118 @@
                 </div>
               </div>
             </div>
+            <div class="main_item">
+              <img src="./imgs/recipe4.jpg" alt="img4" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>노화 방지에 효과적인 <br />토마토 주스!</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    라이코펜이 함유되어 있어 노화 방지, 암 예방에 탁월한 효과!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main_item">
+              <img src="./imgs/recipe5.jpg" alt="img5" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>우리집에서 멕시코의 향기를 <br />과카몰리 🥑</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    비타민, 미네랄 성분이 풍부해 깨끗한 피부를 유지할 수 있어요!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main_item">
+              <img src="./imgs/recipe6.jpg" alt="img6" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>빵 위에 얹어 먹으면 맛이 두배! <br />레몬딜버터!</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    비타민C가 풍부한 레몬의 상큼함을 부드러운 버터에 담아보세요!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main_item">
+              <img src="./imgs/recipe7.jpg" alt="img7" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>그릇 안에 여름을 담다 <br />수박 화채🍉</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    우리 아이들이 좋아하는 간식! 어른들에게는 술안주로 안성맞춤!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main_item">
+              <img src="./imgs/recipe8.jpg" alt="img8" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>호랑이도 무서워하는 곶감<br />곶감말이!</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    겨울철 별미 곶감과 크림치즈가 만나 남녀노소 좋아하는
+                    간식으로 재탄생!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main_item">
+              <img src="./imgs/recipe9.jpg" alt="img9" />
+              <div class="recipe_info">
+                <div class="recipe_title">
+                  <i class="fa-regular fa-heart"></i>
+                  <h4>피자 먹을 때 빠지면 서운하지!<br />오이 피클🥒</h4>
+                  <button>+17</button>
+                </div>
+                <div class="recipe_text">
+                  <div class="recipe_line"></div>
+                  <p>
+                    집에서 손 쉽게 만들 수 있는 느끼함 제거제 피클을
+                    만들어보아요!
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="main_con4">
         <div class="main_inner">
-          <div class="line"></div>
+          <hr />
           <div class="main_sale_title">
             <h1>오늘의 특가상품 ✨</h1>
             <div class="sale_time">03:27:24</div>
           </div>
-          <div class="main_it">
-            <div class="main_type2">
+          <ul class="main_it">
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>10% 할인</button>
               </div>
               <div class="main_info">
@@ -466,9 +644,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>36% 할인</button>
               </div>
               <div class="main_info">
@@ -492,9 +671,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>20% 할인</button>
               </div>
               <div class="main_info">
@@ -518,9 +698,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>25% 할인</button>
               </div>
               <div class="main_info">
@@ -544,9 +725,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>40% 할인</button>
               </div>
               <div class="main_info">
@@ -570,9 +752,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>20% 할인</button>
               </div>
               <div class="main_info">
@@ -596,9 +779,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>52% 할인</button>
               </div>
               <div class="main_info">
@@ -622,9 +806,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="main_type2">
+            </li>
+            <li class="main_type2">
               <div class="img">
+                <img src="./imgs/item1.png" alt="item1" />
                 <button>20% 할인</button>
               </div>
               <div class="main_info">
@@ -648,15 +833,15 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer_inner">
         <div class="footer_inner_left">
-          <img src="./login/login_imgs/logo_02.png" alt="logo_02" />
+          <img src="./imgs/logo_02.png" alt="logo_02" />
           <p>ⓒ 농담 All rights reserved</p>
         </div>
         <div class="footer_inner_center">
