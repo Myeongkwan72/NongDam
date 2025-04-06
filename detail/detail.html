@@ -10,7 +10,7 @@
     ></script>
     <!-- custom CSS & JS -->
     <link rel="stylesheet" href="./styles/detail.css" />
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/detail.js"></script>
     <!-- Media Screen -->
     <link rel="stylesheet" href="./styles/res_detail.css" />
     <!-- domain icon -->
@@ -18,7 +18,7 @@
     <title>상세페이지</title>
   </head>
   <body>
-    <header style="display: none">
+    <header>
       <div class="header_event">
         <p>
           지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="header_inner_logo">
+        <div class="header_inner_logo" id="header_logo">
           <img src="../imgs/logo.png" alt="logo" />
         </div>
       </div>
@@ -187,7 +187,9 @@
           <button class="review_more">232건 리뷰 더 보기 ></button>
         </div>
       </section>
+
       <div class="detail_line"></div>
+
       <!-- 상품 상세 섹션 -->
       <section class="detail_product">
         <div class="product_title">
@@ -261,7 +263,9 @@
           </div>
         </div>
       </section>
+
       <div class="detail_line"></div>
+
       <!-- 문의 섹션 -->
       <section class="detail_faq">
         <div class="faq_title">
@@ -322,6 +326,8 @@
           <div>5</div>
         </div>
       </section>
+
+      <div class="detail_line"></div>
       <!-- 보상정책 -->
       <section class="detail_policy">
         <div class="policy_title">
@@ -436,7 +442,7 @@
         </div>
       </section>
     </main>
-    <footer style="display: none">
+    <footer>
       <div class="footer_inner">
         <div class="footer_inner_left">
           <img src="./detail_imgs/logo_02.png" alt="logo_02" />
