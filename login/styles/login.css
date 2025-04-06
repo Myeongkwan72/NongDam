@@ -32,7 +32,7 @@ a {
 
 header {
   width: 100%;
-  height: 260px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,20 +45,22 @@ header {
 }
 header .header_event {
   width: 100%;
-  height: 60px;
+  height: 50px;
   background: #f37100;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: pretendard;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 header .header_event .fa-chevron-right {
+  margin-left: 10px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 header .header_inner {
-  width: 1650px;
+  width: 1400px;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -75,30 +77,39 @@ header .header_inner .header_inner_left {
 }
 header .header_inner .header_inner_left ul {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 header .header_inner .header_inner_left ul li {
   font-family: pretendard;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_left ul li:hover {
+  color: #f37100;
 }
 header .header_inner .header_inner_right {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 95px;
+  gap: 65px;
   position: absolute;
   right: 0;
+  bottom: 20px;
 }
 header .header_inner .header_inner_right .inner_right_top ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   font-family: pretendard;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 header .header_inner .header_inner_right .inner_right_top ul li {
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_right .inner_right_top ul li:hover {
+  color: #f37100;
 }
 header .header_inner .header_inner_right .inner_right_bottom {
   display: flex;
@@ -122,53 +133,28 @@ header .header_inner .header_inner_right .inner_right_bottom .search_bar input {
   opacity: 1;
   font-family: pretendard;
 }
-header
-  .header_inner
-  .header_inner_right
-  .inner_right_bottom
-  .search_bar
-  input:focus {
+header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus {
   outline: none;
 }
-header
-  .header_inner
-  .header_inner_right
-  .inner_right_bottom
-  .search_bar
-  input:focus::-moz-placeholder {
+header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-header
-  .header_inner
-  .header_inner_right
-  .inner_right_bottom
-  .search_bar
-  input:focus::placeholder {
+header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-header
-  .header_inner
-  .header_inner_right
-  .inner_right_bottom
-  .search_bar
-  .fa-magnifying-glass {
+header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket {
   position: relative;
 }
-header
-  .header_inner
-  .header_inner_right
-  .inner_right_bottom
-  .basket
-  .fa-cart-shopping {
+header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
-  height: 32px;
-  font-size: 32px;
+  height: 34px;
+  font-size: 28px;
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -212,12 +198,12 @@ a {
 
 footer {
   width: 100%;
-  height: 300px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f5f5f5;
-  color: #858585;
+  color: #999;
 }
 footer .footer_inner {
   width: 1050px;
@@ -228,12 +214,12 @@ footer .footer_inner {
 footer .footer_inner .footer_inner_left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  align-items: start;
+  gap: 10px;
 }
 footer .footer_inner .footer_inner_left img {
-  width: 170px;
-  height: 80px;
+  width: 140px;
+  height: 66px;
 }
 footer .footer_inner .footer_inner_left p {
   font-family: pretendard;
@@ -246,20 +232,20 @@ footer .footer_inner .footer_inner_center {
 footer .footer_inner .footer_inner_center ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 9px;
 }
 footer .footer_inner .footer_inner_center ul li {
   font-family: pretendard;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 footer .footer_inner .footer_inner_center ul li:last-child {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   font-family: pretendard;
 }
 footer .footer_inner .footer_inner_right .inner_right_top {
@@ -267,42 +253,32 @@ footer .footer_inner .footer_inner_right .inner_right_top {
   flex-direction: column;
 }
 footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(1) {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(2) {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
-footer
-  .footer_inner
-  .footer_inner_right
-  .inner_right_bottom
-  .right_bottom_left {
+footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-footer
-  .footer_inner
-  .footer_inner_right
-  .inner_right_bottom
-  .right_bottom_left
-  li:nth-child(1) {
-  font-size: 1.6rem;
+footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+  font-size: 1.4rem;
   font-weight: bold;
 }
-footer
-  .footer_inner
-  .footer_inner_right
-  .inner_right_bottom
-  .right_bottom_left
-  li:nth-child(2) {
-  font-size: 1.2rem;
+footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+  font-size: 1rem;
+}
+footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  font-size: 1.4rem;
+  line-height: 150%;
 }
 
 html {

@@ -27,6 +27,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  justify-content: center;
+  margin: 0 auto;
   #tttt {
     width: 100%;
     height: 100vh;
@@ -34,15 +36,16 @@ main {
   }
   #main_con1 {
     width: 100%;
-    height: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin-top: 120px;
     .main_inner {
-      width: 1050px;
+      width: 100%;
+      max-width: 1050px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       h1 {
         font-size: 3rem;
       }
@@ -50,59 +53,32 @@ main {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        .main_type1 {
-          .img {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #f00;
-            margin-bottom: 15px;
-            cursor: pointer;
-          }
-          .main_info {
-            width: 240px;
-            height: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 10px;
-            .main_title {
-              font-size: 1.8rem;
-            }
-            .main_shopping {
-              display: flex;
-              justify-content: space-between;
-              align-items: end;
-              p {
-                font-size: 2.2rem;
-              }
-              .icon {
-                display: flex;
-                justify-content: right;
-                gap: 5px;
-                .fa-heart {
-                  @include icon;
-                  cursor: pointer;
-                }
-                .fa-cart-shopping {
-                  @include icon;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
+        gap: 30px; // 간격을 주는 게 더 보기 좋아요
+        .main_type1,
         .main_type2 {
           display: flex;
           flex-direction: column;
+          width: 100%;
+          height: 100%;
+          // padding: 10px;
+          box-sizing: border-box;
           gap: 15px;
+
           .img {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #f00;
             position: relative;
-            cursor: pointer;
+            width: 100%;
+            img {
+              width: 100%;
+              aspect-ratio: 1 / 1; // 정사각형 비율 유지
+              object-fit: cover;
+              border: 1px solid #f00;
+              cursor: pointer;
+            }
+            // 할인 버튼은 type2에서만 존재
             button {
+              position: absolute;
+              top: 5%;
+              left: 5%;
               @include button;
             }
           }
@@ -110,38 +86,53 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 240px;
-            height: 80px;
-            h3 {
+            height: 100%;
+            gap: 10px;
+            h3,
+            .main_title {
               font-size: 1.8rem;
+              display: -webkit-box;
+              -webkit-line-clamp: 1; // 원하는 줄 수
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              // font-size: 1.8rem;
+              cursor: pointer;
             }
+            .main_shopping,
             .main_tag {
               display: flex;
-              align-items: end;
               justify-content: space-between;
+              align-items: flex-end;
+              p {
+                font-weight: 600;
+                font-size: 2.2rem;
+              }
               .main_sale {
                 display: flex;
-                justify-content: center;
-                align-items: end;
                 gap: 10px;
+                align-items: flex-end;
+
                 .main_percent {
-                  display: flex;
                   p {
+                    font-size: 1.8rem;
+                    color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
                     }
-                    color: map-get($map: $color, $key: main-01);
-                    font-size: 1.8rem;
                   }
                 }
+
                 .main_price {
                   display: flex;
                   flex-direction: column;
                   span {
+                    font-size: 1.6rem;
                     color: map-get($map: $color, $key: gray-ccc);
                     text-decoration: line-through;
                   }
                   p {
+                    font-weight: 600;
                     font-size: 2.2rem;
                     color: map-get($map: $color, $key: dark);
                   }
@@ -149,12 +140,8 @@ main {
               }
               .icon {
                 display: flex;
-                justify-content: right;
                 gap: 5px;
-                .fa-heart {
-                  @include icon;
-                  cursor: pointer;
-                }
+                .fa-heart,
                 .fa-cart-shopping {
                   @include icon;
                   cursor: pointer;
@@ -166,139 +153,231 @@ main {
       }
     }
   }
-  #main_banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .main_banner {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     position: relative;
-    img {
-      object-fit: cover;
-    }
-    .banner_text {
-      width: 1050px;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      flex-direction: column;
-      gap: 40px;
-      .banner_tag {
+    .main_innerbanner1 {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .banner_text {
+        // width: 1050px;
+        width: 100%;
+        max-width: 1050px;
         display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         flex-direction: column;
-        gap: 10px;
-        span {
-          width: 17%;
-          background: #ff4726;
-          color: map-get($map: $color, $key: light);
-          border-radius: 30px;
-          padding: 10px;
-          display: flex;
-          justify-content: center;
-        }
-        .banner_title {
+        gap: 40px;
+        .banner_tag {
           display: flex;
           flex-direction: column;
-          gap: 6px;
-          h2 {
-            font-size: 4rem;
+          gap: 10px;
+          span {
+            width: 17%;
+            background: #ff4726;
+            color: map-get($map: $color, $key: light);
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
           }
+          .banner_title {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            h2 {
+              font-size: 4rem;
+            }
+            p {
+              font-size: 1.6rem;
+              color: map-get($map: $color, $key: dark-424242);
+            }
+          }
+        }
+        .banner_text1 {
           p {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: map-get($map: $color, $key: dark-424242);
           }
         }
       }
-      .banner_text1 {
+    }
+    .main_innerbanner2 {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .banner2_text {
+        padding: 0 50px;
+        width: 100%;
+        max-width: 1050px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span {
+          font-size: 2.6rem;
+        }
+        h2 {
+          font-size: 4rem;
+          b {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
         p {
-          font-size: 1.8rem;
-          color: map-get($map: $color, $key: dark-424242);
+          font-size: 1.6rem;
+          color: map-get($map: $color, $key: main-01);
+        }
+      }
+    }
+    .main_innerbanner3 {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .banner3_text {
+        width: 100%;
+        max-width: 1050px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+          font-size: 2rem;
+          b {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+        h2 {
+          font-size: 5rem;
+        }
+      }
+    }
+    .main_innerbanner4 {
+      width: 100%;
+      position: relative;
+      color: map-get($map: $color, $key: light);
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .banner4_text {
+        width: 100%;
+        max-width: 1050px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 5px;
+        p {
+          font-size: 1.4rem;
+          font-weight: lighter;
+        }
+        span {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 4rem;
+          b {
+            // background-image: linear-gradient(
+            //   90deg,
+            //   rgba(151, 210, 118, 1) 0%,
+            //   rgba(110, 171, 77, 1) 100%
+            // );
+            color: rgba(110, 171, 77, 1);
+          }
+        }
+        .banner_time {
+          margin-top: 10px;
+          width: 16%;
+          display: flex;
+          justify-content: center;
+          font-size: 2rem;
+          background: map-get($map: $color, $key: dark);
+          border-radius: 20px;
+          padding: 10px;
         }
       }
     }
   }
   #main_con2 {
     width: 100%;
-    height: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
+    // margin-top: 120px;
     .main_inner {
-      width: 1050px;
+      width: 100%;
+      max-width: 1050px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       .main_con2title {
         display: flex;
         align-items: center;
         gap: 14px;
         cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          gap: 24px;
+        }
         h1 {
           font-size: 3rem;
-          // font-weight: 600;
         }
         img {
           width: 40px;
           height: 10px;
         }
       }
-
       .main_it {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        .main_type1 {
-          .img {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #f00;
-            margin-bottom: 15px;
-            cursor: pointer;
-          }
-          .main_info {
-            width: 240px;
-            height: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 10px;
-            .main_title {
-              font-size: 1.8rem;
-            }
-            .main_shopping {
-              display: flex;
-              justify-content: space-between;
-              align-items: end;
-              p {
-                font-size: 2.2rem;
-              }
-              .icon {
-                display: flex;
-                justify-content: right;
-                gap: 5px;
-                .fa-heart {
-                  @include icon;
-                  cursor: pointer;
-                }
-                .fa-cart-shopping {
-                  @include icon;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
+        gap: 30px; // 간격을 주는 게 더 보기 좋아요
+        .main_type1,
         .main_type2 {
           display: flex;
           flex-direction: column;
+          width: 100%;
+          height: 100%;
+          // padding: 10px;
+          box-sizing: border-box;
           gap: 15px;
+
           .img {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #f00;
             position: relative;
-            cursor: pointer;
+            width: 100%;
+            img {
+              width: 100%;
+              aspect-ratio: 1 / 1; // 정사각형 비율 유지
+              object-fit: cover;
+              border: 1px solid #f00;
+              cursor: pointer;
+            }
+            // 할인 버튼은 type2에서만 존재
             button {
+              position: absolute;
+              top: 5%;
+              left: 5%;
               @include button;
             }
           }
@@ -306,38 +385,55 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 240px;
-            height: 80px;
-            h3 {
+            height: 100%;
+            gap: 10px;
+            h3,
+            .main_title {
+              // white-space: nowrap;
+              // overflow: hidden;
               font-size: 1.8rem;
+              display: -webkit-box;
+              -webkit-line-clamp: 1; // 원하는 줄 수
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              // font-size: 1.8rem;
+              cursor: pointer;
             }
+            .main_shopping,
             .main_tag {
               display: flex;
-              align-items: end;
               justify-content: space-between;
+              align-items: flex-end;
+              p {
+                font-weight: 600;
+                font-size: 2.2rem;
+              }
               .main_sale {
                 display: flex;
-                justify-content: center;
-                align-items: end;
                 gap: 10px;
+                align-items: flex-end;
+
                 .main_percent {
-                  display: flex;
                   p {
+                    font-size: 1.8rem;
+                    color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
                     }
-                    color: map-get($map: $color, $key: main-01);
-                    font-size: 1.8rem;
                   }
                 }
+
                 .main_price {
                   display: flex;
                   flex-direction: column;
                   span {
+                    font-size: 1.6rem;
                     color: map-get($map: $color, $key: gray-ccc);
                     text-decoration: line-through;
                   }
                   p {
+                    font-weight: 600;
                     font-size: 2.2rem;
                     color: map-get($map: $color, $key: dark);
                   }
@@ -345,12 +441,8 @@ main {
               }
               .icon {
                 display: flex;
-                justify-content: right;
                 gap: 5px;
-                .fa-heart {
-                  @include icon;
-                  cursor: pointer;
-                }
+                .fa-heart,
                 .fa-cart-shopping {
                   @include icon;
                   cursor: pointer;
@@ -370,10 +462,12 @@ main {
     align-items: center;
     background: map-get($map: $color, $key: sub-03);
     .main_inner {
-      width: 1050px;
+      width: 100%;
+      max-width: 1050px;
       display: flex;
       gap: 45px;
       height: 304px;
+      overflow: hidden;
       .main_title2 {
         .main_title3 {
           font-size: 3rem;
@@ -389,20 +483,65 @@ main {
         }
         p {
           margin-top: 15px;
+          font-size: 1.6rem;
         }
       }
+
       .main_recipe {
+        width: 70%;
         display: flex;
-        gap: 30px;
+        // gap: 30px;
         align-items: center;
+        // overflow: hidden;
+        overflow: visible;
+        position: relative;
+        .slick-slide {
+          padding: 0 15px; // 좌우 갭 30px (각 아이템 양쪽 15px씩)
+          box-sizing: border-box;
+        }
+
+        // 슬라이더 전체 양옆 여백 보정 필요시
+        .slick-list {
+          margin: 0 -15px;
+        }
+        .slick-prev,
+        .slick-next {
+          width: 30px;
+          height: 30px;
+          background: none;
+          color: map-get($map: $color, $key: main-01);
+          border-radius: 50%;
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+
+          &:before {
+            color: map-get($map: $color, $key: main-01);
+            font-size: 20px;
+            opacity: 1;
+          }
+        }
+
+        .slick-prev {
+          left: -40px;
+        }
+        .slick-next {
+          right: -40px;
+        }
+
         .main_item {
-          width: 240px;
+          width: 100%;
+          // width: 240px;
           height: 304px;
+          // width: 100%;
           position: relative;
+
           cursor: pointer;
           img {
             width: 100%;
-            height: 100%;
+            max-width: 240px;
+            // width: 240px;
+            height: 304px;
             object-fit: cover;
             border-radius: 10px;
             filter: brightness(70%);
@@ -430,6 +569,9 @@ main {
               }
               button {
                 border: none;
+                display: flex;
+                align-items: center;
+                height: 14px;
                 border-radius: 12px;
                 padding: 8px;
                 color: map-get($map: $color, $key: light);
@@ -458,12 +600,13 @@ main {
   }
   #main_con4 {
     width: 100%;
-    height: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
     .main_inner {
-      width: 1050px;
+      width: 100%;
+      max-width: 1050px;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -475,6 +618,7 @@ main {
       .main_sale_title {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         h1 {
           font-size: 3rem;
         }
@@ -494,14 +638,26 @@ main {
         .main_type2 {
           display: flex;
           flex-direction: column;
+          width: 100%;
+          height: 100%;
+          // padding: 10px;
+          box-sizing: border-box;
           gap: 15px;
+
           .img {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #f00;
             position: relative;
-            cursor: pointer;
+            width: 100%;
+            img {
+              width: 100%;
+              aspect-ratio: 1 / 1; // 정사각형 비율 유지
+              object-fit: cover;
+              border: 1px solid #f00;
+              cursor: pointer;
+            }
             button {
+              position: absolute;
+              top: 5%;
+              left: 5%;
               @include button;
             }
           }
@@ -509,38 +665,53 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 240px;
-            height: 80px;
-            h3 {
+            height: 100%;
+            gap: 10px;
+            h3,
+            .main_title {
               font-size: 1.8rem;
+              // white-space: nowrap;
+              display: -webkit-box;
+              -webkit-line-clamp: 1; // 원하는 줄 수
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              // font-size: 1.8rem;
+              cursor: pointer;
             }
             .main_tag {
               display: flex;
-              align-items: end;
               justify-content: space-between;
+              align-items: flex-end;
+              p {
+                font-weight: 600;
+                font-size: 2.2rem;
+              }
               .main_sale {
                 display: flex;
-                justify-content: center;
-                align-items: end;
                 gap: 10px;
+                align-items: flex-end;
+
                 .main_percent {
-                  display: flex;
                   p {
+                    font-size: 1.8rem;
+                    color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
                     }
-                    color: map-get($map: $color, $key: main-01);
-                    font-size: 1.8rem;
                   }
                 }
+
                 .main_price {
                   display: flex;
                   flex-direction: column;
                   span {
+                    font-size: 1.6rem;
                     color: map-get($map: $color, $key: gray-ccc);
                     text-decoration: line-through;
                   }
                   p {
+                    font-weight: 600;
                     font-size: 2.2rem;
                     color: map-get($map: $color, $key: dark);
                   }
@@ -548,12 +719,8 @@ main {
               }
               .icon {
                 display: flex;
-                justify-content: right;
                 gap: 5px;
-                .fa-heart {
-                  @include icon;
-                  cursor: pointer;
-                }
+                .fa-heart,
                 .fa-cart-shopping {
                   @include icon;
                   cursor: pointer;
@@ -562,6 +729,77 @@ main {
             }
           }
         }
+        // .main_type2 {
+        //   display: flex;
+        //   flex-direction: column;
+        //   gap: 15px;
+        //   .img {
+        //     width: 240px;
+        //     height: 240px;
+        //     border: 1px solid #f00;
+        //     position: relative;
+        //     cursor: pointer;
+        //     button {
+        //       @include button;
+        //     }
+        //   }
+        //   .main_info {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        //     width: 240px;
+        //     height: 80px;
+        //     h3 {
+        //       font-size: 1.8rem;
+        //     }
+        //     .main_tag {
+        //       display: flex;
+        //       align-items: end;
+        //       justify-content: space-between;
+        //       .main_sale {
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: end;
+        //         gap: 10px;
+        //         .main_percent {
+        //           display: flex;
+        //           p {
+        //             b {
+        //               font-size: 3.6rem;
+        //             }
+        //             color: map-get($map: $color, $key: main-01);
+        //             font-size: 1.8rem;
+        //           }
+        //         }
+        //         .main_price {
+        //           display: flex;
+        //           flex-direction: column;
+        //           span {
+        //             color: map-get($map: $color, $key: gray-ccc);
+        //             text-decoration: line-through;
+        //           }
+        //           p {
+        //             font-size: 2.2rem;
+        //             color: map-get($map: $color, $key: dark);
+        //           }
+        //         }
+        //       }
+        //       .icon {
+        //         display: flex;
+        //         justify-content: right;
+        //         gap: 5px;
+        //         .fa-heart {
+        //           @include icon;
+        //           cursor: pointer;
+        //         }
+        //         .fa-cart-shopping {
+        //           @include icon;
+        //           cursor: pointer;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
   }
