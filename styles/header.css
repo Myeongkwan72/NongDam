@@ -72,6 +72,9 @@ header .header_inner .header_inner_left ul li {
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
 }
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
+}
 header .header_inner .header_inner_right {
   display: flex;
   flex-direction: column;
@@ -138,7 +141,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
-  font-size: 28px;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -155,7 +158,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;

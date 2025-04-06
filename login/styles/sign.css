@@ -33,7 +33,7 @@ a {
 
 header {
   width: 100%;
-  height: 260px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,20 +46,22 @@ header {
 }
 header .header_event {
   width: 100%;
-  height: 60px;
+  height: 50px;
   background: #f37100;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: pretendard;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 header .header_event .fa-chevron-right {
+  margin-left: 10px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 header .header_inner {
-  width: 1650px;
+  width: 1400px;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -76,30 +78,42 @@ header .header_inner .header_inner_left {
 }
 header .header_inner .header_inner_left ul {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 header .header_inner .header_inner_left ul li {
   font-family: pretendard;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_left ul li:hover {
+  color: #f37100;
+}
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
 }
 header .header_inner .header_inner_right {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 95px;
+  gap: 65px;
   position: absolute;
   right: 0;
+  bottom: 20px;
 }
 header .header_inner .header_inner_right .inner_right_top ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   font-family: pretendard;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 header .header_inner .header_inner_right .inner_right_top ul li {
   cursor: pointer;
+  transition: color 0.4s;
+}
+header .header_inner .header_inner_right .inner_right_top ul li:hover {
+  color: #f37100;
 }
 header .header_inner .header_inner_right .inner_right_bottom {
   display: flex;
@@ -143,8 +157,8 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
-  height: 32px;
-  font-size: 32px;
+  height: 34px;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -161,7 +175,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;
@@ -188,12 +202,12 @@ a {
 
 footer {
   width: 100%;
-  height: 300px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f5f5f5;
-  color: #858585;
+  color: #999;
 }
 footer .footer_inner {
   width: 1050px;
@@ -204,12 +218,12 @@ footer .footer_inner {
 footer .footer_inner .footer_inner_left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  align-items: start;
+  gap: 10px;
 }
 footer .footer_inner .footer_inner_left img {
-  width: 170px;
-  height: 80px;
+  width: 140px;
+  height: 66px;
 }
 footer .footer_inner .footer_inner_left p {
   font-family: pretendard;
@@ -222,20 +236,20 @@ footer .footer_inner .footer_inner_center {
 footer .footer_inner .footer_inner_center ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 9px;
 }
 footer .footer_inner .footer_inner_center ul li {
   font-family: pretendard;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 footer .footer_inner .footer_inner_center ul li:last-child {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   font-family: pretendard;
 }
 footer .footer_inner .footer_inner_right .inner_right_top {
@@ -243,16 +257,16 @@ footer .footer_inner .footer_inner_right .inner_right_top {
   flex-direction: column;
 }
 footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(1) {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(2) {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
   display: flex;
@@ -260,11 +274,15 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left 
   gap: 5px;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  font-size: 1.4rem;
+  line-height: 150%;
 }
 
 html {
@@ -597,17 +615,6 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_date .sign_date_text h2 b {
-  font-family: pretendard;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ff5454;
-}
-#container .sign_inner .sign .sign_date .sign_date_text p {
-  font-family: pretendard;
-  font-size: 1.4rem;
-  color: #ff5454;
-}
 #container .sign_inner .sign .sign_date .date_select {
   width: 450px;
   height: 60px;
@@ -669,23 +676,23 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) {
+#container .sign_inner .sign .sign_email > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) h2 {
+#container .sign_inner .sign .sign_email > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) h2 b {
+#container .sign_inner .sign .sign_email > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) p {
+#container .sign_inner .sign .sign_email > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
@@ -768,36 +775,37 @@ body {
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) {
-  width: 450px;
-  border: 1px solid #999;
-  border-radius: 10px;
+#container .sign_inner .sign .sign_call .call_input {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input {
-  width: 100%;
+#container .sign_inner .sign .sign_call .call_input input {
+  width: 140px;
   height: 60px;
-  border: none;
-  border-radius: 10px;
   padding: 10px 20px;
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 10px;
   font-family: pretendard;
   font-size: 1.8rem;
+  text-align: center;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign .sign_call .call_input input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign .sign_call .call_input input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign .sign_call .call_input ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) ::placeholder {
+#container .sign_inner .sign .sign_call .call_input ::placeholder {
   color: #ccc;
 }
 #container .sign_inner .sign .sign_address {
@@ -871,7 +879,7 @@ body {
   display: flex;
   gap: 10px;
 }
-#container .sign_inner .sign_checkbox div .checkbox {
+#container .sign_inner .sign_checkbox div .check_boxes {
   width: 20px;
   height: 20px;
   -webkit-appearance: none;
@@ -883,11 +891,11 @@ body {
   position: relative;
   cursor: pointer;
 }
-#container .sign_inner .sign_checkbox div .checkbox:checked {
+#container .sign_inner .sign_checkbox div .check_boxes:checked {
   background: #f37100;
   border: #f37100;
 }
-#container .sign_inner .sign_checkbox div .checkbox:checked::after {
+#container .sign_inner .sign_checkbox div .check_boxes:checked::after {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -896,24 +904,37 @@ body {
   color: #fff;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign_checkbox div p {
+#container .sign_inner .sign_checkbox div ul {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+#container .sign_inner .sign_checkbox div ul li {
   font-family: pretendard;
   font-size: 1.6rem;
 }
-#container .sign_inner .sign_checkbox div p b {
+#container .sign_inner .sign_checkbox div ul li b {
   font-family: pretendard;
   font-size: 1.6rem;
   color: #ff5454;
 }
-#container .sign_inner button {
+#container .sign_inner .sign_checkbox div ul .checkbox_must {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .sign_inner .sign_button {
   width: 450px;
   height: 60px;
   border: none;
   border-radius: 10px;
-  background: #ccc;
+  background: #f37100;
   color: #fff;
   font-family: pretendard;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
+}
+#container .sign_inner .sign_button:disabled {
+  background: #ccc;
 }
