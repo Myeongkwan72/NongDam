@@ -105,9 +105,9 @@ errorMessage.forEach((message) => {
 });
 
 // 가입하기
-const signUp = document.querySelector(".sign");
+const form = document.querySelector(".sign_form");
 
-signUp.addEventListener("submit", () => {
+form.addEventListener("input", (e) => {
   e.preventDefault();
 
   let isValid = true;
@@ -200,30 +200,72 @@ signUp.addEventListener("submit", () => {
   if (p1 === "" || p2 === "" || p3 === "") {
     callError.style.opacity = "1";
     callError.textContent = "연락처가 입력되지 않았습니다.";
+    isValid = false;
   } else if (p1.length !== 3 || p2.length !== 4 || p3.length !== 4) {
     callError.style.opacity = "1";
     callError.textContent = "연락처가 올바르지 않습니다.";
+    isValid = false;
   } else {
     callError.style.opacity = "0";
   }
 
   // 약관
-  // if (!must01.checked) {
-  //   serviceError.style.opacity = "1";
-  //   serviceError.textContent = "필수 약관에 동의해주세요.";
-  //   isValid = false;
-  // } else {
-  //   serviceError.style.opacity = "0";
-  // }
+  if (!must01.checked) {
+    serviceError.style.opacity = "1";
+    serviceError.textContent = "필수 약관에 동의해주세요.";
+    isValid = false;
+  } else {
+    serviceError.style.opacity = "0";
+  }
 
-  // if (!must02.checked) {
-  //   privacyError.style.opacity = "1";
-  //   privacyError.textContent = "필수 약관에 동의해주세요.";
-  //   isValid = false;
-  // } else {
-  //   privacyError.style.opacity = "0";
-  // }
+  if (!must02.checked) {
+    privacyError.style.opacity = "1";
+    privacyError.textContent = "필수 약관에 동의해주세요.";
+    isValid = false;
+  } else {
+    privacyError.style.opacity = "0";
+  }
 
   // 버튼
-  signButton.disabled = !isValid;
+  if (isValid) {
+    signButton.disabled = false;
+  } else {
+    signButton.disabled = true;
+  }
+});
+
+signButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  // 값 다시 가져오기
+  const id = document.querySelector("#id").value.trim();
+  const pw = document.querySelector("#pw").value.trim();
+  const name = document.querySelector("#name").value.trim();
+  const birth = `${year.value.trim()} ${month.value.trim()} ${day.value.trim()}`;
+  const email = document.querySelector("#email").value.trim();
+  const domain = document.querySelector(".email_list").value;
+  const phone = `${phone1.value.trim()}-${phone2.value.trim()}-${phone3.value.trim()}`;
+  const address = document.querySelector("#address").value.trim();
+
+  // 기존 사용자 데이터 불러오기 (없으면 빈 배열)
+  let users = JSON.parse(localStorage.getItem("Users")) || [];
+
+  // 새로운 사용자 데이터 추가
+  users.push({
+    id: id,
+    pw: pw,
+    name: name,
+    birth: birth,
+    email: `${email}@${domain}`,
+    call: phone,
+  });
+
+  // 사용자 목록을 로컬스토리지에 저장
+  localStorage.setItem("Users", JSON.stringify(users));
+
+  alert(`${name}님, 회원가입이 완료되었습니다!`);
+
+  // 폼 초기화 후 이메일 로그인 페이지로 이동
+  form.reset();
+  window.location.href = "./login.html";
 });

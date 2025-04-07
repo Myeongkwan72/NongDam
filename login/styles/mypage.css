@@ -340,6 +340,8 @@ body {
   font-family: pretendard;
   font-size: 2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 #container .mypage_inner .mypage .mypage_data .mypage_detail {
   width: 450px;
@@ -352,8 +354,12 @@ body {
   height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #container .mypage_inner .mypage .mypage_data .mypage_detail li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: pretendard;
   font-size: 2rem;
 }
@@ -370,6 +376,15 @@ body {
   font-family: pretendard;
   font-size: 1.4rem;
   font-weight: bold;
+  cursor: pointer;
+}
+#container .mypage_inner .mypage .mypage_data .mypage_detail li div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .mypage_inner .mypage .mypage_data .mypage_detail li div i {
   cursor: pointer;
 }
 #container .mypage_inner .mypage_policy {

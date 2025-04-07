@@ -62,7 +62,7 @@
     </header>
     <main id="container">
       <div class="sign_inner">
-        <form class="sign">
+        <form class="sign_form">
           <div class="sign_title">
             <h2>회원가입</h2>
             <p>* 표시된 항목은 필수사항입니다.</p>
@@ -182,43 +182,47 @@
               <h2>배송지 주소</h2>
             </div>
             <div class="address_input">
-              <input type="text" placeholder="배송지 주소를 입력해주세요." />
+              <input
+                id="address"
+                type="text"
+                placeholder="배송지 주소를 입력해주세요."
+              />
             </div>
           </div>
+          <div class="sign_checkbox">
+            <div class="checkbox_all">
+              <input class="check_all check_boxes" type="checkbox" />
+              <ul>
+                <li>전체 약관에 동의합니다.</li>
+              </ul>
+            </div>
+            <div class="checkbox_service">
+              <input class="check_must check_boxes" type="checkbox" />
+              <ul>
+                <li>서비스 이용 약관 동의<b>*</b></li>
+                <li id="sign_service_error" class="sign_error_message">
+                  필수 약관에 동의해야 합니다.
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox_privacy">
+              <input class="check_must check_boxes" type="checkbox" />
+              <ul>
+                <li>개인정보 수집 및 이용 동의<b>*</b></li>
+                <li id="sign_privacy_error" class="sign_error_message">
+                  필수 약관에 동의해야 합니다.
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox_event">
+              <input class="check_event check_boxes" type="checkbox" />
+              <ul>
+                <li>이벤트 정보 수신 동의</li>
+              </ul>
+            </div>
+          </div>
+          <input type="submit" class="sign_button" value="가입하기" disabled />
         </form>
-        <div class="sign_checkbox">
-          <div class="checkbox_all">
-            <input class="check_all check_boxes" type="checkbox" />
-            <ul>
-              <li>전체 약관에 동의합니다.</li>
-            </ul>
-          </div>
-          <div class="checkbox_service">
-            <input class="check_must check_boxes" type="checkbox" />
-            <ul>
-              <li>서비스 이용 약관 동의<b>*</b></li>
-              <li id="sign_service_error" class="sign_error_message">
-                필수 약관에 동의해야 합니다.
-              </li>
-            </ul>
-          </div>
-          <div class="checkbox_privacy">
-            <input class="check_must check_boxes" type="checkbox" />
-            <ul>
-              <li>개인정보 수집 및 이용 동의<b>*</b></li>
-              <li id="sign_privacy_error" class="sign_error_message">
-                필수 약관에 동의해야 합니다.
-              </li>
-            </ul>
-          </div>
-          <div class="checkbox_event">
-            <input class="check_event check_boxes" type="checkbox" />
-            <ul>
-              <li>이벤트 정보 수신 동의</li>
-            </ul>
-          </div>
-        </div>
-        <button class="sign_button" disabled>가입하기</button>
       </div>
     </main>
     <footer>

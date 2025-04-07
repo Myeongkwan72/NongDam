@@ -177,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    .sign {
+    .sign_form {
       width: 450px;
       display: flex;
       flex-direction: column;
@@ -421,6 +421,11 @@ body {
             b {
               font-family: map-get($map: $font, $key: pretendard);
               font-size: 1.6rem;
+              color: map-get($map: $color, $key: red);
+            }
+            &.sign_error_message {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.4rem;
               color: map-get($map: $color, $key: red);
             }
           }
