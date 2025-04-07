@@ -145,6 +145,12 @@ header .header_inner .header_inner_left ul li {
 }
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
+<<<<<<< HEAD
+}
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
+=======
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
 }
 header .header_inner .header_inner_right {
   display: flex;
@@ -212,7 +218,11 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
+<<<<<<< HEAD
+  font-size: 2.8rem;
+=======
   font-size: 28px;
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -229,7 +239,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;
@@ -456,7 +466,6 @@ body {
   opacity: 1;
   font-family: pretendard;
   font-size: 1.8rem;
-  color: #ccc;
 }
 #container .find_inner .find_id .find_input_name input:focus {
   color: #000;
@@ -469,6 +478,12 @@ body {
 #container .find_inner .find_id .find_input_name input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
+}
+#container .find_inner .find_id .find_input_name ::-moz-placeholder {
+  color: #ccc;
+}
+#container .find_inner .find_id .find_input_name ::placeholder {
+  color: #ccc;
 }
 #container .find_inner .find_id .find_input_call {
   width: 450px;
@@ -489,7 +504,6 @@ body {
   opacity: 1;
   font-family: pretendard;
   font-size: 1.8rem;
-  color: #ccc;
 }
 #container .find_inner .find_id .find_input_call input:focus {
   color: #000;
@@ -502,6 +516,12 @@ body {
 #container .find_inner .find_id .find_input_call input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
+}
+#container .find_inner .find_id .find_input_call ::-moz-placeholder {
+  color: #ccc;
+}
+#container .find_inner .find_id .find_input_call ::placeholder {
+  color: #ccc;
 }
 #container .find_inner .find_id button {
   width: 450px;

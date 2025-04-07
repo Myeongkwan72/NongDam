@@ -125,7 +125,6 @@ body {
           opacity: 1;
           font-family: map-get($map: $font, $key: pretendard);
           font-size: 1.8rem;
-          color: map-get($map: $color, $key: gray-ccc);
           &:focus {
             color: map-get($map: $color, $key: dark);
             &::placeholder {
@@ -133,6 +132,9 @@ body {
               opacity: 0;
             }
           }
+        }
+        ::placeholder {
+          color: map-get($map: $color, $key: gray-ccc);
         }
       }
       .find_input_call {
@@ -153,7 +155,6 @@ body {
           opacity: 1;
           font-family: map-get($map: $font, $key: pretendard);
           font-size: 1.8rem;
-          color: map-get($map: $color, $key: gray-ccc);
           &:focus {
             color: map-get($map: $color, $key: dark);
             &::placeholder {
@@ -161,6 +162,9 @@ body {
               opacity: 0;
             }
           }
+        }
+        ::placeholder {
+          color: map-get($map: $color, $key: gray-ccc);
         }
       }
       button {

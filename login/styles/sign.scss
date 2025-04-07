@@ -177,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    .sign {
+    .sign_form {
       width: 450px;
       display: flex;
       flex-direction: column;
@@ -228,17 +228,6 @@ body {
             font-family: map-get($map: $font, $key: pretendard);
             font-size: 1.8rem;
             font-weight: bold;
-            b {
-              font-family: map-get($map: $font, $key: pretendard);
-              font-size: 1.8rem;
-              font-weight: bold;
-              color: map-get($map: $color, $key: red);
-            }
-          }
-          p {
-            font-family: map-get($map: $font, $key: pretendard);
-            font-size: 1.4rem;
-            color: map-get($map: $color, $key: red);
           }
         }
         .date_select {
@@ -263,7 +252,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        :nth-child(1) {
+        & > :nth-child(1) {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -332,7 +321,58 @@ body {
         }
       }
       .sign_call {
-        @include type-01;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & > :nth-child(1) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            font-weight: bold;
+            b {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: map-get($map: $color, $key: red);
+            }
+          }
+          p {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.4rem;
+            color: map-get($map: $color, $key: red);
+          }
+        }
+        .call_input {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          input {
+            width: 140px;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid map-get($map: $color, $key: gray-999);
+            border-radius: 10px;
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.8rem;
+            text-align: center;
+            &:focus {
+              &::placeholder {
+                transition: all 0.3s;
+                opacity: 0;
+              }
+            }
+          }
+          ::placeholder {
+            color: map-get($map: $color, $key: gray-ccc);
+          }
+        }
       }
       .sign_address {
         @include type-01;
@@ -348,7 +388,7 @@ body {
       div {
         display: flex;
         gap: 10px;
-        .checkbox {
+        .check_boxes {
           width: 20px;
           height: 20px;
           appearance: none;
@@ -358,11 +398,11 @@ body {
           position: relative;
           cursor: pointer;
         }
-        .checkbox:checked {
+        .check_boxes:checked {
           background: map-get($map: $color, $key: main-01);
           border: map-get($map: $color, $key: main-01);
         }
-        .checkbox:checked::after {
+        .check_boxes:checked::after {
           content: "\2714";
           position: absolute;
           top: 50%;
@@ -371,28 +411,46 @@ body {
           color: map-get($map: $color, $key: light);
           font-size: 1.8rem;
         }
-        p {
-          font-family: map-get($map: $font, $key: pretendard);
-          font-size: 1.6rem;
-          b {
+        ul {
+          width: 420px;
+          display: flex;
+          justify-content: space-between;
+          li {
             font-family: map-get($map: $font, $key: pretendard);
             font-size: 1.6rem;
+            b {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.6rem;
+              color: map-get($map: $color, $key: red);
+            }
+            &.sign_error_message {
+              font-family: map-get($map: $font, $key: pretendard);
+              font-size: 1.4rem;
+              color: map-get($map: $color, $key: red);
+            }
+          }
+          .checkbox_must {
+            font-family: map-get($map: $font, $key: pretendard);
+            font-size: 1.4rem;
             color: map-get($map: $color, $key: red);
           }
         }
       }
     }
-    button {
+    .sign_button {
       width: 450px;
       height: 60px;
       border: none;
       border-radius: 10px;
-      background: map-get($map: $color, $key: gray-ccc);
+      background: map-get($map: $color, $key: main-01);
       color: map-get($map: $color, $key: light);
       font-family: map-get($map: $font, $key: pretendard);
       font-size: 2rem;
       font-weight: bold;
       cursor: pointer;
+      &:disabled {
+        background: map-get($map: $color, $key: gray-ccc);
+      }
     }
   }
 }

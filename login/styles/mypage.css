@@ -145,6 +145,12 @@ header .header_inner .header_inner_left ul li {
 }
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
+<<<<<<< HEAD
+}
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
+=======
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
 }
 header .header_inner .header_inner_right {
   display: flex;
@@ -212,7 +218,11 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
+<<<<<<< HEAD
+  font-size: 2.8rem;
+=======
   font-size: 28px;
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -229,7 +239,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;
@@ -395,6 +405,8 @@ body {
   font-family: pretendard;
   font-size: 2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 #container .mypage_inner .mypage .mypage_data .mypage_detail {
   width: 450px;
@@ -407,8 +419,12 @@ body {
   height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #container .mypage_inner .mypage .mypage_data .mypage_detail li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: pretendard;
   font-size: 2rem;
 }
@@ -425,6 +441,15 @@ body {
   font-family: pretendard;
   font-size: 1.4rem;
   font-weight: bold;
+  cursor: pointer;
+}
+#container .mypage_inner .mypage .mypage_data .mypage_detail li div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .mypage_inner .mypage .mypage_data .mypage_detail li div i {
   cursor: pointer;
 }
 #container .mypage_inner .mypage_policy {

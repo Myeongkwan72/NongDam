@@ -1,0 +1,81 @@
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+  }
+  #container .login_inner {
+    width: 500px;
+    gap: 20px;
+  }
+  #container .login_inner .login_01 {
+    gap: 20px;
+  }
+  #container .login_inner .login_01 h2 {
+    font-size: 2.4rem;
+  }
+  #container .login_inner .login_01 .login_input {
+    gap: 10px;
+  }
+  #container .login_inner .login_01 .login_input .login_pw .fa-eye-slash {
+    right: 10px;
+    font-size: 1.2rem;
+  }
+  #container .login_inner .login_01 .login_input input {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+  #container .login_inner .login_01 button {
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+  #container .login_inner .login_01 ul {
+    gap: 5px;
+  }
+  #container .login_inner .login_01 ul li {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  #container .login_inner .login_01 ul p {
+    font-size: 1rem;
+  }
+  #container .login_inner .login_02 .login_social_title {
+    width: 300px;
+  }
+  #container .login_inner .login_02 .login_social_title hr {
+    border: 0.5px solid #ff9900;
+  }
+  #container .login_inner .login_02 .login_social_title p {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  #container .login_inner .login_02 .login_social_kakao {
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+    gap: 5px;
+  }
+  #container .login_inner .login_02 .login_social_kakao img {
+    width: 14px;
+    height: 14px;
+  }
+  #container .login_inner .login_02 .login_social_kakao p {
+    font-size: 1.4rem;
+  }
+  #container .login_inner .login_02 .login_social_naver {
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+    gap: 5px;
+  }
+  #container .login_inner .login_02 .login_social_naver img {
+    width: 14px;
+    height: 14px;
+  }
+  #container .login_inner .login_02 .login_social_naver p {
+    font-size: 1.4rem;
+  }
+}
