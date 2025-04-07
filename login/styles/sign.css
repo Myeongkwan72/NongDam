@@ -68,6 +68,64 @@ header .header_inner {
   padding: 20px 0;
   position: relative;
 }
+header .header_inner nav {
+  width: 100%;
+  padding: 0 20px;
+}
+header .header_inner nav .gnb {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  position: fixed;
+  top: 201px;
+  left: 30px;
+  width: 200px;
+  height: 250px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s;
+}
+header .header_inner nav .gnb li > a {
+  font-family: pretendard;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+header .header_inner nav .gnb li > a:hover {
+  color: #ff9900;
+}
+header .header_inner nav .gnb.active {
+  display: flex;
+  right: 0;
+}
+header .header_inner .trigger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 120px;
+  left: -30px;
+  z-index: 11;
+  cursor: pointer;
+}
+header .header_inner .trigger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+header .header_inner .trigger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+header .header_inner .trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+header .header_inner .trigger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 header .header_inner .header_inner_left {
   display: flex;
   justify-content: start;
@@ -88,6 +146,12 @@ header .header_inner .header_inner_left ul li {
 }
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
+<<<<<<< HEAD
+}
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
+=======
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
 }
 header .header_inner .header_inner_right {
   display: flex;
@@ -155,7 +219,11 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
+<<<<<<< HEAD
+  font-size: 2.8rem;
+=======
   font-size: 28px;
+>>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -172,7 +240,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;
@@ -311,7 +379,7 @@ body {
   align-items: center;
   gap: 30px;
 }
-#container .sign_inner .sign {
+#container .sign_inner .sign_form {
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -319,12 +387,12 @@ body {
   align-items: start;
   gap: 30px;
 }
-#container .sign_inner .sign .sign_title {
+#container .sign_inner .sign_form .sign_title {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-#container .sign_inner .sign .sign_title h2 {
+#container .sign_inner .sign_form .sign_title h2 {
   width: 450px;
   display: flex;
   justify-content: center;
@@ -332,47 +400,47 @@ body {
   font-size: 3.4rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_title p {
+#container .sign_inner .sign_form .sign_title p {
   font-family: pretendard;
   font-size: 1.4rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_id {
+#container .sign_inner .sign_form .sign_id {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_id > :nth-child(1) {
+#container .sign_inner .sign_form .sign_id > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_id > :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_id > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_id > :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_id > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_id > :nth-child(1) p {
+#container .sign_inner .sign_form .sign_id > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) {
   width: 450px;
   border: 1px solid #999;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) input {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) input {
   width: 100%;
   height: 60px;
   border: none;
@@ -382,49 +450,49 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_id > :nth-child(2) ::placeholder {
+#container .sign_inner .sign_form .sign_id > :nth-child(2) ::placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_pw {
+#container .sign_inner .sign_form .sign_pw {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(1) {
+#container .sign_inner .sign_form .sign_pw > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_pw > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_pw > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(1) p {
+#container .sign_inner .sign_form .sign_pw > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) {
   width: 450px;
   border: 1px solid #999;
   border-radius: 10px;
@@ -433,7 +501,7 @@ body {
   align-items: center;
   position: relative;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) input {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) input {
   width: 100%;
   height: 60px;
   border: none;
@@ -443,22 +511,22 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) ::placeholder {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) ::placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_pw > :nth-child(2) i {
+#container .sign_inner .sign_form .sign_pw > :nth-child(2) i {
   background: #fff;
   position: absolute;
   top: 50%;
@@ -467,34 +535,34 @@ body {
   color: #999;
   cursor: pointer;
 }
-#container .sign_inner .sign .sign_pw_again {
+#container .sign_inner .sign_form .sign_pw_again {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(1) {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(1) p {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) {
   width: 450px;
   border: 1px solid #999;
   border-radius: 10px;
@@ -503,7 +571,7 @@ body {
   align-items: center;
   position: relative;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) input {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) input {
   width: 100%;
   height: 60px;
   border: none;
@@ -513,22 +581,22 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) ::placeholder {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) ::placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_pw_again > :nth-child(2) i {
+#container .sign_inner .sign_form .sign_pw_again > :nth-child(2) i {
   background: #fff;
   position: absolute;
   top: 50%;
@@ -537,41 +605,41 @@ body {
   color: #999;
   cursor: pointer;
 }
-#container .sign_inner .sign .sign_name {
+#container .sign_inner .sign_form .sign_name {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_name > :nth-child(1) {
+#container .sign_inner .sign_form .sign_name > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_name > :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_name > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_name > :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_name > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_name > :nth-child(1) p {
+#container .sign_inner .sign_form .sign_name > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) {
   width: 450px;
   border: 1px solid #999;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) input {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) input {
   width: 100%;
   height: 60px;
   border: none;
@@ -581,56 +649,45 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_name > :nth-child(2) ::placeholder {
+#container .sign_inner .sign_form .sign_name > :nth-child(2) ::placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_date {
+#container .sign_inner .sign_form .sign_date {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_date .sign_date_text {
+#container .sign_inner .sign_form .sign_date .sign_date_text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_date .sign_date_text h2 {
+#container .sign_inner .sign_form .sign_date .sign_date_text h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_date .sign_date_text h2 b {
-  font-family: pretendard;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ff5454;
-}
-#container .sign_inner .sign .sign_date .sign_date_text p {
-  font-family: pretendard;
-  font-size: 1.4rem;
-  color: #ff5454;
-}
-#container .sign_inner .sign .sign_date .date_select {
+#container .sign_inner .sign_form .sign_date .date_select {
   width: 450px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_date .date_select .date_select_year {
+#container .sign_inner .sign_form .sign_date .date_select .date_select_year {
   width: 140px;
   height: 60px;
   padding: 10px 30px;
@@ -646,7 +703,7 @@ body {
   -moz-appearance: none;
        appearance: none;
 }
-#container .sign_inner .sign .sign_date .date_select .date_select_month {
+#container .sign_inner .sign_form .sign_date .date_select .date_select_month {
   width: 140px;
   height: 60px;
   padding: 10px 30px;
@@ -662,7 +719,7 @@ body {
   -moz-appearance: none;
        appearance: none;
 }
-#container .sign_inner .sign .sign_date .date_select .date_select_day {
+#container .sign_inner .sign_form .sign_date .date_select .date_select_day {
   width: 140px;
   height: 60px;
   padding: 10px 30px;
@@ -678,39 +735,39 @@ body {
   -moz-appearance: none;
        appearance: none;
 }
-#container .sign_inner .sign .sign_email {
+#container .sign_inner .sign_form .sign_email {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) {
+#container .sign_inner .sign_form .sign_email > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_email > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_email > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_email :nth-child(1) p {
+#container .sign_inner .sign_form .sign_email > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_email .email_input {
+#container .sign_inner .sign_form .sign_email .email_input {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_email .email_input input {
+#container .sign_inner .sign_form .sign_email .email_input input {
   width: 260px;
   height: 60px;
   border: 1px solid #999;
@@ -720,26 +777,26 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_email .email_input input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_email .email_input input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_email .email_input input:focus::placeholder {
+#container .sign_inner .sign_form .sign_email .email_input input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_email .email_input ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_email .email_input ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_email .email_input ::placeholder {
+#container .sign_inner .sign_form .sign_email .email_input ::placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_email .email_input p {
+#container .sign_inner .sign_form .sign_email .email_input p {
   font-family: pretendard;
   font-size: 2rem;
 }
-#container .sign_inner .sign .sign_email .email_input select {
+#container .sign_inner .sign_form .sign_email .email_input select {
   width: 140px;
   height: 60px;
   padding: 10px 20px;
@@ -756,41 +813,101 @@ body {
   -moz-appearance: none;
        appearance: none;
 }
-#container .sign_inner .sign .sign_call {
+#container .sign_inner .sign_form .sign_call {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .sign_inner .sign .sign_call > :nth-child(1) {
+#container .sign_inner .sign_form .sign_call > :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#container .sign_inner .sign .sign_call > :nth-child(1) h2 {
+#container .sign_inner .sign_form .sign_call > :nth-child(1) h2 {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
 }
-#container .sign_inner .sign .sign_call > :nth-child(1) h2 b {
+#container .sign_inner .sign_form .sign_call > :nth-child(1) h2 b {
   font-family: pretendard;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_call > :nth-child(1) p {
+#container .sign_inner .sign_form .sign_call > :nth-child(1) p {
   font-family: pretendard;
   font-size: 1.4rem;
   color: #ff5454;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) {
+#container .sign_inner .sign_form .sign_call .call_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .sign_inner .sign_form .sign_call .call_input input {
+  width: 140px;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-family: pretendard;
+  font-size: 1.8rem;
+  text-align: center;
+}
+#container .sign_inner .sign_form .sign_call .call_input input:focus::-moz-placeholder {
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .sign_inner .sign_form .sign_call .call_input input:focus::placeholder {
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .sign_inner .sign_form .sign_call .call_input ::-moz-placeholder {
+  color: #ccc;
+}
+#container .sign_inner .sign_form .sign_call .call_input ::placeholder {
+  color: #ccc;
+}
+#container .sign_inner .sign_form .sign_address {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#container .sign_inner .sign_form .sign_address > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .sign_inner .sign_form .sign_address > :nth-child(1) h2 {
+  font-family: pretendard;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#container .sign_inner .sign_form .sign_address > :nth-child(1) h2 b {
+  font-family: pretendard;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff5454;
+}
+#container .sign_inner .sign_form .sign_address > :nth-child(1) p {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .sign_inner .sign_form .sign_address > :nth-child(2) {
   width: 450px;
   border: 1px solid #999;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input {
+#container .sign_inner .sign_form .sign_address > :nth-child(2) input {
   width: 100%;
   height: 60px;
   border: none;
@@ -800,78 +917,19 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input:focus::-moz-placeholder {
+#container .sign_inner .sign_form .sign_address > :nth-child(2) input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) input:focus::placeholder {
+#container .sign_inner .sign_form .sign_address > :nth-child(2) input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) ::-moz-placeholder {
+#container .sign_inner .sign_form .sign_address > :nth-child(2) ::-moz-placeholder {
   color: #ccc;
 }
-#container .sign_inner .sign .sign_call > :nth-child(2) ::placeholder {
-  color: #ccc;
-}
-#container .sign_inner .sign .sign_address {
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#container .sign_inner .sign .sign_address > :nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#container .sign_inner .sign .sign_address > :nth-child(1) h2 {
-  font-family: pretendard;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-#container .sign_inner .sign .sign_address > :nth-child(1) h2 b {
-  font-family: pretendard;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ff5454;
-}
-#container .sign_inner .sign .sign_address > :nth-child(1) p {
-  font-family: pretendard;
-  font-size: 1.4rem;
-  color: #ff5454;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) {
-  width: 450px;
-  border: 1px solid #999;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) input {
-  width: 100%;
-  height: 60px;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  opacity: 1;
-  font-family: pretendard;
-  font-size: 1.8rem;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) input:focus::-moz-placeholder {
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) input:focus::placeholder {
-  transition: all 0.3s;
-  opacity: 0;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) ::-moz-placeholder {
-  color: #ccc;
-}
-#container .sign_inner .sign .sign_address > :nth-child(2) ::placeholder {
+#container .sign_inner .sign_form .sign_address > :nth-child(2) ::placeholder {
   color: #ccc;
 }
 #container .sign_inner .sign_checkbox {
@@ -886,7 +944,7 @@ body {
   display: flex;
   gap: 10px;
 }
-#container .sign_inner .sign_checkbox div .checkbox {
+#container .sign_inner .sign_checkbox div .check_boxes {
   width: 20px;
   height: 20px;
   -webkit-appearance: none;
@@ -898,11 +956,11 @@ body {
   position: relative;
   cursor: pointer;
 }
-#container .sign_inner .sign_checkbox div .checkbox:checked {
+#container .sign_inner .sign_checkbox div .check_boxes:checked {
   background: #f37100;
   border: #f37100;
 }
-#container .sign_inner .sign_checkbox div .checkbox:checked::after {
+#container .sign_inner .sign_checkbox div .check_boxes:checked::after {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -911,24 +969,42 @@ body {
   color: #fff;
   font-size: 1.8rem;
 }
-#container .sign_inner .sign_checkbox div p {
+#container .sign_inner .sign_checkbox div ul {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+#container .sign_inner .sign_checkbox div ul li {
   font-family: pretendard;
   font-size: 1.6rem;
 }
-#container .sign_inner .sign_checkbox div p b {
+#container .sign_inner .sign_checkbox div ul li b {
   font-family: pretendard;
   font-size: 1.6rem;
   color: #ff5454;
 }
-#container .sign_inner button {
+#container .sign_inner .sign_checkbox div ul li.sign_error_message {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .sign_inner .sign_checkbox div ul .checkbox_must {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .sign_inner .sign_button {
   width: 450px;
   height: 60px;
   border: none;
   border-radius: 10px;
-  background: #ccc;
+  background: #f37100;
   color: #fff;
   font-family: pretendard;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
+}
+#container .sign_inner .sign_button:disabled {
+  background: #ccc;
 }

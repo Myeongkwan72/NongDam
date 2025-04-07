@@ -10,7 +10,9 @@
     ></script>
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/mypage.css" />
-    <script src="./js/mypage.js"></script>
+    <script defer src="./js/mypage.js"></script>
+    <!-- response -->
+    <link rel="stylesheet" href="./styles/res_mypage.css" />
     <!-- domain icon -->
     <link rel="icon" type="images/png" href="../logo/logo.png" />
     <title>마이페이지</title>
@@ -76,7 +78,10 @@
                 <p class="mypage_id">nmixx**@naver.com</p>
               </li>
               <li>
-                <p class="mypage_pw">********</p>
+                <div id="pw">
+                  <p class="mypage_pw">********</p>
+                  <i class="fas fa-eye-slash"></i>
+                </div>
                 <button class="mypage_modify">수정</button>
               </li>
               <li>

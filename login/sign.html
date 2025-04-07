@@ -10,7 +10,9 @@
     ></script>
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/sign.css" />
-    <script src="./js/sign.js"></script>
+    <script defer src="./js/sign.js"></script>
+    <!-- response -->
+    <link rel="stylesheet" href="./styles/res_sign.css" />
     <!-- domain icon -->
     <link rel="icon" type="images/png" href="../logo/logo.png" />
     <title>회원가입</title>
@@ -60,7 +62,7 @@
     </header>
     <main id="container">
       <div class="sign_inner">
-        <section class="sign">
+        <form class="sign_form">
           <div class="sign_title">
             <h2>회원가입</h2>
             <p>* 표시된 항목은 필수사항입니다.</p>
@@ -68,21 +70,26 @@
           <div class="sign_id">
             <div class="sign_id_text">
               <h2>아이디 <b>*</b></h2>
-              <p>아이디가 올바르지 않습니다.</p>
+              <p id="sign_id_error" class="sign_error_message">
+                아이디가 올바르지 않습니다.
+              </p>
             </div>
             <div class="id_input">
-              <input type="text" placeholder="아이디를 입력해주세요." />
+              <input id="id" type="text" placeholder="아이디를 입력해주세요." />
             </div>
           </div>
           <div class="sign_pw">
             <div class="sign_pw_text">
               <h2>비밀번호 <b>*</b></h2>
-              <p>비밀번호가 올바르지 않습니다.</p>
+              <p id="sign_pw_error" class="sign_error_message">
+                비밀번호가 올바르지 않습니다.
+              </p>
             </div>
             <div class="pw_input">
               <input
+                id="pw"
                 type="password"
-                placeholder="비밀번호를 입력해주세요. (영문+숫자 8~12자리)"
+                placeholder="비밀번호를 입력해주세요. (영문+숫자 8자리)"
               />
               <i class="fas fa-eye-slash"></i>
             </div>
@@ -90,20 +97,32 @@
           <div class="sign_pw_again">
             <div class="sign_pw_again_text">
               <h2>비밀번호 확인 <b>*</b></h2>
-              <p>비밀번호가 일치하지 않습니다.</p>
+              <p id="sign_pw_again_error" class="sign_error_message">
+                비밀번호가 일치하지 않습니다.
+              </p>
             </div>
             <div class="pw_input">
-              <input type="password" placeholder="비밀번호를 재입력해주세요." />
+              <input
+                id="pw_again"
+                type="password"
+                placeholder="비밀번호를 재입력해주세요."
+              />
               <i class="fas fa-eye-slash"></i>
             </div>
           </div>
           <div class="sign_name">
             <div class="sign_name_text">
               <h2>이름 <b>*</b></h2>
-              <p>이름이 올바르지 않습니다.</p>
+              <p id="sign_name_error" class="sign_error_message">
+                이름이 올바르지 않습니다.
+              </p>
             </div>
             <div class="id_input">
-              <input type="text" placeholder="이름을 입력해주세요." />
+              <input
+                id="name"
+                type="text"
+                placeholder="이름을 입력해주세요. (한글 혹은 영문)"
+              />
             </div>
           </div>
           <div class="sign_date">
@@ -125,31 +144,37 @@
           <div class="sign_email">
             <div class="sign_email_text">
               <h2>이메일 <b>*</b></h2>
-              <p>이메일이 올바르지 않습니다.</p>
+              <p id="sign_email_error" class="sign_error_message">
+                이메일이 올바르지 않습니다.
+              </p>
             </div>
             <div class="email_input">
-              <input type="text" placeholder="이메일을 입력해주세요." />
+              <input
+                id="email"
+                type="text"
+                placeholder="이메일을 입력해주세요."
+              />
               <p>@</p>
               <select class="email_list">
                 <option selected disabled>----------</option>
-                <option value="naver">naver.com</option>
-                <option value="daum">daum.net</option>
-                <option value="nate">nate.com</option>
-                <option value="gmail">gmail.com</option>
+                <option value="naver.com">naver.com</option>
+                <option value="daum.net">daum.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="gmail.com">gmail.com</option>
               </select>
             </div>
           </div>
           <div class="sign_call">
             <div class="sign_call_text">
               <h2>연락처 <b>*</b></h2>
-              <p>연락처가 올바르지 않습니다.</p>
+              <p id="sign_call_error" class="sign_error_message">
+                연락처가 올바르지 않습니다.
+              </p>
             </div>
             <div class="call_input">
-              <input
-                type="tel"
-                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
-                placeholder="연락처를 입력해주세요."
-              />
+              <input id="phone1" type="text" placeholder="010" maxlength="3" />
+              <input id="phone2" type="text" placeholder="1234" maxlength="4" />
+              <input id="phone3" type="text" placeholder="5678" maxlength="4" />
             </div>
           </div>
           <div class="sign_address">
@@ -157,29 +182,47 @@
               <h2>배송지 주소</h2>
             </div>
             <div class="address_input">
-              <input type="text" placeholder="배송지 주소를 입력해주세요." />
+              <input
+                id="address"
+                type="text"
+                placeholder="배송지 주소를 입력해주세요."
+              />
             </div>
           </div>
-        </section>
-        <div class="sign_checkbox">
-          <div class="checkbox_all">
-            <input class="checkbox" type="checkbox" />
-            <p>전체 약관에 동의합니다.</p>
+          <div class="sign_checkbox">
+            <div class="checkbox_all">
+              <input class="check_all check_boxes" type="checkbox" />
+              <ul>
+                <li>전체 약관에 동의합니다.</li>
+              </ul>
+            </div>
+            <div class="checkbox_service">
+              <input class="check_must check_boxes" type="checkbox" />
+              <ul>
+                <li>서비스 이용 약관 동의<b>*</b></li>
+                <li id="sign_service_error" class="sign_error_message">
+                  필수 약관에 동의해야 합니다.
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox_privacy">
+              <input class="check_must check_boxes" type="checkbox" />
+              <ul>
+                <li>개인정보 수집 및 이용 동의<b>*</b></li>
+                <li id="sign_privacy_error" class="sign_error_message">
+                  필수 약관에 동의해야 합니다.
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox_event">
+              <input class="check_event check_boxes" type="checkbox" />
+              <ul>
+                <li>이벤트 정보 수신 동의</li>
+              </ul>
+            </div>
           </div>
-          <div class="checkbox_service">
-            <input class="checkbox" type="checkbox" />
-            <p>서비스 이용 약관 동의<b>*</b></p>
-          </div>
-          <div class="checkbox_privacy">
-            <input class="checkbox" type="checkbox" />
-            <p>개인정보 수집 및 이용 동의<b>*</b></p>
-          </div>
-          <div class="checkbox_event">
-            <input class="checkbox" type="checkbox" />
-            <p>이벤트 정보 수신 동의</p>
-          </div>
-        </div>
-        <button>가입하기</button>
+          <input type="submit" class="sign_button" value="가입하기" disabled />
+        </form>
       </div>
     </main>
     <footer>

@@ -1,0 +1,141 @@
+// variables
+@import "./variables.scss";
+
+// width 1440px ~ 1920px
+@media screen and (max-width: 1440px) {
+  header {
+    .header_event {
+      height: 40px;
+    }
+    .header_inner {
+      width: 1000px;
+      margin: 0 auto;
+      .header_inner_left {
+        ul {
+          gap: 20px;
+          li {
+            font-size: 1.8rem;
+          }
+          div {
+            display: none;
+          }
+        }
+      }
+      .header_inner_right {
+        justify-content: space-between;
+        .inner_right_top {
+          ul {
+            gap: 10px;
+            font-size: 1.4rem;
+          }
+        }
+        .inner_right_bottom {
+          gap: 20px;
+          .search_bar {
+            width: 200px;
+            height: 30px;
+            padding: 5px 15px;
+            .fa-magnifying-glass {
+              font-size: 1.4rem;
+            }
+          }
+          .basket {
+            .fa-cart-shopping {
+              width: 32px;
+              height: 30px;
+              font-size: 2.4rem;
+            }
+            p {
+              width: 16px;
+              height: 16px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// width 1024px ~ 1439px
+@media screen and (max-width: 1024px) {
+  header {
+    .header_event {
+      height: 40px;
+    }
+    .header_inner {
+      width: 750px;
+      height: 160px;
+      .header_inner_left {
+        ul {
+          gap: 20px;
+          li {
+            display: none;
+          }
+          .header_menu_trigger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            span {
+              &:nth-child(1) {
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 0;
+                background: map-get($map: $color, $key: dark);
+              }
+              &:nth-child(2) {
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: map-get($map: $color, $key: dark);
+              }
+              &:nth-child(3) {
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                background: map-get($map: $color, $key: dark);
+              }
+            }
+          }
+        }
+      }
+      .header_inner_right {
+        justify-content: space-between;
+        .inner_right_top {
+          ul {
+            gap: 10px;
+            font-size: 1.4rem;
+          }
+        }
+        .inner_right_bottom {
+          gap: 20px;
+          .search_bar {
+            width: 200px;
+            height: 30px;
+            padding: 5px 15px;
+            .fa-magnifying-glass {
+              font-size: 1.4rem;
+            }
+          }
+          .basket {
+            .fa-cart-shopping {
+              width: 32px;
+              height: 30px;
+              font-size: 2.4rem;
+            }
+            p {
+              width: 16px;
+              height: 16px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
