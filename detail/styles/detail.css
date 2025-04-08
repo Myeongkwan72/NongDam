@@ -905,10 +905,76 @@ body {
   color: #000;
   cursor: pointer;
 }
-.detail_faq .faq_number div:first-child {
+.detail_faq .faq_number div.active {
   color: #f37100;
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* modal */
+.modal_overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_overlay .modal {
+  width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal_overlay .modal .modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal_overlay .modal .modal_header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.modal_overlay .modal .modal_header .modal_close {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.modal_overlay .modal .modal_body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal_overlay .modal .modal_body input,
+.modal_overlay .modal .modal_body textarea {
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+.modal_overlay .modal .modal_body textarea {
+  height: 100px;
+  resize: none;
+}
+.modal_overlay .modal .modal_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal_overlay .modal .modal_footer .modal_submit {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  background: #f37100;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* policy */

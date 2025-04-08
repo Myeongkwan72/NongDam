@@ -1,3 +1,9 @@
+/* logo location */
+const logoBtn = document.querySelector("#header_logo");
+logoBtn.addEventListener("click", () => {
+  location.href = "../index.html";
+});
+
 const triBtn = document.querySelector(".trigger");
 triBtn.addEventListener("click", (e) => {
   e.currentTarget.classList.toggle("active");
