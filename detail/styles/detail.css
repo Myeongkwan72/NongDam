@@ -591,7 +591,7 @@ body {
 .detail_review .review_member {
   width: 100%;
   height: auto;
-  margin: 40px auto;
+  margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,6 +662,19 @@ body {
   font-size: 1.2rem;
   color: #999;
   margin: 30px 0px 0px;
+}
+.detail_review .hide_members {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.detail_review .hide_members.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .detail_review .review_more {
   width: 100%;
