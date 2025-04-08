@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
 });
 
 // search event
-const searchBtn = document.querySelector(".res_magnify");
+const searchBtn = document.querySelector(".fa-magnifying-glass");
 searchBtn.addEventListener("click", () => {});
 
 // footer 이벤트
