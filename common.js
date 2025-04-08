@@ -47,6 +47,10 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop >= 0 ? scrollTop : 0;
 });
 
+// search event
+const searchBtn = document.querySelector(".res_magnify");
+searchBtn.addEventListener("click", () => {});
+
 // footer 이벤트
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
