@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/81c26bcbac.js"
       crossorigin="anonymous"
     ></script>
     <!-- custom css & js -->
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="./styles/find.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <script defer src="./js/find.js"></script>
     <script defer src="../common.js"></script>
-    <!-- media screen -->
+    <!-- response -->
     <link rel="stylesheet" href="./styles/res_find.css" />
     <link rel="stylesheet" href="../styles/res_header.css" />
     <!-- domain icon -->
@@ -33,17 +30,27 @@
         </p>
       </div>
       <div class="header_inner">
+        <!-- trigger start -->
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">과일</a></li>
+            <li><a href="#">채소</a></li>
+            <li><a href="#">가공식품/기타</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- trigger end -->
         <div class="header_inner_left">
           <ul>
             <li>과일</li>
             <li>채소</li>
             <li>가공식품 / 기타</li>
             <li>이벤트</li>
-            <div class="trigger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </ul>
         </div>
         <div class="header_inner_right">
@@ -53,7 +60,7 @@
           <div class="inner_right_bottom">
             <div class="search_bar">
               <input type="text" placeholder="검색어를 입력해주세요." />
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass res_magnify"></i>
             </div>
             <div class="basket">
               <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
