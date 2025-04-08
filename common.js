@@ -10,18 +10,9 @@ triBtn.addEventListener("click", (e) => {
   document.querySelector(".gnb").classList.toggle("active");
 });
 
-const menus = document.querySelectorAll(".gnb a");
-menus.forEach((menu) => {
-  menu.addEventListener("click", (e) => {
-    e.preventDefault();
-    const target = menu.getAttribute("href");
-    console.log(target, "클릭");
-  });
-});
-
 // header 스크롤 체크, 히든
 let lastScrollTop = 0;
-const header = document.querySelector("#header");
+const header = document.querySelector("#footer_to_header");
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
@@ -61,7 +52,7 @@ window.addEventListener("scroll", () => {
 });
 
 // footer topscroll event
-const up_btn = document.querySelector(".up_btn > a");
+const up_btn = document.querySelector(".up_btn");
 
 up_btn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -154,27 +145,28 @@ const locationEvent = document.querySelectorAll(".header_location_event");
 // 과일 페이지 이동
 locationFriut.forEach((fruit) => {
   fruit.addEventListener("click", () => {
-    window.location.href = "../fruit.html";
+    window.location.href = "../pages/fruit.html";
   });
 });
 
 // 채소 페이지 이동
 locationVegetable.forEach((vegetable) => {
   vegetable.addEventListener("click", () => {
-    window.location.href = "./pages/vegetable.html";
+    console.log(vegetable);
+    window.location.href = "../pages/vegetable.html";
   });
 });
 
 // 가공식품/기타 페이지 이동
 locationEtc.forEach((etc) => {
   etc.addEventListener("click", () => {
-    window.location.href = "../etc.html";
+    window.location.href = "../pages/etc.html";
   });
 });
 
 // 이벤트 페이지 이동
 locationEvent.forEach((event) => {
   event.addEventListener("click", () => {
-    window.location.href = "./eventpromotion/event.html";
+    window.location.href = "../eventpromotion/event.html";
   });
 });

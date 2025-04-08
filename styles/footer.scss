@@ -27,19 +27,17 @@ footer {
       position: fixed;
       opacity: 0;
       transition: opacity 0.4s;
-      a {
-        div {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: map-get($map: $color, $key: sub-01);
-          border-radius: 27px;
-          i {
-            font-size: 2rem;
-            color: map-get($map: $color, $key: light);
-          }
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: map-get($map: $color, $key: sub-01);
+        border-radius: 27px;
+        i {
+          font-size: 2rem;
+          color: map-get($map: $color, $key: light);
         }
       }
       &.active {
