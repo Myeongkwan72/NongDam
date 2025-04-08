@@ -50,6 +50,7 @@ const ndUsers = localStorage.getItem("ndUsers");
 // 현재 유저 정보
 const users = JSON.parse(localStorage.getItem("Users")) || [];
 const currentUser = users.find((user) => user.id === ndUsers);
+console.log(currentUser);
 
 // 계정 찾기
 const form = document.querySelector(".find_id");
@@ -83,6 +84,8 @@ const vaildTest = (e) => {
   // 연락처
   const call = document.querySelector("#call");
   const callValue = call.value.trim();
+
+  console.log(callValue);
 
   if (currentMode === "call") {
     if (callValue === "") {
