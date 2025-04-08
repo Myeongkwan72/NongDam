@@ -80,9 +80,9 @@ header .header_inner nav .gnb {
   top: 201px;
   left: 30px;
   width: 200px;
-  height: 250px;
+  height: 236px;
   padding: 30px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
   transition: all 0.3s;
 }
 header .header_inner nav .gnb li > a {
@@ -146,12 +146,9 @@ header .header_inner .header_inner_left ul li {
 }
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
-<<<<<<< HEAD
 }
 header .header_inner .header_inner_left ul .header_menu_trigger {
   display: none;
-=======
->>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
 }
 header .header_inner .header_inner_right {
   display: flex;
@@ -219,11 +216,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
-<<<<<<< HEAD
   font-size: 2.8rem;
-=======
-  font-size: 28px;
->>>>>>> 41f619292f69d04b63936a4b7a4faf37952a4b5e
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
