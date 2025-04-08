@@ -47,7 +47,7 @@ main {
       flex-direction: column;
       gap: 20px;
       h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
       }
       .main_it {
         width: 100%;
@@ -71,7 +71,6 @@ main {
               width: 100%;
               aspect-ratio: 1 / 1; // 정사각형 비율 유지
               object-fit: cover;
-              border: 1px solid #f00;
               cursor: pointer;
             }
             // 할인 버튼은 type2에서만 존재
@@ -341,7 +340,7 @@ main {
           gap: 24px;
         }
         h1 {
-          font-size: 3rem;
+          font-size: 2.6rem;
         }
         img {
           width: 40px;
@@ -370,7 +369,6 @@ main {
               width: 100%;
               aspect-ratio: 1 / 1; // 정사각형 비율 유지
               object-fit: cover;
-              border: 1px solid #f00;
               cursor: pointer;
             }
             // 할인 버튼은 type2에서만 존재
@@ -470,14 +468,14 @@ main {
       overflow: hidden;
       .main_title2 {
         .main_title3 {
-          font-size: 3rem;
+          font-size: 2.6rem;
           margin-bottom: 6px;
           b {
             color: map-get($map: $color, $key: main-01);
           }
         }
         .line {
-          width: 220px;
+          width: 200px; // 220px 이었음 title: 3rem
           height: 1px;
           background-color: map-get($map: $color, $key: main-01);
         }
@@ -620,7 +618,7 @@ main {
         justify-content: space-between;
         align-items: center;
         h1 {
-          font-size: 3rem;
+          font-size: 2.6rem;
         }
         .sale_time {
           color: map-get($map: $color, $key: light);
@@ -651,7 +649,6 @@ main {
               width: 100%;
               aspect-ratio: 1 / 1; // 정사각형 비율 유지
               object-fit: cover;
-              border: 1px solid #f00;
               cursor: pointer;
             }
             button {

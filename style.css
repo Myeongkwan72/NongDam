@@ -80,9 +80,9 @@ header .header_inner nav .gnb {
   top: 201px;
   left: 30px;
   width: 200px;
-  height: 250px;
+  height: 236px;
   padding: 30px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
   transition: all 0.3s;
 }
 header .header_inner nav .gnb li > a {
@@ -146,6 +146,9 @@ header .header_inner .header_inner_left ul li {
 }
 header .header_inner .header_inner_left ul li:hover {
   color: #f37100;
+}
+header .header_inner .header_inner_left ul .header_menu_trigger {
+  display: none;
 }
 header .header_inner .header_inner_right {
   display: flex;
@@ -213,7 +216,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket {
 header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
   width: 40px;
   height: 34px;
-  font-size: 28px;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .basket p {
@@ -230,7 +233,7 @@ header .header_inner .header_inner_right .inner_right_bottom .basket p {
   top: -5px;
   right: -5px;
   font-family: pretendard;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 header .header_inner .header_inner_logo {
   position: absolute;
@@ -378,7 +381,7 @@ main #main_con1 .main_inner {
   gap: 20px;
 }
 main #main_con1 .main_inner h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con1 .main_inner .main_it {
   width: 100%;
@@ -406,7 +409,6 @@ main #main_con1 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con1 .main_inner .main_it .main_type1 .img button,
@@ -708,7 +710,7 @@ main #main_con2 .main_inner .main_con2title:hover {
   gap: 24px;
 }
 main #main_con2 .main_inner .main_con2title h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con2 .main_inner .main_con2title img {
   width: 40px;
@@ -740,7 +742,6 @@ main #main_con2 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con2 .main_inner .main_it .main_type1 .img button,
@@ -876,14 +877,14 @@ main #main_con3 .main_inner {
   overflow: hidden;
 }
 main #main_con3 .main_inner .main_title2 .main_title3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 6px;
 }
 main #main_con3 .main_inner .main_title2 .main_title3 b {
   color: #f37100;
 }
 main #main_con3 .main_inner .main_title2 .line {
-  width: 220px;
+  width: 200px;
   height: 1px;
   background-color: #f37100;
 }
@@ -1014,7 +1015,7 @@ main #main_con4 .main_inner .main_sale_title {
   align-items: center;
 }
 main #main_con4 .main_inner .main_sale_title h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con4 .main_inner .main_sale_title .sale_time {
   color: #fff;
@@ -1046,7 +1047,6 @@ main #main_con4 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con4 .main_inner .main_it .main_type2 .img button {
