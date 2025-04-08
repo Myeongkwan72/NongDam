@@ -183,8 +183,14 @@ fetch("./food_dataset.json")
               </div>
         `;
       }
+
+      section1.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
       content1.appendChild(section1);
     });
+
     // main_con2에 나열
     random1.forEach((item) => {
       const section2 = document.createElement("li");
@@ -235,8 +241,13 @@ fetch("./food_dataset.json")
               </div>
         `;
       }
+
+      section2.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
       content2.appendChild(section2);
     });
+
     // main_con4(오늘의 특가상품)에 나열
     random2.forEach((item) => {
       const saleItem = document.createElement("li");
@@ -268,6 +279,10 @@ fetch("./food_dataset.json")
                 </div>
               </div>
       `;
+
+      saleItem.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
       content4.appendChild(saleItem);
     });
   })
