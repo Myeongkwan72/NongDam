@@ -142,3 +142,39 @@ if (headerCurrentUser) {
     window.location.href = "./sign.html";
   });
 }
+
+// 페이지 이동
+const locationFriut = document.querySelectorAll(".header_location_fruit");
+const locationVegetable = document.querySelectorAll(
+  ".header_location_vegetable"
+);
+const locationEtc = document.querySelectorAll(".header_location_etc");
+const locationEvent = document.querySelectorAll(".header_location_event");
+
+// 과일 페이지 이동
+locationFriut.forEach((fruit) => {
+  fruit.addEventListener("click", () => {
+    window.location.href = "../fruit.html";
+  });
+});
+
+// 채소 페이지 이동
+locationVegetable.forEach((vegetable) => {
+  vegetable.addEventListener("click", () => {
+    window.location.href = "../vegetable.html";
+  });
+});
+
+// 가공식품/기타 페이지 이동
+locationEtc.forEach((etc) => {
+  etc.addEventListener("click", () => {
+    window.location.href = "../etc.html";
+  });
+});
+
+// 이벤트 페이지 이동
+locationEvent.forEach((event) => {
+  event.addEventListener("click", () => {
+    window.location.href = "../eventpromotion/event.html";
+  });
+});

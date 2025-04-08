@@ -80,7 +80,7 @@ main #main_con1 .main_inner .main_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #main_con1 .main_inner .main_it .main_type1 .img button,
@@ -133,65 +133,351 @@ main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
   font-weight: 600;
   font-size: 2.2rem;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b {
   font-size: 3.6rem;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price {
   display: flex;
   flex-direction: column;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon,
 main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon,
 main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .icon
+  .fa-heart,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-heart,
+main
+  #main_con1
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -210,7 +496,7 @@ main .main_banner .main_innerbanner1 {
 main .main_banner .main_innerbanner1 img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .main_banner .main_innerbanner1 .banner_text {
   width: 100%;
@@ -261,7 +547,7 @@ main .main_banner .main_innerbanner2 {
 main .main_banner .main_innerbanner2 img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .main_banner .main_innerbanner2 .banner2_text {
   padding: 0 50px;
@@ -295,7 +581,7 @@ main .main_banner .main_innerbanner3 {
 main .main_banner .main_innerbanner3 img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .main_banner .main_innerbanner3 .banner3_text {
   width: 100%;
@@ -322,7 +608,7 @@ main .main_banner .main_innerbanner4 {
 main .main_banner .main_innerbanner4 img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .main_banner .main_innerbanner4 .banner4_text {
   width: 100%;
@@ -413,7 +699,7 @@ main #main_con2 .main_inner .main_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #main_con2 .main_inner .main_it .main_type1 .img button,
@@ -466,65 +752,351 @@ main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
   font-weight: 600;
   font-size: 2.2rem;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b {
   font-size: 3.6rem;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price {
   display: flex;
   flex-direction: column;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon,
 main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon,
 main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .icon
+  .fa-heart,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type1
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-heart,
+main
+  #main_con2
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -612,7 +1184,7 @@ main #main_con3 .main_inner .main_recipe .main_item img {
   max-width: 240px;
   height: 304px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   filter: brightness(70%);
 }
@@ -626,18 +1198,39 @@ main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title .fa-heart {
+main
+  #main_con3
+  .main_inner
+  .main_recipe
+  .main_item
+  .recipe_info
+  .recipe_title
+  .fa-heart {
   font-size: 1.6rem;
   display: flex;
   justify-content: right;
   margin-bottom: 10px;
   cursor: pointer;
 }
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title h4 {
+main
+  #main_con3
+  .main_inner
+  .main_recipe
+  .main_item
+  .recipe_info
+  .recipe_title
+  h4 {
   font-size: 1.6rem;
   margin-bottom: 6px;
 }
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title button {
+main
+  #main_con3
+  .main_inner
+  .main_recipe
+  .main_item
+  .recipe_info
+  .recipe_title
+  button {
   border: none;
   display: flex;
   align-items: center;
@@ -654,12 +1247,26 @@ main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text {
   flex-direction: column;
   gap: 10px;
 }
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text .recipe_line {
+main
+  #main_con3
+  .main_inner
+  .main_recipe
+  .main_item
+  .recipe_info
+  .recipe_text
+  .recipe_line {
   width: 204px;
   height: 1px;
   background-color: #fff;
 }
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text p {
+main
+  #main_con3
+  .main_inner
+  .main_recipe
+  .main_item
+  .recipe_info
+  .recipe_text
+  p {
   font-size: 1.2rem;
 }
 main #main_con4 {
@@ -718,7 +1325,7 @@ main #main_con4 .main_inner .main_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #main_con4 .main_inner .main_it .main_type2 .img button {
@@ -761,28 +1368,80 @@ main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
   font-weight: 600;
   font-size: 2.2rem;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b {
   font-size: 3.6rem;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price {
   display: flex;
   flex-direction: column;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
@@ -791,8 +1450,24 @@ main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-heart,
+main
+  #main_con4
+  .main_inner
+  .main_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;
