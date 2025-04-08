@@ -10,16 +10,19 @@
     ></script>
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/sign.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <script defer src="./js/sign.js"></script>
     <script defer src="../common.js"></script>
     <!-- response -->
     <link rel="stylesheet" href="./styles/res_sign.css" />
+    <link rel="stylesheet" href="../styles/res_header.css" />
     <!-- domain icon -->
     <link rel="icon" type="images/png" href="../logo/logo.png" />
     <title>회원가입</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="header_event">
         <p>
           지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
@@ -27,6 +30,22 @@
         </p>
       </div>
       <div class="header_inner">
+        <!-- trigger start -->
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">과일</a></li>
+            <li><a href="#">채소</a></li>
+            <li><a href="#">가공식품/기타</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- trigger end -->
+
         <div class="header_inner_left">
           <ul>
             <li>과일</li>
@@ -37,26 +56,20 @@
         </div>
         <div class="header_inner_right">
           <div class="inner_right_top">
-            <ul>
-              <li>로그인</li>
-              <p>|</p>
-              <li>마이페이지</li>
-              <p>|</p>
-              <li>회원가입</li>
-            </ul>
+            <ul class="header_login"></ul>
           </div>
           <div class="inner_right_bottom">
             <div class="search_bar">
               <input type="text" placeholder="검색어를 입력해주세요." />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <i class="fa-solid fa-magnifying-glass res_magnify"></i>
             <div class="basket">
-              <i class="fa-solid fa-cart-shopping"> </i>
-              <p>1</p>
+              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
             </div>
           </div>
         </div>
-        <div class="header_inner_logo">
+        <div class="header_inner_logo" id="header_logo">
           <img src="../imgs/logo.png" alt="logo" />
         </div>
       </div>
@@ -228,6 +241,14 @@
     </main>
     <footer>
       <div class="footer_inner">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+
         <div class="footer_inner_left">
           <img src="../imgs/logo_02.png" alt="logo_02" />
           <p>ⓒ 농담 All rights reserved</p>
