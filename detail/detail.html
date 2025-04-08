@@ -10,6 +10,11 @@
     ></script>
     <!-- custom CSS & detail/header/footer JS -->
     <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/res_header.css" />
     <script defer src="./js/detail.js"></script>
     <script defer src="../common.js"></script>
     <!-- Media Screen -->
@@ -19,7 +24,7 @@
     <title>상세페이지</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="header_event">
         <p>
           지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
@@ -66,6 +71,7 @@
               <input type="text" placeholder="검색어를 입력해주세요." />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <i class="fa-solid fa-magnifying-glass res_magnify"></i>
             <div class="basket">
               <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
             </div>
@@ -379,7 +385,7 @@
       <section class="detail_faq">
         <div class="faq_title">
           <span>문의</span>
-          <button>문의하기</button>
+          <button class="contact_us">문의하기</button>
         </div>
         <div class="faq_subTitle">
           상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
@@ -396,7 +402,7 @@
           </div>
         </div>
         <table class="faq_table">
-          <tr>
+          <tr class="faq_row">
             <td class="left">배송 관련 문의 <i class="fas fa-lock"></i></td>
             <td class="right faq_name">이*일</td>
             <td class="right faq_date">2025.03.15</td>
@@ -435,7 +441,21 @@
           <div>5</div>
         </div>
       </section>
-
+      <div class="modal_overlay" style="display: none">
+        <div class="modal">
+          <div class="modal_header">
+            <h2>문의 등록</h2>
+            <span class="modal_close">&times;</span>
+          </div>
+          <div class="modal_body">
+            <input type="text" placeholder="제목을 입력하세요" />
+            <textarea placeholder="문의 내용을 입력하세요"></textarea>
+          </div>
+          <div class="modal_footer">
+            <button class="modal_submit">등록</button>
+          </div>
+        </div>
+      </div>
       <div class="detail_line"></div>
       <!-- 보상정책 -->
       <section class="detail_policy">
@@ -553,6 +573,14 @@
     </main>
     <footer>
       <div class="footer_inner">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+
         <div class="footer_inner_left">
           <img src="../imgs/logo_02.png" alt="logo_02" />
           <p>ⓒ 농담 All rights reserved</p>
