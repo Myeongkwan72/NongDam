@@ -229,7 +229,7 @@
           top: 130px;
           width: 140px;
           padding: 20px;
-          li > a {
+          li {
             font-size: 1.4rem;
             padding: 8px;
           }
@@ -243,7 +243,6 @@
           background-color: #333;
           transition: 0.4s;
         }
-
         &.active {
           span:nth-child(1) {
             transform: translateY(6px) rotate(45deg);

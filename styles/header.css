@@ -78,15 +78,16 @@ header .header_inner nav .gnb {
   box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
   transition: all 0.7s;
 }
-header .header_inner nav .gnb li > a {
+header .header_inner nav .gnb li {
   font-size: 1.6rem;
   color: #000;
   text-decoration: none;
   padding: 10px;
   display: block;
   transition: color 0.4s;
+  cursor: pointer;
 }
-header .header_inner nav .gnb li > a:hover {
+header .header_inner nav .gnb li:hover {
   color: #f37100;
 }
 header .header_inner nav .gnb.active {

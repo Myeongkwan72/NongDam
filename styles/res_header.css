@@ -189,7 +189,7 @@
     width: 140px;
     padding: 20px;
   }
-  header .header_inner nav .gnb li > a {
+  header .header_inner nav .gnb li {
     font-size: 1.4rem;
     padding: 8px;
   }
