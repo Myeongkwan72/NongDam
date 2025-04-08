@@ -182,7 +182,7 @@ a {
   .detail_review .review_member {
     width: 100%;
     height: auto;
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +211,8 @@ a {
   .detail_review .review_member > div:first-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 100%;
   }
   .detail_review .review_member > div:first-child .member_content > div {
@@ -246,6 +248,8 @@ a {
   .detail_review .review_member > div:last-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 100%;
   }
   .detail_review .review_member > div:last-child .member_content > div {
@@ -732,7 +736,7 @@ a {
   .detail_review .review_star {
     width: 100%;
     height: auto;
-    margin: 46px auto;
+    margin: 0px auto;
     padding: 16px;
     background: #fffaf1;
     display: flex;
@@ -755,7 +759,7 @@ a {
   .detail_review .review_member {
     width: 100%;
     height: auto;
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -784,6 +788,8 @@ a {
   .detail_review .review_member > div:first-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 90%;
   }
   .detail_review .review_member > div:first-child .member_content > div {
@@ -819,6 +825,8 @@ a {
   .detail_review .review_member > div:last-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 90%;
   }
   .detail_review .review_member > div:last-child .member_content > div {
@@ -1340,9 +1348,8 @@ a {
   .detail_review .review_member {
     width: 100%;
     height: auto;
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .detail_review .review_member > div:first-child {
@@ -1368,6 +1375,8 @@ a {
   .detail_review .review_member > div:first-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 50%;
   }
   .detail_review .review_member > div:first-child .member_content > div {
@@ -1402,6 +1411,8 @@ a {
   .detail_review .review_member > div:last-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 50%;
   }
   .detail_review .review_member > div:last-child .member_content > div {
@@ -1949,7 +1960,7 @@ a {
   .detail_review .review_member {
     width: 100%;
     height: auto;
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1977,6 +1988,8 @@ a {
   .detail_review .review_member > div:first-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 50%;
   }
   .detail_review .review_member > div:first-child .member_content > div {
@@ -2011,6 +2024,8 @@ a {
   .detail_review .review_member > div:last-child .member_content img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 50%;
   }
   .detail_review .review_member > div:last-child .member_content > div {

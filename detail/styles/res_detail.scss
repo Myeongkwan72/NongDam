@@ -17,6 +17,7 @@
       border-radius: 10px;
       img {
         object-fit: cover;
+        height: fit-content;
         width: 100%;
       }
       & > div {
@@ -252,7 +253,7 @@
     .review_member {
       width: 100%;
       height: auto;
-      margin: 40px auto;
+      margin: 0px auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -605,6 +606,7 @@
       border-radius: 10px;
       img {
         object-fit: cover;
+        height: fit-content;
         width: 90%;
       }
       & > div {
@@ -818,7 +820,7 @@
     .review_star {
       width: 100%;
       height: auto;
-      margin: 46px auto;
+      margin: 0px auto;
       padding: 16px;
       background: map-get($map: $color, $key: sub-03);
       display: flex;
@@ -841,7 +843,7 @@
     .review_member {
       width: 100%;
       height: auto;
-      margin: 40px auto;
+      margin: 0px auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1189,6 +1191,7 @@
       border-radius: 10px;
       img {
         object-fit: cover;
+        height: fit-content;
         width: 50%;
       }
       & > div {
@@ -1441,9 +1444,9 @@
     .review_member {
       width: 100%;
       height: auto;
-      margin: 40px auto;
+      margin: 0px auto;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
       & > div:first-child {
         cursor: pointer;
@@ -1808,6 +1811,7 @@
       border-radius: 10px;
       img {
         object-fit: cover;
+        height: fit-content;
         width: 50%;
       }
       & > div {
@@ -2065,7 +2069,7 @@
     .review_member {
       width: 100%;
       height: auto;
-      margin: 40px auto;
+      margin: 0px auto;
       display: flex;
       flex-direction: column;
       align-items: center;
