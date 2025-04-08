@@ -159,7 +159,8 @@ body {
 }
 #event_page #event_main_section .inner #event_main #event_down_text #roulette_uparr img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #event_page #event_main_section .inner #event_main #event_down_text span {
   font-size: 1.8rem;
@@ -320,7 +321,8 @@ body {
 }
 #event_page #event_product .inner ul li img {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.85;
   transition: opacity 0.4s;
 }
