@@ -502,7 +502,7 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   main #main_con1 .main_inner {
     padding: 0 50px;
   }
