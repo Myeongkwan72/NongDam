@@ -126,11 +126,11 @@ if (headerCurrentUser) {
   headerLoginOut.appendChild(signUp);
 
   logIn.addEventListener("click", () => {
-    window.location.href = "./login.html";
+    window.location.href = "login.html";
   });
 
   signUp.addEventListener("click", () => {
-    window.location.href = "./sign.html";
+    window.location.href = "sign.html";
   });
 }
 
@@ -160,13 +160,13 @@ locationVegetable.forEach((vegetable) => {
 // 가공식품/기타 페이지 이동
 locationEtc.forEach((etc) => {
   etc.addEventListener("click", () => {
-    window.location.href = "../pages/etc.html";
+    window.location.href = "/pages/etc.html";
   });
 });
 
 // 이벤트 페이지 이동
 locationEvent.forEach((event) => {
   event.addEventListener("click", () => {
-    window.location.href = "../eventpromotion/event.html";
+    window.location.href = "eventpromotion/event.html";
   });
 });

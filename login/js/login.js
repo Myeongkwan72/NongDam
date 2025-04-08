@@ -75,3 +75,7 @@ signUp.addEventListener("click", () => {
 findId.addEventListener("click", () => {
   window.location.href = "./find-id.html";
 });
+
+findPw.addEventListener("click", () => {
+  window.location.href = "./find-pw.html";
+});
