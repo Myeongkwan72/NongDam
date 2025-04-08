@@ -446,6 +446,10 @@ body {
   font-size: 1.4rem;
   color: #666;
   cursor: pointer;
+  transition: color 0.4s;
+}
+#container .login_inner .login_01 ul li:hover {
+  color: #f37100;
 }
 #container .login_inner .login_02 {
   display: flex;

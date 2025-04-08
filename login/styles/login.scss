@@ -104,6 +104,10 @@ body {
           font-size: 1.4rem;
           color: map-get($map: $color, $key: gray-666);
           cursor: pointer;
+          transition: color 0.4s;
+          &:hover {
+            color: map-get($map: $color, $key: main-01);
+          }
         }
       }
     }

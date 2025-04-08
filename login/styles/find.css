@@ -440,17 +440,27 @@ body {
   height: 5px;
   background: #f37100;
 }
-#container .find_inner .find_id .find_input_name {
+#container .find_inner .find_id .find_by_name {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .find_inner .find_id .find_input_name p {
+#container .find_inner .find_id .find_by_name div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .find_inner .find_id .find_by_name div :nth-child(1) {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .find_inner .find_id .find_input_name input {
+#container .find_inner .find_id .find_by_name div :nth-child(2) {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .find_inner .find_id .find_by_name input {
   width: 450px;
   height: 60px;
   padding: 10px 20px;
@@ -460,35 +470,45 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .find_inner .find_id .find_input_name input:focus {
+#container .find_inner .find_id .find_by_name input:focus {
   color: #000;
 }
-#container .find_inner .find_id .find_input_name input:focus::-moz-placeholder {
+#container .find_inner .find_id .find_by_name input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .find_inner .find_id .find_input_name input:focus::placeholder {
+#container .find_inner .find_id .find_by_name input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .find_inner .find_id .find_input_name ::-moz-placeholder {
+#container .find_inner .find_id .find_by_name ::-moz-placeholder {
   color: #ccc;
 }
-#container .find_inner .find_id .find_input_name ::placeholder {
+#container .find_inner .find_id .find_by_name ::placeholder {
   color: #ccc;
 }
-#container .find_inner .find_id .find_input_call {
+#container .find_inner .find_id .find_by_call {
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#container .find_inner .find_id .find_input_call p {
+#container .find_inner .find_id .find_by_call div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .find_inner .find_id .find_by_call div :nth-child(1) {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .find_inner .find_id .find_input_call input {
+#container .find_inner .find_id .find_by_call div :nth-child(2) {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .find_inner .find_id .find_by_call input {
   width: 450px;
   height: 60px;
   padding: 10px 20px;
@@ -498,28 +518,77 @@ body {
   font-family: pretendard;
   font-size: 1.8rem;
 }
-#container .find_inner .find_id .find_input_call input:focus {
+#container .find_inner .find_id .find_by_call input:focus {
   color: #000;
 }
-#container .find_inner .find_id .find_input_call input:focus::-moz-placeholder {
+#container .find_inner .find_id .find_by_call input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-#container .find_inner .find_id .find_input_call input:focus::placeholder {
+#container .find_inner .find_id .find_by_call input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-#container .find_inner .find_id .find_input_call ::-moz-placeholder {
+#container .find_inner .find_id .find_by_call ::-moz-placeholder {
   color: #ccc;
 }
-#container .find_inner .find_id .find_input_call ::placeholder {
+#container .find_inner .find_id .find_by_call ::placeholder {
   color: #ccc;
 }
-#container .find_inner .find_id button {
+#container .find_inner .find_id .find_by_email {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+#container .find_inner .find_id .find_by_email div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .find_inner .find_id .find_by_email div :nth-child(1) {
+  font-family: pretendard;
+  font-size: 1.8rem;
+}
+#container .find_inner .find_id .find_by_email div :nth-child(2) {
+  font-family: pretendard;
+  font-size: 1.4rem;
+  color: #ff5454;
+}
+#container .find_inner .find_id .find_by_email input {
   width: 450px;
   height: 60px;
-  background: #ccc;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  opacity: 1;
+  font-family: pretendard;
+  font-size: 1.8rem;
+}
+#container .find_inner .find_id .find_by_email input:focus {
+  color: #000;
+}
+#container .find_inner .find_id .find_by_email input:focus::-moz-placeholder {
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .find_inner .find_id .find_by_email input:focus::placeholder {
+  transition: all 0.3s;
+  opacity: 0;
+}
+#container .find_inner .find_id .find_by_email ::-moz-placeholder {
+  color: #ccc;
+}
+#container .find_inner .find_id .find_by_email ::placeholder {
+  color: #ccc;
+}
+#container .find_inner .find_id .find_button {
+  width: 450px;
+  height: 60px;
+  background: #f37100;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -528,6 +597,6 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-#container .find_inner .find_id button.active {
-  background: #f37100;
+#container .find_inner .find_id .find_button:disabled {
+  background: #ccc;
 }
