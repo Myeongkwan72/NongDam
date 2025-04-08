@@ -381,7 +381,7 @@ main #main_con1 .main_inner {
   gap: 20px;
 }
 main #main_con1 .main_inner h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con1 .main_inner .main_it {
   width: 100%;
@@ -409,7 +409,6 @@ main #main_con1 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con1 .main_inner .main_it .main_type1 .img button,
@@ -711,7 +710,7 @@ main #main_con2 .main_inner .main_con2title:hover {
   gap: 24px;
 }
 main #main_con2 .main_inner .main_con2title h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con2 .main_inner .main_con2title img {
   width: 40px;
@@ -743,7 +742,6 @@ main #main_con2 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con2 .main_inner .main_it .main_type1 .img button,
@@ -879,14 +877,14 @@ main #main_con3 .main_inner {
   overflow: hidden;
 }
 main #main_con3 .main_inner .main_title2 .main_title3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 6px;
 }
 main #main_con3 .main_inner .main_title2 .main_title3 b {
   color: #f37100;
 }
 main #main_con3 .main_inner .main_title2 .line {
-  width: 220px;
+  width: 200px;
   height: 1px;
   background-color: #f37100;
 }
@@ -1017,7 +1015,7 @@ main #main_con4 .main_inner .main_sale_title {
   align-items: center;
 }
 main #main_con4 .main_inner .main_sale_title h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 main #main_con4 .main_inner .main_sale_title .sale_time {
   color: #fff;
@@ -1049,7 +1047,6 @@ main #main_con4 .main_inner .main_it .main_type2 .img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #f00;
   cursor: pointer;
 }
 main #main_con4 .main_inner .main_it .main_type2 .img button {
