@@ -20,50 +20,74 @@ menus.forEach((menu) => {
   });
 });
 
-// 헤더 로그인 & 로그아웃
-const headerLoginOut = document.querySelector(".header_login");
+// header 스크롤 체크, 히든
+let lastScrollTop = 0;
+const header = document.querySelector("#header");
 
-// 로컬 스토리지에서 유저 정보 찾아오기
-const headerNdUsers = localStorage.getItem("ndUsers");
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;
 
-// 현재 유저 정보
-const headerUsers = JSON.parse(localStorage.getItem("Users")) || [];
-const headerCurrentUser = headerUsers.find((user) => user.id === headerNdUsers);
+  if (scrollTop === 0) {
+    header.classList.remove("hidden");
+  }
+  // 스크롤을 내릴 때만 숨기기
+  else if (scrollTop > lastScrollTop && scrollTop > 50) {
+    header.classList.add("hidden");
+  }
+  // 스크롤을 올릴 때 보이게
+  else if (scrollTop < lastScrollTop) {
+    header.classList.remove("hidden");
+  }
 
-if (headerCurrentUser) {
-  const logOut = document.createElement("li");
-  logOut.innerText = "로그아웃";
-  const divider = document.createElement("p");
-  divider.innerText = "|";
-  const myPage = document.createElement("li");
-  myPage.innerText = "마이페이지";
+  if (window.scrollY > 50) {
+    header.classList.add("scroll");
+  } else {
+    header.classList.remove("scroll");
+  }
 
-  headerLoginOut.appendChild(logOut);
-  headerLoginOut.appendChild(divider);
-  headerLoginOut.appendChild(myPage);
+  lastScrollTop = scrollTop >= 0 ? scrollTop : 0;
+});
 
-  logOut.addEventListener("click", () => {
-    localStorage.removeItem("ndUsers");
-    alert("로그아웃 되었습니다.");
-    window.location.href = "./login.html";
+// footer 이벤트
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    document.querySelector(".up_btn").classList.add("active");
+  } else {
+    document.querySelector(".up_btn").classList.remove("active");
+  }
+});
+
+// footer topscroll event
+const up_btn = document.querySelector(".up_btn > a");
+
+up_btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
-} else {
-  const logIn = document.createElement("li");
-  logIn.innerText = "로그인";
-  const divider = document.createElement("p");
-  divider.innerText = "|";
-  const signUp = document.createElement("li");
-  signUp.innerText = "회원가입";
+});
 
-  headerLoginOut.appendChild(logIn);
-  headerLoginOut.appendChild(divider);
-  headerLoginOut.appendChild(signUp);
+// footer button bottom event
+document.addEventListener("scroll", function () {
+  const button = document.querySelector(".up_btn");
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+  const documentHeight = document.documentElement.scrollHeight;
+  let footerThreshold = 240;
+  if (window.innerWidth <= 767) {
+    footerThreshold = 180;
+  } else if (window.innerWidth <= 1440) {
+    footerThreshold = 200;
+  }
 
-  logIn.addEventListener("click", () => {
-    window.location.href = "./login.html";
-  });
+  const maxBottom = documentHeight - footerThreshold - windowHeight;
 
-  signUp.addEventListener("click", () => {
-    window.location.href = "./sign.html";
-  });
-}
+  if (scrollY >= maxBottom) {
+    button.style.position = "absolute";
+    button.style.bottom = `${footerThreshold}px`;
+  } else {
+    button.style.position = "fixed"; // 기본 상태 유지
+    button.style.bottom = "6vh"; // 기본 위치 유지
+  }
+});
