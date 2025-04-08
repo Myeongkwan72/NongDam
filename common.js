@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("hidden");
   }
   // 스크롤을 내릴 때만 숨기기
-  else if (scrollTop > lastScrollTop && scrollTop > 50) {
+  else if (scrollTop > lastScrollTop && scrollTop > 230) {
     header.classList.add("hidden");
   }
   // 스크롤을 올릴 때 보이게

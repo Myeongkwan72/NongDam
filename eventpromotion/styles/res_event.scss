@@ -1,7 +1,7 @@
 // Full Screen DeskTop
 @media screen and (max-width: 1440px) {
   #event_page {
-    #event_main_section { 
+    #event_main_section {
       height: 1200px;
       .inner {
         height: 1200px;
@@ -68,25 +68,25 @@
       }
     }
 
-    #event_modal_section{
+    #event_modal_section {
       #event_modal {
         width: 440px;
         height: 240px;
-        #modal_inner{
+        #modal_inner {
           gap: 25px;
           padding-top: 10px;
-    h2{
-      font-size: 2.2rem;
-      #modal_content {
-        font-size: 2.8rem;
-      }
-    }
-    #modal_btn {
-      width: 340px;
-      height: 52px;
-      border-radius: 26px;
-      font-size: 2rem;
-    }
+          h2 {
+            font-size: 2.2rem;
+            #modal_content {
+              font-size: 2.8rem;
+            }
+          }
+          #modal_btn {
+            width: 340px;
+            height: 52px;
+            border-radius: 26px;
+            font-size: 2rem;
+          }
         }
       }
     }
@@ -120,7 +120,7 @@
         }
         #event_product_subtext {
           font-size: 1.6rem;
-          margin:50px auto 10px;
+          margin: 50px auto 10px;
         }
         ul {
           gap: 36px;
@@ -219,7 +219,7 @@
               transition: all 0.2s;
             }
           }
-          #product_banner_img {
+          #product_banner_imginner {
             bottom: 20px;
           }
         }
@@ -311,7 +311,7 @@
             top: 535px;
             width: 110px;
             height: 110px;
-              font-size: 2.6rem;
+            font-size: 2.6rem;
           }
           #event_down_text {
             top: 840px;
@@ -327,26 +327,26 @@
       }
     }
 
-    #event_modal_section{
+    #event_modal_section {
       #event_modal {
         width: 380px;
         height: 200px;
         border-radius: 20px;
-        #modal_inner{
+        #modal_inner {
           gap: 20px;
           padding-top: 8px;
-    h2{
-      font-size: 1.8rem;
-      #modal_content {
-        font-size: 2.4rem;
-      }
-    }
-    #modal_btn {
-      width: 280px;
-      height: 48px;
-      border-radius: 24px;
-      font-size: 1.8rem;
-    }
+          h2 {
+            font-size: 1.8rem;
+            #modal_content {
+              font-size: 2.4rem;
+            }
+          }
+          #modal_btn {
+            width: 280px;
+            height: 48px;
+            border-radius: 24px;
+            font-size: 1.8rem;
+          }
         }
       }
     }
@@ -379,7 +379,7 @@
         }
         #event_product_subtext {
           font-size: 1.4rem;
-          margin:40px auto 10px;
+          margin: 40px auto 10px;
         }
         ul {
           gap: 36px;
@@ -528,7 +528,7 @@
             top: 430px;
             width: 90px;
             height: 90px;
-              font-size: 2.2rem;
+            font-size: 2.2rem;
           }
           #event_down_text {
             top: 660px;
@@ -544,25 +544,25 @@
       }
     }
 
-    #event_modal_section{
+    #event_modal_section {
       #event_modal {
         width: 320px;
         height: 180px;
-        #modal_inner{
+        #modal_inner {
           gap: 24px;
           padding-top: 8px;
-    h2{
-      font-size: 1.6rem;
-      #modal_content {
-        font-size: 2rem;
-      }
-    }
-    #modal_btn {
-      width: 240px;
-      height: 40px;
-      border-radius: 20px;
-      font-size: 1.6rem;
-    }
+          h2 {
+            font-size: 1.6rem;
+            #modal_content {
+              font-size: 2rem;
+            }
+          }
+          #modal_btn {
+            width: 240px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 1.6rem;
+          }
         }
       }
     }
@@ -599,7 +599,7 @@
         }
         #event_product_subtext {
           font-size: 1.2rem;
-          margin:30px auto 10px;
+          margin: 30px auto 10px;
         }
         ul {
           gap: 26px;
@@ -668,7 +668,7 @@
           &:hover {
             #product_banner_title {
               img {
-                left:320px;
+                left: 320px;
               }
             }
           }
@@ -705,7 +705,7 @@
               width: 70px;
             }
           }
-          #product_banner_img {
+          #product_banner_imginner {
             width: 110%;
             bottom: 20px;
           }
@@ -812,25 +812,25 @@
       }
     }
 
-    #event_modal_section{
+    #event_modal_section {
       #event_modal {
         width: 280px;
         height: 160px;
-        #modal_inner{
+        #modal_inner {
           gap: 20px;
           padding-top: 6px;
-    h2{
-      font-size: 1.4rem;
-      #modal_content {
-        font-size: 1.8rem;
-      }
-    }
-    #modal_btn {
-      width: 200px;
-      height: 32px;
-      border-radius: 16px;
-      font-size: 1.2rem;
-    }
+          h2 {
+            font-size: 1.4rem;
+            #modal_content {
+              font-size: 1.8rem;
+            }
+          }
+          #modal_btn {
+            width: 200px;
+            height: 32px;
+            border-radius: 16px;
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -914,7 +914,7 @@
                 bottom: 40px;
                 &:hover {
                   right: 8px;
-                  gap:12px;
+                  gap: 12px;
                 }
                 span {
                   font-size: 1rem;
@@ -935,7 +935,7 @@
           &:hover {
             #product_banner_title {
               img {
-                left:295px;
+                left: 295px;
               }
             }
           }
