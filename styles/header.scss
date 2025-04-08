@@ -17,14 +17,15 @@ header {
   top: 0;
   z-index: 3;
   transition: transform 0.8s ease;
-    &.scroll {
+  &.scroll {
     &::before {
       content: "";
       display: block;
       position: absolute;
       z-index: -1;
-      width: 100vw;
-      height:100px;
+      width: 100%;
+      // 100%가 맞는거
+      height: 100px;
       backdrop-filter: blur(10px);
     }
   }
@@ -54,6 +55,7 @@ header {
     position: relative;
     // trigger start
     nav {
+      display: none;
       width: 100%;
       padding: 0 20px;
       .gnb {
@@ -66,7 +68,7 @@ header {
         width: 160px;
         padding: 22px;
         box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
-        transition: all 0.7s;
+        transition: opacity 0.4s;
 
         li > a {
           font-size: 1.6rem;

@@ -110,6 +110,9 @@
     height: 110px;
     padding: 16px 20px;
   }
+  header .header_inner nav {
+    display: flex;
+  }
   header .header_inner .trigger {
     display: flex;
   }
