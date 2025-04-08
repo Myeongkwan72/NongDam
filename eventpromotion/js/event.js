@@ -128,3 +128,20 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 
 updateTimer();
+
+// event_banner event
+const banner_item = document.querySelector("#product_banner_img");
+const banner_track = document.querySelector("#product_banner_imginner");
+const banner_item_clone = banner_item.cloneNode(true);
+banner_track.appendChild(banner_item_clone);
+
+const setAnimationDuration = () => {
+  const itemWidth = banner_item.offsetWidth;
+  const cloneWidth = banner_item_clone.offsetWidth;
+  const totalWidth = itemWidth + cloneWidth;
+
+  const duration = totalWidth / 100; // 속도 = px/sec
+  banner_track.style.animationDuration = `${duration}s`;
+};
+
+setAnimationDuration();
