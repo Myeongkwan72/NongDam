@@ -1,0 +1,229 @@
+// reset
+@import "./reset.scss";
+
+// variables
+@import "./variables.scss";
+
+// header
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: map-get($map: $color, $key: light);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  transition: transform 0.4s ease;
+  &.scroll {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      // 100%가 맞는거
+      height: 100px;
+      backdrop-filter: blur(10px);
+    }
+  }
+  &.hidden {
+    transform: translateY(-100%);
+  }
+  .header_event {
+    width: 100%;
+    height: 50px;
+    background: map-get($map: $color, $key: main-01);
+    color: map-get($map: $color, $key: light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: map-get($map: $font, $key: pretendard);
+    font-size: 1.4rem;
+    .fa-chevron-right {
+      margin-left: 10px;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+  .header_inner {
+    width: 100%;
+    height: 180px;
+    padding: 20px 240px;
+    position: relative;
+    // trigger start
+    nav {
+      display: none;
+      width: 100%;
+      padding: 0 20px;
+      .gnb {
+        opacity: 0;
+        flex-direction: column;
+        background: #fff;
+        position: fixed;
+        top: 145px;
+        left: 20px;
+        width: 160px;
+        padding: 22px;
+        box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
+        transition: opacity 0.4s;
+
+        li > a {
+          font-size: 1.6rem;
+          color: map-get($map: $color, $key: dark);
+          text-decoration: none;
+          padding: 10px;
+          display: block;
+          transition: color 0.4s;
+
+          &:hover {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .trigger {
+      bottom: 20px;
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 5;
+      cursor: pointer;
+
+      span {
+        width: 22px;
+        height: 2px;
+        background-color: #333;
+        border-radius: 1px;
+        transition: 0.4s;
+      }
+
+      &.active {
+        span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        span:nth-child(2) {
+          opacity: 0;
+        }
+        span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+    // trigger end
+
+    .header_inner_left {
+      position: absolute;
+      bottom: 20px;
+      ul {
+        display: flex;
+        gap: 40px;
+        li {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 2rem;
+          cursor: pointer;
+          transition: color 0.4s;
+          &:hover {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+      }
+    }
+    .header_inner_right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+      .inner_right_top {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          font-size: 1.6rem;
+          font-family: map-get($map: $font, $key: pretendard);
+          li {
+            cursor: pointer;
+            transition: color 0.4s;
+            &:hover {
+              color: map-get($map: $color, $key: main-01);
+            }
+          }
+        }
+      }
+      .inner_right_bottom {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .search_bar {
+          width: 280px;
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px;
+          border-radius: 40px;
+          background: map-get($map: $color, $key: gray-f5f5f5);
+          input {
+            width: 90%;
+            background: inherit;
+            border: none;
+            opacity: 1;
+            font-family: map-get($map: $font, $key: pretendard);
+            &:focus {
+              outline: none;
+              &::placeholder {
+                transition: all 0.3s;
+                opacity: 0;
+              }
+            }
+          }
+          .fa-magnifying-glass {
+            cursor: pointer;
+          }
+        }
+        .res_magnify {
+          display: none;
+        }
+        .basket {
+          position: relative;
+          .fa-cart-shopping {
+            width: 40px;
+            height: 34px;
+            font-size: 2.8rem;
+            cursor: pointer;
+          }
+          p {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: map-get($map: $color, $key: main-01);
+            color: map-get($map: $color, $key: light);
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            font-family: map-get($map: $font, $key: pretendard);
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .header_inner_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

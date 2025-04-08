@@ -1,0 +1,69 @@
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+  }
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+  #container .find_inner {
+    width: 500px;
+  }
+  #container .find_inner .find_id h2 {
+    font-size: 2.4rem;
+  }
+  #container .find_inner .find_id .find_switch {
+    width: 300px;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_call p {
+    font-size: 1.8rem;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_call hr {
+    width: 150px;
+    height: 1px;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_call hr.active {
+    height: 3px;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_email p {
+    font-size: 1.8rem;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_email hr {
+    width: 150px;
+    height: 1px;
+  }
+  #container .find_inner .find_id .find_switch .find_switch_email hr.active {
+    height: 3px;
+  }
+  #container .find_inner .find_id .find_input_name {
+    width: 300px;
+  }
+  #container .find_inner .find_id .find_input_name p {
+    font-size: 1.4rem;
+  }
+  #container .find_inner .find_id .find_input_name input {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+  #container .find_inner .find_id .find_input_call {
+    width: 300px;
+  }
+  #container .find_inner .find_id .find_input_call p {
+    font-size: 1.4rem;
+  }
+  #container .find_inner .find_id .find_input_call input {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+  #container .find_inner .find_id button {
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}

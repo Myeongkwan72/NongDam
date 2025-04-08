@@ -1,0 +1,178 @@
+// reset
+@import "../../styles/reset.scss";
+
+// variables
+@import "../../styles/variables.scss";
+
+// header
+@import "../../styles/header.scss";
+
+// footer
+@import "../../styles/footer.scss";
+
+// common
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  font-size: 1.6rem;
+}
+
+// main
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .login_inner {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .login_01 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      h2 {
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 3.4rem;
+        font-weight: bold;
+      }
+      .login_input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .login_pw {
+          display: flex;
+          position: relative;
+          .fa-eye-slash {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            color: map-get($map: $color, $key: gray-999);
+          }
+        }
+        input {
+          width: 450px;
+          height: 60px;
+          border-radius: 10px;
+          padding: 10px 20px;
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.8rem;
+          border: 1px solid map-get($map: $color, $key: gray-999);
+          &:focus {
+            color: map-get($map: $color, $key: dark);
+            &::placeholder {
+              transition: all 0.3s;
+              opacity: 0;
+            }
+          }
+        }
+        ::placeholder {
+          color: map-get($map: $color, $key: gray-ccc);
+        }
+      }
+      button {
+        width: 450px;
+        height: 60px;
+        background: map-get($map: $color, $key: main-01);
+        color: map-get($map: $color, $key: light);
+        border: none;
+        border-radius: 10px;
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        li {
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.4rem;
+          color: map-get($map: $color, $key: gray-666);
+          cursor: pointer;
+          transition: color 0.4s;
+          &:hover {
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+      }
+    }
+    .login_02 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .login_social_title {
+        width: 450px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        hr {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          border: 1px solid map-get($map: $color, $key: main-02);
+        }
+        p {
+          padding: 10px;
+          font-family: map-get($map: $font, $key: pretendard);
+          font-size: 1.4rem;
+          font-weight: bold;
+          background: map-get($map: $color, $key: light);
+          color: map-get($map: $color, $key: main-02);
+          z-index: 1;
+        }
+      }
+      .login_social_kakao {
+        width: 450px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #fee500;
+        cursor: pointer;
+        p {
+          font-family: map-get($map: $color, $key: pretendard);
+          font-size: 1.8rem;
+          color: map-get($map: $color, $key: dark);
+        }
+      }
+      .login_social_naver {
+        width: 450px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #03c75a;
+        cursor: pointer;
+        p {
+          font-family: map-get($map: $color, $key: pretendard);
+          font-size: 1.8rem;
+          color: map-get($map: $color, $key: light);
+        }
+      }
+    }
+  }
+}

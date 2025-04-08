@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/9be338970f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom CSS & detail/header/footer JS -->
+    <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/res_header.css" />
+    <script defer src="./js/detail.js"></script>
+    <script defer src="../common.js"></script>
+    <!-- Media Screen -->
+    <link rel="stylesheet" href="./styles/res_detail.css" />
+    <!-- domain icon -->
+    <link rel="icon" type="images/png" href="../logo/logo.png" />
+    <title>상세페이지</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header_event">
+        <p>
+          지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
+          <i class="fa-solid fa-chevron-right"></i>
+        </p>
+      </div>
+      <div class="header_inner">
+        <!-- trigger start -->
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">과일</a></li>
+            <li><a href="#">채소</a></li>
+            <li><a href="#">가공식품/기타</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- trigger end -->
+
+        <div class="header_inner_left">
+          <ul>
+            <li>과일</li>
+            <li>채소</li>
+            <li>가공식품 / 기타</li>
+            <li>이벤트</li>
+          </ul>
+        </div>
+        <div class="header_inner_right">
+          <div class="inner_right_top">
+            <ul>
+              <li>로그인</li>
+              <p>|</p>
+              <li>마이페이지</li>
+              <p>|</p>
+              <li>회원가입</li>
+            </ul>
+          </div>
+          <div class="inner_right_bottom">
+            <div class="search_bar">
+              <input type="text" placeholder="검색어를 입력해주세요." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <i class="fa-solid fa-magnifying-glass res_magnify"></i>
+            <div class="basket">
+              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+            </div>
+          </div>
+        </div>
+        <div class="header_inner_logo" id="header_logo">
+          <img src="../imgs/logo.png" alt="logo" />
+        </div>
+      </div>
+    </header>
+    <main class="detail_container">
+      <!-- 상품 기본 정보 -->
+      <section class="detail_info">
+        <figure class="info_img">
+          <img src="./imgs/img8.png" alt="img1" />
+        </figure>
+
+        <article class="img_info">
+          <div class="info_title">
+            <h1>유기농 찰토마토 2kg</h1>
+            <p>탄탄하고 찰진 식감의 유기농 토마토</p>
+          </div>
+          <section class="info_price">
+            <span class="price_one">29<span class="price_sub">%</span></span>
+            <span class="price_two"
+              >25,489<span class="price_sub">원</span></span
+            >
+            <div class="price_three"><del>원가 35,900원</del></div>
+          </section>
+          <div class="info_review">
+            <i class="fas fa-star"></i>
+            <span class="review_rating"> 4.2 </span>
+            <span class="review_re">리뷰: </span
+            ><span class="review_few">232건</span>
+            <p>원산지: 국산</p>
+          </div>
+          <div class="info_btns">
+            <button class="organic_btn">유기농</button>
+            <button class="event_btn">이벤트</button>
+          </div>
+          <section class="info_option">
+            <table>
+              <tbody>
+                <tr>
+                  <th>재배환경</th>
+                  <td>무농약, 화학농약X, 생장촉진제X</td>
+                </tr>
+                <tr>
+                  <th>판매단위</th>
+                  <td>1팩</td>
+                </tr>
+                <tr>
+                  <th>배송비</th>
+                  <td>무료 배송</td>
+                </tr>
+                <tr>
+                  <th>배송</th>
+                  <td>
+                    23시 전 주문 시 수도권/충청 내일 아침 7시 전 도착<br />(그
+                    외 지역 아침 8시 전 도착)
+                  </td>
+                </tr>
+                <tr>
+                  <th>안내사항</th>
+                  <td>
+                    신선식품 특성상 크기 및 형태 차이가 있을 수 있습니다.<br />3%
+                    중량 차이가 있을 수 있습니다.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <div class="info_purchase">
+            <button>장바구니에 담기</button>
+          </div>
+        </article>
+      </section>
+
+      <div class="detail_line"></div>
+
+      <!-- 리뷰 섹션 -->
+      <section class="detail_review">
+        <div class="detail_content">
+          <div class="review_text">
+            <span class="text_review">리뷰</span>
+            <span class="text_few">232건</span>
+          </div>
+          <div class="review_star">
+            <span class="star">평균 별점</span>
+            <span class="rating"><span class="rating_one">4.2</span> / 5</span>
+          </div>
+          <div class="members">
+            <div class="review_member">
+              <div>
+                <p>
+                  김 * 연
+                  <span>★★★★★</span>
+                </p>
+                <div class="member_content">
+                  <img src="./imgs/img1.png" alt="img1" />
+                  <div>
+                    <span>
+                      못난이들도 있긴 하지만.. 전체적으로 너무 이뻐요!! 이런
+                      상품들이 선택받지 못하고 버려진다는게 너무
+                      마음아프네요..😢 배송도 빠르고 상품이 너무 좋아요!!
+                      정기배송 시켜볼 생각이에요!!
+                    </span>
+                    <p>
+                      2025.03.10 |
+                      <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>
+                  이 * 진
+                  <span>★★★★☆</span>
+                </p>
+                <div class="member_content">
+                  <img src="./imgs/img2.png" alt="img2" />
+                  <div>
+                    <span>
+                      다들 너무 싱싱하고 좋았어요. 못난이가 어디있나 찾아도 못
+                      찾겠어요. ^^ 샐러드 박스는 저에게 주는 선물 같은 정기배송
+                      시켜봤는데 선한데 감자도 달달포슬한 편이고 버섯도 세가지
+                      종류나
+                    </span>
+                    <p>
+                      2025.01.02 |
+                      <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hide_members">
+              <div class="review_member">
+                <div>
+                  <p>
+                    김 * 연
+                    <span>★★★★★</span>
+                  </p>
+                  <div class="member_content">
+                    <img src="./imgs/img1.png" alt="img1" />
+                    <div>
+                      <span>
+                        못난이들도 있긴 하지만.. 전체적으로 너무 이뻐요!! 이런
+                        상품들이 선택받지 못하고 버려진다는게 너무
+                        마음아프네요..😢 배송도 빠르고 상품이 너무 좋아요!!
+                        정기배송 시켜볼 생각이에요!!
+                      </span>
+                      <p>
+                        2025.03.10 |
+                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p>
+                    이 * 진
+                    <span>★★★★☆</span>
+                  </p>
+                  <div class="member_content">
+                    <img src="./imgs/img2.png" alt="img2" />
+                    <div>
+                      <span>
+                        다들 너무 싱싱하고 좋았어요. 못난이가 어디있나 찾아도 못
+                        찾겠어요. ^^ 샐러드 박스는 저에게 주는 선물 같은
+                        정기배송 시켜봤는데 선한데 감자도 달달포슬한 편이고
+                        버섯도 세가지 종류나
+                      </span>
+                      <p>
+                        2025.01.02 |
+                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review_member">
+                <div>
+                  <p>
+                    김 * 연
+                    <span>★★★★★</span>
+                  </p>
+                  <div class="member_content">
+                    <img src="./imgs/img1.png" alt="img1" />
+                    <div>
+                      <span>
+                        못난이들도 있긴 하지만.. 전체적으로 너무 이뻐요!! 이런
+                        상품들이 선택받지 못하고 버려진다는게 너무
+                        마음아프네요..😢 배송도 빠르고 상품이 너무 좋아요!!
+                        정기배송 시켜볼 생각이에요!!
+                      </span>
+                      <p>
+                        2025.03.10 |
+                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p>
+                    이 * 진
+                    <span>★★★★☆</span>
+                  </p>
+                  <div class="member_content">
+                    <img src="./imgs/img2.png" alt="img2" />
+                    <div>
+                      <span>
+                        다들 너무 싱싱하고 좋았어요. 못난이가 어디있나 찾아도 못
+                        찾겠어요. ^^ 샐러드 박스는 저에게 주는 선물 같은
+                        정기배송 시켜봤는데 선한데 감자도 달달포슬한 편이고
+                        버섯도 세가지 종류나
+                      </span>
+                      <p>
+                        2025.01.02 |
+                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="review_more">232건 리뷰 더 보기 ▼</button>
+        </div>
+      </section>
+
+      <div class="detail_line"></div>
+
+      <!-- 상품 상세 섹션 -->
+      <section class="detail_product">
+        <div class="product_title">
+          <h1>상품 설명</h1>
+          <img src="./imgs/img3.png" alt="img3" />
+          <div class="img_group">
+            <img src="./imgs/img4.png" alt="img4" />
+            <img src="./imgs/img5.png" alt="img5" />
+            <img src="./imgs/img6.png" alt="img6" />
+            <img src="./imgs/img7.png" alt="img7" />
+          </div>
+        </div>
+        <div class="product_thumb">
+          <div class="thumb_one">
+            <div>
+              <p>1</p>
+              <h4>크기와 모양을 기준으로 선별하지 않아요.</h4>
+              <span>
+                일반 찰토마토는 크기와 모양을 일정하게 선별하고, 개성만점
+                오돌토돌 찰토마토는 다양해요. <br />
+                갈라진 모양, 호박 모양 등 다양한 모습을 가진 토마토를 차별없이
+                담아드리고 있어요.
+              </span>
+            </div>
+            <img src="./imgs/img4.png" alt="thumb" />
+          </div>
+          <div class="thumb_one">
+            <div>
+              <p>2</p>
+              <h4>수확시기에 따라 맛이 조금씩 달라요.</h4>
+              <span>
+                토마토는 생물이기 때문에 수확하는 시기와 날씨에 따라서 맛이
+                달라지는 게 당연해요! <br />특히나 긴 장마가 있는 시기에는 맛의
+                차이가 더 도드라질 수 있어요. <br />
+                당도 조절제 없이 자연의 변화를 고스란히 담은 토마토 본연의 맛을
+                알아봐주시길 부탁드립니다.
+              </span>
+            </div>
+            <img src="./imgs/img5.png" alt="thumb" />
+          </div>
+          <div class="thumb_one">
+            <div>
+              <p>3</p>
+              <h4>꼭지가 떨어지거나, 말라 보일 수 있어요.</h4>
+              <span>
+                특성상 꼭지가 쉽게 떨어지고, 맛과 향을 위해 물 조절을 하게 되면
+                노랗게 변하거나 마르기도 해요.<br />
+                토마토가 자라는 과정에서 자연스럽게 나타나는 현상으로 절대
+                오래된 것이 아니에요. <br />농담에서 보내드리는 방울토마토는
+                매일 새벽 수확해 당일 출고를 원칙으로 합니다.
+              </span>
+            </div>
+            <img src="./imgs/img6.png" alt="thumb" />
+          </div>
+          <div class="thumb_one">
+            <div>
+              <p>4</p>
+              <h4>배송중 금이 가거나 터진 토마토가 나올 수 있어요.</h4>
+              <span>
+                덥고 습한 날씨엔 토마토가 열을 많이 받거나 습을 흡수해 과피에
+                금이가는 ‘열과'가 종종 발생해요.<br />
+                포장 작업을 할 때 열과는 모두 선별하고 있지만 배송중에 서로
+                부딪혀 열과가 생기기도 해요.<br />
+                터진 토마토를 보냈다고 오해하기 쉽지만 드시는 데에는 문제가
+                없답니다.<br />
+                정도가 심한 경우 고객 센터를 통해 문의 남겨주시면 신속한 처리를
+                도와드려요.
+              </span>
+            </div>
+            <img src="./imgs/img7.png" alt="thumb" />
+          </div>
+        </div>
+      </section>
+
+      <div class="detail_line"></div>
+
+      <!-- 문의 섹션 -->
+      <section class="detail_faq">
+        <div class="faq_title">
+          <span>문의</span>
+          <button class="contact_us">문의하기</button>
+        </div>
+        <div class="faq_subTitle">
+          상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
+          사전동의 없이 담당 게시판으로 이동될 수 있습니다. <br />배송관련,
+          주문(취소/교환/환불)관련 문의 및 요청사항은 농담 내 1:1문의에
+          남겨주세요.
+        </div>
+        <div class="table_title">
+          <div class="title_left">제목</div>
+          <div class="title_right">
+            <div>작성자</div>
+            <div>작성일</div>
+            <div>상태</div>
+          </div>
+        </div>
+        <table class="faq_table">
+          <tr class="faq_row">
+            <td class="left">배송 관련 문의 <i class="fas fa-lock"></i></td>
+            <td class="right faq_name">이*일</td>
+            <td class="right faq_date">2025.03.15</td>
+            <td class="right faq_comple">답변완료</td>
+          </tr>
+          <tr>
+            <td class="left">상품 상태 문의 <i class="fas fa-lock"></i></td>
+            <td class="right faq_name">송*관</td>
+            <td class="right faq_date">2025.02.02</td>
+            <td class="right faq_comple">답변완료</td>
+          </tr>
+          <tr>
+            <td class="left">환불 가능 여부 <i class="fas fa-lock"></i></td>
+            <td class="right faq_name">최*연</td>
+            <td class="right faq_date">2025.01.13</td>
+            <td class="right">답변대기</td>
+          </tr>
+          <tr>
+            <td class="left">환불 가능 여부 <i class="fas fa-lock"></i></td>
+            <td class="right faq_name">장*아</td>
+            <td class="right faq_date">2025.01.12</td>
+            <td class="right faq_comple">답변완료</td>
+          </tr>
+          <tr>
+            <td class="left">환불 가능 여부 <i class="fas fa-lock"></i></td>
+            <td class="right faq_name">박*진</td>
+            <td class="right faq_date">2024.12.23</td>
+            <td class="right">답변대기</td>
+          </tr>
+        </table>
+        <div class="faq_number">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+      </section>
+      <div class="modal_overlay" style="display: none">
+        <div class="modal">
+          <div class="modal_header">
+            <h2>문의 등록</h2>
+            <span class="modal_close">&times;</span>
+          </div>
+          <div class="modal_body">
+            <input type="text" placeholder="제목을 입력하세요" />
+            <textarea placeholder="문의 내용을 입력하세요"></textarea>
+          </div>
+          <div class="modal_footer">
+            <button class="modal_submit">등록</button>
+          </div>
+        </div>
+      </div>
+      <div class="detail_line"></div>
+      <!-- 보상정책 -->
+      <section class="detail_policy">
+        <div class="policy_title">
+          <h1>사고보상정책</h1>
+          <p class="title_te">
+            받아보신 상품에 이상이 있으신가요? <br />아래 절차에 따라 요청을
+            남겨주시면 빠르게 도와드리겠습니다.
+          </p>
+        </div>
+        <div class="policy_contents">
+          <!-- 사고 보상 요청 방법 섹션 -->
+          <section class="policy_first">
+            <h2>사고 보상 요청 방법</h2>
+            <p>
+              <strong>
+                상품을 받으신 직후 상태를 확인해주세요.<br />
+                이상이 있는 부분이 있다면 사진을 촬영해주세요.
+              </strong>
+            </p>
+            <ul>
+              <li>&#8226; 수령 후 1일 이내에 접수가 가능합니다.</li>
+              <li>&#8226; 파손 사고 시 배송 송장 사진도 함께 촬영해주세요.</li>
+              <li>
+                &#8226; 문제 부분을 확인할 수 있도록 3~4장 이상 촬영해주세요.
+              </li>
+              <li>
+                &#8226; 사진은 이상이 있는 부분과 없는 부분 전체를 확인할 수
+                있어야 해요.
+              </li>
+            </ul>
+            <p>
+              <strong>
+                홈페이지 로그인 후 마이페이지 / 챗봇에 사진과 함께 접수해주세요.
+              </strong>
+            </p>
+
+            <ul>
+              <li>
+                &#8226; 마이페이지 &gt; 주문내역 &gt; 교환/환불 문의를 통해
+                접수가 가능합니다.
+              </li>
+              <li>&#8226; 챗봇 &gt; 메뉴 선택 후 문의 접수 가능합니다.</li>
+            </ul>
+            <p>
+              <strong>
+                검토 후 처리 결과를 홈페이지 및 문자 알림으로 알려드려요.
+              </strong>
+            </p>
+            <ul>
+              <li>
+                &#8226; 접수 완료 후 1 ~ 3일 내 처리하여 문자 알림 및 홈페이지를
+                통해 알려드립니다.
+              </li>
+            </ul>
+          </section>
+          <!-- 사고 보상이 불가한 경우 섹션 -->
+          <section class="policy_last">
+            <h2>사고 보상이 불가한 경우</h2>
+            <table>
+              <tr>
+                <td>
+                  <strong>1)</strong>
+                  수령 후 단순 변심, 기호 등에 의한 요청인 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>2)</strong>
+                  수령 후 1일 이상 경과, 제품의 30%이상 섭취 한 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>3)</strong>
+                  접수내용에 사진이 첨부되지 않아 품질 문제를 확인하기 어려운
+                  경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>4)</strong>
+                  고객의 책임(지연 개봉, 부적절한 보관 방법 등)으로 상품이 손실
+                  또는 훼손 된 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>5)</strong>
+                  수령 후 시간이 지나 상품 가치가 현저히 감소한 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>6)</strong>
+                  연락처 및 주소를 잘못 기입하여 배송 사고가 일어난 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>7)</strong>
+                  상품 상세 페이지에 안내되어 있는 내용인 경우
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>8)</strong>
+                  택배사 배송 완료 후 상품이 분실된 경우
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer_inner_left">
+          <img src="../imgs/logo_02.png" alt="logo_02" />
+          <p>ⓒ 농담 All rights reserved</p>
+        </div>
+        <div class="footer_inner_center">
+          <ul>
+            <li>법인명 (상호) : 주식회사 농담 | 대표이사 : 송명관</li>
+            <li>사업자등록번호 : 123-45-67890</li>
+            <li>주소지 : 서울시 서초구 서초대로77길 41 대동2빌딩 9층</li>
+            <li>서비스 이용약관 | 개인정보 처리방침</li>
+          </ul>
+        </div>
+        <div class="footer_inner_right">
+          <div class="inner_right_top">
+            <ul>
+              <li>고객센터</li>
+              <li>02-1234-5678</li>
+            </ul>
+          </div>
+          <div class="inner_right_bottom">
+            <ul class="right_bottom_left">
+              <li>고객센터 운영시간 :</li>
+              <li>(운영시간에 순차적 답변)</li>
+            </ul>
+            <ul class="right_bottom_right">
+              <li>월 ~ 토요일 | 오전 7시 ~ 오후 6시</li>
+              <li>일 & 공휴일 | 오전 7시 ~ 오후 4시</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

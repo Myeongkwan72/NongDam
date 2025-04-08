@@ -1,0 +1,158 @@
+// reset
+@import "../../styles/reset.scss";
+
+// variables
+@import "../../styles/variables.scss";
+
+// header
+@import "../../styles/header.scss";
+
+// footer
+@import "../../styles/footer.scss";
+
+@mixin find-switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-family: map-get($map: $font, $key: pretendard);
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: map-get($map: $color, $key: gray-ccc);
+    &.active {
+      color: map-get($map: $color, $key: main-01);
+    }
+    cursor: pointer;
+  }
+  hr {
+    width: 225px;
+    height: 2px;
+    border: none;
+    background: map-get($map: $color, $key: gray-ccc);
+    &.active {
+      height: 5px;
+      background: map-get($map: $color, $key: main-01);
+    }
+  }
+}
+
+@mixin find-div {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :nth-child(1) {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.8rem;
+    }
+    :nth-child(2) {
+      font-family: map-get($map: $font, $key: pretendard);
+      font-size: 1.4rem;
+      color: map-get($map: $color, $key: red);
+    }
+  }
+  input {
+    width: 450px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 1px solid map-get($map: $color, $key: gray-999);
+    border-radius: 10px;
+    opacity: 1;
+    font-family: map-get($map: $font, $key: pretendard);
+    font-size: 1.8rem;
+    &:focus {
+      color: map-get($map: $color, $key: dark);
+      &::placeholder {
+        transition: all 0.3s;
+        opacity: 0;
+      }
+    }
+  }
+  ::placeholder {
+    color: map-get($map: $color, $key: gray-ccc);
+  }
+}
+
+// common
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  font-size: 1.6rem;
+}
+
+// main
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .find_inner {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    .find_id {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      h2 {
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 3.4rem;
+        font-weight: bold;
+      }
+      .find_switch {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .find_switch_call {
+          @include find-switch;
+        }
+        .find_switch_email {
+          @include find-switch;
+        }
+      }
+      .find_by_name {
+        @include find-div;
+      }
+      .find_by_call {
+        @include find-div;
+      }
+      .find_by_email {
+        @include find-div;
+        display: none;
+      }
+      .find_button {
+        width: 450px;
+        height: 60px;
+        background: map-get($map: $color, $key: main-01);
+        border: none;
+        border-radius: 10px;
+        color: map-get($map: $color, $key: light);
+        font-family: map-get($map: $font, $key: pretendard);
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        &:disabled {
+          background: map-get($map: $color, $key: gray-ccc);
+        }
+      }
+    }
+  }
+}

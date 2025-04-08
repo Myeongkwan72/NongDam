@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c268412579.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="./styles/event.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/res_header.css" />
+    <link rel="stylesheet" href="./styles/res_event.css" />
+    <script defer src="./js/event.js"></script>
+    <script defer src="../common.js"></script>
+    <title>Event page</title>
+  </head>
+  <body>
+    <main id="event_page">
+      <header id="header">
+        <div class="header_event">
+          <p>이벤트 종료까지 | <b class="event_timer">5일 16 : 05 : 39</b></p>
+        </div>
+        <div class="header_inner">
+          <!-- trigger start -->
+          <nav>
+            <ul class="gnb">
+              <li><a href="#">과일</a></li>
+              <li><a href="#">채소</a></li>
+              <li><a href="#">가공식품/기타</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </nav>
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- trigger end -->
+
+          <div class="header_inner_left">
+            <ul>
+              <li>과일</li>
+              <li>채소</li>
+              <li>가공식품 / 기타</li>
+              <li>이벤트</li>
+            </ul>
+          </div>
+          <div class="header_inner_right">
+            <div class="inner_right_top">
+              <ul>
+                <li>로그인</li>
+                <p>|</p>
+                <li>마이페이지</li>
+                <p>|</p>
+                <li>회원가입</li>
+              </ul>
+            </div>
+            <div class="inner_right_bottom">
+              <div class="search_bar">
+                <input type="text" placeholder="검색어를 입력해주세요." />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <i class="fa-solid fa-magnifying-glass res_magnify"></i>
+              <div class="basket">
+                <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+              </div>
+            </div>
+          </div>
+          <div class="header_inner_logo" id="header_logo">
+            <img src="../imgs/logo.png" alt="logo" />
+          </div>
+        </div>
+      </header>
+
+      <!-- event main section -->
+      <section id="event_main_section">
+        <div class="inner">
+          <div id="event_main">
+            <div id="event_main_text">
+              <h4>농담 회원이라면 누구나 참여 가능</h4>
+              <span id="underline"></span>
+              <h2><b>100%</b> 당첨 확정!</h2>
+              <h3>매일매일 <b>룰렛이벤트</b></h3>
+              <span>타 쿠폰과 중복 적용 가능 / 일부 상품 제외</span>
+            </div>
+            <div id="event_roulette">
+              <img src="../imgs/Coin-1.png" alt="Coin-1" />
+              <img src="../imgs/Coin-2.png" alt="Coin-2" />
+              <img src="../imgs/Coin-3.png" alt="Coin-3" />
+              <img src="../imgs/Coin-4.png" alt="Coin-4" />
+              <img src="../imgs/roulette_arr.png" alt="roulette_arr" />
+              <img src="../imgs/event_titlesub.png" alt="" />
+              <img
+                id="event_roulette_bg"
+                src="../imgs/event_roulette.png"
+                alt="event_roulette"
+              />
+            </div>
+            <button id="roulette_center">Start!</button>
+            <div id="event_down_text">
+              <div id="roulette_uparr">
+                <img src="../imgs/roulette_uparr.png" alt="roulette_uparr" />
+              </div>
+              <span>룰렛 가운데 버튼을 눌러보세요</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal after -->
+      <div id="event_modal_section">
+        <div id="event_before"></div>
+        <div id="event_modal">
+          <div id="modal_inner">
+            <h2><b id="modal_content">포인트</b>에 당첨되셨습니다!</h2>
+            <button id="modal_btn">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- event middle plus -->
+      <div id="event_middle_plus">
+        <div class="middle_plus"></div>
+        <div class="middle_plus"></div>
+      </div>
+
+      <!-- event product -->
+      <section id="event_product">
+        <div class="inner">
+          <div id="event_product_up">
+            <div class="product_title_line"></div>
+            <div id="event_product_title">
+              <h4>쿠폰과 함께쓰면 대폭 할인!</h4>
+              <h3>농담 PICK 추천상품</h3>
+            </div>
+            <div class="product_title_line"></div>
+          </div>
+          <span id="event_product_subtext">이벤트 쿠폰과 중복할인 가능</span>
+          <ul>
+            <li>
+              <img src="../imgs/event_product_1.jpg" alt="event_product_1" />
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>10<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>유기농 송이 어글리바나나</span>
+                  <h3>어글리 바나나 1.5kg</h3>
+                  <div class="product_text_price">
+                    <h2>16,200원</h2>
+                    <span>18,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img
+                    class="product_godet_arr"
+                    src="../imgs/product_godet_arr.png"
+                    alt="product_godet_arr"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_2.jpg" alt="event_product_1" />
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>취향껏 골라먹는 파프리카 2종과 당조고추</span>
+                  <h3>파프리카 2종/당조고추</h3>
+                  <div class="product_text_price">
+                    <h2>13,300원</h2>
+                    <span>14,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img
+                    class="product_godet_arr"
+                    src="../imgs/product_godet_arr.png"
+                    alt="product_godet_arr"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_3.jpg" alt="event_product_1" />
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>못난이 무농약 토마토로 만들었어요</span>
+                  <h3>그대로 토마토</h3>
+                  <div class="product_text_price">
+                    <h2>30,400원</h2>
+                    <span>32,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img
+                    class="product_godet_arr"
+                    src="../imgs/product_godet_arr.png"
+                    alt="product_godet_arr"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="../imgs/event_product_4.jpg" alt="event_product_1" />
+              <div class="event_product_inner">
+                <div class="event_product_sale">
+                  <h2>5<span>%</span></h2>
+                </div>
+                <div class="event_product_text">
+                  <span>향긋한 제철 진주 딸기</span>
+                  <h3>진주 딸기 1kg</h3>
+                  <div class="product_text_price">
+                    <h2>20,900원</h2>
+                    <span>22,000원</span>
+                  </div>
+                </div>
+                <div class="event_product_godet">
+                  <span>담으러 가기</span>
+                  <img
+                    class="product_godet_arr"
+                    src="../imgs/product_godet_arr.png"
+                    alt="product_godet_arr"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="event_product_banner">
+            <span>지금 농담에 신규가입하면</span>
+            <div id="product_banner_title">
+              <div></div>
+              <h4>인기상품 10종이 <b>100원부터</b></h4>
+              <img
+                src="../imgs/product_godet_warr.png"
+                alt="product_godet_warr"
+              />
+            </div>
+            <div id="product_banner_imginner">
+              <img
+                id="product_banner_img"
+                src="../imgs/event_product_banner.png"
+                alt="event_product_banner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- event caution -->
+      <section id="event_caution">
+        <div class="inner">
+          <h4>꼭 읽어주세요</h4>
+          <p>
+            • 본 이벤트는 농담 회원을 대상으로 진행됩니다.<br />• 추가 참여
+            기회는 아래의 경우에만 제공되므로 반드시 양지 부탁드립니다.<br />1)
+            초대를 받은 친구가 기존 회원인 경우: 로그인 후 이벤트 참여까지
+            완료시 참여 기회 추가 제공<br />2) 초대를 받은 친구가 농담 회원이
+            아닌 경우 공유 버튼 링크를 통해.<br />• 초대를 받은 대상자가
+            일반회원이 아닌 통합회원 SNS 회원으로 가입 시 추가 참여 기회는
+            인정되지 않습니다.<br />• 친구 초대로 최대 10번의 추가 참여 기회를
+            받을 수 있으나, 초대를 한 10명의 대상자는 모두 달라야 합니다.<br />•
+            지급된 포인트는 [마이페이지] - [혜택이벤트]에서 확인하실 수
+            있습니다.<br />• 지급된 포인트는 타인에게 양도할 수 없으며,
+            유효기간이 만료되는 경우 사용이 불가합니다.<br />• 정상적인 방법으로
+            참여하지 않았음이 확인된 경우, 혜택 지급은 제한되며 지급된 혜택은
+            회수됩니다.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_inner">
+          <div class="up_btn">
+            <a href="#header">
+              <div class="up_arrow_container">
+                <i class="fas fa-chevron-up"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="footer_inner_left">
+            <img src="../imgs/logo_02.png" alt="logo_02" />
+            <p>ⓒ 농담 All rights reserved</p>
+          </div>
+          <div class="footer_inner_center">
+            <ul>
+              <li>법인명 (상호) : 주식회사 농담 | 대표이사 : 송명관</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>주소지 : 서울시 서초구 서초대로77길 41 대동2빌딩 9층</li>
+              <li>서비스 이용약관 | 개인정보 처리방침</li>
+            </ul>
+          </div>
+          <div class="footer_inner_right">
+            <div class="inner_right_top">
+              <ul>
+                <li>고객센터</li>
+                <li>02-1234-5678</li>
+              </ul>
+            </div>
+            <div class="inner_right_bottom">
+              <ul class="right_bottom_left">
+                <li>고객센터 운영시간 :</li>
+                <li>(운영시간에 순차적 답변)</li>
+              </ul>
+              <ul class="right_bottom_right">
+                <li>월 ~ 토요일 | 오전 7시 ~ 오후 6시</li>
+                <li>일 & 공휴일 | 오전 7시 ~ 오후 4시</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
