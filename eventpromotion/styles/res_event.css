@@ -197,7 +197,7 @@
     left: 385px;
     transition: all 0.2s;
   }
-  #event_page #event_product .inner #event_product_banner #product_banner_img {
+  #event_page #event_product .inner #event_product_banner #product_banner_imginner {
     bottom: 20px;
   }
   #event_page #event_caution .inner {
@@ -625,7 +625,7 @@
     transition: all 0.2s;
     width: 70px;
   }
-  #event_page #event_product .inner #event_product_banner #product_banner_img {
+  #event_page #event_product .inner #event_product_banner #product_banner_imginner {
     width: 110%;
     bottom: 20px;
   }

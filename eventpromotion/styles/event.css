@@ -449,10 +449,14 @@ body {
   left: 420px;
   transition: all 0.2s;
 }
-#event_page #event_product .inner #event_product_banner #product_banner_img {
+#event_page #event_product .inner #event_product_banner #product_banner_imginner {
   width: 100%;
   position: absolute;
   bottom: 30px;
+  display: flex;
+}
+#event_page #event_product .inner #event_product_banner #product_banner_imginner #product_banner_img {
+  width: 100%;
 }
 #event_page #event_caution .inner {
   width: 1050px;
@@ -472,4 +476,20 @@ body {
 }
 #event_page #event_caution .inner p .space {
   color: #fff;
+}
+
+#product_banner_imginner {
+  display: flex;
+  animation-name: slideLeft;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
