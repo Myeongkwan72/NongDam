@@ -161,7 +161,7 @@ locationFriut.forEach((fruit) => {
 // 채소 페이지 이동
 locationVegetable.forEach((vegetable) => {
   vegetable.addEventListener("click", () => {
-    window.location.href = "../vegetable.html";
+    window.location.href = "./pages/vegetable.html";
   });
 });
 
@@ -175,6 +175,6 @@ locationEtc.forEach((etc) => {
 // 이벤트 페이지 이동
 locationEvent.forEach((event) => {
   event.addEventListener("click", () => {
-    window.location.href = "../eventpromotion/event.html";
+    window.location.href = "./eventpromotion/event.html";
   });
 });
