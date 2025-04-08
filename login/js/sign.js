@@ -248,7 +248,7 @@ signButton.addEventListener("click", (e) => {
   const address = document.querySelector("#address").value.trim();
 
   // 기존 사용자 데이터 불러오기 (없으면 빈 배열)
-  let users = JSON.parse(localStorage.getItem("Users")) || [];
+  const users = JSON.parse(localStorage.getItem("Users")) || [];
 
   // 새로운 사용자 데이터 추가
   users.push({

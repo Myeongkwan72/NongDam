@@ -11,6 +11,7 @@
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/login.css" />
     <script defer src="./js/login.js"></script>
+    <script defer src="../common.js"></script>
     <!-- response -->
     <link rel="stylesheet" href="./styles/res_login.css" />
     <!-- domain icon -->
@@ -36,13 +37,7 @@
         </div>
         <div class="header_inner_right">
           <div class="inner_right_top">
-            <ul>
-              <li>로그인</li>
-              <p>|</p>
-              <li>마이페이지</li>
-              <p>|</p>
-              <li>회원가입</li>
-            </ul>
+            <ul class="header_login"></ul>
           </div>
           <div class="inner_right_bottom">
             <div class="search_bar">
@@ -74,7 +69,7 @@
               <i class="fas fa-eye-slash"></i>
             </div>
           </div>
-          <button>로그인</button>
+          <button class="login_button">로그인</button>
           <ul>
             <li>회원가입</li>
             <p>|</p>

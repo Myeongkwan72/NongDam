@@ -1,8 +1,9 @@
-// 유저 정보 찾아오기
-const users = JSON.parse(localStorage.getItem("Users")) || [];
+// 로컬 스토리지에서 유저 정보 찾아오기
+const ndUsers = localStorage.getItem("ndUsers");
 
 // 현재 유저 정보
-const currentUser = users.find((user) => user.id);
+const users = JSON.parse(localStorage.getItem("Users")) || [];
+const currentUser = users.find((user) => user.id === ndUsers);
 
 if (currentUser) {
   document.querySelector(".mypage_id").textContent = currentUser.id;
