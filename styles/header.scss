@@ -16,7 +16,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
-  transition: transform 0.8s ease;
+  transition: transform 0.4s ease;
   &.scroll {
     &::before {
       content: "";

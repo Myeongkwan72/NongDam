@@ -11,7 +11,8 @@
     ></script>
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/find.css" />
-    <script src="./js/find.js"></script>
+    <script defer src="./js/find.js"></script>
+    <script defer src="../common.js"></script>
     <!-- media screen -->
     <link rel="stylesheet" href="./styles/res_find.css" />
     <link rel="stylesheet" href="../styles/res_header.css" />
@@ -43,13 +44,7 @@
         </div>
         <div class="header_inner_right">
           <div class="inner_right_top">
-            <ul>
-              <li>로그인</li>
-              <p>|</p>
-              <li>마이페이지</li>
-              <p>|</p>
-              <li>회원가입</li>
-            </ul>
+            <ul class="header_login"></ul>
           </div>
           <div class="inner_right_bottom">
             <div class="search_bar">
@@ -68,7 +63,7 @@
     </header>
     <main id="container">
       <div class="find_inner">
-        <section class="find_id">
+        <form class="find_id">
           <h2>아이디 찾기</h2>
           <div class="find_switch">
             <div class="find_switch_call">
@@ -80,22 +75,46 @@
               <hr />
             </div>
           </div>
-          <div class="find_input_name">
-            <p>이름</p>
+          <div class="find_by_name">
+            <div>
+              <p>이름</p>
+              <p class="name_error_message">이름을 입력해주세요.</p>
+            </div>
             <input
+              id="name"
               type="text"
               placeholder="가입 시 등록한 이름을 입력해주세요."
             />
           </div>
-          <div class="find_input_call">
-            <p>연락처</p>
+          <div class="find_by_call">
+            <div>
+              <p>연락처</p>
+              <p class="call_error_message">연락처를 입력해주세요.</p>
+            </div>
             <input
+              id="call"
               type="text"
               placeholder="가입 시 등록한 연락처를 입력해주세요."
             />
           </div>
-          <button>인증번호 받기</button>
-        </section>
+          <div class="find_by_email">
+            <div>
+              <p>이메일</p>
+              <p class="email_error_message">이메일을 입력해주세요.</p>
+            </div>
+            <input
+              id="email"
+              type="text"
+              placeholder="가입 시 등록한 이메일을 입력해주세요."
+            />
+          </div>
+          <input
+            type="submit"
+            class="find_button"
+            value="아이디 찾기"
+            disabled
+          />
+        </form>
       </div>
     </main>
     <footer>

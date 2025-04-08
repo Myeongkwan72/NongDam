@@ -449,10 +449,11 @@ body {
   left: 420px;
   transition: all 0.2s;
 }
-#event_page #event_product .inner #event_product_banner #product_banner_img {
+#event_page #event_product .inner #event_product_banner #product_banner_imginner {
   width: 100%;
   position: absolute;
   bottom: 30px;
+  display: flex;
 }
 #event_page #event_caution .inner {
   width: 1050px;

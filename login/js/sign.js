@@ -57,6 +57,7 @@ const must02 = checkMust[1];
 
 checkAll.addEventListener("change", () => {
   checkBox.forEach((box) => (box.checked = checkAll.checked));
+  console.log(must01);
 });
 
 // 연락처 이벤트

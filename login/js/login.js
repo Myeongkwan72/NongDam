@@ -62,3 +62,16 @@ eye.addEventListener("click", () => {
     pwInput.type = "password";
   }
 });
+
+// 페이지 이동
+const signUp = document.querySelector(".login_sign");
+const findId = document.querySelector(".login_find_id");
+const findPw = document.querySelector(".login_find_pw");
+
+signUp.addEventListener("click", () => {
+  window.location.href = "./sign.html";
+});
+
+findId.addEventListener("click", () => {
+  window.location.href = "./find-id.html";
+});
