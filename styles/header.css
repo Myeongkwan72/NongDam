@@ -87,7 +87,6 @@ header .header_inner nav .gnb li > a {
   padding: 10px;
   display: block;
   transition: color 0.4s;
-  cursor: pointer;
 }
 header .header_inner nav .gnb li > a:hover {
   color: #f37100;
