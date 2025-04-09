@@ -12,7 +12,7 @@ triBtn.addEventListener("click", (e) => {
 
 // header 스크롤 체크, 히든
 let lastScrollTop = 0;
-const header = document.querySelector("#footer_to_header");
+const header = document.querySelector("#header");
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
