@@ -29,12 +29,13 @@ body {
     margin-bottom: 50px;
     overflow: hidden;
     padding-right: 20px;
-    img {
-      border-radius: 10px;
-      object-fit: cover;
+    .product_sub_img {
       width: 20%;
+      max-width: 20%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
     }
-
     & p {
       width: 50px;
       height: 50px;
@@ -51,14 +52,14 @@ body {
       padding: 8px 17px;
     }
 
-    & h4 {
+    .product_ex_title {
       font-size: 2.6rem;
       font-weight: 700;
       color: map-get($map: $color, $key: dark);
       margin-bottom: 10px;
     }
 
-    & span {
+    .product_ex_desc {
       width: 800px;
       font-size: 1.8rem;
       font-weight: normal;
@@ -375,10 +376,13 @@ body {
     width: 100%;
     overflow: hidden;
     padding-right: 20px;
-    img {
+    .product_title_img {
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
+      max-width: 930px;
+      height: auto;
+      aspect-ratio: 930 / 605;
     }
     margin-bottom: 80px;
     h1 {
@@ -401,6 +405,9 @@ body {
       display: none;
       img {
         width: 22.3%;
+        max-width: 22.3%;
+        height: auto;
+        aspect-ratio: 200 / 200;
       }
     }
   }
