@@ -228,4 +228,5 @@ header .header_inner .header_inner_logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }

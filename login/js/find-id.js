@@ -150,7 +150,7 @@ findButton.addEventListener("click", (e) => {
 
   if (findId) {
     alert(`회원님의 아이디는 ${findId}입니다.`);
-    window.location.href = "./login.html";
+    window.location.href = "/login/login.html";
   } else {
     alert("일치하는 회원 정보를 찾을 수 없습니다.");
   }
