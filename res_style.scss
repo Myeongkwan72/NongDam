@@ -1,3 +1,276 @@
+// desktop
+@media screen and (max-width: 1440px) {
+  main {
+    #main_con1 {
+      height: auto; // 높이 고정 해제
+      margin-top: 60px;
+
+      .main_inner {
+        padding: 0 50px;
+        h1 {
+          font-size: 2.2rem;
+        }
+        .main_it {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .main_type1,
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.6rem;
+                min-height: 4.2rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.8rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.4rem;
+                      b {
+                        font-size: 2.8rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.4rem;
+                    }
+                    p {
+                      font-size: 1.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main_banner {
+      .main_innerbanner1 {
+        .banner_text {
+          padding: 0 50px;
+          gap: 30px;
+          .banner_tag {
+            gap: 6px;
+            span {
+              width: 16%;
+              font-size: 1.1rem;
+              padding: 5px 10px;
+            }
+            .banner_title {
+              h2 {
+                font-size: 2.6rem;
+              }
+              p {
+                font-size: 1.1rem;
+              }
+            }
+          }
+          .banner_text1 {
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      .main_innerbanner2 {
+        .banner2_text {
+          padding: 0 50px;
+          span {
+            font-size: 2.2rem;
+          }
+          h2 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .main_innerbanner3 {
+        .banner3_text {
+          padding: 0 50px;
+          p {
+            font-size: 1.8rem;
+          }
+          h2 {
+            font-size: 4rem;
+          }
+        }
+      }
+      .main_innerbanner4 {
+        .banner4_text {
+          padding: 0 50px;
+          p {
+            font-size: 1.1rem;
+          }
+          span {
+            font-size: 2.4rem;
+          }
+          h2 {
+            font-size: 2.8rem;
+          }
+          .banner_time {
+            width: 14%;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    #main_con2 {
+      height: auto; // 높이 고정 해제
+      .main_inner {
+        padding: 0 50px;
+        .main_con2title {
+          h1 {
+            font-size: 2.2rem;
+          }
+          img {
+            width: 30px;
+          }
+        }
+        .main_it {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .main_type1,
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.6rem;
+                min-height: 4.2rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.8rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.4rem;
+                      b {
+                        font-size: 2.8rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.4rem;
+                    }
+                    p {
+                      font-size: 1.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #main_con3 {
+      .main_inner {
+        padding: 0 50px;
+        .main_title2 {
+          .main_title3 {
+            font-size: 2.2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        .main_recipe {
+          width: 60%;
+          .main_item {
+            img {
+              width: 100%;
+            }
+            .recipe_info {
+              transform: translate(-53%, -50%);
+            }
+          }
+        }
+      }
+    }
+    #main_con4 {
+      .main_inner {
+        padding: 0 50px;
+        .main_sale_title {
+          h1 {
+            font-size: 2.2rem;
+          }
+          .sale_time {
+            font-size: 1.4rem;
+          }
+        }
+        .main_it {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3 {
+                font-size: 1.6rem;
+                min-height: 4.2rem;
+              }
+              .main_tag {
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.4rem;
+                      b {
+                        font-size: 2.8rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.4rem;
+                    }
+                    p {
+                      font-size: 1.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Tablet
 @media screen and (max-width: 1024px) {
   main {
