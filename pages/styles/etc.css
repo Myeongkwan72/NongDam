@@ -1720,13 +1720,13 @@ main {
   justify-content: center;
   margin: 0 auto;
 }
-main #fruits {
+main #etcs {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-main #fruits .fruit_inner {
+main #etcs .etc_inner {
   margin: 120px 0;
   width: 100%;
   max-width: 1050px;
@@ -1734,14 +1734,14 @@ main #fruits .fruit_inner {
   flex-direction: column;
   gap: 20px;
 }
-main #fruits .fruit_inner .fruit_it {
+main #etcs .etc_inner .etc_it {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-main #fruits .fruit_inner .fruit_it .main_type1,
-main #fruits .fruit_inner .fruit_it .main_type2 {
+main #etcs .etc_inner .etc_it .main_type1,
+main #etcs .etc_inner .etc_it .main_type2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1749,21 +1749,21 @@ main #fruits .fruit_inner .fruit_it .main_type2 {
   box-sizing: border-box;
   gap: 15px;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .img,
-main #fruits .fruit_inner .fruit_it .main_type2 .img {
+main #etcs .etc_inner .etc_it .main_type1 .img,
+main #etcs .etc_inner .etc_it .main_type2 .img {
   position: relative;
   width: 100%;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .img img,
-main #fruits .fruit_inner .fruit_it .main_type2 .img img {
+main #etcs .etc_inner .etc_it .main_type1 .img img,
+main #etcs .etc_inner .etc_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .img button,
-main #fruits .fruit_inner .fruit_it .main_type2 .img button {
+main #etcs .etc_inner .etc_it .main_type1 .img button,
+main #etcs .etc_inner .etc_it .main_type2 .img button {
   position: absolute;
   top: 5%;
   left: 5%;
@@ -1778,18 +1778,18 @@ main #fruits .fruit_inner .fruit_it .main_type2 .img button {
   left: 3%;
   font-family: pretendard;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info {
+main #etcs .etc_inner .etc_it .main_type1 .main_info,
+main #etcs .etc_inner .etc_it .main_type2 .main_info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   gap: 10px;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info h3,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_title,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info h3,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_title {
+main #etcs .etc_inner .etc_it .main_type1 .main_info h3,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_title,
+main #etcs .etc_inner .etc_it .main_type2 .main_info h3,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_title {
   font-size: 1.8rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1798,81 +1798,81 @@ main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_title {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping p,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag p {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping p,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag p {
   font-weight: 600;
   font-size: 2.2rem;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
   font-size: 3.6rem;
   font-weight: 800;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price {
   display: flex;
   flex-direction: column;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .icon,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .icon,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .icon,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .icon {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .icon,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .icon,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .icon,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #fruits .fruit_inner .fruit_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #fruits .fruit_inner .fruit_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .icon .fa-heart,
+main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon .fa-heart,
+main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;
