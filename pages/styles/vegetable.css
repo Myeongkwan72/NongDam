@@ -1,4 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -1721,192 +1720,28 @@ main {
   justify-content: center;
   margin: 0 auto;
 }
-main .main_banner {
-  width: 100%;
-  height: 360px;
-  position: relative;
-}
-main .main_banner .main_innerbanner1 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-main .main_banner .main_innerbanner1 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .main_banner .main_innerbanner1 .banner_text {
-  margin-left: 10vw;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  flex-direction: column;
-  gap: 40px;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_tag {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
-  width: 200px;
-  background: #ff4726;
-  color: #fff;
-  border-radius: 30px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
-  font-size: 4rem;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title p {
-  font-size: 1.6rem;
-  color: #424242;
-}
-main .main_banner .main_innerbanner1 .banner_text .banner_text1 p {
-  font-size: 1.6rem;
-  color: #424242;
-  line-height: 150%;
-}
-main .main_banner .main_innerbanner2 {
-  width: 100%;
-  position: relative;
-}
-main .main_banner .main_innerbanner2 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .main_banner .main_innerbanner2 .banner2_text {
-  padding: 0 50px;
-  width: 100%;
-  max-width: 1050px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-main .main_banner .main_innerbanner2 .banner2_text span {
-  font-size: 2.6rem;
-}
-main .main_banner .main_innerbanner2 .banner2_text h2 {
-  font-size: 4rem;
-}
-main .main_banner .main_innerbanner2 .banner2_text h2 b {
-  color: #f37100;
-}
-main .main_banner .main_innerbanner2 .banner2_text p {
-  font-size: 1.6rem;
-  color: #f37100;
-}
-main .main_banner .main_innerbanner3 {
-  width: 100%;
-  position: relative;
-}
-main .main_banner .main_innerbanner3 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .main_banner .main_innerbanner3 .banner3_text {
-  width: 100%;
-  max-width: 1050px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-main .main_banner .main_innerbanner3 .banner3_text p {
-  font-size: 2rem;
-}
-main .main_banner .main_innerbanner3 .banner3_text p b {
-  color: #f37100;
-}
-main .main_banner .main_innerbanner3 .banner3_text h2 {
-  font-size: 5rem;
-}
-main .main_banner .main_innerbanner4 {
-  width: 100%;
-  position: relative;
-  color: #fff;
-}
-main .main_banner .main_innerbanner4 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .main_banner .main_innerbanner4 .banner4_text {
-  width: 100%;
-  max-width: 1050px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  gap: 5px;
-}
-main .main_banner .main_innerbanner4 .banner4_text p {
-  font-size: 1.4rem;
-  font-weight: lighter;
-}
-main .main_banner .main_innerbanner4 .banner4_text span {
-  font-size: 3rem;
-}
-main .main_banner .main_innerbanner4 .banner4_text h2 {
-  font-size: 4rem;
-}
-main .main_banner .main_innerbanner4 .banner4_text h2 b {
-  color: rgb(110, 171, 77);
-}
-main .main_banner .main_innerbanner4 .banner4_text .banner_time {
-  margin-top: 10px;
-  width: 16%;
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  background: #000;
-  border-radius: 20px;
-  padding: 10px;
-}
-main #main_con1 {
+main #vegetables {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-main #main_con1 .main_inner {
+main #vegetables .vegetable_inner {
+  margin: 120px 0;
   width: 100%;
   max-width: 1050px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-main #main_con1 .main_inner h1 {
-  font-size: 2.6rem;
-}
-main #main_con1 .main_inner .main_it {
+main #vegetables .vegetable_inner .vegetable_it {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-main #main_con1 .main_inner .main_it .main_type1,
-main #main_con1 .main_inner .main_it .main_type2 {
+main #vegetables .vegetable_inner .vegetable_it .main_type1,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1914,21 +1749,21 @@ main #main_con1 .main_inner .main_it .main_type2 {
   box-sizing: border-box;
   gap: 15px;
 }
-main #main_con1 .main_inner .main_it .main_type1 .img,
-main #main_con1 .main_inner .main_it .main_type2 .img {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .img,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .img {
   position: relative;
   width: 100%;
 }
-main #main_con1 .main_inner .main_it .main_type1 .img img,
-main #main_con1 .main_inner .main_it .main_type2 .img img {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .img img,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
 }
-main #main_con1 .main_inner .main_it .main_type1 .img button,
-main #main_con1 .main_inner .main_it .main_type2 .img button {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .img button,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .img button {
   position: absolute;
   top: 5%;
   left: 5%;
@@ -1943,18 +1778,18 @@ main #main_con1 .main_inner .main_it .main_type2 .img button {
   left: 3%;
   font-family: pretendard;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info,
-main #main_con1 .main_inner .main_it .main_type2 .main_info {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   gap: 10px;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
-main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info h3,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_title,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info h3,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_title {
   font-size: 1.8rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1963,526 +1798,81 @@ main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping p,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping p,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag p {
   font-weight: 600;
   font-size: 2.2rem;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
   font-size: 3.6rem;
   font-weight: 800;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale .main_price,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale .main_price,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale .main_price,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale .main_price {
   display: flex;
   flex-direction: column;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale .main_price span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .main_sale .main_price p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .icon,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .icon,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .icon,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
-  border: 1px solid #ffc164;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  border-radius: 50px;
-  color: #ffc164;
-  cursor: pointer;
-}
-main #main_con2 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-}
-main #main_con2 .main_inner {
-  width: 100%;
-  max-width: 1050px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-main #main_con2 .main_inner .main_con2title {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-main #main_con2 .main_inner .main_con2title:hover {
-  gap: 24px;
-}
-main #main_con2 .main_inner .main_con2title h1 {
-  font-size: 2.6rem;
-}
-main #main_con2 .main_inner .main_con2title img {
-  width: 40px;
-  height: 10px;
-}
-main #main_con2 .main_inner .main_it {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-main #main_con2 .main_inner .main_it .main_type1,
-main #main_con2 .main_inner .main_it .main_type2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  gap: 15px;
-}
-main #main_con2 .main_inner .main_it .main_type1 .img,
-main #main_con2 .main_inner .main_it .main_type2 .img {
-  position: relative;
-  width: 100%;
-}
-main #main_con2 .main_inner .main_it .main_type1 .img img,
-main #main_con2 .main_inner .main_it .main_type2 .img img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-}
-main #main_con2 .main_inner .main_it .main_type1 .img button,
-main #main_con2 .main_inner .main_it .main_type2 .img button {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  background: #f37100;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  font-family: pretendard;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info,
-main #main_con2 .main_inner .main_it .main_type2 .main_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  gap: 10px;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
-main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
-  font-size: 1.8rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping p,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
-  font-weight: 600;
-  font-size: 2.2rem;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
-  font-size: 1.8rem;
-  color: #f37100;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
-  font-size: 3.6rem;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
-  display: flex;
-  flex-direction: column;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
-  font-size: 1.6rem;
-  color: #ccc;
-  text-decoration: line-through;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
-  font-weight: 600;
-  font-size: 2.2rem;
-  color: #000;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
-  display: flex;
-  gap: 5px;
-}
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
-  border: 1px solid #ffc164;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  border-radius: 50px;
-  color: #ffc164;
-  cursor: pointer;
-}
-main #main_con3 {
-  width: 100%;
-  height: 444px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fffaf1;
-}
-main #main_con3 .main_inner {
-  width: 100%;
-  max-width: 1050px;
-  display: flex;
-  gap: 45px;
-  height: 304px;
-  overflow: hidden;
-}
-main #main_con3 .main_inner .main_title2 .main_title3 {
-  font-size: 2.6rem;
-  margin-bottom: 6px;
-}
-main #main_con3 .main_inner .main_title2 .main_title3 b {
-  color: #f37100;
-}
-main #main_con3 .main_inner .main_title2 .line {
-  width: 200px;
-  height: 1px;
-  background-color: #f37100;
-}
-main #main_con3 .main_inner .main_title2 p {
-  margin-top: 15px;
-  font-size: 1.6rem;
-}
-main #main_con3 .main_inner .main_recipe {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  position: relative;
-}
-main #main_con3 .main_inner .main_recipe .slick-slide {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-main #main_con3 .main_inner .main_recipe .slick-list {
-  margin: 0 -15px;
-}
-main #main_con3 .main_inner .main_recipe .slick-prev,
-main #main_con3 .main_inner .main_recipe .slick-next {
-  width: 30px;
-  height: 30px;
-  background: none;
-  color: #f37100;
-  border-radius: 50%;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-main #main_con3 .main_inner .main_recipe .slick-prev:before,
-main #main_con3 .main_inner .main_recipe .slick-next:before {
-  color: #f37100;
-  font-size: 20px;
-  opacity: 1;
-}
-main #main_con3 .main_inner .main_recipe .slick-prev {
-  left: -40px;
-}
-main #main_con3 .main_inner .main_recipe .slick-next {
-  right: -40px;
-}
-main #main_con3 .main_inner .main_recipe .main_item {
-  width: 100%;
-  height: 304px;
-  position: relative;
-  cursor: pointer;
-}
-main #main_con3 .main_inner .main_recipe .main_item img {
-  width: 100%;
-  max-width: 240px;
-  height: 304px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  filter: brightness(70%);
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title .fa-heart {
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: right;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title h4 {
-  font-size: 1.6rem;
-  margin-bottom: 6px;
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_title button {
-  border: none;
-  display: flex;
-  align-items: center;
-  height: 14px;
-  border-radius: 12px;
-  padding: 8px;
-  color: #fff;
-  font-size: 1rem;
-  font-family: pretendard;
-  background: rgba(0, 0, 0, 0.6);
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text .recipe_line {
-  width: 204px;
-  height: 1px;
-  background-color: #fff;
-}
-main #main_con3 .main_inner .main_recipe .main_item .recipe_info .recipe_text p {
-  font-size: 1.2rem;
-}
-main #main_con4 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 120px;
-}
-main #main_con4 .main_inner {
-  width: 100%;
-  max-width: 1050px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-main #main_con4 .main_inner hr {
-  width: 100%;
-  border: 1px solid #f37100;
-  border-radius: 50px;
-}
-main #main_con4 .main_inner .main_sale_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main #main_con4 .main_inner .main_sale_title h1 {
-  font-size: 2.6rem;
-}
-main #main_con4 .main_inner .main_sale_title .sale_time {
-  color: #fff;
-  background: #f37100;
-  font-size: 1.6rem;
-  border-radius: 10px;
-  padding: 10px 15px;
-}
-main #main_con4 .main_inner .main_it {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-main #main_con4 .main_inner .main_it .main_type2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  gap: 15px;
-}
-main #main_con4 .main_inner .main_it .main_type2 .img {
-  position: relative;
-  width: 100%;
-}
-main #main_con4 .main_inner .main_it .main_type2 .img img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-}
-main #main_con4 .main_inner .main_it .main_type2 .img button {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  background: #f37100;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  font-family: pretendard;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  gap: 10px;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info h3,
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_title {
-  font-size: 1.8rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
-  font-weight: 600;
-  font-size: 2.2rem;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
-  font-size: 1.8rem;
-  color: #f37100;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
-  font-size: 3.6rem;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price {
-  display: flex;
-  flex-direction: column;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
-  font-size: 1.6rem;
-  color: #ccc;
-  text-decoration: line-through;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
-  font-weight: 600;
-  font-size: 2.2rem;
-  color: #000;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
-  display: flex;
-  gap: 5px;
-}
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .icon .fa-heart,
+main #vegetables .vegetable_inner .vegetable_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .icon .fa-heart,
+main #vegetables .vegetable_inner .vegetable_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;
