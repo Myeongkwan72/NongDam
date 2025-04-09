@@ -113,6 +113,10 @@ if (headerCurrentUser) {
     alert("로그아웃 되었습니다.");
     window.location.href = "/login/login.html";
   });
+
+  myPage.addEventListener("click", () => {
+    window.location.href = "/login/mypage.html";
+  });
 } else {
   const logIn = document.createElement("li");
   logIn.innerText = "로그인";
