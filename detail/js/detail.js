@@ -249,7 +249,7 @@ reviewMoreBtn.addEventListener("click", () => {
 });
 /* Review More Event end */
 
-/* faqButton start */
+/* Modal start */
 const contactUs = document.querySelector(".contact_us");
 
 contactUs.addEventListener("click", () => {

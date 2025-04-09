@@ -246,6 +246,7 @@ header .header_inner .header_inner_logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 * {
@@ -384,6 +385,9 @@ body {
   font-family: pretendard;
   width: 100%;
   margin: 0px auto;
+}
+body.modal-open {
+  overflow: hidden;
 }
 
 /* Product Thumbnail */
@@ -925,7 +929,7 @@ body {
 /* modal */
 .modal_overlay {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
