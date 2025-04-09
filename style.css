@@ -245,6 +245,7 @@ header .header_inner .header_inner_logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 * {
@@ -1725,17 +1726,20 @@ main .main_banner {
   height: 360px;
   position: relative;
 }
-main .main_banner .main_innerbanner1 {
+main .main_banner .slick-list {
+  height: 100%;
+}
+main .main_banner .slick-list .main_innerbanner1 {
   width: 100%;
   height: 100%;
   position: relative;
 }
-main .main_banner .main_innerbanner1 img {
+main .main_banner .slick-list .main_innerbanner1 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main_banner .main_innerbanner1 .banner_text {
+main .main_banner .slick-list .main_innerbanner1 .banner_text {
   margin-left: 10vw;
   width: 100%;
   display: flex;
@@ -1747,12 +1751,12 @@ main .main_banner .main_innerbanner1 .banner_text {
   flex-direction: column;
   gap: 40px;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_tag {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_tag {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_tag span {
   width: 200px;
   background: #ff4726;
   color: #fff;
@@ -1761,33 +1765,33 @@ main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
   display: flex;
   justify-content: center;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_tag .banner_title {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
   font-size: 4rem;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_tag .banner_title p {
   font-size: 1.6rem;
   color: #424242;
 }
-main .main_banner .main_innerbanner1 .banner_text .banner_text1 p {
+main .main_banner .slick-list .main_innerbanner1 .banner_text .banner_text1 p {
   font-size: 1.6rem;
   color: #424242;
   line-height: 150%;
 }
-main .main_banner .main_innerbanner2 {
+main .main_banner .slick-list .main_innerbanner2 {
   width: 100%;
   position: relative;
 }
-main .main_banner .main_innerbanner2 img {
+main .main_banner .slick-list .main_innerbanner2 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main_banner .main_innerbanner2 .banner2_text {
+main .main_banner .slick-list .main_innerbanner2 .banner2_text {
   padding: 0 50px;
   width: 100%;
   max-width: 1050px;
@@ -1799,29 +1803,29 @@ main .main_banner .main_innerbanner2 .banner2_text {
   flex-direction: column;
   gap: 5px;
 }
-main .main_banner .main_innerbanner2 .banner2_text span {
+main .main_banner .slick-list .main_innerbanner2 .banner2_text span {
   font-size: 2.6rem;
 }
-main .main_banner .main_innerbanner2 .banner2_text h2 {
+main .main_banner .slick-list .main_innerbanner2 .banner2_text h2 {
   font-size: 4rem;
 }
-main .main_banner .main_innerbanner2 .banner2_text h2 b {
+main .main_banner .slick-list .main_innerbanner2 .banner2_text h2 b {
   color: #f37100;
 }
-main .main_banner .main_innerbanner2 .banner2_text p {
+main .main_banner .slick-list .main_innerbanner2 .banner2_text p {
   font-size: 1.6rem;
   color: #f37100;
 }
-main .main_banner .main_innerbanner3 {
+main .main_banner .slick-list .main_innerbanner3 {
   width: 100%;
   position: relative;
 }
-main .main_banner .main_innerbanner3 img {
+main .main_banner .slick-list .main_innerbanner3 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main_banner .main_innerbanner3 .banner3_text {
+main .main_banner .slick-list .main_innerbanner3 .banner3_text {
   width: 100%;
   max-width: 1050px;
   position: absolute;
@@ -1829,26 +1833,26 @@ main .main_banner .main_innerbanner3 .banner3_text {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .main_banner .main_innerbanner3 .banner3_text p {
+main .main_banner .slick-list .main_innerbanner3 .banner3_text p {
   font-size: 2rem;
 }
-main .main_banner .main_innerbanner3 .banner3_text p b {
+main .main_banner .slick-list .main_innerbanner3 .banner3_text p b {
   color: #f37100;
 }
-main .main_banner .main_innerbanner3 .banner3_text h2 {
+main .main_banner .slick-list .main_innerbanner3 .banner3_text h2 {
   font-size: 5rem;
 }
-main .main_banner .main_innerbanner4 {
+main .main_banner .slick-list .main_innerbanner4 {
   width: 100%;
   position: relative;
   color: #fff;
 }
-main .main_banner .main_innerbanner4 img {
+main .main_banner .slick-list .main_innerbanner4 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main_banner .main_innerbanner4 .banner4_text {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text {
   width: 100%;
   max-width: 1050px;
   display: flex;
@@ -1859,20 +1863,20 @@ main .main_banner .main_innerbanner4 .banner4_text {
   transform: translate(-50%, -50%);
   gap: 5px;
 }
-main .main_banner .main_innerbanner4 .banner4_text p {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text p {
   font-size: 1.4rem;
   font-weight: lighter;
 }
-main .main_banner .main_innerbanner4 .banner4_text span {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text span {
   font-size: 3rem;
 }
-main .main_banner .main_innerbanner4 .banner4_text h2 {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text h2 {
   font-size: 4rem;
 }
-main .main_banner .main_innerbanner4 .banner4_text h2 b {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text h2 b {
   color: rgb(110, 171, 77);
 }
-main .main_banner .main_innerbanner4 .banner4_text .banner_time {
+main .main_banner .slick-list .main_innerbanner4 .banner4_text .banner_time {
   margin-top: 10px;
   width: 16%;
   display: flex;
