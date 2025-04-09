@@ -1,7 +1,7 @@
 /* logo location */
 const logoBtn = document.querySelector("#header_logo");
 logoBtn.addEventListener("click", () => {
-  location.href = "../index.html";
+  location.href = "/index.html";
 });
 
 const triBtn = document.querySelector(".trigger");
@@ -111,7 +111,7 @@ if (headerCurrentUser) {
   logOut.addEventListener("click", () => {
     localStorage.removeItem("ndUsers");
     alert("로그아웃 되었습니다.");
-    window.location.href = "./login.html";
+    window.location.href = "/login/login.html";
   });
 } else {
   const logIn = document.createElement("li");

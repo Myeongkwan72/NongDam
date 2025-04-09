@@ -259,6 +259,7 @@ signButton.addEventListener("click", (e) => {
     birth: birth,
     email: `${email}@${domain}`,
     call: phone,
+    address: address,
   });
 
   // 사용자 목록을 로컬스토리지에 저장
@@ -268,5 +269,5 @@ signButton.addEventListener("click", (e) => {
 
   // 폼 초기화 후 이메일 로그인 페이지로 이동
   form.reset();
-  window.location.href = "./login.html";
+  window.location.href = "/index.html";
 });
