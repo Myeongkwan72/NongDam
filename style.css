@@ -97,15 +97,16 @@ header .header_inner nav .gnb {
   box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.07);
   transition: opacity 0.4s;
 }
-header .header_inner nav .gnb li > a {
+header .header_inner nav .gnb li {
   font-size: 1.6rem;
   color: #000;
   text-decoration: none;
   padding: 10px;
   display: block;
   transition: color 0.4s;
+  cursor: pointer;
 }
-header .header_inner nav .gnb li > a:hover {
+header .header_inner nav .gnb li:hover {
   color: #f37100;
 }
 header .header_inner nav .gnb.active {
@@ -287,7 +288,7 @@ footer .footer_inner .up_btn {
   opacity: 0;
   transition: opacity 0.4s;
 }
-footer .footer_inner .up_btn a div {
+footer .footer_inner .up_btn div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -296,7 +297,7 @@ footer .footer_inner .up_btn a div {
   background: #ffc164;
   border-radius: 27px;
 }
-footer .footer_inner .up_btn a div i {
+footer .footer_inner .up_btn div i {
   font-size: 2rem;
   color: #fff;
 }
@@ -567,7 +568,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     width: 140px;
     padding: 20px;
   }
-  header .header_inner nav .gnb li > a {
+  header .header_inner nav .gnb li {
     font-size: 1.4rem;
     padding: 8px;
   }
