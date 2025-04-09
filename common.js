@@ -1,7 +1,7 @@
 /* logo location */
 const logoBtn = document.querySelector("#header_logo");
 logoBtn.addEventListener("click", () => {
-  location.href = "../index.html";
+  location.href = "/index.html";
 });
 
 const triBtn = document.querySelector(".trigger");
@@ -111,7 +111,7 @@ if (headerCurrentUser) {
   logOut.addEventListener("click", () => {
     localStorage.removeItem("ndUsers");
     alert("로그아웃 되었습니다.");
-    window.location.href = "./login.html";
+    window.location.href = "/login/login.html";
   });
 } else {
   const logIn = document.createElement("li");
@@ -126,11 +126,11 @@ if (headerCurrentUser) {
   headerLoginOut.appendChild(signUp);
 
   logIn.addEventListener("click", () => {
-    window.location.href = "login.html";
+    window.location.href = "/login/login.html";
   });
 
   signUp.addEventListener("click", () => {
-    window.location.href = "sign.html";
+    window.location.href = "/login/sign.html";
   });
 }
 
@@ -145,7 +145,7 @@ const locationEvent = document.querySelectorAll(".header_location_event");
 // 과일 페이지 이동
 locationFriut.forEach((fruit) => {
   fruit.addEventListener("click", () => {
-    window.location.href = "../pages/fruit.html";
+    window.location.href = "/pages/fruit.html";
   });
 });
 
@@ -153,7 +153,7 @@ locationFriut.forEach((fruit) => {
 locationVegetable.forEach((vegetable) => {
   vegetable.addEventListener("click", () => {
     console.log(vegetable);
-    window.location.href = "../pages/vegetable.html";
+    window.location.href = "/pages/vegetable.html";
   });
 });
 
@@ -167,6 +167,6 @@ locationEtc.forEach((etc) => {
 // 이벤트 페이지 이동
 locationEvent.forEach((event) => {
   event.addEventListener("click", () => {
-    window.location.href = "eventpromotion/event.html";
+    window.location.href = "/eventpromotion/event.html";
   });
 });
