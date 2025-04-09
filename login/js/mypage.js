@@ -19,22 +19,22 @@ if (currentUser) {
   console.log("유저를 찾을 수 없습니다.");
 }
 
-// 눈 아이콘
-const eye = document.querySelector(".fa-eye-slash");
+// // 눈 아이콘
+// const eye = document.querySelector(".fa-eye-slash");
 
-// 최초 비밀번호 가림상태
-const myPw = document.querySelector(".mypage_pw");
-const realPw = currentUser.pw;
-let showPw = false;
+// // 최초 비밀번호 가림상태
+// const myPw = document.querySelector(".mypage_pw");
+// const realPw = currentUser.pw;
+// let showPw = false;
 
-eye.addEventListener("click", () => {
-  showPw = !showPw;
+// eye.addEventListener("click", () => {
+//   showPw = !showPw;
 
-  if (showPw) {
-    eye.classList.toggle("fa-eye");
-    myPw.textContent = realPw;
-  } else {
-    eye.classList.toggle("fa-eye");
-    myPw.textContent = "*".repeat(realPw.length);
-  }
-});
+//   if (showPw) {
+//     eye.classList.toggle("fa-eye");
+//     myPw.textContent = realPw;
+//   } else {
+//     eye.classList.toggle("fa-eye");
+//     myPw.textContent = "*".repeat(realPw.length);
+//   }
+// });
