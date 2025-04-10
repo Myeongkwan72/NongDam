@@ -345,3 +345,5 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer();
+
+// heart click event
