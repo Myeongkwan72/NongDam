@@ -1,5 +1,153 @@
 // variables
 @import "../../styles/variables.scss";
 
+@media screen and (max-width: 1024px) {
+  @mixin button {
+    width: 36px;
+    height: 24px;
+    font-size: 1.2rem;
+  }
+
+  #container {
+    width: 100%;
+    gap: 100px;
+    .mypage_inner {
+      max-width: 390px;
+      gap: 80px;
+      .mypage {
+        gap: 25px;
+        h2 {
+          font-size: 2.8rem;
+        }
+        .mypage_data {
+          .mypage_info {
+            gap: 25px;
+            li {
+              height: 25px;
+              font-size: 1.8rem;
+            }
+          }
+          .mypage_detail {
+            gap: 25px;
+            li {
+              height: 25px;
+              gap: 50px;
+              p {
+                font-size: 1.6rem;
+              }
+              button {
+                @include button;
+              }
+            }
+          }
+        }
+      }
+      .mypage_policy {
+        gap: 30px;
+        h2 {
+          font-size: 2.8rem;
+        }
+        .policy_personal {
+          p {
+            font-size: 1.8rem;
+          }
+          button {
+            @include button;
+          }
+        }
+        .policy_service {
+          p {
+            font-size: 1.8rem;
+          }
+          button {
+            @include button;
+          }
+        }
+      }
+      .mypage_quit {
+        font-size: 1.8rem;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
+  @mixin button {
+    width: 32px;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  body {
+    gap: 0;
+  }
+  #container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .mypage_inner {
+      max-width: 300px;
+      gap: 50px;
+      .mypage {
+        gap: 20px;
+        h2 {
+          font-size: 2.4rem;
+        }
+        .mypage_data {
+          .mypage_info {
+            gap: 20px;
+            li {
+              height: 20px;
+              font-size: 1.4rem;
+            }
+          }
+          .mypage_detail {
+            gap: 20px;
+            li {
+              height: 20px;
+              gap: 40px;
+              p {
+                font-size: 1.2rem;
+              }
+              button {
+                @include button;
+              }
+            }
+          }
+        }
+      }
+      .mypage_policy {
+        gap: 20px;
+        h2 {
+          font-size: 2.4rem;
+        }
+        .policy_personal {
+          p {
+            font-size: 1.4rem;
+          }
+          button {
+            @include button;
+          }
+        }
+        .policy_service {
+          p {
+            font-size: 1.4rem;
+          }
+          button {
+            @include button;
+          }
+        }
+      }
+      .mypage_quit {
+        font-size: 1.6rem;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
