@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+  #container {
+    width: 100%;
+    gap: 100px;
+  }
+  #container .mypage_inner {
+    max-width: 390px;
+    gap: 80px;
+  }
+  #container .mypage_inner .mypage {
+    gap: 25px;
+  }
+  #container .mypage_inner .mypage h2 {
+    font-size: 2.8rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_info {
+    gap: 25px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_info li {
+    height: 25px;
+    font-size: 1.8rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail {
+    gap: 25px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li {
+    height: 25px;
+    gap: 50px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li p {
+    font-size: 1.6rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li button {
+    width: 36px;
+    height: 24px;
+    font-size: 1.2rem;
+  }
+  #container .mypage_inner .mypage_policy {
+    gap: 30px;
+  }
+  #container .mypage_inner .mypage_policy h2 {
+    font-size: 2.8rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_personal p {
+    font-size: 1.8rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_personal button {
+    width: 36px;
+    height: 24px;
+    font-size: 1.2rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_service p {
+    font-size: 1.8rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_service button {
+    width: 36px;
+    height: 24px;
+    font-size: 1.2rem;
+  }
+  #container .mypage_inner .mypage_quit {
+    font-size: 1.8rem;
+    text-underline-offset: 4px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    gap: 0;
+  }
+  #container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #container .mypage_inner {
+    max-width: 300px;
+    gap: 50px;
+  }
+  #container .mypage_inner .mypage {
+    gap: 20px;
+  }
+  #container .mypage_inner .mypage h2 {
+    font-size: 2.4rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_info {
+    gap: 20px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_info li {
+    height: 20px;
+    font-size: 1.4rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail {
+    gap: 20px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li {
+    height: 20px;
+    gap: 40px;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li p {
+    font-size: 1.2rem;
+  }
+  #container .mypage_inner .mypage .mypage_data .mypage_detail li button {
+    width: 32px;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  #container .mypage_inner .mypage_policy {
+    gap: 20px;
+  }
+  #container .mypage_inner .mypage_policy h2 {
+    font-size: 2.4rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_personal p {
+    font-size: 1.4rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_personal button {
+    width: 32px;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  #container .mypage_inner .mypage_policy .policy_service p {
+    font-size: 1.4rem;
+  }
+  #container .mypage_inner .mypage_policy .policy_service button {
+    width: 32px;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  #container .mypage_inner .mypage_quit {
+    font-size: 1.6rem;
+    text-underline-offset: 4px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

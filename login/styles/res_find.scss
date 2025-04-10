@@ -1,79 +1,143 @@
 // variables
 @import "../../styles/variables.scss";
 
-@media screen and (max-width: 500px) {
-  body {
-    width: 100%;
-    height: 100vh;
-    gap: 50px;
+@media screen and (max-width: 1024px) {
+  @mixin find-switch {
+    gap: 10px;
+    p {
+      font-size: 1.8rem;
+    }
+    hr {
+      height: 2px;
+      &.active {
+        height: 4px;
+      }
+    }
+  }
+
+  @mixin find-div {
+    gap: 10px;
+    div {
+      :nth-child(1) {
+        font-size: 1.6rem;
+      }
+      :nth-child(2) {
+        font-size: 1.4rem;
+      }
+    }
+    input {
+      height: 50px;
+      padding: 10px 15px;
+      font-size: 1.6rem;
+    }
   }
 
   #container {
-    width: 100%;
-    height: 100%;
+    gap: 30px;
     .find_inner {
-      width: 500px;
       .find_id {
+        max-width: 390px;
+        gap: 30px;
+        h2 {
+          font-size: 2.8rem;
+        }
+        .find_switch {
+          .find_switch_call {
+            @include find-switch;
+          }
+          .find_switch_email {
+            @include find-switch;
+          }
+        }
+        .find_by_name {
+          @include find-div;
+        }
+        .find_by_call {
+          @include find-div;
+        }
+        .find_by_email {
+          @include find-div;
+          display: none;
+        }
+        .find_button {
+          height: 50px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  @mixin find-switch {
+    gap: 10px;
+    p {
+      font-size: 1.6rem;
+    }
+    hr {
+      height: 1px;
+      &.active {
+        height: 3px;
+      }
+    }
+  }
+
+  @mixin find-div {
+    gap: 10px;
+    div {
+      :nth-child(1) {
+        font-size: 1.4rem;
+      }
+      :nth-child(2) {
+        font-size: 1.2rem;
+      }
+    }
+    input {
+      height: 40px;
+      padding: 10px 15px;
+      font-size: 1.4rem;
+    }
+  }
+
+  #container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 30px;
+    .find_inner {
+      .find_id {
+        max-width: 300px;
+        gap: 20px;
         h2 {
           font-size: 2.4rem;
         }
         .find_switch {
-          width: 300px;
           .find_switch_call {
-            p {
-              font-size: 1.8rem;
-            }
-            hr {
-              width: 150px;
-              height: 1px;
-              &.active {
-                height: 3px;
-              }
-            }
+            @include find-switch;
           }
           .find_switch_email {
-            p {
-              font-size: 1.8rem;
-            }
-            hr {
-              width: 150px;
-              height: 1px;
-              &.active {
-                height: 3px;
-              }
-            }
+            @include find-switch;
           }
         }
-        .find_input_name {
-          width: 300px;
-          p {
-            font-size: 1.4rem;
-          }
-          input {
-            width: 300px;
-            height: 40px;
-            padding: 5px 10px;
-            font-size: 1.2rem;
-          }
+        .find_by_name {
+          @include find-div;
         }
-        .find_input_call {
-          width: 300px;
-          p {
-            font-size: 1.4rem;
-          }
-          input {
-            width: 300px;
-            height: 40px;
-            padding: 5px 10px;
-            font-size: 1.2rem;
-          }
+        .find_by_call {
+          @include find-div;
         }
-        button {
-          width: 300px;
+        .find_by_email {
+          @include find-div;
+          display: none;
+        }
+        .find_button {
           height: 40px;
           font-size: 1.4rem;
         }
       }
     }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }
