@@ -246,6 +246,7 @@ header .header_inner .header_inner_logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 * {
@@ -405,6 +406,7 @@ body {
   height: 1px;
   background-color: #f37100;
   border: none;
+  padding: 0 50px;
 }
 
 /* info */

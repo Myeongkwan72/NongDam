@@ -1778,7 +1778,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px;
   }
   .detail_info .info_img {
     width: 100%;
@@ -1787,6 +1787,7 @@ a {
     border-radius: 0;
   }
   .detail_info .info_img img {
+    border-radius: 0;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -1819,7 +1820,7 @@ a {
     font-size: 1.8rem;
   }
   .detail_info .info_price .price_two {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
   .detail_info .info_price .price_two .price_sub {
@@ -1903,8 +1904,8 @@ a {
   .detail_info .info_purchase button {
     width: 100%;
     border: none;
-    border-radius: 10px;
-    font-size: 1.6rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #fff;
     background: #ff9900;
@@ -1926,12 +1927,12 @@ a {
     text-align: left;
   }
   .detail_review .review_text .text_review {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
   }
   .detail_review .review_text .text_few {
     color: #f37100;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
   }
   .detail_review .review_star {
