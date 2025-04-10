@@ -40,7 +40,9 @@ window.addEventListener("scroll", () => {
 
 // search event
 const searchBtn = document.querySelector(".fa-magnifying-glass");
-searchBtn.addEventListener("click", () => {});
+searchBtn.addEventListener("click", () => {
+  console.log("탕후루 사와 샤인머스캇으로다가");
+});
 
 // footer 이벤트
 window.addEventListener("scroll", () => {
