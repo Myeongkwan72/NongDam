@@ -140,7 +140,7 @@ fetch("../food_dataset.json")
     // review + xx건
     const reviewMoreBtn = document.querySelector(".review_more");
     if (reviewMoreBtn) {
-      reviewMoreBtn.innerText = `${randomRew}건 리뷰 더보기 ▼`;
+      reviewMoreBtn.innerText = `${randomRew}건 리뷰 더보기 ${arrowDown.outerHTML}`;
     }
 
     // review random data
@@ -296,10 +296,14 @@ reviewMoreBtn.addEventListener("click", () => {
   reviewShow = !reviewShow;
   const reviewCountReview = document
     .querySelector(".review_few")
-    .innerText.replace("건", "");
-  reviewMoreBtn.innerText = reviewShow
-    ? "리뷰 접기 ▲"
-    : `${reviewCountReview}건 리뷰 더보기 ▼`;
+    .innerHTML.replace("건", "");
+  const arrowDown = document.createElement("i");
+  arrowDown.classList.add("fas", "fa-angle-down");
+  const arrowUp = document.createElement("i");
+  arrowUp.classList.add("fas", "fa-angle-up");
+  reviewMoreBtn.innerHTML = reviewShow
+    ? `리뷰 접기 ${arrowUp.outerHTML}`
+    : `${reviewCountReview}건 리뷰 더보기 ${arrowDown.outerHTML}`;
 });
 /* Review More Event end */
 
