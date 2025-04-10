@@ -1,16 +1,248 @@
 // variables
 @import "../../styles/variables.scss";
 
-@media screen and (max-width: 500px) {
+// @media screen and (max-width: 1440px) {
+//   body {
+//     height: 100%;
+//     gap: 50px;
+//   }
+//   #container {
+//     .login_inner {
+//       margin: 0 auto;
+//       padding: 0 20px;
+//       .login_01 {
+//         h2 {
+//           font-size: 3.2rem;
+//         }
+//         .login_input {
+//           .login_pw {
+//             .fa-eye-slash {
+//               font-size: 1.4rem;
+//             }
+//           }
+//           input {
+//             height: 55px;
+//             font-size: 1.6rem;
+//           }
+//         }
+//         button {
+//           height: 55px;
+//           font-size: 1.8rem;
+//         }
+//         ul {
+//           gap: 8px;
+//           li {
+//             font-size: 1.3rem;
+//             line-height: 1.3rem;
+//           }
+//           p {
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+//       .login_02 {
+//         .login_social_kakao {
+//           height: 55px;
+//           img {
+//             width: 18px;
+//             height: 18px;
+//           }
+//           p {
+//             font-size: 1.8rem;
+//           }
+//         }
+//         .login_social_naver {
+//           height: 55px;
+//           img {
+//             width: 18px;
+//             height: 18px;
+//           }
+//           p {
+//             font-size: 1.8rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 1024px) {
   body {
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     gap: 50px;
   }
   #container {
     .login_inner {
-      width: 500px;
+      margin: 0 auto;
+      padding: 0 30px;
+      .login_01 {
+        gap: 25px;
+        h2 {
+          font-size: 2.8rem;
+        }
+        .login_input {
+          gap: 15px;
+          .login_pw {
+            .fa-eye-slash {
+              right: 15px;
+              font-size: 1.4rem;
+            }
+          }
+          input {
+            height: 50px;
+            padding: 8px 16px;
+            font-size: 1.4rem;
+          }
+        }
+        button {
+          height: 50px;
+          font-size: 1.6rem;
+        }
+        ul {
+          gap: 8px;
+          li {
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      .login_02 {
+        .login_social_title {
+          hr {
+            border: 0.5px solid map-get($map: $color, $key: main-02);
+          }
+          p {
+            padding: 5px;
+            font-size: 1.2rem;
+          }
+        }
+        .login_social_kakao {
+          height: 50px;
+          gap: 5px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .login_social_naver {
+          height: 50px;
+          gap: 5px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   #container {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     .login_inner {
+//       margin: 50px auto;
+//       padding: 0 40px;
+//       .login_01 {
+//         gap: 25px;
+//         h2 {
+//           font-size: 2.8rem;
+//         }
+//         .login_input {
+//           gap: 15px;
+//           .login_pw {
+//             .fa-eye-slash {
+//               right: 15px;
+//               font-size: 1.4rem;
+//             }
+//           }
+//           input {
+//             height: 45px;
+//             padding: 8px 16px;
+//             font-size: 1.4rem;
+//           }
+//         }
+//         button {
+//           height: 45px;
+//           font-size: 1.6rem;
+//         }
+//         ul {
+//           gap: 8px;
+//           li {
+//             font-size: 1.3rem;
+//             line-height: 1.3rem;
+//           }
+//           p {
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+//       .login_02 {
+//         .login_social_title {
+//           hr {
+//             border: 0.5px solid map-get($map: $color, $key: main-02);
+//           }
+//           p {
+//             padding: 5px;
+//             font-size: 1.2rem;
+//           }
+//         }
+//         .login_social_kakao {
+//           height: 45px;
+//           gap: 5px;
+//           img {
+//             width: 16px;
+//             height: 16px;
+//           }
+//           p {
+//             font-size: 1.6rem;
+//           }
+//         }
+//         .login_social_naver {
+//           height: 45px;
+//           gap: 5px;
+//           img {
+//             width: 16px;
+//             height: 16px;
+//           }
+//           p {
+//             font-size: 1.6rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   footer {
+//     position: absolute;
+//     bottom: 0;
+//   }
+// }
+
+@media screen and (max-width: 500px) {
+  body {
+    height: 100%;
+    gap: 50px;
+  }
+  #container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .login_inner {
       gap: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 50px;
       .login_01 {
         gap: 20px;
         h2 {
@@ -24,15 +256,13 @@
               font-size: 1.2rem;
             }
           }
-          input {
-            width: 300px;
-            height: 40px;
-            padding: 5px 10px;
-            font-size: 1.2rem;
-          }
         }
-        button {
-          width: 300px;
+        input {
+          height: 40px;
+          padding: 5px 10px;
+          font-size: 1.2rem;
+        }
+        .button {
           height: 40px;
           font-size: 1.4rem;
         }
@@ -49,7 +279,6 @@
       }
       .login_02 {
         .login_social_title {
-          width: 300px;
           hr {
             border: 0.5px solid map-get($map: $color, $key: main-02);
           }
@@ -59,7 +288,6 @@
           }
         }
         .login_social_kakao {
-          width: 300px;
           height: 40px;
           font-size: 1.4rem;
           gap: 5px;
@@ -72,7 +300,6 @@
           }
         }
         .login_social_naver {
-          width: 300px;
           height: 40px;
           font-size: 1.4rem;
           gap: 5px;
@@ -86,5 +313,9 @@
         }
       }
     }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }

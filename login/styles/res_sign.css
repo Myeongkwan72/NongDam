@@ -1,266 +1,220 @@
 @media screen and (max-width: 500px) {
-  body {
-    width: 100%;
-    height: 100vh;
-    gap: 50px;
-  }
   #container {
     width: 100%;
-    height: 100%;
+    gap: 100px;
   }
   #container .sign_inner {
-    width: 500px;
-  }
-  #container .sign_inner .sign {
-    width: 300px;
+    width: 100%;
     gap: 20px;
   }
-  #container .sign_inner .sign .sign_title {
+  #container .sign_inner .sign_form {
+    width: 100%;
+    max-width: 300px;
     gap: 20px;
   }
-  #container .sign_inner .sign .sign_title h2 {
-    width: 300px;
+  #container .sign_inner .sign_form .sign_title {
+    gap: 20px;
+  }
+  #container .sign_inner .sign_form .sign_title h2 {
+    width: 100%;
     font-size: 2.4rem;
   }
-  #container .sign_inner .sign .sign_title p {
+  #container .sign_inner .sign_form .sign_title p {
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_form .sign_id > :nth-child(1) h2 {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_id > :nth-child(1) h2 b {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_id > :nth-child(1) p {
     font-size: 1rem;
   }
-  #container .sign_inner .sign .sign_id {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_id > :nth-child(1) h2 {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_id > :nth-child(1) h2 b {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_id > :nth-child(1) p {
-    font-size: 1.2rem;
-  }
-  #container .sign_inner .sign .sign_id > :nth-child(2) {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_id > :nth-child(2) input {
-    height: 40px;
+  #container .sign_inner .sign_form .sign_id > :nth-child(2) input {
     padding: 5px 10px;
+    height: 40px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_pw {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_pw > :nth-child(1) h2 {
+  #container .sign_inner .sign_form .sign_pw > :nth-child(1) h2 {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_pw > :nth-child(1) h2 b {
+  #container .sign_inner .sign_form .sign_pw > :nth-child(1) h2 b {
     font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff5454;
   }
-  #container .sign_inner .sign .sign_pw > :nth-child(1) p {
-    font-size: 1.2rem;
+  #container .sign_inner .sign_form .sign_pw > :nth-child(1) p {
+    font-size: 1rem;
   }
-  #container .sign_inner .sign .sign_pw > :nth-child(2) {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_pw > :nth-child(2) input {
+  #container .sign_inner .sign_form .sign_pw > :nth-child(2) input {
     height: 40px;
     padding: 5px 40px 5px 10px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_pw > :nth-child(2) i {
+  #container .sign_inner .sign_form .sign_pw > :nth-child(2) i {
+    font-size: 1.2rem;
+    background: #fff;
+    position: absolute;
     right: 10px;
-    font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_pw_again {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(1) h2 {
+  #container .sign_inner .sign_form .sign_pw_again > :nth-child(1) h2 {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(1) h2 b {
+  #container .sign_inner .sign_form .sign_pw_again > :nth-child(1) h2 b {
     font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff5454;
   }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(1) p {
-    font-size: 1.2rem;
+  #container .sign_inner .sign_form .sign_pw_again > :nth-child(1) p {
+    font-size: 1rem;
   }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(2) {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(2) input {
+  #container .sign_inner .sign_form .sign_pw_again > :nth-child(2) input {
     height: 40px;
     padding: 5px 40px 5px 10px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_pw_again > :nth-child(2) i {
+  #container .sign_inner .sign_form .sign_pw_again > :nth-child(2) i {
+    font-size: 1.2rem;
+    background: #fff;
+    position: absolute;
     right: 10px;
-    font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_name {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_name > :nth-child(1) h2 {
+  #container .sign_inner .sign_form .sign_name > :nth-child(1) h2 {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_name > :nth-child(1) h2 b {
+  #container .sign_inner .sign_form .sign_name > :nth-child(1) h2 b {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_name > :nth-child(1) p {
+  #container .sign_inner .sign_form .sign_name > :nth-child(1) p {
+    font-size: 1rem;
+  }
+  #container .sign_inner .sign_form .sign_name > :nth-child(2) input {
+    padding: 5px 10px;
+    height: 40px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_name > :nth-child(2) {
-    width: 300px;
+  #container .sign_inner .sign_form .sign_date {
+    width: 100%;
+    gap: 10px;
   }
-  #container .sign_inner .sign .sign_name > :nth-child(2) input {
+  #container .sign_inner .sign_form .sign_date .sign_date_text h2 {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_date .date_select {
+    width: 100%;
+  }
+  #container .sign_inner .sign_form .sign_date .date_select .date_select_year {
+    width: 30%;
+    height: 40px;
+    padding: 5px 15px;
+    background: url(/login/login_imgs/arrow.png) no-repeat right 15px center/1rem;
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_form .sign_date .date_select .date_select_month {
+    width: 30%;
+    height: 40px;
+    padding: 5px 15px;
+    background: url(/login/login_imgs/arrow.png) no-repeat right 15px center/1rem;
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_form .sign_date .date_select .date_select_day {
+    width: 30%;
+    height: 40px;
+    padding: 5px 15px;
+    background: url(/login/login_imgs/arrow.png) no-repeat right 15px center/1rem;
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_form .sign_email {
+    width: 100%;
+    gap: 10px;
+  }
+  #container .sign_inner .sign_form .sign_email > :nth-child(1) h2 {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_email > :nth-child(1) h2 b {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_email > :nth-child(1) p {
+    font-size: 1rem;
+  }
+  #container .sign_inner .sign_form .sign_email .email_input input {
     height: 40px;
     padding: 5px 10px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_date {
-    width: 300px;
+  #container .sign_inner .sign_form .sign_email .email_input p {
+    font-size: 1.6rem;
   }
-  #container .sign_inner .sign .sign_date .sign_date_text h2 {
+  #container .sign_inner .sign_form .sign_email .email_input select {
+    width: 30%;
+    height: 40px;
+    padding: 0 10px;
+    background: url(/login/login_imgs/arrow.png) no-repeat right 10px center/0.8rem;
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_form .sign_call {
+    width: 100%;
+    gap: 10px;
+  }
+  #container .sign_inner .sign_form .sign_call > :nth-child(1) h2 {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_date .date_select {
-    width: 300px;
-    height: 40px;
-  }
-  #container .sign_inner .sign .sign_date .date_select .date_select_year {
-    width: 90px;
-    height: 40px;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #999;
-    border-radius: 10px;
-    background: url(../login_imgs/arrow.png) no-repeat right 10px center/0.8rem;
-    font-family: pretendard;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-  }
-  #container .sign_inner .sign .sign_date .date_select .date_select_month {
-    width: 90px;
-    height: 40px;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #999;
-    border-radius: 10px;
-    background: url(../login_imgs/arrow.png) no-repeat right 10px center/0.8rem;
-    font-family: pretendard;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-  }
-  #container .sign_inner .sign .sign_date .date_select .date_select_day {
-    width: 90px;
-    height: 40px;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #999;
-    border-radius: 10px;
-    background: url(../login_imgs/arrow.png) no-repeat right 10px center/0.8rem;
-    font-family: pretendard;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-  }
-  #container .sign_inner .sign .sign_email {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_email :nth-child(1) h2 {
+  #container .sign_inner .sign_form .sign_call > :nth-child(1) h2 b {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_email :nth-child(1) h2 b {
-    font-size: 1.4rem;
+  #container .sign_inner .sign_form .sign_call > :nth-child(1) p {
+    font-size: 1rem;
   }
-  #container .sign_inner .sign .sign_email :nth-child(1) p {
-    font-size: 1.2rem;
-  }
-  #container .sign_inner .sign .sign_email .email_input input {
-    width: 150px;
+  #container .sign_inner .sign_form .sign_call .call_input input {
+    width: 30%;
     height: 40px;
     padding: 5px 10px;
     font-size: 1.2rem;
   }
-  #container .sign_inner .sign .sign_email .email_input p {
-    font-size: 1.2rem;
+  #container .sign_inner .sign_form .sign_address > :nth-child(1) h2 {
+    font-size: 1.4rem;
   }
-  #container .sign_inner .sign .sign_email .email_input select {
-    width: 90px;
-    height: 40px;
+  #container .sign_inner .sign_form .sign_address > :nth-child(1) h2 b {
+    font-size: 1.4rem;
+  }
+  #container .sign_inner .sign_form .sign_address > :nth-child(1) p {
+    font-size: 1rem;
+  }
+  #container .sign_inner .sign_form .sign_address > :nth-child(2) input {
     padding: 5px 10px;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    background: url(../login_imgs/arrow.png) no-repeat right 10px center/0.8rem;
-  }
-  #container .sign_inner .sign .sign_call {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_call > :nth-child(1) h2 {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_call > :nth-child(1) h2 b {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_call > :nth-child(1) p {
-    font-size: 1.2rem;
-  }
-  #container .sign_inner .sign .sign_call > :nth-child(2) {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_call > :nth-child(2) input {
     height: 40px;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-  }
-  #container .sign_inner .sign .sign_address {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_address > :nth-child(1) h2 {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_address > :nth-child(1) h2 b {
-    font-size: 1.4rem;
-  }
-  #container .sign_inner .sign .sign_address > :nth-child(1) p {
-    font-size: 1.2rem;
-  }
-  #container .sign_inner .sign .sign_address > :nth-child(2) {
-    width: 300px;
-  }
-  #container .sign_inner .sign .sign_address > :nth-child(2) input {
-    height: 40px;
-    padding: 5px 10px;
     font-size: 1.2rem;
   }
   #container .sign_inner .sign_checkbox {
-    width: 300px;
+    width: 100%;
+    gap: 10px;
   }
   #container .sign_inner .sign_checkbox div {
-    gap: 5px;
+    width: 100%;
+    gap: 10px;
   }
-  #container .sign_inner .sign_checkbox div .checkbox {
+  #container .sign_inner .sign_checkbox div .check_boxes {
     width: 16px;
     height: 16px;
   }
-  #container .sign_inner .sign_checkbox div .checkbox:checked::after {
+  #container .sign_inner .sign_checkbox div .check_boxes:checked::after {
     font-size: 1.4rem;
   }
-  #container .sign_inner .sign_checkbox div p {
-    font-size: 1.4rem;
+  #container .sign_inner .sign_checkbox div ul {
+    width: 100%;
   }
-  #container .sign_inner .sign_checkbox div p b {
-    font-size: 1.4rem;
+  #container .sign_inner .sign_checkbox div ul li {
+    font-size: 1.2rem;
   }
-  #container .sign_inner button {
-    width: 300px;
+  #container .sign_inner .sign_checkbox div ul li b {
+    font-size: 1.2rem;
+  }
+  #container .sign_inner .sign_checkbox div ul li.sign_error_message {
+    font-size: 1rem;
+  }
+  #container .sign_inner .sign_button {
+    width: 100%;
     height: 40px;
     font-size: 1.4rem;
   }
