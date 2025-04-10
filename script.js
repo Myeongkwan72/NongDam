@@ -109,7 +109,6 @@ fetch("./food_dataset.json")
         imgURL: item.imgURL,
       };
     });
-    console.log(fruits);
 
     // 랜덤하게 8개 추출하는 함수
     const getRandomItems = (array, count) => {
@@ -289,3 +288,45 @@ fetch("./food_dataset.json")
   .catch((error) => {
     console.error("에러:", error);
   });
+
+// sale timer
+const sale_timer = document.querySelector(".sale_time");
+const timer = () => {
+  const now = new Date();
+
+  const hours = now.getHours();
+  console.log(hours);
+};
+
+timer();
+// main_eventbanner timer
+const banner_eventTimer = document.querySelector(".banner_time");
+
+const SEVEN_DAYS_IN_SECONDS = 7 * 24 * 60 * 60;
+let remainingSeconds = SEVEN_DAYS_IN_SECONDS;
+
+// 초를 일, 시, 분, 초로 변환하는 함수
+function formatTime(seconds) {
+  const days = Math.floor(seconds / (24 * 60 * 60));
+  const hours = Math.floor((seconds % (24 * 60 * 60)) / (60 * 60));
+  const minutes = Math.floor((seconds % (60 * 60)) / 60);
+  const secs = seconds % 60;
+
+  return `${days}일 ${String(hours).padStart(2, "0")} : ${String(
+    minutes
+  ).padStart(2, "0")} : ${String(secs).padStart(2, "0")}`;
+}
+
+function updateTimer() {
+  // 남은 시간 표시
+  banner_eventTimer.textContent = formatTime(remainingSeconds);
+
+  if (remainingSeconds <= 0) {
+    remainingSeconds = SEVEN_DAYS_IN_SECONDS;
+  }
+
+  remainingSeconds--;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
