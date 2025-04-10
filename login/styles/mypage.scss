@@ -34,7 +34,8 @@ body {
   align-items: center;
   gap: 100px;
   .mypage_inner {
-    width: 1050px;
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
