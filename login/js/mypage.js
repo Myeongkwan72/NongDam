@@ -4,12 +4,10 @@ const ndUsers = localStorage.getItem("ndUsers");
 // 현재 유저 정보
 const users = JSON.parse(localStorage.getItem("Users")) || [];
 const currentUser = users.find((user) => user.id === ndUsers);
+console.log(currentUser);
 
 if (currentUser) {
   document.querySelector(".mypage_id").textContent = currentUser.id;
-  document.querySelector(".mypage_pw").textContent = "*".repeat(
-    currentUser.pw.length
-  );
   document.querySelector(".mypage_name").textContent = currentUser.name;
   document.querySelector(".mypage_birth").textContent = currentUser.birth;
   document.querySelector(".mypage_email").textContent = currentUser.email;
