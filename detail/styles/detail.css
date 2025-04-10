@@ -430,6 +430,7 @@ body.modal-open {
   overflow: hidden;
 }
 .detail_info .info_img img {
+  aspect-ratio: 1/1;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -560,7 +561,6 @@ body.modal-open {
   justify-content: space-between;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
 }
 .detail_review .review_text {
   width: 100%;
@@ -587,7 +587,7 @@ body.modal-open {
 }
 .detail_review .review_star .star {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .detail_review .review_star .rating {
   font-size: 2.4rem;
@@ -622,14 +622,17 @@ body.modal-open {
   gap: 20px;
   display: flex;
   font-size: 1.4rem;
+  line-height: 150%;
   overflow: hidden;
   padding-right: 20px;
+  height: 100%;
 }
 .detail_review .review_member > div:first-child .member_content img {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .detail_review .review_member > div:first-child .member_content .modal-search {
   width: 100%;
@@ -848,9 +851,10 @@ body.modal-open {
 .detail_review .review_member > div:first-child .member_content > div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .detail_review .review_member > div:first-child .member_content > div p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #999;
   margin: 30px 0px 0px;
 }
@@ -869,14 +873,17 @@ body.modal-open {
   gap: 20px;
   display: flex;
   font-size: 1.4rem;
+  line-height: 150%;
   overflow: hidden;
   padding-right: 20px;
+  height: 100%;
 }
 .detail_review .review_member > div:last-child .member_content img {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .detail_review .review_member > div:last-child .member_content .modal-search {
   width: 100%;
@@ -1095,9 +1102,10 @@ body.modal-open {
 .detail_review .review_member > div:last-child .member_content > div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .detail_review .review_member > div:last-child .member_content > div p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #999;
   margin: 30px 0px 0px;
 }
@@ -1139,12 +1147,11 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
+  gap: 0;
 }
 .detail_product .product_title {
   width: 100%;
   overflow: hidden;
-  padding-right: 20px;
   margin-bottom: 80px;
 }
 .detail_product .product_title .product_title_img {
@@ -1161,6 +1168,7 @@ body.modal-open {
   display: inline-block;
   position: relative;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .detail_product .product_title h1::after {
   content: "";
@@ -1186,13 +1194,12 @@ body.modal-open {
 }
 .detail_product .product_thumb .thumb_one {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 50px;
+  align-items: end;
+  margin-bottom: 30px;
   overflow: hidden;
-  padding-right: 20px;
+  gap: 30px;
 }
 .detail_product .product_thumb .thumb_one .product_sub_img {
   width: 20%;
@@ -1213,7 +1220,7 @@ body.modal-open {
   margin-bottom: 20px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 8px 17px;
 }
@@ -1227,7 +1234,7 @@ body.modal-open {
   width: 800px;
   font-size: 1.8rem;
   font-weight: normal;
-  line-height: 1.3rem;
+  line-height: 150%;
   color: #000;
 }
 

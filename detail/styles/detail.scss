@@ -25,13 +25,14 @@ body {
   width: 100%;
   .thumb_one {
     width: 100%;
-    height: auto;
+    // height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    align-items: end;
+    margin-bottom: 30px;
     overflow: hidden;
-    padding-right: 20px;
+    gap: 30px;
+    // padding-right: 20px;
     .product_sub_img {
       width: 20%;
       max-width: 20%;
@@ -50,7 +51,7 @@ body {
       margin-bottom: 20px;
       text-align: center;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 8px 17px;
     }
@@ -66,11 +67,12 @@ body {
       width: 800px;
       font-size: 1.8rem;
       font-weight: normal;
-      line-height: 1.3rem;
+      line-height: 150%;
       color: map-get($map: $color, $key: dark);
     }
   }
 }
+
 /* Review Content */
 @mixin member-content {
   width: 50%;
@@ -79,12 +81,15 @@ body {
     gap: 20px;
     display: flex;
     font-size: 1.4rem;
+    line-height: 150%;
     overflow: hidden;
     padding-right: 20px;
+    height: 100%;
     img {
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
+      height: 100%;
     }
     .modal-search {
       width: 100%;
@@ -304,8 +309,9 @@ body {
     & > div {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: map-get($map: $color, $key: gray-999);
         margin: 30px 0px 0px;
       }
@@ -347,6 +353,7 @@ body {
     max-width: 50%;
     overflow: hidden;
     img {
+      aspect-ratio: 1 / 1;
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
@@ -482,7 +489,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
+  // gap: 50px;
 
   .review_text {
     width: 100%;
@@ -508,7 +515,7 @@ body {
     border-radius: 10px;
     & .star {
       font-size: 2rem;
-      font-weight: 300;
+      font-weight: 400;
     }
     & .rating {
       font-size: 2.4rem;
@@ -590,11 +597,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
+  gap: 0;
   .product_title {
     width: 100%;
     overflow: hidden;
-    padding-right: 20px;
+    // padding-right: 20px;
     .product_title_img {
       border-radius: 10px;
       object-fit: cover;
@@ -609,6 +616,7 @@ body {
       display: inline-block;
       position: relative;
       margin-bottom: 30px;
+      font-weight: 700;
       &::after {
         content: "";
         display: block;
