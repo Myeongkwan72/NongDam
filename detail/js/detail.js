@@ -3,6 +3,8 @@ const params = new URLSearchParams(location.search);
 const id = params.get("id");
 const type = params.get("type");
 
+let reviewShow = false;
+
 // console.log("넘어온 id:", id);
 // console.log("넘어온 type:", type);
 
@@ -137,15 +139,27 @@ fetch("../food_dataset.json")
     if (ratingOne) {
       ratingOne.innerText = randomRating;
     }
+    // reviewShow = !reviewShow;
+
+    const reviewCountReview = textFew?.innerText || "0";
+
     // review + xx건
     const reviewMoreBtn = document.querySelector(".review_more");
+    const arrowDown = document.createElement("i");
+    arrowDown.classList.add("fas", "fa-angle-down");
+    const arrowUp = document.createElement("i");
+    arrowUp.classList.add("fas", "fa-angle-up");
     if (reviewMoreBtn) {
-      reviewMoreBtn.innerText = `${randomRew}건 리뷰 더보기 ${arrowDown.outerHTML}`;
+      reviewMoreBtn.innerHTML = reviewShow
+        ? `리뷰 접기 ${arrowUp.outerHTML}`
+        : `${reviewCountReview}건 리뷰 더보기 ${arrowDown.outerHTML}`;
     }
 
     // review random data
-    document.querySelector(".review_rating").innerText = randomRating;
-    document.querySelector(".review_few").innerText = `${randomRew}건`;
+    const reviewRating = document.querySelector(".review_rating");
+    if (reviewRating) reviewRating.innerText = randomRating;
+    const reviewFew = document.querySelector(".review_few");
+    if (reviewFew) reviewFew.innerText = `${randomRew}건`;
 
     // product img
     const productImg = document.querySelector(".product_title_img");
@@ -210,7 +224,7 @@ cartBtn.addEventListener("click", () => {
 
   // 누적값 쌓이게 하기 위해 만든 데이터
   const productInfo = {
-    id: "test 2kg",
+    id: "item.id",
     title: "test Title",
     quantity: 1,
   };
@@ -245,8 +259,6 @@ const cartCount = () => {
 
 cartCount();
 /* cartBtn count end */
-
-let reviewShow = false;
 
 reviewMoreBtn.addEventListener("click", () => {
   hideBtn.forEach((member) => {

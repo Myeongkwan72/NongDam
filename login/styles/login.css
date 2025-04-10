@@ -491,6 +491,9 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   header .header_inner nav {
     display: flex;
   }
+  header .header_inner nav .gnb {
+    pointer-events: auto;
+  }
   header .header_inner .trigger {
     display: flex;
   }
