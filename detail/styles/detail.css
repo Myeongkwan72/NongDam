@@ -409,6 +409,7 @@ body.modal-open {
   height: 1px;
   background-color: #f37100;
   border: none;
+  padding: 0 50px;
 }
 
 /* info */

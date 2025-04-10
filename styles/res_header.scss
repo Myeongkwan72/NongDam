@@ -137,6 +137,9 @@
       padding: 16px 20px;
       nav {
         display: flex;
+        .gnb {
+          pointer-events: auto;
+        }
       }
       .trigger {
         display: flex;
