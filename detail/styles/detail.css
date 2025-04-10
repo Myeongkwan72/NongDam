@@ -904,7 +904,7 @@ body.modal-open {
 .detail_faq > .faq_table .faq_date {
   color: #858585;
 }
-.detail_faq > .faq_table .faq_comple {
+.detail_faq > .faq_table .faq_status {
   color: #f37100;
   font-weight: 500;
 }
@@ -927,9 +927,9 @@ body.modal-open {
 }
 
 /* modal */
-.modal_overlay {
+.modal_container {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -939,50 +939,59 @@ body.modal-open {
   justify-content: center;
   align-items: center;
 }
-.modal_overlay .modal {
-  width: 500px;
+.modal_container .modal_contents {
+  width: 400px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.modal_overlay .modal .modal_header {
+.modal_container .modal_contents .modal_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.modal_overlay .modal .modal_header h2 {
+.modal_container .modal_contents .modal_header h2 {
   font-size: 2.4rem;
   font-weight: 700;
 }
-.modal_overlay .modal .modal_header .modal_close {
+.modal_container .modal_contents .modal_header .modal_close_btn {
   font-size: 2.4rem;
   cursor: pointer;
+  transition: color 0.3s;
 }
-.modal_overlay .modal .modal_body {
+.modal_container .modal_contents .modal_header .modal_close_btn:hover {
+  color: #858585;
+}
+.modal_container .modal_contents .modal_user_info {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.modal_container .modal_contents .modal_input {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.modal_overlay .modal .modal_body input,
-.modal_overlay .modal .modal_body textarea {
+.modal_container .modal_contents .modal_input input,
+.modal_container .modal_contents .modal_input textarea {
   padding: 10px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
 }
-.modal_overlay .modal .modal_body textarea {
-  height: 100px;
+.modal_container .modal_contents .modal_input textarea {
+  height: 200px;
   resize: none;
 }
-.modal_overlay .modal .modal_footer {
+.modal_container .modal_contents .modal_footer {
   display: flex;
   justify-content: flex-end;
 }
-.modal_overlay .modal .modal_footer .modal_submit {
+.modal_container .modal_contents .modal_footer .modal_submit {
   padding: 10px 20px;
   font-size: 1.6rem;
   background: #f37100;
@@ -990,6 +999,10 @@ body.modal-open {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.modal_container .modal_contents .modal_footer .modal_submit:hover {
+  background: #ff9900;
 }
 
 /* policy */

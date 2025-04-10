@@ -192,6 +192,60 @@ fetch("../food_dataset.json")
 /* Review More Event start */
 const reviewMoreBtn = document.querySelector(".review_more");
 const hideBtn = document.querySelectorAll(".hide_members");
+const cartBtn = document.querySelector(".info_purchase");
+
+/* cartBtn count event start */
+cartBtn.addEventListener("click", () => {
+  const currentUserId = localStorage.getItem("ndUsers");
+
+  // 로그인 안되있는 사용자에게 띄워주는 메세지
+  if (!currentUserId) {
+    alert("해당 상품을 담고 싶으세요? 로그인 후에 이용해주세요!😊");
+    location.href = "../login/login.html";
+    return;
+  }
+
+  const cartKey = `cart_${currentUserId}`;
+  const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+  // 누적값 쌓이게 하기 위해 만든 데이터
+  const productInfo = {
+    id: "test 2kg",
+    title: "test Title",
+    quantity: 1,
+  };
+
+  const exItem = cartData.find((it) => it.id === productInfo.id);
+
+  if (exItem) {
+    exItem.quantity += 1;
+  } else {
+    cartData.push(productInfo);
+  }
+
+  localStorage.setItem(cartKey, JSON.stringify(cartData));
+
+  cartCount();
+});
+/* cartBtn click event end */
+
+/* cartBtn count start */
+const cartCount = () => {
+  const currentUserId = localStorage.getItem("ndUsers");
+  const cartKey = `cart_${currentUserId}`;
+  const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+  const cartTotalCount = cartData.reduce((cur, it) => cur + it.quantity, 0);
+
+  const cartCountTag = document.querySelector(".fa-cart-shopping p");
+  if (cartCountTag) {
+    cartCountTag.innerText = cartTotalCount;
+  }
+};
+
+cartCount();
+/* cartBtn count end */
+
 let reviewShow = false;
 
 reviewMoreBtn.addEventListener("click", () => {
@@ -251,44 +305,190 @@ reviewMoreBtn.addEventListener("click", () => {
 
 /* Modal start */
 const contactUs = document.querySelector(".contact_us");
+const modal = document.querySelector(".modal_container");
+const closeBtn = document.querySelector(".modal_close_btn");
+const body = document.body;
+const faqTable = document.querySelector(".faq_table");
 
+// modal open
 contactUs.addEventListener("click", () => {
-  console.log(contactUs, "클릭");
+  const currentUserId = localStorage.getItem("ndUsers");
+  const users = JSON.parse(localStorage.getItem("Users"));
+
+  if (
+    !currentUserId ||
+    !users ||
+    !users.find((user) => user.id === currentUserId)
+  ) {
+    alert("문의하기는 로그인을 하셔야 사용 가능합니다!😊");
+    window.location.href = "../login/login.html";
+    return;
+  }
+
+  modal.style.display = "flex";
+  document.body.classList.add("modal-open");
+
+  const matchUser = users.find((user) => user.id === currentUserId);
+  if (matchUser) {
+    const userName = modal.querySelector(".modal_user_info p");
+    userName.innerText = `이름: ${matchUser.name}`;
+  }
+
+  const todayDate = modal.querySelector(".modal_user_info span");
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const date = String(today.getDate()).padStart(2, "0");
+  todayDate.innerText = `${year}.${month}.${date}`;
 });
+
+// modal close
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+});
+
 /* faqButton end */
 
+// username hide
+const hideName = (name) => {
+  if (!name) return "";
+  const nameLength = name.length;
+  return nameLength === 2
+    ? name[0] + "*"
+    : name[0] + "*" + name[nameLength - 1];
+};
+
+// mockup data
+const mock = [
+  {
+    title: "배송 관련 문의",
+    name: "한민준",
+    date: "2025.04.02",
+    status: "답변완료",
+  },
+  {
+    title: "상품 관련 문의",
+    name: "강동현",
+    date: "2025.03.22",
+    status: "답변완료",
+  },
+  {
+    title: "상품 관련 문의",
+    name: "이정찬",
+    date: "2025.02.17",
+    status: "답변완료",
+  },
+  {
+    title: "환불 관련 문의",
+    name: "박지민",
+    date: "2025.02.02",
+    status: "답변완료",
+  },
+  {
+    title: "환불 관련 문의",
+    name: "최유나",
+    date: "2025.01.31",
+    status: "답변완료",
+  },
+];
+
+// mock data rendering
+const readMock = () => {
+  mock.forEach((it) => {
+    const maskedName = hideName(it.name);
+    const row = document.createElement("tr");
+    row.classList.add("faq_row");
+    row.innerHTML = `
+      <td class="left">${it.title} <i class="fas fa-lock"></i></td>
+      <td class="right faq_name">${maskedName}</td>
+      <td class="right faq_date">${it.date}</td>
+      <td class="right ">${it.status}</td>
+    `;
+    faqTable.appendChild(row);
+  });
+};
+
+// modal data create
+const modalCreateBtn = document.querySelector(".modal_submit");
+
+modalCreateBtn.addEventListener("click", () => {
+  const modalTitle = document.querySelector(".modal_input input").value.trim();
+  const userName = document
+    .querySelector(".modal_user_info p")
+    .innerText.replace("이름: ", "");
+
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const date = String(today.getDate()).padStart(2, "0");
+  const formatDate = `${year}.${month}.${date}`;
+
+  // 문의하기 폼 제목입력 유효성 검사
+  if (modalTitle === "") {
+    alert("제목을 입력해주세요.");
+    return;
+  }
+
+  // 사용자가 등록한 문의 요소 만들기
+  const maskName = hideName(userName);
+  const recent = document.createElement("tr");
+  recent.classList.add("faq_row");
+  recent.innerHTML = `
+    <td class="left">${modalTitle} <i class="fas fa-lock"></i></td>
+    <td class="right faq_name">${maskName}</td>
+    <td class="right faq_date">${formatDate}</td>
+    <td class="right faq_status">답변대기</td>
+  `;
+
+  faqTable.insertBefore(recent, faqTable.querySelector(".faq_row"));
+
+  document.querySelector(".modal_input input").value = "";
+  document.querySelector(".modal_input textarea").value = "";
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+
+  setPagenations();
+});
+
 /* Page nation start */
-// const faqPage = 5;
-// const faqRows = document.querySelectorAll(".faq_table .faq_row");
-// const numContain = document.querySelector(".faq_number");
-// const totalPages = Math.ceil(faqRows.length / faqPage);
+const faqPage = 5;
+const numContain = document.querySelector(".faq_number");
 
-// const activePage = (page) => {
-//   faqRows.forEach((faqRow, i) => {
-//     faqRow.style.display = "none";
-//     if (i >= (page - 1) * faqPage && i < page * faqPage) {
-//       faqRow.style.display = "table-row";
-//     }
-//   });
+const activePage = (page) => {
+  const faqRows = document.querySelectorAll(".faq_table .faq_row");
+  faqRows.forEach((faqRow, i) => {
+    faqRow.style.display = "none";
+    if (i >= (page - 1) * faqPage && i < page * faqPage) {
+      faqRow.style.display = "table-row";
+    }
+  });
 
-//   const numBtns = numContain.querySelectorAll("div");
-//   numBtns.forEach((btn, idx) => {
-//     btn.classList.toggle("active", idx + 1 === page);
-//   });
-// };
+  const numBtns = numContain.querySelectorAll("div");
+  numBtns.forEach((btn, idx) => {
+    btn.classList.toggle("active", idx + 1 === page);
+  });
+};
 
-// const setPagenations = () => {
-//   numContain.innerHTML = "";
+const setPagenations = (page = 1) => {
+  const faqRows = document.querySelectorAll(".faq_table .faq_row");
+  const totalPages = Math.ceil(faqRows.length / faqPage);
+  numContain.innerHTML = "";
 
-//   for (let i = 1; i <= totalPages; i++) {
-//     const pagesBtn = document.createElement("div");
-//     pagesBtn.innerText = i;
-
-//     pagesBtn.addEventListener("click", () => activePage(i));
-//     numContain.appendChild(pagesBtn);
-//   }
-//   activePage(1);
-// };
-
-// setPagenations();
-/* Page nation end */
+  for (let i = 1; i <= totalPages; i++) {
+    const pagesBtn = document.createElement("div");
+    pagesBtn.innerText = i;
+    pagesBtn.addEventListener("click", () => activePage(i));
+    numContain.appendChild(pagesBtn);
+  }
+  activePage(page);
+};
+readMock();
+setPagenations();

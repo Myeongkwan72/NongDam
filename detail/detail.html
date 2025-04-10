@@ -66,7 +66,7 @@
             </div>
             <i class="fa-solid fa-magnifying-glass res_magnify"></i>
             <div class="basket">
-              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+              <i class="fa-solid fa-cart-shopping"> <p>0</p></i>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
             </table>
           </section>
           <div class="info_purchase">
-            <button>장바구니에 담기</button>
+            <button class="info_purchase">장바구니에 담기</button>
           </div>
         </article>
       </section>
@@ -172,8 +172,8 @@
                       정기배송 고민 중이에요!
                     </span>
                     <p>
-                      2025.03.11 |
-                      <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      2025.03.11
+                      <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                     </p>
                   </div>
                 </div>
@@ -192,8 +192,8 @@
                       주문하고 싶어요 😊
                     </span>
                     <p>
-                      2025.03.02 |
-                      <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                      2025.03.02
+                      <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                     </p>
                   </div>
                 </div>
@@ -215,8 +215,8 @@
                         넣었답니다!😋
                       </span>
                       <p>
-                        2025.02.22 |
-                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                        2025.02.22
+                        <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                       </p>
                     </div>
                   </div>
@@ -235,8 +235,8 @@
                         들어있어서 샐러드 만들기 딱이에요!
                       </span>
                       <p>
-                        2025.01.31 |
-                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                        2025.01.31
+                        <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                       </p>
                     </div>
                   </div>
@@ -252,13 +252,13 @@
                     <img src="./imgs/img1.png" alt="img1" />
                     <div>
                       <span>
-                        채소 하나하나 상태가 진짜 좋아요. 감자도 포슬하고,
-                        버섯도 신선하게 도착했어요. 정기배송 시작하길 잘한 것
-                        같아요. 앞으로도 잘 부탁드려요!
+                        상품 하나하나 상태가 진짜 좋아요. 자주 배송해서
+                        먹어봤는데 너무 마음에 쏙 들어요!!. 정기배송 시작하길
+                        잘한 것 같아요. 앞으로도 잘 부탁드려요!
                       </span>
                       <p>
-                        2025.01.11 |
-                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                        2025.01.11
+                        <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                       </p>
                     </div>
                   </div>
@@ -277,8 +277,8 @@
                         기분 좋아졌어요 😍
                       </span>
                       <p>
-                        2025.01.02 |
-                        <strong>오돌토돌 개성만점 유기농토마토 2kg</strong>
+                        2025.01.02
+                        <!-- <strong>오돌토돌 개성만점 유기농토마토 2kg</strong> -->
                       </p>
                     </div>
                   </div>
@@ -348,10 +348,8 @@
           <button class="contact_us">문의하기</button>
         </div>
         <div class="faq_subTitle">
-          상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
-          사전동의 없이 담당 게시판으로 이동될 수 있습니다. <br />배송관련,
-          주문(취소/교환/환불)관련 문의 및 요청사항은 농담 내 1:1문의에
-          남겨주세요.
+          상품의 대한 문의를 남기는 공간입니다! <br />
+          저희 농담은 고객님의 소중한 문의사항을 비밀로 관리합니다!
         </div>
         <div class="table_title">
           <div class="title_left">제목</div>
@@ -362,7 +360,7 @@
           </div>
         </div>
         <table class="faq_table">
-          <tr class="faq_row">
+          <!-- <tr class="faq_row">
             <td class="left">배송 관련 문의 <i class="fas fa-lock"></i></td>
             <td class="right faq_name">이*일</td>
             <td class="right faq_date">2025.03.15</td>
@@ -391,24 +389,28 @@
             <td class="right faq_name">박*진</td>
             <td class="right faq_date">2024.12.23</td>
             <td class="right">답변대기</td>
-          </tr>
+          </tr> -->
         </table>
         <div class="faq_number">
-          <div>1</div>
+          <!-- <div>1</div>
           <div>2</div>
           <div>3</div>
           <div>4</div>
-          <div>5</div>
+          <div>5</div> -->
         </div>
       </section>
       <!-- Contact us modal start -->
-      <div class="modal_overlay">
-        <div class="modal">
+      <div class="modal_container" style="display: none">
+        <div class="modal_contents">
           <div class="modal_header">
             <h2>문의 등록</h2>
-            <span class="modal_close">&times;</span>
+            <span class="modal_close_btn">&times;</span>
           </div>
-          <div class="modal_body">
+          <div class="modal_user_info">
+            <p></p>
+            <span></span>
+          </div>
+          <div class="modal_input">
             <input type="text" placeholder="제목을 입력하세요" />
             <textarea placeholder="문의 내용을 입력하세요"></textarea>
           </div>
