@@ -1798,6 +1798,7 @@
     border: none;
     padding: 0px 50px;
   }
+
   /* Review Content */
   @mixin member-content {
     width: 100%;
@@ -1881,13 +1882,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px;
     .info_img {
       width: 100%;
       max-width: 100%;
       overflow: hidden;
       border-radius: 0;
       img {
+        border-radius: 0;
         object-fit: cover;
         width: 100%;
       }
@@ -1921,7 +1923,7 @@
         }
       }
       & .price_two {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         font-weight: bold;
         & .price_sub {
           font-size: 1.8rem;
@@ -2007,8 +2009,8 @@
       button {
         width: 100%;
         border: none;
-        border-radius: 10px;
-        font-size: 1.6rem;
+        border-radius: 8px;
+        font-size: 1.4rem;
         font-weight: bold;
         color: map-get($map: $color, $key: light);
         background: map-get($map: $color, $key: main-02);
@@ -2032,13 +2034,13 @@
       width: 100%;
       text-align: left;
       & .text_review {
-        font-size: 3rem;
+        font-size: 2.6rem;
         font-weight: 700;
         // word-wrap: break-word;
       }
       & .text_few {
         color: map-get($map: $color, $key: main-01);
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         font-weight: 600;
         // word-wrap: break-word;
       }
