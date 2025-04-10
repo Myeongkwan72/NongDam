@@ -294,11 +294,26 @@ const sale_timer = document.querySelector(".sale_time");
 const timer = () => {
   const now = new Date();
 
-  const hours = now.getHours();
-  console.log(hours);
+  const currentSeconds =
+    now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+
+  const totalSecondsInDay = 24 * 3600;
+  const remainingSeconds = totalSecondsInDay - currentSeconds;
+
+  const hours = Math.floor(remainingSeconds / 3600)
+    .toString()
+    .padStart(2, "0");
+  const minutes = Math.floor((remainingSeconds % 3600) / 60)
+    .toString()
+    .padStart(2, "0");
+  const seconds = (remainingSeconds % 60).toString().padStart(2, "0");
+
+  sale_timer.innerHTML = `${hours} : ${minutes} : ${seconds}`;
 };
 
 timer();
+setInterval(timer, 1000);
+
 // main_eventbanner timer
 const banner_eventTimer = document.querySelector(".banner_time");
 

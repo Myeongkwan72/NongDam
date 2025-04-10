@@ -39,8 +39,27 @@ window.addEventListener("scroll", () => {
 });
 
 // search event
-const searchBtn = document.querySelector(".fa-magnifying-glass");
-searchBtn.addEventListener("click", () => {});
+const searchBtn = document.querySelector(".search_bar .fa-magnifying-glass");
+const searchInput = document.querySelector(".search_bar input");
+// console.log(searchInput);
+searchBtn.addEventListener("click", () => {
+  const searchData = searchInput.value.trim();
+
+  if (searchData) {
+    const encode = encodeURIComponent(searchData);
+    window.location.href = `../pages/search.html?searchData=${encode}`;
+  }
+});
+
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const searchData = searchInput.value.trim();
+    if (searchData) {
+      const encode = encodeURIComponent(searchData);
+      window.location.href = `../pages/search.html?searchData=${encode}`;
+    }
+  }
+});
 
 // footer 이벤트
 window.addEventListener("scroll", () => {
