@@ -51,7 +51,7 @@ header.scroll::before {
   width: 100%;
   height: 100px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 header.hidden {
   transform: translateY(-100%);
@@ -196,19 +196,39 @@ header .header_inner .header_inner_right .inner_right_bottom .search_bar input {
   opacity: 1;
   font-family: pretendard;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus {
   outline: none;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::-moz-placeholder {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar input:focus::placeholder {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  input:focus::placeholder {
   transition: all 0.3s;
   opacity: 0;
 }
-header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .search_bar
+  .fa-magnifying-glass {
   cursor: pointer;
 }
 header .header_inner .header_inner_right .inner_right_bottom .res_magnify {
@@ -217,7 +237,12 @@ header .header_inner .header_inner_right .inner_right_bottom .res_magnify {
 header .header_inner .header_inner_right .inner_right_bottom .basket {
   position: relative;
 }
-header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+header
+  .header_inner
+  .header_inner_right
+  .inner_right_bottom
+  .basket
+  .fa-cart-shopping {
   width: 40px;
   height: 34px;
   font-size: 2.8rem;
@@ -276,6 +301,9 @@ footer .footer_inner {
   width: 100%;
   max-width: 1050px;
   margin: 50px auto;
+  width: 100%;
+  max-width: 1050px;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -314,6 +342,8 @@ footer .footer_inner .footer_inner_left {
 footer .footer_inner .footer_inner_left img {
   width: 160px;
   height: 70px;
+  width: 160px;
+  height: 70px;
 }
 footer .footer_inner .footer_inner_left p {
   font-family: pretendard;
@@ -327,6 +357,7 @@ footer .footer_inner .footer_inner_center ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  gap: 10px;
 }
 footer .footer_inner .footer_inner_center ul li {
   font-family: pretendard;
@@ -334,11 +365,13 @@ footer .footer_inner .footer_inner_center ul li {
 }
 footer .footer_inner .footer_inner_center ul li:last-child {
   font-size: 1.6rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   gap: 10px;
   font-family: pretendard;
 }
@@ -352,27 +385,48 @@ footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(1) {
 }
 footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(2) {
   font-size: 2.4rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 footer .footer_inner .footer_inner_right .inner_right_bottom {
   display: flex;
   gap: 10px;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left {
   display: flex;
   flex-direction: column;
   text-align: center;
+  text-align: center;
   gap: 5px;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left
+  li:nth-child(1) {
   font-size: 1.4rem;
   font-weight: bold;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_left
+  li:nth-child(2) {
   font-size: 1rem;
 }
-footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+footer
+  .footer_inner
+  .footer_inner_right
+  .inner_right_bottom
+  .right_bottom_right {
   font-size: 1.4rem;
+  line-height: 140%;
   line-height: 140%;
 }
 
@@ -406,16 +460,36 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     height: 35px;
     padding: 5px 15px;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar input::-moz-placeholder {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    input::-moz-placeholder {
     font-size: 1.2rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar input::placeholder {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    input::placeholder {
     font-size: 1.2rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    .fa-magnifying-glass {
     font-size: 1.4rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .basket
+    .fa-cart-shopping {
     width: 32px;
     height: 30px;
     font-size: 2.4rem;
@@ -455,16 +529,36 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     width: 190px;
     height: 30px;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar input::-moz-placeholder {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    input::-moz-placeholder {
     font-size: 1.1rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar input::placeholder {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    input::placeholder {
     font-size: 1.1rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .search_bar
+    .fa-magnifying-glass {
     font-size: 1.3rem;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .basket
+    .fa-cart-shopping {
     width: 30px;
     height: 28px;
     font-size: 2.2rem;
@@ -494,6 +588,9 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   header .header_inner nav .gnb {
     pointer-events: auto;
   }
+  header .header_inner nav .gnb {
+    pointer-events: auto;
+  }
   header .header_inner .trigger {
     display: flex;
   }
@@ -506,14 +603,24 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     width: 30px;
     height: 20px;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(1) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(1) {
     width: 30px;
     height: 2px;
     position: absolute;
     top: 0;
     background: #000;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(2) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(2) {
     width: 30px;
     height: 2px;
     position: absolute;
@@ -521,7 +628,12 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     transform: translateY(-50%);
     background: #000;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(3) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(3) {
     width: 30px;
     height: 2px;
     position: absolute;
@@ -544,7 +656,12 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     margin-bottom: 6px;
     cursor: pointer;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .basket
+    .fa-cart-shopping {
     width: 28px;
     height: 26px;
     font-size: 2rem;
@@ -598,14 +715,24 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     width: 30px;
     height: 20px;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(1) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(1) {
     width: 30px;
     height: 2px;
     position: absolute;
     top: 0;
     background: #000;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(2) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(2) {
     width: 30px;
     height: 2px;
     position: absolute;
@@ -613,7 +740,12 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     transform: translateY(-50%);
     background: #000;
   }
-  header .header_inner .header_inner_left ul .header_menu_trigger span:nth-child(3) {
+  header
+    .header_inner
+    .header_inner_left
+    ul
+    .header_menu_trigger
+    span:nth-child(3) {
     width: 30px;
     height: 2px;
     position: absolute;
@@ -634,7 +766,12 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     font-size: 1.7rem;
     margin-bottom: 6px;
   }
-  header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
+  header
+    .header_inner
+    .header_inner_right
+    .inner_right_bottom
+    .basket
+    .fa-cart-shopping {
     width: 24px;
     height: 22px;
     font-size: 1.8rem;
@@ -672,13 +809,27 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(2) {
     font-size: 2.2rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(1) {
     font-size: 1.3rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(2) {
     font-size: 0.9rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_right {
     font-size: 1.3rem;
     line-height: 130%;
   }
@@ -712,16 +863,34 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(2) {
     font-size: 2rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left {
     gap: 1px;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(1) {
     font-size: 1.2rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(2) {
     font-size: 0.9rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_right {
     font-size: 1.2rem;
     line-height: 120%;
   }
@@ -758,7 +927,13 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     gap: 1px;
     font-size: 1.6rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_top ul li:nth-child(1) b {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_top
+    ul
+    li:nth-child(1)
+    b {
     display: block;
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -770,21 +945,45 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     flex-direction: column;
     gap: 5px;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left {
     display: flex;
     align-items: start;
     gap: 1px;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(1) {
     font-size: 1.2rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) b {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(1)
+    b {
     display: none;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(2) {
     display: none;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_right {
     font-size: 1.2rem;
     line-height: 120%;
   }
@@ -829,18 +1028,36 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     flex-direction: column;
     gap: 5px;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left {
     display: flex;
     align-items: start;
     gap: 5px;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(1) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(1) {
     font-size: 1.2rem;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_left li:nth-child(2) {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_left
+    li:nth-child(2) {
     display: none;
   }
-  footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right {
+  footer
+    .footer_inner
+    .footer_inner_right
+    .inner_right_bottom
+    .right_bottom_right {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -855,63 +1072,159 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
     margin-left: 9vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag {
     gap: 6px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    span {
     width: 170px;
     font-size: 1.2rem;
     padding: 5px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    h2 {
     font-size: 3.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    p {
     font-size: 1.4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_text1
+    p {
     font-size: 1.4rem;
   }
   main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text {
     margin-left: 9vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    span {
     font-size: 2.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    h2 {
     font-size: 3.2rem;
     margin-bottom: 10px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    p {
     font-size: 1.4rem;
   }
   main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
     margin-left: 20vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    p {
     font-size: 1.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    h2 {
     font-size: 5rem;
   }
   main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text {
     margin-left: 9vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    p {
     font-size: 1.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    span {
     font-size: 2.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    h2 {
     font-size: 3.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner_time {
     width: 140px;
     font-size: 1.4rem;
     padding: 8px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner4_img {
     width: 75px;
     left: calc(8vw + 100px);
   }
@@ -933,7 +1246,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -955,28 +1268,176 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.8rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.8rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.4rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.8rem;
   }
   main #main_con2 {
@@ -1003,7 +1464,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1025,28 +1486,176 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.8rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.8rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.4rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.8rem;
   }
   main #main_con3 .main_inner {
@@ -1087,22 +1696,59 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.6rem;
     min-height: 0;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.8rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.8rem;
   }
 }
@@ -1116,57 +1762,153 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
     gap: 30px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag {
     gap: 4px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    span {
     width: 150px;
     font-size: 1.1rem;
     padding: 5px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    h2 {
     font-size: 2.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    p {
     font-size: 1.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_text1
+    p {
     font-size: 1.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    span {
     font-size: 2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    h2 {
     font-size: 2.8rem;
     margin-bottom: 8px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    p {
     font-size: 1.2rem;
   }
   main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
     margin-left: 16vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    p {
     font-size: 1.6rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    h2 {
     font-size: 4.5rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    p {
     font-size: 1.1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    span {
     font-size: 2.5rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    h2 {
     font-size: 2.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner_time {
     width: 120px;
     font-size: 1.2rem;
     padding: 7px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner4_img {
     width: 70px;
     left: calc(8vw + 100px);
   }
@@ -1185,7 +1927,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1206,51 +1948,305 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.5rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale {
     gap: 2px;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.9rem;
     margin-right: -3px;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.5rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 3px;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.9rem;
   }
   main #main_con2 {
@@ -1271,7 +2267,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1292,51 +2288,305 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.5rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale {
     gap: 2px;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.9rem;
     margin-right: -3px;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.5rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 3px;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.9rem;
   }
   main #main_con3 {
@@ -1380,7 +2630,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.6rem;
@@ -1389,27 +2639,87 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     flex-direction: row;
     align-items: flex-end;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale {
     gap: 2px;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.9rem;
     margin-right: -3px;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.5rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 3px;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.9rem;
   }
 }
@@ -1420,58 +2730,154 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
     gap: 20px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag {
     gap: 4px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    span {
     width: 120px;
     font-size: 1rem;
     padding: 4px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    h2 {
     font-size: 2.4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    p {
     font-size: 1.1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_text1
+    p {
     font-size: 1.1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    span {
     font-size: 1.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    h2 {
     font-size: 2.4rem;
     margin-bottom: 8px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    p {
     font-size: 1.1rem;
   }
   main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
     margin-left: 12vw;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    p {
     font-size: 1.4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    h2 {
     font-size: 4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    p {
     font-size: 1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    span {
     font-size: 2.1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    h2 {
     font-size: 2.4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner_time {
     margin-top: 5px;
     width: 120px;
     font-size: 1.1rem;
     padding: 5px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner4_img {
     width: 63px;
     left: calc(8vw + 100px);
   }
@@ -1490,7 +2896,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1511,28 +2917,176 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.1rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
   main #main_con2 {
@@ -1559,7 +3113,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1580,28 +3134,176 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.4rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
   main #main_con3 .main_inner {
@@ -1658,7 +3360,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.4rem;
@@ -1670,16 +3372,53 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
 }
@@ -1694,7 +3433,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1715,44 +3454,270 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.3rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 2px;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.7rem;
   }
   main #main_con2 {
@@ -1775,7 +3740,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1796,44 +3761,270 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.3rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 2px;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.7rem;
   }
   main #main_con3 .main_inner .main_title2 .main_title3 {
@@ -1865,7 +4056,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type1 .main_info h3,
   main #main_con4 .main_inner .main_it .main_type1 .main_info .main_title,
@@ -1886,44 +4077,270 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 1.3rem;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1rem;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon,
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
     gap: 2px;
   }
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 0.7rem;
   }
 }
@@ -1955,55 +4372,151 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
     gap: 14px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag {
     gap: 4px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    span {
     width: 100px;
     font-size: 0.8rem;
     padding: 3px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    h2 {
     font-size: 2.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_tag
+    .banner_title
+    p {
     font-size: 1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner1
+    .banner_text
+    .banner_text1
+    p {
     font-size: 1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    span {
     font-size: 1.4rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    h2 {
     font-size: 2.2rem;
     margin-bottom: 8px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner2
+    .banner2_text
+    p {
     font-size: 1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    p {
     font-size: 1.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner3
+    .banner3_text
+    h2 {
     font-size: 3rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    p {
     font-size: 1rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    span {
     font-size: 1.8rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    h2 {
     font-size: 2.2rem;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner_time {
     margin-top: 5px;
     width: 96px;
     font-size: 1rem;
     padding: 4px;
   }
-  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+  main
+    .main_banner
+    .slick-list
+    .slick-track
+    .main_innerbanner4
+    .banner4_text
+    .banner4_img {
     top: 15px;
     width: 50px;
     left: calc(8vw + 100px);
@@ -2023,7 +4536,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con1 .main_inner .main_it .main_type1 .img button,
   main #main_con1 .main_inner .main_it .main_type2 .img button {
@@ -2048,38 +4561,250 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.4rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con1
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 1rem;
   }
   main #main_con2 {
@@ -2099,7 +4824,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con2 .main_inner .main_it .main_type1 .img button,
   main #main_con2 .main_inner .main_it .main_type2 .img button {
@@ -2124,38 +4849,250 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_percent
+    p
+    b,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.4rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    span,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .main_sale
+    .main_price
+    p,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type1
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_shopping
+    .icon
+    .fa-cart-shopping,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con2
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 1rem;
   }
   main #main_con3 .main_inner {
@@ -2197,7 +5134,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type2 .img button {
     font-size: 1rem;
@@ -2205,20 +5142,73 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_percent
+    p
+    b {
     font-size: 2.4rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    span {
     font-size: 1.2rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .main_sale
+    .main_price
+    p {
     font-size: 1.6rem;
   }
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
-  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-heart,
+  main
+    #main_con4
+    .main_inner
+    .main_it
+    .main_type2
+    .main_info
+    .main_tag
+    .icon
+    .fa-cart-shopping {
     font-size: 1rem;
   }
 }
@@ -2279,7 +5269,7 @@ main #etcs .etc_inner .etc_it .main_type2 .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #etcs .etc_inner .etc_it .main_type1 .img button,
@@ -2341,39 +5331,219 @@ main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale {
   gap: 10px;
   align-items: flex-end;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p {
   font-size: 1.8rem;
   color: #f37100;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_percent
+  p
+  b,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_percent
+  p
+  b {
   font-size: 3.6rem;
   font-weight: 800;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price {
   display: flex;
   flex-direction: column;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price span,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  span,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  span {
   font-size: 1.6rem;
   color: #ccc;
   text-decoration: line-through;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .main_sale .main_price p,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .main_sale
+  .main_price
+  p,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .main_sale
+  .main_price
+  p {
   font-weight: 600;
   font-size: 2.2rem;
   color: #000;
@@ -2385,14 +5555,62 @@ main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon {
   display: flex;
   gap: 5px;
 }
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .icon .fa-heart,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
 main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .icon .fa-heart,
-main #etcs .etc_inner .etc_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .icon .fa-heart,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type1
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-heart,
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_shopping
+  .icon
+  .fa-cart-shopping,
 main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon .fa-heart,
-main #etcs .etc_inner .etc_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+main
+  #etcs
+  .etc_inner
+  .etc_it
+  .main_type2
+  .main_info
+  .main_tag
+  .icon
+  .fa-cart-shopping {
   border: 1px solid #ffc164;
   font-size: 1.2rem;
   padding: 0.5rem;

@@ -631,6 +631,220 @@ body.modal-open {
      object-fit: cover;
   width: 100%;
 }
+.detail_review .review_member > div:first-child .member_content .modal-search {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search.active {
+  top: 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .close i {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search {
+  width: 500px;
+  position: relative;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form {
+  display: flex;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search] {
+  flex: 5;
+  padding: 15px;
+  padding-left: 30px;
+  border: none;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search]::-moz-placeholder {
+  opacity: 1;
+  font-style: italic;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search]::placeholder {
+  opacity: 1;
+  font-style: italic;
+  transition: opacity 0.3s;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search]:focus {
+  outline: none;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search]:focus::-moz-placeholder {
+  opacity: 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=submit] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.detail_review .review_member > div:first-child .member_content .modal-search .search form input[type=submit]:hover {
+  opacity: 1;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content {
+  width: 1000px;
+  position: relative;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top .modal-photo {
+  width: 300px;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top .modal-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form {
+  width: 600px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-info {
+  width: 100%;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-info h1 {
+  font-size: 4rem;
+  margin-bottom: 14px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div {
+  font-size: 1.6rem;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div span {
+  display: inline-block;
+  margin-right: 4px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div span:last-child {
+  border-right: none;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-button {
+  width: 100%;
+  margin: 20px 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a {
+  display: inline-block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 34px;
+  margin-right: 8px;
+  padding: 8px 20px;
+  transition: border 0.3s, background 0.3s;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a:hover {
+  border: 1px solid;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a i {
+  margin-right: 10px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-desc {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form .modal-desc p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-top form input[type=submit] {
+  border: none;
+  border-radius: 34px;
+  color: #fff;
+  padding: 8px 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px 0 0 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div span:first-child {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div span:last-child {
+  font-style: italic;
+  text-decoration: underline;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-poster {
+  width: 100%;
+  height: 500px;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-trailer {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-content .modal-bottom .modal-trailer iframe {
+  border: none;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay .modal-close i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.detail_review .review_member > div:first-child .member_content .modal-overlay.active {
+  display: flex;
+}
 .detail_review .review_member > div:first-child .member_content > div {
   display: flex;
   flex-direction: column;
@@ -663,6 +877,220 @@ body.modal-open {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search.active {
+  top: 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .close i {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search {
+  width: 500px;
+  position: relative;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form {
+  display: flex;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search] {
+  flex: 5;
+  padding: 15px;
+  padding-left: 30px;
+  border: none;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search]::-moz-placeholder {
+  opacity: 1;
+  font-style: italic;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search]::placeholder {
+  opacity: 1;
+  font-style: italic;
+  transition: opacity 0.3s;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search]:focus {
+  outline: none;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search]:focus::-moz-placeholder {
+  opacity: 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=submit] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.detail_review .review_member > div:last-child .member_content .modal-search .search form input[type=submit]:hover {
+  opacity: 1;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content {
+  width: 1000px;
+  position: relative;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top .modal-photo {
+  width: 300px;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top .modal-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form {
+  width: 600px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-info {
+  width: 100%;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-info h1 {
+  font-size: 4rem;
+  margin-bottom: 14px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div {
+  font-size: 1.6rem;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div span {
+  display: inline-block;
+  margin-right: 4px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-info div span:last-child {
+  border-right: none;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-button {
+  width: 100%;
+  margin: 20px 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a {
+  display: inline-block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 34px;
+  margin-right: 8px;
+  padding: 8px 20px;
+  transition: border 0.3s, background 0.3s;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a:hover {
+  border: 1px solid;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-button a i {
+  margin-right: 10px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-desc {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form .modal-desc p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-top form input[type=submit] {
+  border: none;
+  border-radius: 34px;
+  color: #fff;
+  padding: 8px 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px 0 0 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div span:first-child {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-detail div span:last-child {
+  font-style: italic;
+  text-decoration: underline;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-poster {
+  width: 100%;
+  height: 500px;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-trailer {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-content .modal-bottom .modal-trailer iframe {
+  border: none;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay .modal-close i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.detail_review .review_member > div:last-child .member_content .modal-overlay.active {
+  display: flex;
 }
 .detail_review .review_member > div:last-child .member_content > div {
   display: flex;
@@ -1104,4 +1532,233 @@ body.modal-open {
   font-weight: 400;
   line-height: 3.3rem;
   color: #000;
+}
+
+.modal-search {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.modal-search.active {
+  top: 0;
+}
+.modal-search .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal-search .close i {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.modal-search .search {
+  width: 500px;
+  position: relative;
+}
+.modal-search .search form {
+  display: flex;
+}
+.modal-search .search form input[type=search] {
+  flex: 5;
+  padding: 15px;
+  padding-left: 30px;
+  border: none;
+}
+.modal-search .search form input[type=search]::-moz-placeholder {
+  opacity: 1;
+  font-style: italic;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.modal-search .search form input[type=search]::placeholder {
+  opacity: 1;
+  font-style: italic;
+  transition: opacity 0.3s;
+}
+.modal-search .search form input[type=search]:focus {
+  outline: none;
+}
+.modal-search .search form input[type=search]:focus::-moz-placeholder {
+  opacity: 0;
+}
+.modal-search .search form input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.modal-search .search form input[type=submit] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modal-search .search form input[type=submit]:hover {
+  opacity: 1;
+}
+.modal-search .search .hash-tag {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-search .search::before {
+  content: "\f002";
+  font-family: "fontawesome";
+  position: absolute;
+  top: 20%;
+  left: 8px;
+  font-size: 1.6rem;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay .modal-content {
+  width: 1000px;
+  position: relative;
+}
+.modal-overlay .modal-content .modal-top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.modal-overlay .modal-content .modal-top .modal-photo {
+  width: 300px;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.modal-overlay .modal-content .modal-top .modal-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-overlay .modal-content .modal-top form {
+  width: 600px;
+}
+.modal-overlay .modal-content .modal-top form .modal-info {
+  width: 100%;
+}
+.modal-overlay .modal-content .modal-top form .modal-info h1 {
+  font-size: 4rem;
+  margin-bottom: 14px;
+}
+.modal-overlay .modal-content .modal-top form .modal-info div {
+  font-size: 1.6rem;
+}
+.modal-overlay .modal-content .modal-top form .modal-info div span {
+  display: inline-block;
+  margin-right: 4px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.modal-overlay .modal-content .modal-top form .modal-info div span:last-child {
+  border-right: none;
+}
+.modal-overlay .modal-content .modal-top form .modal-button {
+  width: 100%;
+  margin: 20px 0;
+}
+.modal-overlay .modal-content .modal-top form .modal-button a {
+  display: inline-block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 34px;
+  margin-right: 8px;
+  padding: 8px 20px;
+  transition: border 0.3s, background 0.3s;
+}
+.modal-overlay .modal-content .modal-top form .modal-button a:hover {
+  border: 1px solid;
+}
+.modal-overlay .modal-content .modal-top form .modal-button a i {
+  margin-right: 10px;
+}
+.modal-overlay .modal-content .modal-top form .modal-desc {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modal-overlay .modal-content .modal-top form .modal-desc p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.modal-overlay .modal-content .modal-top form input[type=submit] {
+  border: none;
+  border-radius: 34px;
+  color: #fff;
+  padding: 8px 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-overlay .modal-content .modal-bottom .modal-detail {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px 0 0 0;
+}
+.modal-overlay .modal-content .modal-bottom .modal-detail h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+.modal-overlay .modal-content .modal-bottom .modal-detail div {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.modal-overlay .modal-content .modal-bottom .modal-detail div span:first-child {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.modal-overlay .modal-content .modal-bottom .modal-detail div span:last-child {
+  font-style: italic;
+  text-decoration: underline;
+}
+.modal-overlay .modal-content .modal-bottom .modal-poster {
+  width: 100%;
+  height: 500px;
+}
+.modal-overlay .modal-content .modal-bottom .modal-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-overlay .modal-content .modal-bottom .modal-trailer {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+}
+.modal-overlay .modal-content .modal-bottom .modal-trailer iframe {
+  border: none;
+}
+.modal-overlay .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-overlay .modal-close i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.modal-overlay.active {
+  display: flex;
 }
