@@ -6,7 +6,7 @@ fetch("../../food_dataset.json")
     return response.json();
   })
   .then((data) => {
-    const fruits = data.fruits.map((item) => {
+    const vegetables = data.vegetables.map((item) => {
       return {
         id: item.id,
         title: item.title,
@@ -19,10 +19,10 @@ fetch("../../food_dataset.json")
     });
 
     const content = document.querySelector(
-      "#fruits > .fruit_inner > .fruit_it"
+      "#vegetables > .vegetable_inner > .vegetable_it"
     );
 
-    fruits.forEach((item) => {
+    vegetables.forEach((item) => {
       const section = document.createElement("li");
       if (item.discount_rate < 20) {
         section.className = "main_type1";

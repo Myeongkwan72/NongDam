@@ -15,6 +15,9 @@ body {
   font-family: map-get($map: $font, $key: pretendard);
   width: 100%;
   margin: 0px auto;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 /* Product Thumbnail */
@@ -521,7 +524,7 @@ body {
     .faq_date {
       color: map-get($map: $color, $key: gray-858585);
     }
-    .faq_comple {
+    .faq_status {
       color: map-get($map: $color, $key: main-01);
       font-weight: 500;
     }
@@ -538,12 +541,6 @@ body {
       color: map-get($map: $color, $key: dark);
       cursor: pointer;
 
-      // &:first-child {
-      //   color: map-get($map: $color, $key: main-01);
-      //   font-weight: 700;
-      //   text-decoration: underline;
-      // }
-
       &.active {
         color: map-get($map: $color, $key: main-01);
         font-weight: 700;
@@ -554,7 +551,7 @@ body {
 }
 
 /* modal */
-.modal_overlay {
+.modal_container {
   position: fixed;
   top: 50px;
   left: 0;
@@ -566,10 +563,10 @@ body {
   justify-content: center;
   align-items: center;
 
-  .modal {
-    width: 500px;
+  .modal_contents {
+    width: 400px;
     background: map-get($map: $color, $key: light);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -585,13 +582,23 @@ body {
         font-weight: 700;
       }
 
-      .modal_close {
+      .modal_close_btn {
         font-size: 2.4rem;
         cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+          color: map-get($map: $color, $key: gray-858585);
+        }
       }
     }
 
-    .modal_body {
+    .modal_user_info {
+      display: flex;
+      justify-content: space-between;
+      color: map-get($map: $color, $key: dark);
+    }
+
+    .modal_input {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -599,14 +606,14 @@ body {
       input,
       textarea {
         padding: 10px;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         border: 1px solid map-get($map: $color, $key: gray-ccc);
         border-radius: 8px;
         width: 100%;
       }
 
       textarea {
-        height: 100px;
+        height: 200px;
         resize: none;
       }
     }
@@ -623,6 +630,10 @@ body {
         border: none;
         border-radius: 10px;
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background: map-get($map: $color, $key: main-02);
+        }
       }
     }
   }

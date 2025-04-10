@@ -24,19 +24,19 @@ main {
   gap: 100px;
   justify-content: center;
   margin: 0 auto;
-  #fruits {
+  #etcs {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    .fruit_inner {
+    .etc_inner {
       margin: 120px 0;
       width: 100%;
       max-width: 1050px;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      .fruit_it {
+      .etc_it {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
