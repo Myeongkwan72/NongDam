@@ -84,6 +84,7 @@ header {
         }
         &.active {
           opacity: 1;
+          color: map-get($map: $color, $key: main-01);
         }
       }
     }
