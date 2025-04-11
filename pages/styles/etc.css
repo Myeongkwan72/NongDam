@@ -110,6 +110,7 @@ header .header_inner nav .gnb li:hover {
 }
 header .header_inner nav .gnb.active {
   opacity: 1;
+  color: #f37100;
 }
 header .header_inner .trigger {
   bottom: 20px;
