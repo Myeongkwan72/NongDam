@@ -243,23 +243,6 @@ cartBtn.addEventListener("click", () => {
 });
 /* cartBtn click event end */
 
-/* cartBtn count start */
-const cartCount = () => {
-  const currentUserId = localStorage.getItem("ndUsers");
-  const cartKey = `cart_${currentUserId}`;
-  const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
-
-  const cartTotalCount = cartData.reduce((cur, it) => cur + it.quantity, 0);
-
-  const cartCountTag = document.querySelector(".fa-cart-shopping p");
-  if (cartCountTag) {
-    cartCountTag.innerText = cartTotalCount;
-  }
-};
-
-cartCount();
-/* cartBtn count end */
-
 reviewMoreBtn.addEventListener("click", () => {
   hideBtn.forEach((member) => {
     if (reviewShow) {

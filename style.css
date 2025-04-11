@@ -2430,6 +2430,9 @@ main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .ban
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .main_banner .slick-arrow {
+  display: none;
+}
 main #main_con1 {
   width: 100%;
   height: auto;

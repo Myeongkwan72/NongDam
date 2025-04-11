@@ -2023,3 +2023,189 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     font-size: 1rem;
   }
 }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: pretendard;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  margin: 0 auto;
+}
+main #search {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+main #search .search_inner {
+  margin: 120px 0;
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #search .search_inner .search_it {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+main #search .search_inner .search_it .main_type1,
+main #search .search_inner .search_it .main_type2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  gap: 15px;
+}
+main #search .search_inner .search_it .main_type1 .img,
+main #search .search_inner .search_it .main_type2 .img {
+  position: relative;
+  width: 100%;
+}
+main #search .search_inner .search_it .main_type1 .img img,
+main #search .search_inner .search_it .main_type2 .img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main #search .search_inner .search_it .main_type1 .img button,
+main #search .search_inner .search_it .main_type2 .img button {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: #f37100;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-family: pretendard;
+}
+main #search .search_inner .search_it .main_type1 .main_info,
+main #search .search_inner .search_it .main_type2 .main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 10px;
+}
+main #search .search_inner .search_it .main_type1 .main_info h3,
+main #search .search_inner .search_it .main_type1 .main_info .main_title,
+main #search .search_inner .search_it .main_type2 .main_info h3,
+main #search .search_inner .search_it .main_type2 .main_info .main_title {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping p,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag p,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping p,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag p {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+  font-size: 1.8rem;
+  color: #f37100;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale .main_price,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale .main_price,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale .main_price,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale .main_price {
+  display: flex;
+  flex-direction: column;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+  font-size: 1.6rem;
+  color: #ccc;
+  text-decoration: line-through;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #000;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .icon,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .icon,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .icon,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .icon {
+  display: flex;
+  gap: 5px;
+}
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+main #search .search_inner .search_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .icon .fa-heart,
+main #search .search_inner .search_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+main #search .search_inner .search_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .icon .fa-heart,
+main #search .search_inner .search_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+  border: 1px solid #ffc164;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  color: #ffc164;
+  cursor: pointer;
+}
+main #search .search_inner .search_empty {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #ccc;
+  padding: 60px 0;
+}
