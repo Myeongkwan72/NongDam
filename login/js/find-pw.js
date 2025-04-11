@@ -44,12 +44,8 @@ findSwitchEmail.addEventListener("click", () => {
   vaildTest();
 });
 
-// 로컬 스토리지에서 유저 정보 찾아오기
-const ndUsers = localStorage.getItem("ndUsers");
-
-// 현재 유저 정보
+// 등록된 전체 유저 정보
 const users = JSON.parse(localStorage.getItem("Users")) || [];
-const currentUser = users.find((user) => user.id === ndUsers);
 
 // 계정 찾기
 const form = document.querySelector(".find_id");
@@ -64,6 +60,7 @@ nameError.style.opacity = "0";
 callError.style.opacity = "0";
 emailError.style.opacity = "0";
 
+// 유효성 검사 함수
 const vaildTest = (e) => {
   if (e) e.preventDefault();
 
@@ -115,3 +112,46 @@ const vaildTest = (e) => {
 };
 
 form.addEventListener("input", vaildTest);
+
+const findUser = () => {
+  const name = document.querySelector("#name").value.trim();
+  const call = document
+    .querySelector("#call")
+    .value.trim()
+    .replace(/[^0-9]/g, "");
+  const email = document.querySelector("#email").value.trim();
+
+  let Users = null;
+
+  if (currentMode === "call") {
+    Users = users.find((user) => {
+      const userCall = user.call.replace(/[^0-9]/g, "");
+      return user.name === name && userCall === call;
+    });
+  } else if (currentMode === "email") {
+    Users = users.find((user) => {
+      return user.name === name && user.email === email;
+    });
+  }
+
+  if (Users) {
+    console.log("해당 유저 ID:", Users.pw);
+    return Users.pw;
+  } else {
+    console.log("일치하는 유저가 없습니다.");
+    return null;
+  }
+};
+
+findButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const findPw = findUser();
+
+  if (findPw) {
+    alert(`회원님의 비밀번호는 ${findPw}입니다.`);
+    window.location.href = "/login/login.html";
+  } else {
+    alert("일치하는 회원 정보를 찾을 수 없습니다.");
+  }
+});

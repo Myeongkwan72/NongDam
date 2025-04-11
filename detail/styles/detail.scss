@@ -15,6 +15,9 @@ body {
   font-family: map-get($map: $font, $key: pretendard);
   width: 100%;
   margin: 0px auto;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 /* Product Thumbnail */
@@ -22,19 +25,21 @@ body {
   width: 100%;
   .thumb_one {
     width: 100%;
-    height: auto;
+    // height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    align-items: end;
+    margin-bottom: 30px;
     overflow: hidden;
-    padding-right: 20px;
-    img {
-      border-radius: 10px;
-      object-fit: cover;
+    gap: 30px;
+    // padding-right: 20px;
+    .product_sub_img {
       width: 20%;
+      max-width: 20%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
     }
-
     & p {
       width: 50px;
       height: 50px;
@@ -46,27 +51,28 @@ body {
       margin-bottom: 20px;
       text-align: center;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 8px 17px;
     }
 
-    & h4 {
+    .product_ex_title {
       font-size: 2.6rem;
       font-weight: 700;
       color: map-get($map: $color, $key: dark);
       margin-bottom: 10px;
     }
 
-    & span {
+    .product_ex_desc {
       width: 800px;
       font-size: 1.8rem;
       font-weight: normal;
-      line-height: 1.3rem;
+      line-height: 150%;
       color: map-get($map: $color, $key: dark);
     }
   }
 }
+
 /* Review Content */
 @mixin member-content {
   width: 50%;
@@ -75,18 +81,237 @@ body {
     gap: 20px;
     display: flex;
     font-size: 1.4rem;
+    line-height: 150%;
     overflow: hidden;
     padding-right: 20px;
+    height: 100%;
     img {
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
+      height: 100%;
+    }
+    .modal-search {
+      width: 100%;
+      height: 300px;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      z-index: 5;
+      background: rgba($color: #000000, $alpha: 0.5);
+      color: map-get($map: $color, $key: light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+      &.active {
+        top: 0;
+      }
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        i {
+          font-size: 2.4rem;
+          cursor: pointer;
+        }
+      }
+      .search {
+        width: 500px;
+        position: relative;
+        form {
+          display: flex;
+          input[type="search"] {
+            flex: 5;
+            padding: 15px;
+            padding-left: 30px;
+            border: none;
+            &::placeholder {
+              opacity: 1;
+              font-style: italic;
+              transition: opacity 0.3s;
+            }
+            &:focus {
+              outline: none;
+              &::placeholder {
+                opacity: 0;
+              }
+            }
+          }
+          input[type="submit"] {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            background: map-get($map: $color, $key: button);
+            color: map-get($map: $color, $key: light);
+            opacity: 0.8;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      background: rgba($color: #000000, $alpha: 0.7);
+      width: 100%;
+      height: auto;
+      padding: 100px;
+      // display: flex;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      .modal-content {
+        width: 1000px;
+        position: relative;
+        .modal-top {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+          .modal-photo {
+            width: 300px;
+            height: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          form {
+            width: 600px;
+            .modal-info {
+              width: 100%;
+              h1 {
+                font-size: 4rem;
+                margin-bottom: 14px;
+              }
+              div {
+                font-size: 1.6rem;
+                // line-height: 1.2rem;
+                span {
+                  display: inline-block;
+                  margin-right: 4px;
+                  padding-right: 10px;
+                  border-right: 1px solid map-get($map: $color, $key: light);
+                  &:last-child {
+                    border-right: none;
+                  }
+                }
+              }
+            }
+            .modal-button {
+              width: 100%;
+              margin: 20px 0;
+              a {
+                display: inline-block;
+                width: auto;
+                border: 1px solid map-get($map: $color, $key: light);
+                border-radius: 34px;
+                margin-right: 8px;
+                padding: 8px 20px;
+                transition: border 0.3s, background 0.3s;
+                &:hover {
+                  border: 1px solid map-get($map: $color, $key: button);
+                  background: map-get($map: $color, $key: button);
+                }
+                i {
+                  margin-right: 10px;
+                }
+              }
+            }
+            .modal-desc {
+              width: 100%;
+              margin-bottom: 20px;
+              p {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+              }
+            }
+            input[type="submit"] {
+              border: none;
+              border-radius: 34px;
+              background: map-get($map: $color, $key: button);
+              color: map-get($map: $color, $key: light);
+              padding: 8px 36px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+        }
+        .modal-bottom {
+          .modal-detail {
+            width: 100%;
+            background: map-get($map: $color, $key: button);
+            padding: 10px;
+            border-radius: 20px 0 0 0;
+            h1 {
+              font-size: 3rem;
+              margin-bottom: 14px;
+            }
+            div {
+              margin-bottom: 10px;
+              padding-left: 20px;
+              span {
+                &:first-child {
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  margin-right: 12px;
+                }
+                &:last-child {
+                  font-style: italic;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .modal-poster {
+            width: 100%;
+            height: 500px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .modal-trailer {
+            width: 100%;
+            height: 500px;
+            // margin: 20px 0;
+            background: #fff;
+            iframe {
+              border: none;
+            }
+          }
+        }
+      }
+      .modal-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        i {
+          font-size: 3rem;
+          cursor: pointer;
+        }
+      }
+      &.active {
+        display: flex;
+      }
     }
     & > div {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: map-get($map: $color, $key: gray-999);
         margin: 30px 0px 0px;
       }
@@ -111,6 +336,7 @@ body {
   height: 1px;
   background-color: map-get($map: $color, $key: main-01);
   border: none;
+  padding: 0 50px;
 }
 
 /* info */
@@ -127,6 +353,7 @@ body {
     max-width: 50%;
     overflow: hidden;
     img {
+      aspect-ratio: 1 / 1;
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
@@ -262,7 +489,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
+  // gap: 50px;
 
   .review_text {
     width: 100%;
@@ -288,7 +515,7 @@ body {
     border-radius: 10px;
     & .star {
       font-size: 2rem;
-      font-weight: 300;
+      font-weight: 400;
     }
     & .rating {
       font-size: 2.4rem;
@@ -370,15 +597,18 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 50px;
-  gap: 50px;
+  gap: 0;
   .product_title {
     width: 100%;
     overflow: hidden;
-    padding-right: 20px;
-    img {
+    // padding-right: 20px;
+    .product_title_img {
       border-radius: 10px;
       object-fit: cover;
       width: 100%;
+      max-width: 930px;
+      height: auto;
+      aspect-ratio: 930 / 605;
     }
     margin-bottom: 80px;
     h1 {
@@ -386,6 +616,7 @@ body {
       display: inline-block;
       position: relative;
       margin-bottom: 30px;
+      font-weight: 700;
       &::after {
         content: "";
         display: block;
@@ -401,6 +632,9 @@ body {
       display: none;
       img {
         width: 22.3%;
+        max-width: 22.3%;
+        height: auto;
+        aspect-ratio: 200 / 200;
       }
     }
   }
@@ -513,7 +747,7 @@ body {
     .faq_date {
       color: map-get($map: $color, $key: gray-858585);
     }
-    .faq_comple {
+    .faq_status {
       color: map-get($map: $color, $key: main-01);
       font-weight: 500;
     }
@@ -530,12 +764,6 @@ body {
       color: map-get($map: $color, $key: dark);
       cursor: pointer;
 
-      // &:first-child {
-      //   color: map-get($map: $color, $key: main-01);
-      //   font-weight: 700;
-      //   text-decoration: underline;
-      // }
-
       &.active {
         color: map-get($map: $color, $key: main-01);
         font-weight: 700;
@@ -546,7 +774,7 @@ body {
 }
 
 /* modal */
-.modal_overlay {
+.modal_container {
   position: fixed;
   top: 50px;
   left: 0;
@@ -558,10 +786,10 @@ body {
   justify-content: center;
   align-items: center;
 
-  .modal {
-    width: 500px;
+  .modal_contents {
+    width: 400px;
     background: map-get($map: $color, $key: light);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -577,13 +805,23 @@ body {
         font-weight: 700;
       }
 
-      .modal_close {
+      .modal_close_btn {
         font-size: 2.4rem;
         cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+          color: map-get($map: $color, $key: gray-858585);
+        }
       }
     }
 
-    .modal_body {
+    .modal_user_info {
+      display: flex;
+      justify-content: space-between;
+      color: map-get($map: $color, $key: dark);
+    }
+
+    .modal_input {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -591,14 +829,14 @@ body {
       input,
       textarea {
         padding: 10px;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         border: 1px solid map-get($map: $color, $key: gray-ccc);
         border-radius: 8px;
         width: 100%;
       }
 
       textarea {
-        height: 100px;
+        height: 200px;
         resize: none;
       }
     }
@@ -615,6 +853,10 @@ body {
         border: none;
         border-radius: 10px;
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background: map-get($map: $color, $key: main-02);
+        }
       }
     }
   }
@@ -731,5 +973,235 @@ body {
         }
       }
     }
+  }
+}
+.modal-search {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 5;
+  background: rgba($color: #000000, $alpha: 0.5);
+  color: map-get($map: $color, $key: light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  &.active {
+    top: 0;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    i {
+      font-size: 2.4rem;
+      cursor: pointer;
+    }
+  }
+  .search {
+    width: 500px;
+    position: relative;
+    form {
+      display: flex;
+      input[type="search"] {
+        flex: 5;
+        padding: 15px;
+        padding-left: 30px;
+        border: none;
+        &::placeholder {
+          opacity: 1;
+          font-style: italic;
+          transition: opacity 0.3s;
+        }
+        &:focus {
+          outline: none;
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+      input[type="submit"] {
+        flex: 1;
+        padding: 15px;
+        border: none;
+        background: map-get($map: $color, $key: button);
+        color: map-get($map: $color, $key: light);
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .hash-tag {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: map-get($map: $color, $key: hashtag);
+    }
+    &::before {
+      content: "\f002";
+      font-family: "fontawesome";
+      color: map-get($map: $color, $key: button);
+      position: absolute;
+      top: 20%;
+      left: 8px;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: rgba($color: #000000, $alpha: 0.7);
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  // display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  .modal-content {
+    width: 1000px;
+    position: relative;
+    .modal-top {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      .modal-photo {
+        width: 300px;
+        height: 450px;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      form {
+        width: 600px;
+        .modal-info {
+          width: 100%;
+          h1 {
+            font-size: 4rem;
+            margin-bottom: 14px;
+          }
+          div {
+            font-size: 1.6rem;
+            // line-height: 1.2rem;
+            span {
+              display: inline-block;
+              margin-right: 4px;
+              padding-right: 10px;
+              border-right: 1px solid map-get($map: $color, $key: light);
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
+        }
+        .modal-button {
+          width: 100%;
+          margin: 20px 0;
+          a {
+            display: inline-block;
+            width: auto;
+            border: 1px solid map-get($map: $color, $key: light);
+            border-radius: 34px;
+            margin-right: 8px;
+            padding: 8px 20px;
+            transition: border 0.3s, background 0.3s;
+            &:hover {
+              border: 1px solid map-get($map: $color, $key: button);
+              background: map-get($map: $color, $key: button);
+            }
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+        .modal-desc {
+          width: 100%;
+          margin-bottom: 20px;
+          p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+        }
+        input[type="submit"] {
+          border: none;
+          border-radius: 34px;
+          background: map-get($map: $color, $key: button);
+          color: map-get($map: $color, $key: light);
+          padding: 8px 36px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+    .modal-bottom {
+      .modal-detail {
+        width: 100%;
+        background: map-get($map: $color, $key: button);
+        padding: 10px;
+        border-radius: 20px 0 0 0;
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 14px;
+        }
+        div {
+          margin-bottom: 10px;
+          padding-left: 20px;
+          span {
+            &:first-child {
+              font-size: 1.6rem;
+              font-weight: bold;
+              margin-right: 12px;
+            }
+            &:last-child {
+              font-style: italic;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .modal-poster {
+        width: 100%;
+        height: 500px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .modal-trailer {
+        width: 100%;
+        height: 500px;
+        // margin: 20px 0;
+        background: #fff;
+        iframe {
+          border: none;
+        }
+      }
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    i {
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  }
+  &.active {
+    display: flex;
   }
 }

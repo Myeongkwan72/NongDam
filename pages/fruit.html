@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/afd4c8363e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js-->
+    <link rel="stylesheet" href="./styles/fruit.css" />
+    <script defer src="./js/fruit.js"></script>
+    <!-- responsive css-->
+    <link rel="stylesheet" href="../res_style.css" />
+    <script defer src="../common.js"></script>
+    <title>Fruit</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header_event">
+        <p>
+          지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
+          <i class="fa-solid fa-chevron-right header_location_event"></i>
+        </p>
+      </div>
+      <div class="header_inner">
+        <!-- trigger start -->
+        <nav>
+          <ul class="gnb">
+            <li class="header_location_fruit">과일</li>
+            <li class="header_location_vegetable">채소</li>
+            <li class="header_location_etc">가공식품/기타</li>
+            <li class="header_location_event">이벤트</li>
+          </ul>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- trigger end -->
+        <div class="header_inner_left">
+          <ul>
+            <li class="header_location_fruit">과일</li>
+            <li class="header_location_vegetable">채소</li>
+            <li class="header_location_etc">가공식품/기타</li>
+            <li class="header_location_event">이벤트</li>
+          </ul>
+        </div>
+        <div class="header_inner_right">
+          <div class="inner_right_top">
+            <ul class="header_login"></ul>
+          </div>
+          <div class="inner_right_bottom">
+            <div class="search_bar">
+              <input type="text" placeholder="검색어를 입력해주세요." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <i class="fa-solid fa-magnifying-glass res_magnify"></i>
+            <div class="basket">
+              <i class="fa-solid fa-cart-shopping"> <p>0</p></i>
+            </div>
+          </div>
+        </div>
+        <div id="header_logo" class="header_inner_logo">
+          <img src="../imgs/logo.png" alt="logo" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="fruits">
+        <div class="fruit_inner">
+          <ul class="fruit_it"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+        <div class="footer_inner_left">
+          <img src="../imgs/logo_02.png" alt="logo_02" />
+          <p>ⓒ 농담 All rights reserved</p>
+        </div>
+        <div class="footer_inner_center">
+          <ul>
+            <li>법인명 (상호) : 주식회사 농담 | 대표이사 : 송명관</li>
+            <li>사업자등록번호 : 123-45-67890</li>
+            <li>주소지 : 서울시 서초구 서초대로77길 41 대동2빌딩 9층</li>
+            <li>서비스 이용약관 | 개인정보 처리방침</li>
+          </ul>
+        </div>
+        <div class="footer_inner_right">
+          <div class="inner_right_top">
+            <ul>
+              <li>고객센터</li>
+              <li>02-1234-5678</li>
+            </ul>
+          </div>
+          <div class="inner_right_bottom">
+            <ul class="right_bottom_left">
+              <li>고객센터 운영시간 :</li>
+              <li>(운영시간에 순차적 답변)</li>
+            </ul>
+            <ul class="right_bottom_right">
+              <li>월 ~ 토요일 | 오전 7시 ~ 오후 6시</li>
+              <li>일 & 공휴일 | 오전 7시 ~ 오후 4시</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

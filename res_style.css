@@ -1,7 +1,69 @@
-@media screen and (max-width: 1024px) {
-  main #main_con1 {
-    height: auto;
-    margin-top: 60px;
+@media screen and (max-width: 1440px) {
+  main .main_banner {
+    height: 340px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
+    margin-left: 9vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+    gap: 6px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+    width: 170px;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+    font-size: 3.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+    font-size: 1.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+    font-size: 1.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text {
+    margin-left: 9vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+    font-size: 2.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+    font-size: 1.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
+    margin-left: 20vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+    font-size: 1.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+    font-size: 5rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text {
+    margin-left: 9vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+    font-size: 1.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+    font-size: 2.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+    font-size: 3.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+    width: 140px;
+    font-size: 1.4rem;
+    padding: 8px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+    width: 75px;
+    left: calc(8vw + 100px);
   }
   main #main_con1 .main_inner {
     padding: 0 50px;
@@ -28,7 +90,7 @@
   main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
     font-size: 1.6rem;
-    min-height: 4.2rem;
+    min-height: 0;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -67,66 +129,8 @@
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
     font-size: 1.8rem;
   }
-  main .main_banner .main_innerbanner1 .banner_text {
-    padding: 0 50px;
-    gap: 30px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag {
-    gap: 6px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
-    width: 16%;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
-    font-size: 2.6rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title p {
-    font-size: 1.1rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_text1 p {
-    font-size: 1.2rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text span {
-    font-size: 2.2rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text h2 {
-    font-size: 3rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text p {
-    font-size: 1.2rem;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text p {
-    font-size: 1.8rem;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text h2 {
-    font-size: 4rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text p {
-    font-size: 1.1rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text span {
-    font-size: 2.4rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text h2 {
-    font-size: 2.8rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text .banner_time {
-    width: 14%;
-    font-size: 1.4rem;
-  }
   main #main_con2 {
-    height: auto;
+    margin-top: 80px;
   }
   main #main_con2 .main_inner {
     padding: 0 50px;
@@ -156,7 +160,7 @@
   main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
     font-size: 1.6rem;
-    min-height: 4.2rem;
+    min-height: 0;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -204,14 +208,15 @@
   main #main_con3 .main_inner .main_title2 p {
     font-size: 1.4rem;
   }
-  main #main_con3 .main_inner .main_recipe {
-    width: 60%;
+  main #main_con3 .main_inner .main_recipe .slick-slide {
+    padding: 0 10px;
   }
   main #main_con3 .main_inner .main_recipe .main_item img {
     width: 100%;
   }
   main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
-    transform: translate(-53%, -50%);
+    width: 212px;
+    transform: translate(-50%, -50%);
   }
   main #main_con4 .main_inner {
     padding: 0 50px;
@@ -236,7 +241,7 @@
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.6rem;
-    min-height: 4.2rem;
+    min-height: 0;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
     font-size: 1.4rem;
@@ -251,15 +256,75 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 767px) {
-  main #main_con1 .main_inner {
-    padding: 0 50px;
+@media screen and (max-width: 1024px) {
+  main {
+    gap: 80px;
   }
-  main #main_con1 .main_inner h1 {
+  main .main_banner {
+    height: 300px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
+    gap: 30px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+    gap: 4px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+    width: 150px;
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+    font-size: 2.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+    font-size: 1.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+    font-size: 1.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
     font-size: 2rem;
   }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+    font-size: 1.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
+    margin-left: 16vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+    font-size: 1.6rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+    font-size: 4.5rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+    font-size: 1.1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+    font-size: 2.5rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+    font-size: 2.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+    width: 120px;
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+    width: 70px;
+    left: calc(8vw + 100px);
+  }
+  main #main_con1 .main_inner h1 {
+    font-size: 2.2rem;
+  }
   main #main_con1 .main_inner .main_it {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   main #main_con1 .main_inner .main_it .main_type1,
@@ -276,8 +341,312 @@
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
   main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.6rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
+    font-size: 1.5rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+    gap: 2px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
     font-size: 1.4rem;
-    min-height: 4.2rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.9rem;
+    margin-right: -3px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1.2rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.5rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 3px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.9rem;
+  }
+  main #main_con2 {
+    margin-top: 60px;
+  }
+  main #main_con2 .main_inner h1 {
+    font-size: 2.2rem;
+  }
+  main #main_con2 .main_inner .main_it {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1,
+  main #main_con2 .main_inner .main_it .main_type2 {
+    gap: 15px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .img img,
+  main #main_con2 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.6rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
+    font-size: 1.5rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+    gap: 2px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+    font-size: 1.4rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.9rem;
+    margin-right: -3px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1.2rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.5rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 3px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.9rem;
+  }
+  main #main_con3 {
+    margin-top: 40px;
+  }
+  main #main_con3 .main_inner {
+    padding: 0 50px;
+  }
+  main #main_con3 .main_inner .main_title2 .main_title3 {
+    font-size: 2.2rem;
+  }
+  main #main_con3 .main_inner .main_title2 p {
+    font-size: 1.4rem;
+  }
+  main #main_con3 .main_inner .main_recipe {
+    width: 60%;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item img {
+    width: 100%;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
+    width: 200px;
+    transform: translate(-50%, -50%);
+  }
+  main #main_con4 .main_inner {
+    padding: 0 50px;
+  }
+  main #main_con4 .main_inner .main_sale_title h1 {
+    font-size: 2.2rem;
+  }
+  main #main_con4 .main_inner .main_sale_title .sale_time {
+    font-size: 1.4rem;
+  }
+  main #main_con4 .main_inner .main_it {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 {
+    gap: 15px;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
+    font-size: 1.6rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale {
+    gap: 2px;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+    font-size: 1.4rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.9rem;
+    margin-right: -3px;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1.2rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.5rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 3px;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .main_banner {
+    height: 240px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
+    gap: 20px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+    gap: 4px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+    width: 120px;
+    font-size: 1rem;
+    padding: 4px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+    font-size: 2.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+    font-size: 1.1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+    font-size: 1.1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+    font-size: 1.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+    font-size: 1.1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text {
+    margin-left: 12vw;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+    font-size: 1.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+    font-size: 4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+    font-size: 1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+    font-size: 2.1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+    font-size: 2.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+    margin-top: 5px;
+    width: 120px;
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+    width: 63px;
+    left: calc(8vw + 100px);
+  }
+  main #main_con1 .main_inner h1 {
+    font-size: 2rem;
+  }
+  main #main_con1 .main_inner .main_it {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1,
+  main #main_con1 .main_inner .main_it .main_type2 {
+    gap: 6px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .img img,
+  main #main_con1 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.4rem;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -302,7 +671,7 @@
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
@@ -316,65 +685,8 @@
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
     font-size: 1.6rem;
   }
-  main .main_banner .main_innerbanner1 .banner_text {
-    padding: 0 50px;
-    gap: 20px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag {
-    gap: 6px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
-    width: 18%;
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
-    font-size: 2.2rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_text1 p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text span {
-    font-size: 1.8rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text h2 {
-    font-size: 2.4rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text p {
-    font-size: 1.4rem;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text h2 {
-    font-size: 3rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text {
-    padding: 0 50px;
-    gap: 3px;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text span {
-    font-size: 2rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text h2 {
-    font-size: 2.4rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text .banner_time {
-    width: 16%;
-    font-size: 1.2rem;
-    padding: 5px;
+  main #main_con2 {
+    margin-top: 40px;
   }
   main #main_con2 .main_inner {
     padding: 0 50px;
@@ -387,11 +699,11 @@
   }
   main #main_con2 .main_inner .main_it {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   main #main_con2 .main_inner .main_it .main_type1,
   main #main_con2 .main_inner .main_it .main_type2 {
-    gap: 15px;
+    gap: 6px;
   }
   main #main_con2 .main_inner .main_it .main_type1 .img img,
   main #main_con2 .main_inner .main_it .main_type2 .img img {
@@ -404,7 +716,6 @@
   main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
     font-size: 1.4rem;
-    min-height: 4.2rem;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -458,10 +769,23 @@
   main #main_con3 .main_inner .main_recipe {
     width: 70%;
   }
+  main #main_con3 .main_inner .main_recipe .slick-prev.slick-prev,
+  main #main_con3 .main_inner .main_recipe .slick-next.slick-prev {
+    left: -195px;
+  }
+  main #main_con3 .main_inner .main_recipe .slick-prev.slick-next,
+  main #main_con3 .main_inner .main_recipe .slick-next.slick-next {
+    left: -130px;
+  }
+  main #main_con3 .main_inner .main_recipe .slick-prev:before,
+  main #main_con3 .main_inner .main_recipe .slick-next:before {
+    font-size: 2.5rem;
+  }
   main #main_con3 .main_inner .main_recipe .main_item img {
     width: 100%;
   }
   main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
+    width: 180px;
     transform: translate(-50%, -50%);
   }
   main #main_con4 .main_inner {
@@ -471,14 +795,15 @@
     font-size: 2rem;
   }
   main #main_con4 .main_inner .main_sale_title .sale_time {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
   }
   main #main_con4 .main_inner .main_it {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   main #main_con4 .main_inner .main_it .main_type2 {
-    gap: 15px;
+    gap: 6px;
   }
   main #main_con4 .main_inner .main_it .main_type2 .img img {
     aspect-ratio: 1/1;
@@ -486,28 +811,355 @@
        object-fit: cover;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
+    font-size: 1.4rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
     font-size: 1.6rem;
-    min-height: 4.2rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #main_con1 .main_inner h1 {
+    font-size: 2rem;
+  }
+  main #main_con1 .main_inner .main_it {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .img img,
+  main #main_con1 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info h3,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_title,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.4rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag p {
+    font-size: 1.2rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+    font-size: 1.2rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.3rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.2rem;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 2px;
+  }
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.7rem;
+  }
+  main #main_con2 {
+    margin-top: 40px;
+  }
+  main #main_con2 .main_inner {
+    padding: 0 50px;
+  }
+  main #main_con2 .main_inner .main_con2title img {
+    width: 25px;
+  }
+  main #main_con2 .main_inner .main_it {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main #main_con2 .main_inner .main_it .main_type1,
+  main #main_con2 .main_inner .main_it .main_type2 {
+    gap: 15px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .img img,
+  main #main_con2 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info h3,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_title,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.4rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag p {
+    font-size: 1.2rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+    font-size: 1.2rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.3rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.2rem;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 2px;
+  }
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con2 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.7rem;
+  }
+  main #main_con3 .main_inner .main_title2 .main_title3 {
+    font-size: 2rem;
+  }
+  main #main_con3 .main_inner .main_title2 p {
+    font-size: 1.2rem;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item img {
+    width: 100%;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
+    width: 200px;
+    transform: translate(-50%, -50%);
+  }
+  main #main_con3 .main_inner .main_recipe .slick-next {
+    right: 70px;
+  }
+  main #main_con4 .main_inner {
+    padding: 0 50px;
+  }
+  main #main_con4 .main_inner .main_sale_title h1 {
+    font-size: 2rem;
+  }
+  main #main_con4 .main_inner .main_it {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .img img,
+  main #main_con4 .main_inner .main_it .main_type2 .img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info h3,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_title,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info h3,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_title {
+    font-size: 1.4rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping p,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag p {
+    font-size: 1.2rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
+    font-size: 1.2rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_percent p b,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_percent p b,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p b {
+    font-size: 1.3rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price span,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price span,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price span {
+    font-size: 1rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .main_sale .main_price p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .main_sale .main_price p,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_price p {
+    font-size: 1.2rem;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon {
+    gap: 2px;
+  }
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-heart,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-heart,
+  main #main_con4 .main_inner .main_it .main_type1 .main_info .main_tag .icon .fa-cart-shopping,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-heart,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_shopping .icon .fa-cart-shopping,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-heart,
+  main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 550px) {
-  main #main_con1 .main_inner {
-    padding: 0 50px;
+  main #main_con3 .main_inner .main_title2 .main_title3 {
+    font-size: 2rem;
+  }
+  main #main_con3 .main_inner .main_title2 p {
+    font-size: 1.2rem;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item img {
+    width: 100%;
+  }
+  main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
+    width: 200px;
+    transform: translate(-70%, -50%);
+  }
+  main #main_con3 .main_inner .main_recipe .slick-next {
+    right: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    gap: 60px;
+  }
+  main .main_banner {
+    height: 180px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text {
+    gap: 14px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag {
+    gap: 4px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag span {
+    width: 100px;
+    font-size: 0.8rem;
+    padding: 3px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
+    font-size: 2.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_tag .banner_title p {
+    font-size: 1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner1 .banner_text .banner_text1 p {
+    font-size: 1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text span {
+    font-size: 1.4rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner2 .banner2_text p {
+    font-size: 1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text p {
+    font-size: 1.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner3 .banner3_text h2 {
+    font-size: 3rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text p {
+    font-size: 1rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text span {
+    font-size: 1.8rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text h2 {
+    font-size: 2.2rem;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner_time {
+    margin-top: 5px;
+    width: 96px;
+    font-size: 1rem;
+    padding: 4px;
+  }
+  main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .banner4_img {
+    top: 15px;
+    width: 50px;
+    left: calc(8vw + 100px);
   }
   main #main_con1 .main_inner h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   main #main_con1 .main_inner .main_it {
     grid-template-columns: repeat(2, 1fr);
@@ -532,7 +1184,6 @@
   main #main_con1 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_title {
     font-size: 1.4rem;
-    min-height: 4.2rem;
   }
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con1 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -581,94 +1232,18 @@
   main #main_con1 .main_inner .main_it .main_type2 .main_info .main_tag .icon .fa-cart-shopping {
     font-size: 1rem;
   }
-  main .main_banner .main_innerbanner1 img {
-    height: 150px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text {
-    padding: 0 50px;
-    gap: 20px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag {
-    gap: 2px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag span {
-    width: 25%;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title {
-    gap: 4px;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title h2 {
-    font-size: 1.2rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_tag .banner_title p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner1 .banner_text .banner_text1 p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner2 img {
-    height: 150px;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text span {
-    font-size: 1.4rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text h2 {
-    font-size: 2rem;
-  }
-  main .main_banner .main_innerbanner2 .banner2_text p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner3 img {
-    height: 150px;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text {
-    padding: 0 50px;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner3 .banner3_text h2 {
-    font-size: 2.4rem;
-  }
-  main .main_banner .main_innerbanner4 img {
-    height: 150px;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text {
-    padding: 0 50px;
-    gap: 3px;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text p {
-    font-size: 1rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text span {
-    font-size: 1.2rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text h2 {
-    font-size: 1.8rem;
-  }
-  main .main_banner .main_innerbanner4 .banner4_text .banner_time {
-    width: 20%;
-    font-size: 1rem;
-    padding: 5px;
+  main #main_con2 {
+    margin-top: 30px;
   }
   main #main_con2 .main_inner {
     padding: 0 50px;
   }
   main #main_con2 .main_inner h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   main #main_con2 .main_inner .main_it {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  main #main_con2 .main_inner .main_it .main_type1,
-  main #main_con2 .main_inner .main_it .main_type2 {
-    gap: 15px;
   }
   main #main_con2 .main_inner .main_it .main_type1 .img img,
   main #main_con2 .main_inner .main_it .main_type2 .img img {
@@ -685,7 +1260,6 @@
   main #main_con2 .main_inner .main_it .main_type2 .main_info h3,
   main #main_con2 .main_inner .main_it .main_type2 .main_info .main_title {
     font-size: 1.4rem;
-    min-height: 4.2rem;
   }
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_shopping,
   main #main_con2 .main_inner .main_it .main_type1 .main_info .main_tag,
@@ -740,9 +1314,6 @@
   main #main_con3 .main_inner .main_title2 .main_title3 {
     font-size: 2rem;
   }
-  main #main_con3 .main_inner .main_title2 .line {
-    width: 150px;
-  }
   main #main_con3 .main_inner .main_title2 p {
     font-size: 1.2rem;
   }
@@ -750,10 +1321,12 @@
     width: 80%;
   }
   main #main_con3 .main_inner .main_recipe .main_item img {
-    width: 100%;
+    max-width: 224px;
   }
   main #main_con3 .main_inner .main_recipe .main_item .recipe_info {
-    transform: translate(-75%, -50%);
+    padding: 14px;
+    width: 224px;
+    transform: translate(-71%, -50%);
   }
   main #main_con3 .main_inner .main_recipe .slick-next {
     right: 70px;
@@ -762,10 +1335,7 @@
     padding: 0 50px;
   }
   main #main_con4 .main_inner .main_sale_title h1 {
-    font-size: 2rem;
-  }
-  main #main_con4 .main_inner .main_sale_title .sale_time {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   main #main_con4 .main_inner .main_it {
     grid-template-columns: repeat(2, 1fr);
@@ -784,7 +1354,6 @@
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info h3 {
     font-size: 1.4rem;
-    min-height: 4.2rem;
   }
   main #main_con4 .main_inner .main_it .main_type2 .main_info .main_tag .main_sale .main_percent p {
     font-size: 1.2rem;

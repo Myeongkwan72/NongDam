@@ -5,7 +5,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplayspeed: 3000,
+    autoplayspeed: 6000,
+    arrows: false,
     pauseOnFoucus: true,
     pauseOnHover: true,
     responsive: [
@@ -109,7 +110,6 @@ fetch("./food_dataset.json")
         imgURL: item.imgURL,
       };
     });
-    console.log(fruits);
 
     // 랜덤하게 8개 추출하는 함수
     const getRandomItems = (array, count) => {
@@ -140,7 +140,9 @@ fetch("./food_dataset.json")
         section1.className = "main_type1";
         section1.innerHTML = `
               <div class="img">
-                <img src="${item.imgURL}" alt="${item.title}" />
+                <img src="${item.imgURL}" alt="${
+          item.title
+        }" class="img_link" />
               </div>
               <div class="main_info">
                 <h3 class="main_title">${item.title}</h3>
@@ -157,7 +159,7 @@ fetch("./food_dataset.json")
         section1.className = "main_type2";
         section1.innerHTML = ` 
               <div class="img">
-                <img src="${item.imgURL}" alt="item1" />
+                <img src="${item.imgURL}" alt="item1" class="img_link" />
                 <button>${item.discount_rate}% 할인</button>
               </div>
               <div class="main_info">
@@ -183,8 +185,70 @@ fetch("./food_dataset.json")
               </div>
         `;
       }
+      const linkImg = section1.querySelector(".img_link");
+      linkImg.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+      /* Icon button start */
+      const cartIconBtn = section1.querySelector(".fa-cart-shopping");
+      const heartIconBtn = section1.querySelector(".fa-heart");
+
+      // heart Icon
+      heartIconBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        // regular: 빈하트 / solid: 채워진 하트
+        heartIconBtn.classList.toggle("fa-regular");
+        heartIconBtn.classList.toggle("fa-solid");
+
+        if (heartIconBtn.classList.contains("fa-solid")) {
+          heartIconBtn.style.color = "#f37100";
+          heartIconBtn.style.border = "1px solid #f37100";
+        } else {
+          heartIconBtn.style.color = "";
+          heartIconBtn.style.border = "";
+        }
+      });
+
+      // cart Icon
+      cartIconBtn.addEventListener("click", (e) => {
+        // preventDefault() : 브라우저 고유 행동 막는 함수
+        // stopPropagation() : 부모 엘리먼트로의 이벤트 전달 막는 함수
+        e.stopPropagation();
+
+        // 로그인 사용자인지 유효성 검사
+        const currentUserId = localStorage.getItem("ndUsers");
+        if (!currentUserId) {
+          alert("해당 상품을 담고 싶으시다면 로그인 후에 이용해주세요!😊");
+          location.href = "../login/login.html";
+          return;
+        }
+
+        const cartKey = `cart_${currentUserId}`;
+        const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+        const productInfo = {
+          id: item.id,
+          title: item.title,
+          quantity: 1,
+        };
+
+        // 이미 있는 상품 값인지 확인하고 스토리지에 누적값 추가하고, 장바구니 num 증가
+        const exItem = cartData.find((it) => it.id === productInfo.id);
+        exItem ? (exItem.quantity += 1) : cartData.push(productInfo);
+
+        // 로컬스토리지에 값 저장
+        localStorage.setItem(cartKey, JSON.stringify(cartData));
+        // console.log(localStorage.getItem(cartKey), "스토리지 들어왔나?");
+
+        cartCount();
+        alert(`${item.title} 상품을 담았습니다.`);
+      });
+      /* cart Icon button end */
+
       content1.appendChild(section1);
     });
+
     // main_con2에 나열
     random1.forEach((item) => {
       const section2 = document.createElement("li");
@@ -192,7 +256,9 @@ fetch("./food_dataset.json")
         section2.className = "main_type1";
         section2.innerHTML = `
               <div class="img">
-                <img src="${item.imgURL}" alt="${item.title}" />
+                <img src="${item.imgURL}" alt="${
+          item.title
+        }" class="img_link" />
               </div>
               <div class="main_info">
                 <h3 class="main_title">${item.title}</h3>
@@ -209,7 +275,7 @@ fetch("./food_dataset.json")
         section2.className = "main_type2";
         section2.innerHTML = ` 
               <div class="img">
-                <img src="${item.imgURL}" alt="item1" />
+                <img src="${item.imgURL}" alt="item1" class="img_link" />
                 <button>${item.discount_rate}% 할인</button>
               </div>
               <div class="main_info">
@@ -235,15 +301,77 @@ fetch("./food_dataset.json")
               </div>
         `;
       }
+      const linkImg = section2.querySelector(".img_link");
+      linkImg.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
+      /* Icon button start */
+      const cartIconBtn = section2.querySelector(".fa-cart-shopping");
+      const heartIconBtn = section2.querySelector(".fa-heart");
+
+      // heart Icon
+      heartIconBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        // regular: 빈하트 / solid: 채워진 하트
+        heartIconBtn.classList.toggle("fa-regular");
+        heartIconBtn.classList.toggle("fa-solid");
+
+        if (heartIconBtn.classList.contains("fa-solid")) {
+          heartIconBtn.style.color = "#f37100";
+          heartIconBtn.style.border = "1px solid #f37100";
+        } else {
+          heartIconBtn.style.color = "";
+          heartIconBtn.style.border = "";
+        }
+      });
+
+      // cart Icon
+      cartIconBtn.addEventListener("click", (e) => {
+        // preventDefault() : 브라우저 고유 행동 막는 함수
+        // stopPropagation() : 부모 엘리먼트로의 이벤트 전달 막는 함수
+        e.stopPropagation();
+
+        // 로그인 사용자인지 유효성 검사
+        const currentUserId = localStorage.getItem("ndUsers");
+        if (!currentUserId) {
+          alert("해당 상품을 담고 싶으시다면 로그인 후에 이용해주세요!😊");
+          location.href = "../login/login.html";
+          return;
+        }
+
+        const cartKey = `cart_${currentUserId}`;
+        const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+        const productInfo = {
+          id: item.id,
+          title: item.title,
+          quantity: 1,
+        };
+
+        // 이미 있는 상품 값인지 확인하고 스토리지에 누적값 추가하고, 장바구니 num 증가
+        const exItem = cartData.find((it) => it.id === productInfo.id);
+        exItem ? (exItem.quantity += 1) : cartData.push(productInfo);
+
+        // 로컬스토리지에 값 저장
+        localStorage.setItem(cartKey, JSON.stringify(cartData));
+        // console.log(localStorage.getItem(cartKey), "스토리지 들어왔나?");
+
+        cartCount();
+        alert(`${item.title} 상품을 담았습니다.`);
+      });
+      /* Icon button end */
       content2.appendChild(section2);
     });
+
     // main_con4(오늘의 특가상품)에 나열
     random2.forEach((item) => {
       const saleItem = document.createElement("li");
       saleItem.className = "main_type2";
       saleItem.innerHTML = `
                     <div class="img">
-                <img src="${item.imgURL}" alt="item1" />
+                <img src="${item.imgURL}" alt="item1" class="img_link" />
                 <button>${item.discount_rate}% 할인</button>
               </div>
               <div class="main_info">
@@ -268,9 +396,129 @@ fetch("./food_dataset.json")
                 </div>
               </div>
       `;
+      const linkImg = saleItem.querySelector(".img_link");
+      linkImg.addEventListener("click", () => {
+        window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
+      /* Icon button start */
+      const cartIconBtn = saleItem.querySelector(".fa-cart-shopping");
+      const heartIconBtn = saleItem.querySelector(".fa-heart");
+
+      // heart Icon
+      heartIconBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        // regular: 빈하트 / solid: 채워진 하트
+        heartIconBtn.classList.toggle("fa-regular");
+        heartIconBtn.classList.toggle("fa-solid");
+
+        if (heartIconBtn.classList.contains("fa-solid")) {
+          heartIconBtn.style.color = "#f37100";
+          heartIconBtn.style.border = "1px solid #f37100";
+        } else {
+          heartIconBtn.style.color = "";
+          heartIconBtn.style.border = "";
+        }
+      });
+
+      // cart Icon
+      cartIconBtn.addEventListener("click", (e) => {
+        // preventDefault() : 브라우저 고유 행동 막는 함수
+        // stopPropagation() : 부모 엘리먼트로의 이벤트 전달 막는 함수
+        e.stopPropagation();
+
+        // 로그인 사용자인지 유효성 검사
+        const currentUserId = localStorage.getItem("ndUsers");
+        if (!currentUserId) {
+          alert("해당 상품을 담고 싶으시다면 로그인 후에 이용해주세요!😊");
+          location.href = "../login/login.html";
+          return;
+        }
+
+        const cartKey = `cart_${currentUserId}`;
+        const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+        const productInfo = {
+          id: item.id,
+          title: item.title,
+          quantity: 1,
+        };
+
+        // 이미 있는 상품 값인지 확인하고 스토리지에 누적값 추가하고, 장바구니 num 증가
+        const exItem = cartData.find((it) => it.id === productInfo.id);
+        exItem ? (exItem.quantity += 1) : cartData.push(productInfo);
+
+        // 로컬스토리지에 값 저장
+        localStorage.setItem(cartKey, JSON.stringify(cartData));
+        // console.log(localStorage.getItem(cartKey), "스토리지 들어왔나?");
+
+        cartCount();
+        alert(`${item.title} 상품을 담았습니다.`);
+      });
+      /* Icon button end */
       content4.appendChild(saleItem);
     });
   })
   .catch((error) => {
     console.error("에러:", error);
   });
+
+// sale timer
+const sale_timer = document.querySelector(".sale_time");
+const timer = () => {
+  const now = new Date();
+
+  const currentSeconds =
+    now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+
+  const totalSecondsInDay = 24 * 3600;
+  const remainingSeconds = totalSecondsInDay - currentSeconds;
+
+  const hours = Math.floor(remainingSeconds / 3600)
+    .toString()
+    .padStart(2, "0");
+  const minutes = Math.floor((remainingSeconds % 3600) / 60)
+    .toString()
+    .padStart(2, "0");
+  const seconds = (remainingSeconds % 60).toString().padStart(2, "0");
+
+  sale_timer.innerHTML = `${hours} : ${minutes} : ${seconds}`;
+};
+
+timer();
+setInterval(timer, 1000);
+
+// main_eventbanner timer
+const banner_eventTimer = document.querySelector(".banner_time");
+
+const SEVEN_DAYS_IN_SECONDS = 7 * 24 * 60 * 60;
+let remainingSeconds = SEVEN_DAYS_IN_SECONDS;
+
+// 초를 일, 시, 분, 초로 변환하는 함수
+function formatTime(seconds) {
+  const days = Math.floor(seconds / (24 * 60 * 60));
+  const hours = Math.floor((seconds % (24 * 60 * 60)) / (60 * 60));
+  const minutes = Math.floor((seconds % (60 * 60)) / 60);
+  const secs = seconds % 60;
+
+  return `${days}일 ${String(hours).padStart(2, "0")} : ${String(
+    minutes
+  ).padStart(2, "0")} : ${String(secs).padStart(2, "0")}`;
+}
+
+function updateTimer() {
+  // 남은 시간 표시
+  banner_eventTimer.textContent = formatTime(remainingSeconds);
+
+  if (remainingSeconds <= 0) {
+    remainingSeconds = SEVEN_DAYS_IN_SECONDS;
+  }
+
+  remainingSeconds--;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
+
+// heart click event

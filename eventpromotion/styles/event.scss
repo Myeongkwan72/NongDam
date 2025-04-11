@@ -459,8 +459,9 @@ body {
           position: absolute;
           bottom: 30px;
           display: flex;
-          // #product_banner_img {
-          // }
+          #product_banner_img {
+            width: 100%;
+          }
         }
       }
     }
@@ -486,5 +487,21 @@ body {
         }
       }
     }
+  }
+}
+
+#product_banner_imginner {
+  display: flex;
+  animation-name: slideLeft;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

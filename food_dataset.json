@@ -322,7 +322,7 @@
       "classification": "채소",
       "title": "배추 3개",
       "price": 14500,
-      "discount_price": 24050,
+      "discount_price": 9050,
       "discount_rate": 40,
       "imgURL": "https://cdn.oasis.co.kr:48581/product/99823/thumb/75cb971c-75bd-499b-84d7-ebe16680a013.jpg"
     },
@@ -438,7 +438,7 @@
   "processed_etc": [
     {
       "id": 1,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "딸기잼 500g",
       "price": 6500,
       "discount_price": 3250,
@@ -447,7 +447,7 @@
     },
     {
       "id": 2,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "사과 주스 1L",
       "price": 5500,
       "discount_price": 3300,
@@ -456,7 +456,7 @@
     },
     {
       "id": 3,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "동결건조 배칩 500g",
       "price": 7000,
       "discount_price": 6300,
@@ -465,7 +465,7 @@
     },
     {
       "id": 4,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "블루베리청 500g",
       "price": 6000,
       "discount_price": 4200,
@@ -474,7 +474,7 @@
     },
     {
       "id": 5,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "당근 주스 1L",
       "price": 5200,
       "discount_price": 4680,
@@ -483,7 +483,7 @@
     },
     {
       "id": 6,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "바나나칩 200g",
       "price": 3000,
       "discount_price": 2100,
@@ -492,7 +492,7 @@
     },
     {
       "id": 7,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "고구마칩 200g",
       "price": 4500,
       "discount_price": 3150,
@@ -501,7 +501,7 @@
     },
     {
       "id": 8,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "감자칩 200g",
       "price": 4000,
       "discount_price": 1200,
@@ -510,7 +510,7 @@
     },
     {
       "id": 9,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "양배추즙 1L",
       "price": 6200,
       "discount_price": 4960,
@@ -519,7 +519,7 @@
     },
     {
       "id": 10,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "오렌지 주스 1L",
       "price": 5000,
       "discount_price": 4000,
@@ -528,7 +528,7 @@
     },
     {
       "id": 11,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "브로콜리 크림수프 500g",
       "price": 7500,
       "discount_price": 5250,
@@ -537,7 +537,7 @@
     },
     {
       "id": 12,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "양파 분말 500g",
       "price": 4300,
       "discount_price": 3870,
@@ -546,7 +546,7 @@
     },
     {
       "id": 13,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "파프리카 시즈닝 500g",
       "price": 4700,
       "discount_price": 2350,
@@ -555,7 +555,7 @@
     },
     {
       "id": 14,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "배추김치 1kg",
       "price": 8000,
       "discount_price": 6400,
@@ -564,7 +564,7 @@
     },
     {
       "id": 15,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "상추 겉절이 500g",
       "price": 4500,
       "discount_price": 3825,
@@ -573,7 +573,7 @@
     },
     {
       "id": 16,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "시금치 된장국 1L",
       "price": 5600,
       "discount_price": 3360,
@@ -582,7 +582,7 @@
     },
     {
       "id": 17,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "청경채 볶음 500g",
       "price": 5000,
       "discount_price": 2500,
@@ -591,16 +591,16 @@
     },
     {
       "id": 18,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "깻잎 장아찌 400g",
-      "price": 14800,
-      "discount_price": 93360,
+      "price": 12800,
+      "discount_price": 8960,
       "discount_rate": 30,
       "imgURL": "https://image.8dogam.com/resized/product/asset/v1/upload/9cf3ac933aff4dcaa8f64c5029e48710.jpg?type=big&res=2x&ext=webp"
     },
     {
       "id": 19,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "비트 피클 500g",
       "price": 5300,
       "discount_price": 4240,
@@ -609,7 +609,7 @@
     },
     {
       "id": 20,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "고구마 말랭이 300g",
       "price": 6000,
       "discount_price": 3600,
@@ -618,7 +618,7 @@
     },
     {
       "id": 21,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "토마토 퓨레 1L",
       "price": 7200,
       "discount_price": 6480,
@@ -627,7 +627,7 @@
     },
     {
       "id": 22,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "당근 케이크 500g",
       "price": 10000,
       "discount_price": 5000,
@@ -636,7 +636,7 @@
     },
     {
       "id": 23,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "사과 말랭이 300g",
       "price": 6800,
       "discount_price": 5440,
@@ -645,7 +645,7 @@
     },
     {
       "id": 24,
-      "classification": "가공식품/기타",
+      "classification": "가공식품",
       "title": "표고버섯 가루 500g",
       "price": 4000,
       "discount_price": 3600,

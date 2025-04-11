@@ -113,6 +113,9 @@
   header .header_inner nav {
     display: flex;
   }
+  header .header_inner nav .gnb {
+    pointer-events: auto;
+  }
   header .header_inner .trigger {
     display: flex;
   }
@@ -192,7 +195,7 @@
     width: 140px;
     padding: 20px;
   }
-  header .header_inner nav .gnb li > a {
+  header .header_inner nav .gnb li {
     font-size: 1.4rem;
     padding: 8px;
   }

@@ -16,11 +16,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom CSS & JS-->
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="./script.js"></script>
-    <script defer src="../common.js"></script>
+    <link rel="stylesheet" href="./style.css" />
     <!-- responsive CSS -->
     <link rel="stylesheet" href="./res_style.css" />
+    <script defer src="./script.js"></script>
+    <script defer src="./common.js"></script>
     <!-- domain icon -->
     <link rel="icon" type="images/png" href="./logo/logo.png" />
     <title>main</title>
@@ -30,17 +30,17 @@
       <div class="header_event">
         <p>
           지금 농담에 가입하고 <b>매일 룰렛 이벤트</b>로 상품 받아 가세요!
-          <i class="fa-solid fa-chevron-right"></i>
+          <i class="fa-solid fa-chevron-right header_location_event"></i>
         </p>
       </div>
       <div class="header_inner">
         <!-- trigger start -->
         <nav>
           <ul class="gnb">
-            <li><a href="#">과일</a></li>
-            <li><a href="#">채소</a></li>
-            <li><a href="#">가공식품/기타</a></li>
-            <li><a href="#">이벤트</a></li>
+            <li class="header_location_fruit">과일</li>
+            <li class="header_location_vegetable">채소</li>
+            <li class="header_location_etc">가공식품/기타</li>
+            <li class="header_location_event">이벤트</li>
           </ul>
         </nav>
         <div class="trigger">
@@ -49,24 +49,17 @@
           <span></span>
         </div>
         <!-- trigger end -->
-
         <div class="header_inner_left">
           <ul>
-            <li>과일</li>
-            <li>채소</li>
-            <li>가공식품 / 기타</li>
-            <li>이벤트</li>
+            <li class="header_location_fruit">과일</li>
+            <li class="header_location_vegetable">채소</li>
+            <li class="header_location_etc">가공식품/기타</li>
+            <li class="header_location_event">이벤트</li>
           </ul>
         </div>
         <div class="header_inner_right">
           <div class="inner_right_top">
-            <ul>
-              <li>로그인</li>
-              <p>|</p>
-              <li>마이페이지</li>
-              <p>|</p>
-              <li>회원가입</li>
-            </ul>
+            <ul class="header_login"></ul>
           </div>
           <div class="inner_right_bottom">
             <div class="search_bar">
@@ -75,172 +68,16 @@
             </div>
             <i class="fa-solid fa-magnifying-glass res_magnify"></i>
             <div class="basket">
-              <i class="fa-solid fa-cart-shopping"> <p>3</p></i>
+              <i class="fa-solid fa-cart-shopping"> <p>0</p></i>
             </div>
           </div>
         </div>
-        <div class="header_inner_logo" id="header_logo">
+        <div id="header_logo" class="header_inner_logo">
           <img src="../imgs/logo.png" alt="logo" />
         </div>
       </div>
     </header>
     <main>
-      <section id="tttt" style="display: none"></section>
-      <section id="main_con1">
-        <div class="main_inner">
-          <h1>농담이 자신있게 추천해요</h1>
-          <ul class="main_it">
-            <!-- <li class="main_type1">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-              </div>
-              <div class="main_info">
-                <h3 class="main_title">어글리바나나</h3>
-                <div class="main_shopping">
-                  <p>15,200원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>10% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>못난이 사과 3kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>10</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>21,500원</span>
-                      <p>19,350원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
-              <div class="main_info">
-                <h3 class="main_title">제주 못난이 천혜향 2kg</h3>
-                <div class="main_shopping">
-                  <p>15,900원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
-              <div class="main_info">
-                <h3 class="main_title">성주 고당도 못난이 참외 1kg</h3>
-                <div class="main_shopping">
-                  <p>11,900원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
-              <div class="main_info">
-                <h3 class="main_title">제주 못난이 한라봉 5kg, 1박스</h3>
-                <div class="main_shopping">
-                  <p>22,900원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>67% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>고당도 가정용 못난이 단감 10kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>67</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>90,000원</span>
-                      <p>29,100원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>62% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>산지직송 나주배 흠집배 5kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>62</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>65,000원</span>
-                      <p>24,100원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img"><img src="./imgs/item1.png" alt="item1" /></div>
-              <div class="main_info">
-                <h3 class="main_title">못난이 레드자몽 기스 흠집</h3>
-                <div class="main_shopping">
-                  <p>25,760원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-          </ul>
-        </div>
-      </section>
       <section class="main_banner">
         <div class="main_innerbanner1">
           <img src="./imgs/banner1.png" alt="banner1" />
@@ -261,8 +98,9 @@
             </div>
           </div>
         </div>
+
         <div class="main_innerbanner2">
-          <img src="./imgs/banner2.png" alt="banner2" />
+          <img src="./imgs/banner2.jpg" alt="banner2" />
           <div class="banner2_text">
             <span>못생긴 채소로 예쁜 샐러드를</span>
             <h2>
@@ -272,6 +110,7 @@
             <p>농부만의 특별 레시피 만나러 가기 ></p>
           </div>
         </div>
+
         <div class="main_innerbanner3">
           <img src="./imgs/banner3.png" alt="banner3" />
           <div class="banner3_text">
@@ -279,6 +118,7 @@
             <h2>무 료 배 송</h2>
           </div>
         </div>
+
         <div class="main_innerbanner4">
           <img src="./imgs/banner4.jpg" alt="banner4" />
           <div class="banner4_text">
@@ -287,185 +127,27 @@
             <h2>매일매일 <b>룰렛이벤트</b></h2>
             <p>타 쿠폰과 중복 적용 가능 / 일부 상품 제외</p>
             <div class="banner_time">00 : 12 : 34 : 12</div>
+            <div class="banner4_img">
+              <img src="./imgs/event_titlesub.png" alt="titlesub" />
+            </div>
           </div>
         </div>
       </section>
+
+      <section id="main_con1">
+        <div class="main_inner">
+          <h1>농담이 자신있게 추천해요</h1>
+          <ul class="main_it"></ul>
+        </div>
+      </section>
+
       <section id="main_con2">
         <div class="main_inner">
           <div class="main_con2title">
             <h1>신상품</h1>
             <img src="./imgs/main_arrow.png" alt="arrow" />
           </div>
-          <ul class="main_it">
-            <!-- <li class="main_type1">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-              </div>
-              <div class="main_info">
-                <h3 class="main_title">햇감자 1kg</h3>
-                <div class="main_shopping">
-                  <p>4,990원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-                <button>10% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>못난이 제주 흙당근 2kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>10</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>21,500원</span>
-                      <p>19,350원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-              </div>
-              <div class="main_info">
-                <h3 class="main_title">상주 흑침 오이 5개입</h3>
-                <div class="main_shopping">
-                  <p>6,540원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-                <button>20% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>유기농 찰토마토 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>20</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>11,900원</span>
-                      <p>9,520원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-                <button>66% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>국내산 가지 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>66</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>36,900원</span>
-                      <p>12,470원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-              </div>
-              <div class="main_info">
-                <h3 class="main_title">친환경 파프리카 1.5kg</h3>
-                <div class="main_shopping">
-                  <p>16,400원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-                <button>44% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>국내산 아삭이 못난이 고추 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>44</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>13,500원</span>
-                      <p>7,500원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type1">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="" />
-              </div>
-              <div class="main_info">
-                <h3 class="main_title">못생겨도 맛있는 표고버섯</h3>
-                <div class="main_shopping">
-                  <p>4,500원</p>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-          </ul>
+          <ul class="main_it"></ul>
         </div>
       </section>
       <section id="main_con3">
@@ -548,7 +230,7 @@
               <div class="recipe_info">
                 <div class="recipe_title">
                   <i class="fa-regular fa-heart"></i>
-                  <h4>우리집에서 멕시코의 향기를 <br />과카몰리 🥑</h4>
+                  <h4>집에서 멕시코의 향기를 <br />과카몰리 🥑</h4>
                   <button>+17</button>
                 </div>
                 <div class="recipe_text">
@@ -564,7 +246,7 @@
               <div class="recipe_info">
                 <div class="recipe_title">
                   <i class="fa-regular fa-heart"></i>
-                  <h4>빵 위에 얹어 먹으면 맛이 두배! <br />레몬딜버터!</h4>
+                  <h4>빵과 먹으면 맛이 두배! <br />레몬딜버터!</h4>
                   <button>+17</button>
                 </div>
                 <div class="recipe_text">
@@ -613,7 +295,7 @@
               <div class="recipe_info">
                 <div class="recipe_title">
                   <i class="fa-regular fa-heart"></i>
-                  <h4>피자 먹을 때 빠지면 서운하지!<br />오이 피클🥒</h4>
+                  <h4>새콤달콤한 매력의<br />오이 피클🥒</h4>
                   <button>+17</button>
                 </div>
                 <div class="recipe_text">
@@ -633,226 +315,9 @@
           <hr />
           <div class="main_sale_title">
             <h1>오늘의 특가상품 ✨</h1>
-            <div class="sale_time">03:27:24</div>
+            <div class="sale_time"></div>
           </div>
-          <ul class="main_it">
-            <!-- <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>10% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>무농약 김천 보담송이버섯 800g</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>10</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>18,000원</span>
-                      <p>16,200원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>36% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>GAP 유럽상추 6종 500g</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>36</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>21,500원</span>
-                      <p>11,500원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>20% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>당조고추 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>20</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>17,000원</span>
-                      <p>13,600원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>25% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>유기농 고구마 3kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>25</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>16,000원</span>
-                      <p>12,000원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>40% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>산양삼 5~10년근 100g</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>40</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>87,500원</span>
-                      <p>35,000원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>20% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>무농약 포천 파파야 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>20</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>27,000원</span>
-                      <p>21,600원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>52% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>유기농 쌈채소 600g</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>52</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>20,000원</span>
-                      <p>9,600원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main_type2">
-              <div class="img">
-                <img src="./imgs/item1.png" alt="item1" />
-                <button>20% 할인</button>
-              </div>
-              <div class="main_info">
-                <h3>파프리카 2종/당조고추 1kg</h3>
-                <div class="main_tag">
-                  <div class="main_sale">
-                    <div class="main_percent">
-                      <p>
-                        <b>20</b>
-                        %
-                      </p>
-                    </div>
-                    <div class="main_price">
-                      <span>12,500원</span>
-                      <p>10,000원</p>
-                    </div>
-                  </div>
-                  <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-          </ul>
+          <ul class="main_it"></ul>
         </div>
       </section>
     </main>
@@ -865,7 +330,6 @@
             </div>
           </a>
         </div>
-
         <div class="footer_inner_left">
           <img src="../imgs/logo_02.png" alt="logo_02" />
           <p>ⓒ 농담 All rights reserved</p>

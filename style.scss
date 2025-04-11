@@ -1,16 +1,15 @@
-// reset
+// reset variable mixin
 @import "./styles/reset.scss";
-
-// variables
 @import "./styles/variables.scss";
+@import "./mixin.scss";
 
 // font
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-@import "./mixin.scss";
-
 @import "./styles/header.scss";
 @import "./styles/footer.scss";
+@import "./styles/res_header.scss";
+@import "./styles/res_footer.scss";
 @import "./res_style.scss";
 
 html {
@@ -30,17 +29,201 @@ main {
   gap: 100px;
   justify-content: center;
   margin: 0 auto;
-  #tttt {
+
+  .main_banner {
     width: 100%;
-    height: 100vh;
-    background: #ff0;
+    height: 360px;
+    position: relative;
+    .slick-list {
+      height: 100%;
+      .slick-track {
+        height: 100%;
+        .main_innerbanner1 {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          .banner_text {
+            margin-left: 20vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            flex-direction: column;
+            gap: 40px;
+            .banner_tag {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              span {
+                width: 180px;
+                background: #ff4726;
+                color: map-get($map: $color, $key: light);
+                border-radius: 30px;
+                padding: 5px;
+                font-size: 1.4rem;
+                text-align: center;
+              }
+              .banner_title {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                h2 {
+                  font-size: 3.6rem;
+                }
+                p {
+                  font-size: 1.6rem;
+                  color: map-get($map: $color, $key: dark-424242);
+                }
+              }
+            }
+            .banner_text1 {
+              p {
+                font-size: 1.6rem;
+                color: map-get($map: $color, $key: dark-424242);
+                line-height: 150%;
+              }
+            }
+          }
+        }
+        .main_innerbanner2 {
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .banner2_text {
+            width: 100%;
+            margin-left: 20vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            span {
+              font-size: 2.6rem;
+            }
+            h2 {
+              font-size: 3.6rem;
+              margin-bottom: 10px;
+              b {
+                color: map-get($map: $color, $key: main-01);
+                font-weight: 800;
+              }
+            }
+            p {
+              font-size: 1.6rem;
+              color: map-get($map: $color, $key: main-01);
+            }
+          }
+        }
+        .main_innerbanner3 {
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .banner3_text {
+            margin-left: 30vw;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p {
+              font-size: 2rem;
+              b {
+                color: map-get($map: $color, $key: main-01);
+              }
+            }
+            h2 {
+              font-size: 5.5rem;
+              font-weight: 800;
+              line-height: 150%;
+            }
+          }
+        }
+        .main_innerbanner4 {
+          width: 100%;
+          position: relative;
+          color: map-get($map: $color, $key: light);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .banner4_text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 20vw;
+            p {
+              font-size: 1.4rem;
+              font-weight: lighter;
+              line-height: 300%;
+            }
+            span {
+              font-size: 3rem;
+            }
+            h2 {
+              font-size: 3.6rem;
+              b {
+                font-weight: 700;
+                color: #ffb545;
+              }
+            }
+            .banner_time {
+              margin-top: 10px;
+              width: 160px;
+              display: flex;
+              justify-content: center;
+              font-size: 1.6rem;
+              background: map-get($map: $color, $key: dark);
+              border-radius: 20px;
+              padding: 8px;
+            }
+            .banner4_img {
+              width: 80px;
+              position: absolute;
+              top: 10px;
+              left: calc(8vw + 70px);
+              overflow: hidden;
+              img {
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slick-arrow {
+      display: none;
+    }
   }
+
   #main_con1 {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 120px;
     .main_inner {
       width: 100%;
       max-width: 1050px;
@@ -50,6 +233,7 @@ main {
       h1 {
         font-size: 2.6rem;
       }
+
       .main_it {
         width: 100%;
         display: grid;
@@ -96,7 +280,6 @@ main {
               -webkit-box-orient: vertical;
               overflow: hidden;
               text-overflow: ellipsis;
-              // font-size: 1.8rem;
               cursor: pointer;
             }
             .main_shopping,
@@ -119,6 +302,7 @@ main {
                     color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
+                      font-weight: 800;
                     }
                   }
                 }
@@ -153,178 +337,13 @@ main {
       }
     }
   }
-  .main_banner {
-    width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    position: relative;
-    .main_innerbanner1 {
-      width: 100%;
-      position: relative;
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-      .banner_text {
-        // width: 1050px;
-        width: 100%;
-        max-width: 1050px;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex-direction: column;
-        gap: 40px;
-        .banner_tag {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          span {
-            width: 17%;
-            background: #ff4726;
-            color: map-get($map: $color, $key: light);
-            border-radius: 30px;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-          }
-          .banner_title {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            h2 {
-              font-size: 4rem;
-            }
-            p {
-              font-size: 1.6rem;
-              color: map-get($map: $color, $key: dark-424242);
-            }
-          }
-        }
-        .banner_text1 {
-          p {
-            font-size: 1.8rem;
-            color: map-get($map: $color, $key: dark-424242);
-          }
-        }
-      }
-    }
-    .main_innerbanner2 {
-      width: 100%;
-      position: relative;
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-      .banner2_text {
-        padding: 0 50px;
-        width: 100%;
-        max-width: 1050px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        span {
-          font-size: 2.6rem;
-        }
-        h2 {
-          font-size: 4rem;
-          b {
-            color: map-get($map: $color, $key: main-01);
-          }
-        }
-        p {
-          font-size: 1.6rem;
-          color: map-get($map: $color, $key: main-01);
-        }
-      }
-    }
-    .main_innerbanner3 {
-      width: 100%;
-      position: relative;
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-      .banner3_text {
-        width: 100%;
-        max-width: 1050px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        p {
-          font-size: 2rem;
-          b {
-            color: map-get($map: $color, $key: main-01);
-          }
-        }
-        h2 {
-          font-size: 5rem;
-        }
-      }
-    }
-    .main_innerbanner4 {
-      width: 100%;
-      position: relative;
-      color: map-get($map: $color, $key: light);
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-      .banner4_text {
-        width: 100%;
-        max-width: 1050px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        gap: 5px;
-        p {
-          font-size: 1.4rem;
-          font-weight: lighter;
-        }
-        span {
-          font-size: 3rem;
-        }
-        h2 {
-          font-size: 4rem;
-          b {
-            // background-image: linear-gradient(
-            //   90deg,
-            //   rgba(151, 210, 118, 1) 0%,
-            //   rgba(110, 171, 77, 1) 100%
-            // );
-            color: rgba(110, 171, 77, 1);
-          }
-        }
-        .banner_time {
-          margin-top: 10px;
-          width: 16%;
-          display: flex;
-          justify-content: center;
-          font-size: 2rem;
-          background: map-get($map: $color, $key: dark);
-          border-radius: 20px;
-          padding: 10px;
-        }
-      }
-    }
-  }
+
   #main_con2 {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    // margin-top: 120px;
+    margin-top: 100px;
     .main_inner {
       width: 100%;
       max-width: 1050px;
@@ -348,6 +367,7 @@ main {
           height: 10px;
         }
       }
+
       .main_it {
         width: 100%;
         display: grid;
@@ -419,6 +439,7 @@ main {
                     color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
+                      font-weight: 800;
                     }
                   }
                 }
@@ -453,6 +474,7 @@ main {
       }
     }
   }
+
   #main_con3 {
     width: 100%;
     height: 444px;
@@ -513,19 +535,20 @@ main {
           display: flex !important;
           justify-content: center;
           align-items: center;
+          position: absolute;
+          top: 45%;
+          &.slick-prev {
+            left: -245px;
+          }
+          &.slick-next {
+            left: -180px;
+          }
 
           &:before {
             color: map-get($map: $color, $key: main-01);
-            font-size: 20px;
+            font-size: 3rem;
             opacity: 1;
           }
-        }
-
-        .slick-prev {
-          left: -40px;
-        }
-        .slick-next {
-          right: -40px;
         }
 
         .main_item {
@@ -546,11 +569,13 @@ main {
             filter: brightness(70%);
           }
           .recipe_info {
+            width: 224px;
             color: map-get($map: $color, $key: light);
             display: flex;
             flex-direction: column;
             gap: 120px;
             position: absolute;
+            padding: 10px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -584,7 +609,7 @@ main {
               flex-direction: column;
               gap: 10px;
               .recipe_line {
-                width: 204px;
+                width: 100%;
                 height: 1px;
                 background-color: map-get($map: $color, $key: light);
               }
@@ -597,6 +622,7 @@ main {
       }
     }
   }
+
   #main_con4 {
     width: 100%;
     height: auto;
@@ -626,9 +652,10 @@ main {
           background: map-get($map: $color, $key: main-01);
           font-size: 1.6rem;
           border-radius: 10px;
-          padding: 10px 15px;
+          padding: 8px 15px;
         }
       }
+
       .main_it {
         width: 100%;
         display: grid;
@@ -696,6 +723,7 @@ main {
                     color: map-get($map: $color, $key: main-01);
                     b {
                       font-size: 3.6rem;
+                      font-weight: 800;
                     }
                   }
                 }

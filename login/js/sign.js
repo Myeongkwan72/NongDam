@@ -242,7 +242,7 @@ signButton.addEventListener("click", (e) => {
   const id = document.querySelector("#id").value.trim();
   const pw = document.querySelector("#pw").value.trim();
   const name = document.querySelector("#name").value.trim();
-  const birth = `${year.value.trim()} ${month.value.trim()} ${day.value.trim()}`;
+  const birth = `${year.value.trim()}년 ${month.value.trim()}월 ${day.value.trim()}일`;
   const email = document.querySelector("#email").value.trim();
   const domain = document.querySelector(".email_list").value;
   const phone = `${phone1.value.trim()}-${phone2.value.trim()}-${phone3.value.trim()}`;
@@ -259,12 +259,13 @@ signButton.addEventListener("click", (e) => {
     birth: birth,
     email: `${email}@${domain}`,
     call: phone,
+    address: address,
   });
 
   // 사용자 목록을 로컬스토리지에 저장
   localStorage.setItem("Users", JSON.stringify(users));
 
-  alert(`${name}님, 회원가입이 완료되었습니다!`);
+  alert(`회원가입이 완료되었습니다!`);
 
   // 폼 초기화 후 이메일 로그인 페이지로 이동
   form.reset();

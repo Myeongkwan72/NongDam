@@ -14,6 +14,7 @@ loginButton.addEventListener("click", (e) => {
 
   // 로그인하려는 유저 정보
   let currentUser = users.find((user) => user.id === idValue);
+  const name = currentUser.name;
 
   // 아이디 미입력
   if (idValue === "") {
@@ -41,12 +42,12 @@ loginButton.addEventListener("click", (e) => {
 
   // 로그인 성공
   if (currentUser.pw === pwValue) {
-    alert("hi");
+    alert(`${name}님, 반갑습니다!`);
   }
 
   localStorage.setItem("ndUsers", currentUser.id);
 
-  window.location.href = "./mypage.html";
+  window.location.href = "/index.html";
 });
 
 // 눈 아이콘
@@ -69,9 +70,13 @@ const findId = document.querySelector(".login_find_id");
 const findPw = document.querySelector(".login_find_pw");
 
 signUp.addEventListener("click", () => {
-  window.location.href = "./sign.html";
+  window.location.href = "/login/sign.html";
 });
 
 findId.addEventListener("click", () => {
-  window.location.href = "./find-id.html";
+  window.location.href = "/login/find-id.html";
+});
+
+findPw.addEventListener("click", () => {
+  window.location.href = "/login/find-pw.html";
 });
