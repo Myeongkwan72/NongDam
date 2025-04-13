@@ -48,6 +48,7 @@ footer .footer_inner .up_btn div {
   align-items: center;
   background: #ffc164;
   border-radius: 27px;
+  cursor: pointer;
 }
 footer .footer_inner .up_btn div i {
   font-size: 2rem;

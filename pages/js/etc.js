@@ -79,10 +79,18 @@ fetch("../../food_dataset.json")
       /* Icon button start */
       const cartIconBtn = section.querySelector(".fa-cart-shopping");
       const heartIconBtn = section.querySelector(".fa-heart");
+      const currentUserId = localStorage.getItem("ndUsers");
 
       // heart Icon
       heartIconBtn.addEventListener("click", (e) => {
         e.stopPropagation();
+
+        // 로그인 유효성 검사
+        if (!currentUserId) {
+          alert("찜 하기 버튼은 로그인 후에 이용가능합니다!😉");
+          location.href = "../login/login.html";
+          return;
+        }
 
         // regular: 빈하트 / solid: 채워진 하트
         heartIconBtn.classList.toggle("fa-regular");

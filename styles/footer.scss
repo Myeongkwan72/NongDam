@@ -37,6 +37,7 @@ footer {
         align-items: center;
         background: map-get($map: $color, $key: sub-01);
         border-radius: 27px;
+        cursor: pointer;
         i {
           font-size: 2rem;
           color: map-get($map: $color, $key: light);
