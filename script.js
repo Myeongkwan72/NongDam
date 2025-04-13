@@ -192,10 +192,18 @@ fetch("./food_dataset.json")
       /* Icon button start */
       const cartIconBtn = section1.querySelector(".fa-cart-shopping");
       const heartIconBtn = section1.querySelector(".fa-heart");
+      const currentUserId = localStorage.getItem("ndUsers");
 
       // heart Icon
       heartIconBtn.addEventListener("click", (e) => {
         e.stopPropagation();
+
+        // 로그인 유효성 검사
+        if (!currentUserId) {
+          alert("찜 하기 버튼은 로그인 후에 이용가능합니다!😉");
+          location.href = "../login/login.html";
+          return;
+        }
 
         // regular: 빈하트 / solid: 채워진 하트
         heartIconBtn.classList.toggle("fa-regular");
@@ -217,7 +225,7 @@ fetch("./food_dataset.json")
         e.stopPropagation();
 
         // 로그인 사용자인지 유효성 검사
-        const currentUserId = localStorage.getItem("ndUsers");
+
         if (!currentUserId) {
           alert("해당 상품을 담고 싶으시다면 로그인 후에 이용해주세요!😊");
           location.href = "../login/login.html";
@@ -309,10 +317,18 @@ fetch("./food_dataset.json")
       /* Icon button start */
       const cartIconBtn = section2.querySelector(".fa-cart-shopping");
       const heartIconBtn = section2.querySelector(".fa-heart");
+      const currentUserId = localStorage.getItem("ndUsers");
 
       // heart Icon
       heartIconBtn.addEventListener("click", (e) => {
         e.stopPropagation();
+
+        // 로그인 유효성 검사
+        if (!currentUserId) {
+          alert("찜 하기 버튼은 로그인 후에 이용가능합니다!😉");
+          location.href = "../login/login.html";
+          return;
+        }
 
         // regular: 빈하트 / solid: 채워진 하트
         heartIconBtn.classList.toggle("fa-regular");
@@ -404,10 +420,18 @@ fetch("./food_dataset.json")
       /* Icon button start */
       const cartIconBtn = saleItem.querySelector(".fa-cart-shopping");
       const heartIconBtn = saleItem.querySelector(".fa-heart");
+      const currentUserId = localStorage.getItem("ndUsers");
 
       // heart Icon
       heartIconBtn.addEventListener("click", (e) => {
         e.stopPropagation();
+
+        // 로그인 유효성 검사
+        if (!currentUserId) {
+          alert("찜 하기 버튼은 로그인 후에 이용가능합니다!😉");
+          location.href = "../login/login.html";
+          return;
+        }
 
         // regular: 빈하트 / solid: 채워진 하트
         heartIconBtn.classList.toggle("fa-regular");

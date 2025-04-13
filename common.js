@@ -12,15 +12,22 @@ triBtn.addEventListener("click", (e) => {
 /* cartBtn count start */
 const cartCount = () => {
   const currentUserId = localStorage.getItem("ndUsers");
+  const cartCountTag = document.querySelector(".fa-cart-shopping p");
+
+  if (!cartCountTag) return;
+
+  if (!currentUserId) {
+    cartCountTag.style.display = "none";
+    return;
+  }
+
   const cartKey = `cart_${currentUserId}`;
   const cartData = JSON.parse(localStorage.getItem(cartKey)) || [];
 
   const cartTotalCount = cartData.reduce((cur, it) => cur + it.quantity, 0);
 
-  const cartCountTag = document.querySelector(".fa-cart-shopping p");
-  if (cartCountTag) {
-    cartCountTag.innerText = cartTotalCount;
-  }
+  cartCountTag.style.display = "flex";
+  cartCountTag.innerText = cartTotalCount;
 };
 
 cartCount();
@@ -81,8 +88,10 @@ fetch("../../food_dataset.json")
         discount_price: it.discount_price,
         discount_rate: it.discount_rate,
         imgURL: it.imgURL,
+        subImgUrls: it.subImgUrls,
       };
     });
+    console.log(searchValue);
 
     // search word filter
     const searchFilter = searchValue.filter((it) =>
@@ -93,19 +102,20 @@ fetch("../../food_dataset.json")
     const content = document.querySelector(
       "#search > .search_inner > .search_it"
     );
+    // 실제로 .search_it안에 contentWrapper & content요소가 존재하는지 확인
+    if (contentWrapper && content) {
+      if (searchFilter.length === 0) {
+        content.style.display = "none";
 
-    if (searchFilter.length === 0) {
-      content.style.display = "none";
-
-      const epyMsag = document.createElement("li");
-      epyMsag.className = "search_empty";
-      epyMsag.innerText = "검색 결과가 없습니다.";
-      contentWrapper.appendChild(epyMsag);
-      return;
+        const epyMsag = document.createElement("li");
+        epyMsag.className = "search_empty";
+        epyMsag.innerText = "검색 결과가 없습니다.";
+        contentWrapper.appendChild(epyMsag);
+        return;
+      }
+      // 실제로 .search_it안에 content요소가 존재하는지 확인
+      content.style.display = "grid";
     }
-
-    content.style.display = "grid";
-
     searchFilter.forEach((item) => {
       const section = document.createElement("li");
 
@@ -167,11 +177,18 @@ fetch("../../food_dataset.json")
       /* Icon button start */
       const cartIconBtn = section.querySelector(".fa-cart-shopping");
       const heartIconBtn = section.querySelector(".fa-heart");
+      const currentUserId = localStorage.getItem("ndUsers");
 
       // heart Icon
       heartIconBtn.addEventListener("click", (e) => {
         e.stopPropagation();
-        // console.log("클릭됨");
+
+        // 로그인 유효성 검사
+        if (!currentUserId) {
+          alert("찜 하기 버튼은 로그인 후에 이용가능합니다!😉");
+          location.href = "../login/login.html";
+          return;
+        }
 
         // regular: 빈하트 / solid: 채워진 하트
         heartIconBtn.classList.toggle("fa-regular");
@@ -193,8 +210,7 @@ fetch("../../food_dataset.json")
         e.stopPropagation();
         // console.log("딭테일로 안갈거야~");
 
-        // 로그인 사용자인지 유효성 검사
-        const currentUserId = localStorage.getItem("ndUsers");
+        // 로그인 유효성 검사
         if (!currentUserId) {
           alert("해당 상품을 담고 싶으시다면 로그인 후에 이용해주세요!😊");
           location.href = "../login/login.html";
@@ -227,7 +243,9 @@ fetch("../../food_dataset.json")
         window.location.href = `/detail/detail.html?id=${item.id}&type=${item.classification}`;
       });
 
-      content.appendChild(section);
+      if (content) {
+        content.appendChild(section);
+      }
     });
   })
   .catch((error) => {
@@ -235,6 +253,12 @@ fetch("../../food_dataset.json")
   });
 
 /* json data setting end */
+
+const shopCar = document.querySelector(".basket i");
+// console.log(shopCar);
+shopCar.addEventListener("click", () => {
+  alert("현재 준비중인 페이지입니다..!😢");
+});
 
 // header 스크롤 체크, 히든
 let lastScrollTop = 0;
