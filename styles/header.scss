@@ -42,10 +42,10 @@ header {
     align-items: center;
     font-family: map-get($map: $font, $key: pretendard);
     font-size: 1.4rem;
+    cursor: pointer;
     .fa-chevron-right {
       margin-left: 10px;
       font-size: 1.4rem;
-      cursor: pointer;
     }
   }
   .header_inner {
