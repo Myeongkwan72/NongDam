@@ -1,35 +1,64 @@
 // main banner 슬라이드
-$(document).ready(function () {
-  $(".main_banner").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplayspeed: 6000,
-    arrows: false,
-    pauseOnFoucus: true,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+// $(document).ready(function () {
+//   $(".main_banner").slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplayspeed: 6000,
+//     arrows: false,
+//     pauseOnFoucus: true,
+//     pauseOnHover: true,
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//       {
+//         breakpoint: 767,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//       {
+//         breakpoint: 550,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//   });
+// });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  loopAdditionalSlides: 1,
+  autoplay: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 1,
+    },
+    550: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 // recipe 슬라이드

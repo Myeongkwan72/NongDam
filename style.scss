@@ -30,591 +30,450 @@ main {
   justify-content: center;
   margin: 0 auto;
 
-  .main_banner {
-    width: 100%;
-    height: 360px;
+  .swiper {
     position: relative;
-    .slick-list {
-      height: 100%;
-      .slick-track {
+    .swiper-wrapper {
+      width: 1920px;
+      height: 360px;
+      // position: relative;
+      #main_innerbanner1 {
+        width: 100%;
         height: 100%;
-        .main_innerbanner1 {
+        position: relative;
+        img {
+          // position: absolute;
           width: 100%;
           height: 100%;
-          position: relative;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-          .banner_text {
-            margin-left: 20vw;
-            width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .banner_text {
+          margin-left: 20vw;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          flex-direction: column;
+          gap: 40px;
+          .banner_tag {
             display: flex;
-            justify-content: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             flex-direction: column;
-            gap: 40px;
-            .banner_tag {
+            gap: 10px;
+            span {
+              width: 180px;
+              background: #ff4726;
+              color: map-get($map: $color, $key: light);
+              border-radius: 30px;
+              padding: 5px;
+              font-size: 1.4rem;
+              text-align: center;
+            }
+            .banner_title {
               display: flex;
               flex-direction: column;
-              gap: 10px;
-              span {
-                width: 180px;
-                background: #ff4726;
-                color: map-get($map: $color, $key: light);
-                border-radius: 30px;
-                padding: 5px;
-                font-size: 1.4rem;
-                text-align: center;
+              gap: 6px;
+              h2 {
+                font-size: 3.6rem;
               }
-              .banner_title {
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-                h2 {
-                  font-size: 3.6rem;
-                }
-                p {
-                  font-size: 1.6rem;
-                  color: map-get($map: $color, $key: dark-424242);
-                }
-              }
-            }
-            .banner_text1 {
               p {
                 font-size: 1.6rem;
                 color: map-get($map: $color, $key: dark-424242);
-                line-height: 150%;
               }
             }
           }
-        }
-        .main_innerbanner2 {
-          width: 100%;
-          position: relative;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-          .banner2_text {
-            width: 100%;
-            margin-left: 20vw;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            span {
-              font-size: 2.6rem;
-            }
-            h2 {
-              font-size: 3.6rem;
-              margin-bottom: 10px;
-              b {
-                color: map-get($map: $color, $key: main-01);
-                font-weight: 800;
-              }
-            }
+          .banner_text1 {
             p {
               font-size: 1.6rem;
-              color: map-get($map: $color, $key: main-01);
-            }
-          }
-        }
-        .main_innerbanner3 {
-          width: 100%;
-          position: relative;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-          .banner3_text {
-            margin-left: 30vw;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            p {
-              font-size: 2rem;
-              b {
-                color: map-get($map: $color, $key: main-01);
-              }
-            }
-            h2 {
-              font-size: 5.5rem;
-              font-weight: 800;
+              color: map-get($map: $color, $key: dark-424242);
               line-height: 150%;
             }
           }
         }
-        .main_innerbanner4 {
+      }
+      #main_innerbanner2 {
+        width: 100%;
+        position: relative;
+        img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .banner2_text {
+          width: 100%;
+          margin-left: 20vw;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          span {
+            font-size: 2.6rem;
+          }
+          h2 {
+            font-size: 3.6rem;
+            margin-bottom: 10px;
+            b {
+              color: map-get($map: $color, $key: main-01);
+              font-weight: 800;
+            }
+          }
+          p {
+            font-size: 1.6rem;
+            color: map-get($map: $color, $key: main-01);
+          }
+        }
+      }
+      #main_innerbanner3 {
+        width: 100%;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .banner3_text {
+          margin-left: 30vw;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          p {
+            font-size: 2rem;
+            b {
+              color: map-get($map: $color, $key: main-01);
+            }
+          }
+          h2 {
+            font-size: 5.5rem;
+            font-weight: 800;
+            line-height: 150%;
+          }
+        }
+      }
+      #main_innerbanner4 {
+        width: 100%;
+        position: relative;
+        color: map-get($map: $color, $key: light);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .banner4_text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-left: 20vw;
+          p {
+            font-size: 1.4rem;
+            font-weight: lighter;
+            line-height: 300%;
+          }
+          span {
+            font-size: 3rem;
+          }
+          h2 {
+            font-size: 3.6rem;
+            b {
+              font-weight: 700;
+              color: #ffb545;
+            }
+          }
+          .banner_time {
+            margin-top: 10px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            font-size: 1.6rem;
+            background: map-get($map: $color, $key: dark);
+            border-radius: 20px;
+            padding: 8px;
+          }
+          .banner4_img {
+            width: 80px;
+            position: absolute;
+            top: 10px;
+            left: calc(8vw + 70px);
+            overflow: hidden;
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-prev {
+      margin-left: 3%;
+      color: #fff;
+    }
+    .swiper-button-next {
+      margin-right: 3%;
+      color: #fff;
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet-active {
+        background: #fff;
+      }
+    }
+  }
+}
+
+#main_con1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  .main_inner {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    .main_it {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px; // 간격을 주는 게 더 보기 좋아요
+      .main_type1,
+      .main_type2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        // padding: 10px;
+        box-sizing: border-box;
+        gap: 15px;
+
+        .img {
           position: relative;
-          color: map-get($map: $color, $key: light);
+          width: 100%;
           img {
             width: 100%;
-            height: 100%;
+            aspect-ratio: 1 / 1; // 정사각형 비율 유지
             object-fit: cover;
+            cursor: pointer;
           }
-          .banner4_text {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+          // 할인 버튼은 type2에서만 존재
+          button {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-left: 20vw;
+            top: 5%;
+            left: 5%;
+            @include button;
+          }
+        }
+        .main_info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          gap: 10px;
+          h3,
+          .main_title {
+            font-size: 1.8rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; // 원하는 줄 수
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+          }
+          .main_shopping,
+          .main_tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
             p {
-              font-size: 1.4rem;
-              font-weight: lighter;
-              line-height: 300%;
+              font-weight: 600;
+              font-size: 2.2rem;
             }
-            span {
-              font-size: 3rem;
-            }
-            h2 {
-              font-size: 3.6rem;
-              b {
-                font-weight: 700;
-                color: #ffb545;
+            .main_sale {
+              display: flex;
+              gap: 10px;
+              align-items: flex-end;
+
+              .main_percent {
+                p {
+                  font-size: 1.8rem;
+                  color: map-get($map: $color, $key: main-01);
+                  b {
+                    font-size: 3.6rem;
+                    font-weight: 800;
+                  }
+                }
+              }
+
+              .main_price {
+                display: flex;
+                flex-direction: column;
+                span {
+                  font-size: 1.6rem;
+                  color: map-get($map: $color, $key: gray-ccc);
+                  text-decoration: line-through;
+                }
+                p {
+                  font-weight: 600;
+                  font-size: 2.2rem;
+                  color: map-get($map: $color, $key: dark);
+                }
               }
             }
-            .banner_time {
-              margin-top: 10px;
-              width: 160px;
+            .icon {
               display: flex;
-              justify-content: center;
-              font-size: 1.6rem;
-              background: map-get($map: $color, $key: dark);
-              border-radius: 20px;
-              padding: 8px;
-            }
-            .banner4_img {
-              width: 80px;
-              position: absolute;
-              top: 10px;
-              left: calc(8vw + 70px);
-              overflow: hidden;
-              img {
-                object-fit: cover;
+              gap: 5px;
+              .fa-heart,
+              .fa-cart-shopping {
+                @include icon;
+                cursor: pointer;
               }
             }
           }
         }
       }
     }
-    .slick-arrow {
-      display: none;
-    }
   }
+}
 
-  #main_con1 {
+#main_con2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  .main_inner {
     width: 100%;
-    height: auto;
+    max-width: 1050px;
     display: flex;
-    justify-content: center;
-    .main_inner {
-      width: 100%;
-      max-width: 1050px;
+    flex-direction: column;
+    gap: 20px;
+    .main_con2title {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        gap: 24px;
+      }
       h1 {
         font-size: 2.6rem;
       }
-
-      .main_it {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px; // 간격을 주는 게 더 보기 좋아요
-        .main_type1,
-        .main_type2 {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: 100%;
-          // padding: 10px;
-          box-sizing: border-box;
-          gap: 15px;
-
-          .img {
-            position: relative;
-            width: 100%;
-            img {
-              width: 100%;
-              aspect-ratio: 1 / 1; // 정사각형 비율 유지
-              object-fit: cover;
-              cursor: pointer;
-            }
-            // 할인 버튼은 type2에서만 존재
-            button {
-              position: absolute;
-              top: 5%;
-              left: 5%;
-              @include button;
-            }
-          }
-          .main_info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            gap: 10px;
-            h3,
-            .main_title {
-              font-size: 1.8rem;
-              display: -webkit-box;
-              -webkit-line-clamp: 1; // 원하는 줄 수
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              cursor: pointer;
-            }
-            .main_shopping,
-            .main_tag {
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-end;
-              p {
-                font-weight: 600;
-                font-size: 2.2rem;
-              }
-              .main_sale {
-                display: flex;
-                gap: 10px;
-                align-items: flex-end;
-
-                .main_percent {
-                  p {
-                    font-size: 1.8rem;
-                    color: map-get($map: $color, $key: main-01);
-                    b {
-                      font-size: 3.6rem;
-                      font-weight: 800;
-                    }
-                  }
-                }
-
-                .main_price {
-                  display: flex;
-                  flex-direction: column;
-                  span {
-                    font-size: 1.6rem;
-                    color: map-get($map: $color, $key: gray-ccc);
-                    text-decoration: line-through;
-                  }
-                  p {
-                    font-weight: 600;
-                    font-size: 2.2rem;
-                    color: map-get($map: $color, $key: dark);
-                  }
-                }
-              }
-              .icon {
-                display: flex;
-                gap: 5px;
-                .fa-heart,
-                .fa-cart-shopping {
-                  @include icon;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
+      img {
+        width: 40px;
+        height: 10px;
       }
     }
-  }
 
-  #main_con2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    .main_inner {
+    .main_it {
       width: 100%;
-      max-width: 1050px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      .main_con2title {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px; // 간격을 주는 게 더 보기 좋아요
+      .main_type1,
+      .main_type2 {
         display: flex;
-        align-items: center;
-        gap: 14px;
-        cursor: pointer;
-        transition: all 0.2s;
-        &:hover {
-          gap: 24px;
-        }
-        h1 {
-          font-size: 2.6rem;
-        }
-        img {
-          width: 40px;
-          height: 10px;
-        }
-      }
-
-      .main_it {
+        flex-direction: column;
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px; // 간격을 주는 게 더 보기 좋아요
-        .main_type1,
-        .main_type2 {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: 100%;
-          // padding: 10px;
-          box-sizing: border-box;
-          gap: 15px;
+        height: 100%;
+        // padding: 10px;
+        box-sizing: border-box;
+        gap: 15px;
 
-          .img {
-            position: relative;
-            width: 100%;
-            img {
-              width: 100%;
-              aspect-ratio: 1 / 1; // 정사각형 비율 유지
-              object-fit: cover;
-              cursor: pointer;
-            }
-            // 할인 버튼은 type2에서만 존재
-            button {
-              position: absolute;
-              top: 5%;
-              left: 5%;
-              @include button;
-            }
-          }
-          .main_info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            gap: 10px;
-            h3,
-            .main_title {
-              // white-space: nowrap;
-              // overflow: hidden;
-              font-size: 1.8rem;
-              display: -webkit-box;
-              -webkit-line-clamp: 1; // 원하는 줄 수
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              // font-size: 1.8rem;
-              cursor: pointer;
-            }
-            .main_shopping,
-            .main_tag {
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-end;
-              p {
-                font-weight: 600;
-                font-size: 2.2rem;
-              }
-              .main_sale {
-                display: flex;
-                gap: 10px;
-                align-items: flex-end;
-
-                .main_percent {
-                  p {
-                    font-size: 1.8rem;
-                    color: map-get($map: $color, $key: main-01);
-                    b {
-                      font-size: 3.6rem;
-                      font-weight: 800;
-                    }
-                  }
-                }
-
-                .main_price {
-                  display: flex;
-                  flex-direction: column;
-                  span {
-                    font-size: 1.6rem;
-                    color: map-get($map: $color, $key: gray-ccc);
-                    text-decoration: line-through;
-                  }
-                  p {
-                    font-weight: 600;
-                    font-size: 2.2rem;
-                    color: map-get($map: $color, $key: dark);
-                  }
-                }
-              }
-              .icon {
-                display: flex;
-                gap: 5px;
-                .fa-heart,
-                .fa-cart-shopping {
-                  @include icon;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #main_con3 {
-    width: 100%;
-    height: 444px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: map-get($map: $color, $key: sub-03);
-    .main_inner {
-      width: 100%;
-      max-width: 1050px;
-      display: flex;
-      gap: 45px;
-      height: 304px;
-      overflow: hidden;
-      .main_title2 {
-        .main_title3 {
-          font-size: 2.6rem;
-          margin-bottom: 6px;
-          b {
-            color: map-get($map: $color, $key: main-01);
-          }
-        }
-        .line {
-          width: 200px; // 220px 이었음 title: 3rem
-          height: 1px;
-          background-color: map-get($map: $color, $key: main-01);
-        }
-        p {
-          margin-top: 15px;
-          font-size: 1.6rem;
-        }
-      }
-
-      .main_recipe {
-        width: 70%;
-        display: flex;
-        // gap: 30px;
-        align-items: center;
-        // overflow: hidden;
-        overflow: visible;
-        position: relative;
-        .slick-slide {
-          padding: 0 15px; // 좌우 갭 30px (각 아이템 양쪽 15px씩)
-          box-sizing: border-box;
-        }
-
-        // 슬라이더 전체 양옆 여백 보정 필요시
-        .slick-list {
-          margin: 0 -15px;
-        }
-        .slick-prev,
-        .slick-next {
-          width: 30px;
-          height: 30px;
-          background: none;
-          color: map-get($map: $color, $key: main-01);
-          border-radius: 50%;
-          display: flex !important;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          top: 45%;
-          &.slick-prev {
-            left: -245px;
-          }
-          &.slick-next {
-            left: -180px;
-          }
-
-          &:before {
-            color: map-get($map: $color, $key: main-01);
-            font-size: 3rem;
-            opacity: 1;
-          }
-        }
-
-        .main_item {
-          width: 100%;
-          // width: 240px;
-          height: 304px;
-          // width: 100%;
+        .img {
           position: relative;
-
-          cursor: pointer;
+          width: 100%;
           img {
             width: 100%;
-            max-width: 240px;
-            // width: 240px;
-            height: 304px;
+            aspect-ratio: 1 / 1; // 정사각형 비율 유지
             object-fit: cover;
-            border-radius: 10px;
-            filter: brightness(70%);
+            cursor: pointer;
           }
-          .recipe_info {
-            width: 224px;
-            color: map-get($map: $color, $key: light);
-            display: flex;
-            flex-direction: column;
-            gap: 120px;
+          // 할인 버튼은 type2에서만 존재
+          button {
             position: absolute;
-            padding: 10px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            .recipe_title {
-              .fa-heart {
-                font-size: 1.6rem;
-                display: flex;
-                justify-content: right;
-                margin-bottom: 10px;
-                cursor: pointer;
+            top: 5%;
+            left: 5%;
+            @include button;
+          }
+        }
+        .main_info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          gap: 10px;
+          h3,
+          .main_title {
+            // white-space: nowrap;
+            // overflow: hidden;
+            font-size: 1.8rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; // 원하는 줄 수
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            // font-size: 1.8rem;
+            cursor: pointer;
+          }
+          .main_shopping,
+          .main_tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            p {
+              font-weight: 600;
+              font-size: 2.2rem;
+            }
+            .main_sale {
+              display: flex;
+              gap: 10px;
+              align-items: flex-end;
+
+              .main_percent {
+                p {
+                  font-size: 1.8rem;
+                  color: map-get($map: $color, $key: main-01);
+                  b {
+                    font-size: 3.6rem;
+                    font-weight: 800;
+                  }
+                }
               }
-              h4 {
-                font-size: 1.6rem;
-                margin-bottom: 6px;
-              }
-              button {
-                border: none;
+
+              .main_price {
                 display: flex;
-                align-items: center;
-                height: 14px;
-                border-radius: 12px;
-                padding: 8px;
-                color: map-get($map: $color, $key: light);
-                font-size: 1rem;
-                font-family: map-get($map: $font, $key: pretendard);
-                background: rgba($color: #000000, $alpha: 0.6);
+                flex-direction: column;
+                span {
+                  font-size: 1.6rem;
+                  color: map-get($map: $color, $key: gray-ccc);
+                  text-decoration: line-through;
+                }
+                p {
+                  font-weight: 600;
+                  font-size: 2.2rem;
+                  color: map-get($map: $color, $key: dark);
+                }
               }
             }
-            .recipe_text {
+            .icon {
               display: flex;
-              flex-direction: column;
-              gap: 10px;
-              .recipe_line {
-                width: 100%;
-                height: 1px;
-                background-color: map-get($map: $color, $key: light);
-              }
-              p {
-                font-size: 1.2rem;
+              gap: 5px;
+              .fa-heart,
+              .fa-cart-shopping {
+                @include icon;
+                cursor: pointer;
               }
             }
           }
@@ -622,211 +481,359 @@ main {
       }
     }
   }
+}
 
-  #main_con4 {
+#main_con3 {
+  width: 100%;
+  height: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: map-get($map: $color, $key: sub-03);
+  .main_inner {
     width: 100%;
-    height: auto;
+    max-width: 1050px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
-    .main_inner {
-      width: 100%;
-      max-width: 1050px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      hr {
-        width: 100%;
-        border: 1px solid map-get($map: $color, $key: main-01);
-        border-radius: 50px;
-      }
-      .main_sale_title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h1 {
-          font-size: 2.6rem;
+    gap: 45px;
+    height: 304px;
+    overflow: hidden;
+    .main_title2 {
+      .main_title3 {
+        font-size: 2.6rem;
+        margin-bottom: 6px;
+        b {
+          color: map-get($map: $color, $key: main-01);
         }
-        .sale_time {
-          color: map-get($map: $color, $key: light);
-          background: map-get($map: $color, $key: main-01);
-          font-size: 1.6rem;
-          border-radius: 10px;
-          padding: 8px 15px;
+      }
+      .line {
+        width: 200px; // 220px 이었음 title: 3rem
+        height: 1px;
+        background-color: map-get($map: $color, $key: main-01);
+      }
+      p {
+        margin-top: 15px;
+        font-size: 1.6rem;
+      }
+    }
+
+    .main_recipe {
+      width: 70%;
+      display: flex;
+      // gap: 30px;
+      align-items: center;
+      // overflow: hidden;
+      overflow: visible;
+      position: relative;
+      .slick-slide {
+        padding: 0 15px; // 좌우 갭 30px (각 아이템 양쪽 15px씩)
+        box-sizing: border-box;
+      }
+
+      // 슬라이더 전체 양옆 여백 보정 필요시
+      .slick-list {
+        margin: 0 -15px;
+      }
+      .slick-prev,
+      .slick-next {
+        width: 30px;
+        height: 30px;
+        background: none;
+        color: map-get($map: $color, $key: main-01);
+        border-radius: 50%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 45%;
+        &.slick-prev {
+          left: -245px;
+        }
+        &.slick-next {
+          left: -180px;
+        }
+
+        &:before {
+          color: map-get($map: $color, $key: main-01);
+          font-size: 3rem;
+          opacity: 1;
         }
       }
 
-      .main_it {
+      .main_item {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        .main_type2 {
+        // width: 240px;
+        height: 304px;
+        // width: 100%;
+        position: relative;
+
+        cursor: pointer;
+        img {
+          width: 100%;
+          max-width: 240px;
+          // width: 240px;
+          height: 304px;
+          object-fit: cover;
+          border-radius: 10px;
+          filter: brightness(70%);
+        }
+        .recipe_info {
+          width: 224px;
+          color: map-get($map: $color, $key: light);
           display: flex;
           flex-direction: column;
-          width: 100%;
-          height: 100%;
-          // padding: 10px;
-          box-sizing: border-box;
-          gap: 15px;
-
-          .img {
-            position: relative;
-            width: 100%;
-            img {
-              width: 100%;
-              aspect-ratio: 1 / 1; // 정사각형 비율 유지
-              object-fit: cover;
+          gap: 120px;
+          position: absolute;
+          padding: 10px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .recipe_title {
+            .fa-heart {
+              font-size: 1.6rem;
+              display: flex;
+              justify-content: right;
+              margin-bottom: 10px;
               cursor: pointer;
+            }
+            h4 {
+              font-size: 1.6rem;
+              margin-bottom: 6px;
             }
             button {
-              position: absolute;
-              top: 5%;
-              left: 5%;
-              @include button;
+              border: none;
+              display: flex;
+              align-items: center;
+              height: 14px;
+              border-radius: 12px;
+              padding: 8px;
+              color: map-get($map: $color, $key: light);
+              font-size: 1rem;
+              font-family: map-get($map: $font, $key: pretendard);
+              background: rgba($color: #000000, $alpha: 0.6);
             }
           }
-          .main_info {
+          .recipe_text {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
             gap: 10px;
-            h3,
-            .main_title {
-              font-size: 1.8rem;
-              // white-space: nowrap;
-              display: -webkit-box;
-              -webkit-line-clamp: 1; // 원하는 줄 수
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              // font-size: 1.8rem;
-              cursor: pointer;
+            .recipe_line {
+              width: 100%;
+              height: 1px;
+              background-color: map-get($map: $color, $key: light);
             }
-            .main_tag {
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#main_con4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  .main_inner {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    hr {
+      width: 100%;
+      border: 1px solid map-get($map: $color, $key: main-01);
+      border-radius: 50px;
+    }
+    .main_sale_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        font-size: 2.6rem;
+      }
+      .sale_time {
+        color: map-get($map: $color, $key: light);
+        background: map-get($map: $color, $key: main-01);
+        font-size: 1.6rem;
+        border-radius: 10px;
+        padding: 8px 15px;
+      }
+    }
+
+    .main_it {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      .main_type2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        // padding: 10px;
+        box-sizing: border-box;
+        gap: 15px;
+
+        .img {
+          position: relative;
+          width: 100%;
+          img {
+            width: 100%;
+            aspect-ratio: 1 / 1; // 정사각형 비율 유지
+            object-fit: cover;
+            cursor: pointer;
+          }
+          button {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            @include button;
+          }
+        }
+        .main_info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          gap: 10px;
+          h3,
+          .main_title {
+            font-size: 1.8rem;
+            // white-space: nowrap;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; // 원하는 줄 수
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            // font-size: 1.8rem;
+            cursor: pointer;
+          }
+          .main_tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            p {
+              font-weight: 600;
+              font-size: 2.2rem;
+            }
+            .main_sale {
               display: flex;
-              justify-content: space-between;
+              gap: 10px;
               align-items: flex-end;
-              p {
-                font-weight: 600;
-                font-size: 2.2rem;
-              }
-              .main_sale {
-                display: flex;
-                gap: 10px;
-                align-items: flex-end;
 
-                .main_percent {
-                  p {
-                    font-size: 1.8rem;
-                    color: map-get($map: $color, $key: main-01);
-                    b {
-                      font-size: 3.6rem;
-                      font-weight: 800;
-                    }
-                  }
-                }
-
-                .main_price {
-                  display: flex;
-                  flex-direction: column;
-                  span {
-                    font-size: 1.6rem;
-                    color: map-get($map: $color, $key: gray-ccc);
-                    text-decoration: line-through;
-                  }
-                  p {
-                    font-weight: 600;
-                    font-size: 2.2rem;
-                    color: map-get($map: $color, $key: dark);
+              .main_percent {
+                p {
+                  font-size: 1.8rem;
+                  color: map-get($map: $color, $key: main-01);
+                  b {
+                    font-size: 3.6rem;
+                    font-weight: 800;
                   }
                 }
               }
-              .icon {
+
+              .main_price {
                 display: flex;
-                gap: 5px;
-                .fa-heart,
-                .fa-cart-shopping {
-                  @include icon;
-                  cursor: pointer;
+                flex-direction: column;
+                span {
+                  font-size: 1.6rem;
+                  color: map-get($map: $color, $key: gray-ccc);
+                  text-decoration: line-through;
                 }
+                p {
+                  font-weight: 600;
+                  font-size: 2.2rem;
+                  color: map-get($map: $color, $key: dark);
+                }
+              }
+            }
+            .icon {
+              display: flex;
+              gap: 5px;
+              .fa-heart,
+              .fa-cart-shopping {
+                @include icon;
+                cursor: pointer;
               }
             }
           }
         }
-        // .main_type2 {
-        //   display: flex;
-        //   flex-direction: column;
-        //   gap: 15px;
-        //   .img {
-        //     width: 240px;
-        //     height: 240px;
-        //     border: 1px solid #f00;
-        //     position: relative;
-        //     cursor: pointer;
-        //     button {
-        //       @include button;
-        //     }
-        //   }
-        //   .main_info {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-between;
-        //     width: 240px;
-        //     height: 80px;
-        //     h3 {
-        //       font-size: 1.8rem;
-        //     }
-        //     .main_tag {
-        //       display: flex;
-        //       align-items: end;
-        //       justify-content: space-between;
-        //       .main_sale {
-        //         display: flex;
-        //         justify-content: center;
-        //         align-items: end;
-        //         gap: 10px;
-        //         .main_percent {
-        //           display: flex;
-        //           p {
-        //             b {
-        //               font-size: 3.6rem;
-        //             }
-        //             color: map-get($map: $color, $key: main-01);
-        //             font-size: 1.8rem;
-        //           }
-        //         }
-        //         .main_price {
-        //           display: flex;
-        //           flex-direction: column;
-        //           span {
-        //             color: map-get($map: $color, $key: gray-ccc);
-        //             text-decoration: line-through;
-        //           }
-        //           p {
-        //             font-size: 2.2rem;
-        //             color: map-get($map: $color, $key: dark);
-        //           }
-        //         }
-        //       }
-        //       .icon {
-        //         display: flex;
-        //         justify-content: right;
-        //         gap: 5px;
-        //         .fa-heart {
-        //           @include icon;
-        //           cursor: pointer;
-        //         }
-        //         .fa-cart-shopping {
-        //           @include icon;
-        //           cursor: pointer;
-        //         }
-        //       }
-        //     }
-        //   }
-        // }
       }
+      // .main_type2 {
+      //   display: flex;
+      //   flex-direction: column;
+      //   gap: 15px;
+      //   .img {
+      //     width: 240px;
+      //     height: 240px;
+      //     border: 1px solid #f00;
+      //     position: relative;
+      //     cursor: pointer;
+      //     button {
+      //       @include button;
+      //     }
+      //   }
+      //   .main_info {
+      //     display: flex;
+      //     flex-direction: column;
+      //     justify-content: space-between;
+      //     width: 240px;
+      //     height: 80px;
+      //     h3 {
+      //       font-size: 1.8rem;
+      //     }
+      //     .main_tag {
+      //       display: flex;
+      //       align-items: end;
+      //       justify-content: space-between;
+      //       .main_sale {
+      //         display: flex;
+      //         justify-content: center;
+      //         align-items: end;
+      //         gap: 10px;
+      //         .main_percent {
+      //           display: flex;
+      //           p {
+      //             b {
+      //               font-size: 3.6rem;
+      //             }
+      //             color: map-get($map: $color, $key: main-01);
+      //             font-size: 1.8rem;
+      //           }
+      //         }
+      //         .main_price {
+      //           display: flex;
+      //           flex-direction: column;
+      //           span {
+      //             color: map-get($map: $color, $key: gray-ccc);
+      //             text-decoration: line-through;
+      //           }
+      //           p {
+      //             font-size: 2.2rem;
+      //             color: map-get($map: $color, $key: dark);
+      //           }
+      //         }
+      //       }
+      //       .icon {
+      //         display: flex;
+      //         justify-content: right;
+      //         gap: 5px;
+      //         .fa-heart {
+      //           @include icon;
+      //           cursor: pointer;
+      //         }
+      //         .fa-cart-shopping {
+      //           @include icon;
+      //           cursor: pointer;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }
