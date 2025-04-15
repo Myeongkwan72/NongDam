@@ -927,7 +927,7 @@ body {
   gap: 60px;
 }
 #container .mypage_inner .mypage .mypage_data .mypage_detail li p {
-  width: 80%;
+  width: 70%;
   display: flex;
   align-items: center;
   font-family: pretendard;
@@ -1020,5 +1020,87 @@ body {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-align: center;
+  cursor: pointer;
+}
+
+.mypage_modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  background: #fff;
+}
+.mypage_modal .modal_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.mypage_modal .modal_inner h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.mypage_modal .modal_inner .modal_info_before {
+  display: flex;
+  justify-content: space-between;
+}
+.mypage_modal .modal_inner .modal_info_before :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.mypage_modal .modal_inner .modal_info_before :nth-child(2) {
+  font-size: 2rem;
+}
+.mypage_modal .modal_inner .modal_info_after {
+  display: flex;
+  justify-content: space-between;
+}
+.mypage_modal .modal_inner .modal_info_after :nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.mypage_modal .modal_inner .modal_info_after :nth-child(2) {
+  font-size: 2rem;
+}
+.mypage_modal .modal_inner .modal_buttons {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+.mypage_modal .modal_inner .modal_buttons :nth-child(1) {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f37100;
+  border-radius: 6px;
+  background: #fff;
+  color: #f37100;
+  font-family: pretendard;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mypage_modal .modal_inner .modal_buttons :nth-child(2) {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  background: #f37100;
+  color: #fff;
+  font-family: pretendard;
+  font-size: 1.4rem;
+  font-weight: bold;
   cursor: pointer;
 }
