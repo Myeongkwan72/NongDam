@@ -82,9 +82,9 @@ header .header_inner nav {
   display: none;
   width: 100%;
   padding: 0 20px;
-  display: none;
 }
 header .header_inner nav .gnb {
+  display: none;
   opacity: 0;
   flex-direction: column;
   background: #fff;
@@ -494,7 +494,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     display: flex;
   }
   header .header_inner nav .gnb {
-    pointer-events: none;
+    pointer-events: auto;
   }
   header .header_inner .trigger {
     display: flex;

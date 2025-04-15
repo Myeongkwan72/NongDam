@@ -31,6 +31,19 @@
   cursor: pointer;
 }
 
+@mixin modal-button {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-family: map-get($map: $font, $key: pretendard);
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 // common
 html {
   font-size: 62.5%;
@@ -104,7 +117,7 @@ body {
             align-items: center;
             gap: 60px;
             p {
-              width: 80%;
+              width: 70%;
               display: flex;
               align-items: center;
               font-family: map-get($map: $font, $key: pretendard);
@@ -166,6 +179,102 @@ body {
       text-underline-offset: 5px;
       text-align: center;
       cursor: pointer;
+    }
+  }
+}
+
+// modal
+.modal_overlay {
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mypage_modal {
+  display: none;
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  background: map-get($map: $color, $key: light);
+  .modal_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    h2 {
+      font-size: 3.6rem;
+      font-weight: bold;
+    }
+    .modal_info_before {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      :nth-child(1) {
+        width: 30%;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      :nth-child(2) {
+        width: 60%;
+        font-size: 2rem;
+        text-align: end;
+      }
+    }
+    .modal_info_after {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      :nth-of-type(1) {
+        width: 30%;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 60%;
+        font-size: 2rem;
+        font-family: map-get($map: $font, $key: pretendard);
+        font-weight: normal;
+        border: none;
+        text-align: end;
+        &:focus {
+          outline: none;
+          &::placeholder {
+            transition: all 0.3s;
+            opacity: 0;
+          }
+        }
+      }
+    }
+    .modal_buttons {
+      display: flex;
+      justify-content: end;
+      gap: 40px;
+      :nth-child(1) {
+        @include modal-button;
+        background: map-get($map: $color, $key: light);
+        color: map-get($map: $color, $key: main-01);
+        border: 1px solid map-get($map: $color, $key: main-01);
+      }
+      :nth-child(2) {
+        @include modal-button;
+        background: map-get($map: $color, $key: main-01);
+        color: map-get($map: $color, $key: light);
+        border: none;
+      }
     }
   }
 }
