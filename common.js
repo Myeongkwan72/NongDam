@@ -4,9 +4,28 @@ logoBtn.addEventListener("click", () => {
 });
 
 const triBtn = document.querySelector(".trigger");
+const gnbList = document.querySelector(".gnb");
 triBtn.addEventListener("click", (e) => {
-  e.currentTarget.classList.toggle("active");
-  document.querySelector(".gnb").classList.toggle("active");
+  if (window.innerWidth <= 767) {
+    const isActive = e.currentTarget.classList.toggle("active");
+    gnbList.classList.toggle("active");
+
+    if (isActive) {
+      gnbList.style.display = "flex";
+    } else {
+      gnbList.style.display = "none";
+    }
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 767) {
+    gnbList.style.display = "";
+    triBtn.classList.remove("active");
+    gnbList.classList.remove("active");
+  } else {
+    gnbList.style.display = "none";
+  }
 });
 
 /* cartBtn count start */

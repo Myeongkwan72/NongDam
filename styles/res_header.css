@@ -114,7 +114,7 @@
     display: flex;
   }
   header .header_inner nav .gnb {
-    pointer-events: none;
+    pointer-events: auto;
   }
   header .header_inner .trigger {
     display: flex;
