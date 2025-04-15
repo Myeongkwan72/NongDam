@@ -19,19 +19,25 @@ if (currentUser) {
 
 // 유저 정보 수정
 const modifyButton = document.querySelectorAll(".mypage_modify");
+const closeButton = document.querySelector(".modal_close");
 const modalPage = document.querySelector(".mypage_modal");
-
-// 스크롤 이벤트 방지
-preventScroll = (e) => {
-  e.preventDefault();
-};
+const modalOverlay = document.querySelector(".modal_overlay");
 
 // 모달창 출력
 modifyButton.forEach((Button) => {
   Button.addEventListener("click", () => {
     modalPage.style.display = "flex";
+    modalOverlay.style.display = "block";
+    // 스크롤 이벤트 방지
+    preventScroll = (e) => {
+      e.preventDefault();
+    };
     document.body.style.overflow = "hidden";
-    document.body.style.background = "rgba(0, 0, 0, 0.5));";
     document.addEventListener("wheel", preventScroll, { passive: false });
   });
+});
+
+closeButton.addEventListener("click", () => {
+  modalPage.style.display = "none";
+  modalOverlay.style.display = "none";
 });
