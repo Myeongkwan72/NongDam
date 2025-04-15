@@ -217,6 +217,8 @@ fetch("../food_dataset.json")
     console.error("마지막에 오류 났다 :", e);
   });
 
+const memberReviewImgTag = document.querySelector(".member_content img");
+
 /* Review More Event start */
 const reviewMoreBtn = document.querySelector(".review_more");
 const hideBtn = document.querySelectorAll(".hide_members");

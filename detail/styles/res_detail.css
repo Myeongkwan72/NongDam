@@ -219,7 +219,7 @@ a {
   }
   .detail_review .review_member > div:first-child .member_content > div p {
     color: #999;
-    margin: 28px 0px 0px;
+    margin: 20px 0px 0px;
   }
   .detail_review .review_member > div:last-child {
     cursor: pointer;
@@ -255,7 +255,7 @@ a {
   }
   .detail_review .review_member > div:last-child .member_content > div p {
     color: #999;
-    margin: 28px 0px 0px;
+    margin: 20px 0px 0px;
   }
   .detail_review .review_more {
     width: 100%;
@@ -725,7 +725,7 @@ a {
     margin: 16px auto;
     gap: 20px;
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.42rem;
     overflow: hidden;
     padding-right: 20px;
     border-radius: 10px;
@@ -735,7 +735,7 @@ a {
        object-fit: cover;
     height: -moz-fit-content;
     height: fit-content;
-    width: 90%;
+    width: 100%;
   }
   .detail_review .review_member > div:first-child .member_content > div {
     display: flex;
@@ -744,7 +744,7 @@ a {
   .detail_review .review_member > div:first-child .member_content > div p {
     font-size: 1.2rem;
     color: #999;
-    margin: 26px 0px 0px;
+    margin: 8px 0px 0px;
   }
   .detail_review .review_member > div:last-child {
     cursor: pointer;
@@ -762,7 +762,7 @@ a {
     margin: 16px auto;
     gap: 20px;
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.42rem;
     overflow: hidden;
     padding-right: 20px;
     border-radius: 10px;
@@ -772,7 +772,7 @@ a {
        object-fit: cover;
     height: -moz-fit-content;
     height: fit-content;
-    width: 90%;
+    width: 100%;
   }
   .detail_review .review_member > div:last-child .member_content > div {
     display: flex;
@@ -781,7 +781,7 @@ a {
   .detail_review .review_member > div:last-child .member_content > div p {
     font-size: 1.2rem;
     color: #999;
-    margin: 26px 0px 0px;
+    margin: 8px 0px 0px;
   }
   .detail_review .review_more {
     width: 100%;
@@ -815,7 +815,7 @@ a {
     font-size: 2.6rem;
     display: inline-block;
     position: relative;
-    margin-bottom: 30px;
+    margin: 30px 0;
   }
   .detail_product .product_title h1::after {
     content: "";
@@ -1100,41 +1100,41 @@ a {
     flex-direction: column;
   }
   .detail_info .info_title {
-    margin-bottom: 4px;
+    margin-bottom: 15px;
   }
   .detail_info .info_title h1 {
-    font-size: 1.8rem;
-    line-height: 110%;
+    font-size: 3rem;
+    line-height: 130%;
   }
   .detail_info .info_title p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #999;
   }
   .detail_info .info_price .price_one {
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #f37100;
   }
   .detail_info .info_price .price_one .price_sub {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .detail_info .info_price .price_two {
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   .detail_info .info_price .price_two .price_sub {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .detail_info .info_price .price_three {
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #999;
-    margin-bottom: 2px;
+    margin-bottom: 25px;
   }
   .detail_info .info_review {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
   .detail_info .info_review .fa-star {
-    font-size: 1.4rem;
+    font-size: 2rem;
     background: linear-gradient(to right, #c1d95b, #ffd6b0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1142,25 +1142,25 @@ a {
   }
   .detail_info .info_review .review_rating {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-right: 20px;
   }
   .detail_info .info_review .review_re {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .detail_info .info_review .review_few {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .detail_info .info_review p {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .detail_info .info_btns {
     gap: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
   }
   .detail_info .info_btns .organic_btn {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     border: 1px solid #f37100;
     border-radius: 20px;
@@ -1170,7 +1170,7 @@ a {
     cursor: pointer;
   }
   .detail_info .info_btns .event_btn {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     border: none;
     padding: 4px 14px;
@@ -1178,6 +1178,9 @@ a {
     background: linear-gradient(to right, #c1d95b, #ffd6b0);
     color: #fff;
     cursor: pointer;
+  }
+  .detail_info .info_option {
+    display: none;
   }
   .detail_info .info_option table {
     width: 100%;
@@ -1199,11 +1202,11 @@ a {
     width: 100%;
     border: none;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
     background: #ff9900;
-    height: 30px;
+    height: 40px;
     margin-bottom: 10px;
     cursor: pointer;
   }
@@ -1256,6 +1259,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 0px;
   }
   .detail_review .review_member > div:first-child {
     cursor: pointer;
@@ -1291,7 +1295,7 @@ a {
   .detail_review .review_member > div:first-child .member_content > div p {
     font-size: 1rem;
     color: #999;
-    margin: 24px 0px 0px;
+    margin: 8px 0px 0px;
   }
   .detail_review .review_member > div:first-child .member_content {
     font-size: 1.5rem;
@@ -1333,7 +1337,7 @@ a {
   .detail_review .review_member > div:last-child .member_content > div p {
     font-size: 1rem;
     color: #999;
-    margin: 24px 0px 0px;
+    margin: 8px 0px 0px;
   }
   .detail_review .review_member > div:last-child .member_content {
     font-size: 1.5rem;
@@ -1379,7 +1383,7 @@ a {
     font-size: 2.2rem;
     display: inline-block;
     position: relative;
-    margin-bottom: 30px;
+    margin: 30px 0;
   }
   .detail_product .product_title h1::after {
     content: "";
@@ -1874,7 +1878,7 @@ a {
   .detail_review .review_member > div:first-child .member_content > div p {
     font-size: 1.2rem;
     color: #999;
-    margin: 24px 0px 0px;
+    margin: 10px 0px 0px;
   }
   .detail_review .review_member > div:last-child {
     cursor: pointer;
@@ -1910,7 +1914,7 @@ a {
   .detail_review .review_member > div:last-child .member_content > div p {
     font-size: 1.2rem;
     color: #999;
-    margin: 24px 0px 0px;
+    margin: 10px 0px 0px;
   }
   .detail_review .review_more {
     width: 100%;
@@ -1958,7 +1962,7 @@ a {
     font-size: 2.2rem;
     display: inline-block;
     position: relative;
-    margin-bottom: 26px;
+    margin: 30px 0;
   }
   .detail_product .product_title h1::after {
     content: "";
