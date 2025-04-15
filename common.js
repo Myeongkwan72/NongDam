@@ -412,7 +412,13 @@ const locationVegetable = document.querySelectorAll(
 const locationEtc = document.querySelectorAll(".header_location_etc");
 const locationEvent = document.querySelectorAll(".header_event");
 
+const eventProBtn = document.querySelector(
+  ".header_inner_left > ul > .header_location_event"
+);
 const eventBtn = document.querySelector(".gnb > .header_location_event");
+eventProBtn.addEventListener("click", () => {
+  window.location.href = "/eventpromotion/event.html";
+});
 
 eventBtn.addEventListener("click", () => {
   window.location.href = "/eventpromotion/event.html";
