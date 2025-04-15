@@ -4,9 +4,29 @@ logoBtn.addEventListener("click", () => {
 });
 
 const triBtn = document.querySelector(".trigger");
+const gnbList = document.querySelector(".gnb");
+console.log(gnbList);
 triBtn.addEventListener("click", (e) => {
-  e.currentTarget.classList.toggle("active");
-  document.querySelector(".gnb").classList.toggle("active");
+  if (window.innerWidth <= 767) {
+    const isActive = e.currentTarget.classList.toggle("active");
+    gnbList.classList.toggle("active");
+
+    if (isActive) {
+      gnbList.style.display = "flex";
+    } else {
+      gnbList.style.display = "none";
+    }
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 767) {
+    gnbList.style.display = "";
+    triBtn.classList.remove("active");
+    gnbList.classList.remove("active");
+  } else {
+    gnbList.style.display = "none";
+  }
 });
 
 /* cartBtn count start */
@@ -390,7 +410,13 @@ const locationVegetable = document.querySelectorAll(
   ".header_location_vegetable"
 );
 const locationEtc = document.querySelectorAll(".header_location_etc");
-const locationEvent = document.querySelectorAll(".header_location_event");
+const locationEvent = document.querySelectorAll(".header_event");
+
+const eventBtn = document.querySelector(".gnb > .header_location_event");
+
+eventBtn.addEventListener("click", () => {
+  window.location.href = "/eventpromotion/event.html";
+});
 
 // 과일 페이지 이동
 locationFriut.forEach((fruit) => {
