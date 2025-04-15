@@ -25,7 +25,7 @@
         flex-direction: column;
         p {
           color: map-get($map: $color, $key: gray-999);
-          margin: 28px 0px 0px;
+          margin: 20px 0px 0px;
         }
       }
     }
@@ -595,14 +595,14 @@
       margin: 16px auto;
       gap: 20px;
       display: flex;
-      font-size: 1.3rem;
+      font-size: 1.42rem;
       overflow: hidden;
       padding-right: 20px;
       border-radius: 10px;
       img {
         object-fit: cover;
         height: fit-content;
-        width: 90%;
+        width: 100%;
       }
       & > div {
         display: flex;
@@ -610,7 +610,7 @@
         p {
           font-size: 1.2rem;
           color: map-get($map: $color, $key: gray-999);
-          margin: 26px 0px 0px;
+          margin: 8px 0px 0px;
         }
       }
     }
@@ -896,7 +896,7 @@
         font-size: 2.6rem;
         display: inline-block;
         position: relative;
-        margin-bottom: 30px;
+        margin: 30px 0;
         &::after {
           content: "";
           display: block;
@@ -1204,7 +1204,7 @@
         p {
           font-size: 1rem;
           color: map-get($map: $color, $key: gray-999);
-          margin: 24px 0px 0px;
+          margin: 8px 0px 0px;
         }
       }
     }
@@ -1285,42 +1285,42 @@
       flex-direction: column;
     }
     .info_title {
-      margin-bottom: 4px;
+      margin-bottom: 15px;
       & h1 {
-        font-size: 1.8rem;
-        line-height: 110%;
+        font-size: 3rem;
+        line-height: 130%;
       }
       & p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: map-get($map: $color, $key: gray-999);
       }
     }
     .info_price {
       & .price_one {
-        font-size: 1.6rem;
+        font-size: 3rem;
         font-weight: bold;
         color: map-get($map: $color, $key: main-01);
         & .price_sub {
-          font-size: 1rem;
+          font-size: 2rem;
         }
       }
       & .price_two {
-        font-size: 1.6rem;
+        font-size: 3rem;
         font-weight: bold;
         & .price_sub {
-          font-size: 1rem;
+          font-size: 2rem;
         }
       }
       & .price_three {
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: map-get($map: $color, $key: gray-999);
-        margin-bottom: 2px;
+        margin-bottom: 25px;
       }
     }
     .info_review {
-      margin-bottom: 14px;
+      margin-bottom: 15px;
       & .fa-star {
-        font-size: 1.4rem;
+        font-size: 2rem;
         background: linear-gradient(to right, #c1d95b, #ffd6b0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1328,25 +1328,25 @@
       }
       & .review_rating {
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: 2rem;
         margin-right: 20px;
       }
       & .review_re {
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: 2rem;
       }
       & .review_few {
-        font-size: 1.4rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 1.6rem;
       }
     }
     .info_btns {
       gap: 10px;
-      margin-bottom: 4px;
+      margin-bottom: 15px;
       & .organic_btn {
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: bold;
         border: 1px solid map-get($map: $color, $key: main-01);
         border-radius: 20px;
@@ -1356,7 +1356,7 @@
         cursor: pointer;
       }
       & .event_btn {
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: bold;
         border: none;
         padding: 4px 14px;
@@ -1367,6 +1367,7 @@
       }
     }
     .info_option {
+      display: none;
       table {
         width: 100%;
         border-collapse: separate;
@@ -1387,11 +1388,11 @@
         width: 100%;
         border: none;
         border-radius: 10px;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: bold;
         color: map-get($map: $color, $key: light);
         background: map-get($map: $color, $key: main-02);
-        height: 30px;
+        height: 40px;
         margin-bottom: 10px;
         cursor: pointer;
       }
@@ -1450,6 +1451,7 @@
       // justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 0px;
       & > div:first-child {
         cursor: pointer;
         p {
@@ -1523,7 +1525,7 @@
         font-size: 2.2rem;
         display: inline-block;
         position: relative;
-        margin-bottom: 30px;
+        margin: 30px 0;
         &::after {
           content: "";
           display: block;
@@ -1841,7 +1843,7 @@
         p {
           font-size: 1.2rem;
           color: map-get($map: $color, $key: gray-999);
-          margin: 24px 0px 0px;
+          margin: 10px 0px 0px;
         }
       }
     }
@@ -2164,7 +2166,7 @@
         font-size: 2.2rem;
         display: inline-block;
         position: relative;
-        margin-bottom: 26px;
+        margin: 30px 0;
         &::after {
           content: "";
           display: block;
