@@ -390,7 +390,7 @@ const locationVegetable = document.querySelectorAll(
   ".header_location_vegetable"
 );
 const locationEtc = document.querySelectorAll(".header_location_etc");
-const locationEvent = document.querySelectorAll(".header_location_event");
+const locationEvent = document.querySelectorAll(".header_event");
 
 // 과일 페이지 이동
 locationFriut.forEach((fruit) => {

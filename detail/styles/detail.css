@@ -68,11 +68,11 @@ header .header_event {
   align-items: center;
   font-family: pretendard;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 header .header_event .fa-chevron-right {
   margin-left: 10px;
   font-size: 1.4rem;
-  cursor: pointer;
 }
 header .header_inner {
   width: 100%;
