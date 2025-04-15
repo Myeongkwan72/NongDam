@@ -66,11 +66,11 @@ header .header_event {
   align-items: center;
   font-family: pretendard;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 header .header_event .fa-chevron-right {
   margin-left: 10px;
   font-size: 1.4rem;
-  cursor: pointer;
 }
 header .header_inner {
   width: 100%;
@@ -298,6 +298,7 @@ footer .footer_inner .up_btn div {
   align-items: center;
   background: #ffc164;
   border-radius: 27px;
+  cursor: pointer;
 }
 footer .footer_inner .up_btn div i {
   font-size: 2rem;
@@ -493,7 +494,7 @@ footer .footer_inner .footer_inner_right .inner_right_bottom .right_bottom_right
     display: flex;
   }
   header .header_inner nav .gnb {
-    pointer-events: auto;
+    pointer-events: none;
   }
   header .header_inner .trigger {
     display: flex;

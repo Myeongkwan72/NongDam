@@ -168,10 +168,19 @@ fetch("../food_dataset.json")
 
     // product sub img
     const subImg = document.querySelectorAll(".product_sub_img");
-    subImg.forEach((img, idx) => {
-      img.src = item.imgURL;
-      img.alt = `${item.title} ${idx + 1}`;
-    });
+    if (item.subImgUrls && Array.isArray(item.subImgUrls)) {
+      // Array.isArray 배열값이면 true 반환 / 아니면 false 반환
+      // console.log(item.subImgUrls);
+      subImg.forEach((img, idx) => {
+        if (item.subImgUrls[idx]) {
+          img.src = item.subImgUrls[idx];
+          img.alt = `${item.title} ${idx + 1}`;
+        } else {
+          img.src = item.imgURL;
+          img.alt = `${item.title}`;
+        }
+      });
+    }
 
     // product ex text
     const classification = item.classification;
@@ -184,6 +193,9 @@ fetch("../food_dataset.json")
         const block = document.createElement("div");
         block.classList.add("thumb_one");
 
+        // subImgUrls 배열안에 이미지 가져오기
+        const subImg = item.subImgUrls?.[num] || item.imgURL;
+
         block.innerHTML = `
               <div class="thumb_one">
                 <div class="ex_content">
@@ -191,7 +203,9 @@ fetch("../food_dataset.json")
                   <h4 class="product_ex_title">${ex.title}</h4>
                   <span class="product_ex_desc">${ex.desc}</span>
                 </div>
-                <img class="product_sub_img" src="${item.imgURL}" alt="thumb" />
+                <img class="product_sub_img" src="${subImg}" alt="${
+          item.title
+        } ${num + 1}" />
               </div>
         `;
 
@@ -202,6 +216,8 @@ fetch("../food_dataset.json")
   .catch((e) => {
     console.error("마지막에 오류 났다 :", e);
   });
+
+const memberReviewImgTag = document.querySelector(".member_content img");
 
 /* Review More Event start */
 const reviewMoreBtn = document.querySelector(".review_more");

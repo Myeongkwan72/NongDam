@@ -7,7 +7,13 @@
       "price": 5000,
       "discount_rate": 63,
       "discount_price": 1850,
-      "imgURL": "https://oasisprodse.edge.naverncp.com/2023/10/18/4ce7aa2a-364c-4d9a-9fae-4b67ad93f26a"
+      "imgURL": "https://oasisprodse.edge.naverncp.com/2023/10/18/4ce7aa2a-364c-4d9a-9fae-4b67ad93f26a",
+      "subImgUrls": [
+        "https://cdn.oasis.co.kr:48581/product/80976/thumb/8c6d94a5-da22-4aef-b7e3-e988a8d9f4f5.jpg",
+        "https://d2phebdq64jyfk.cloudfront.net/media/image/article/thumbnail/%E1%84%83%E1%85%A1%E1%86%AB%E1%84%89%E1%85%B5%E1%86%AB_1-30.jpg",
+        "https://lh4.googleusercontent.com/proxy/jA83tdkAs4W4PKtQqVCJjFX0CURV7SxqMl-EbiTFeoUBtoayTO_WuDDeqQMdHGQhIScTZoZF6Dfic88enRNnO6_tjiZ3el7cllFMc53el2r4MmC2G65KlqkuJ0FMPlxkHbClkpY8qK3N",
+        "https://i.namu.wiki/i/AUTo2wzlWy4RMVkBHgTkJzsIeKDJtAoWtS5DIQgI-lsgXcU_YY3hoiDAPwngkgP9L7eLm7dHgGOhV2i3yy6B4A.webp"
+      ]
     },
     {
       "id": 2,
@@ -16,7 +22,13 @@
       "price": 3000,
       "discount_rate": 28,
       "discount_price": 2160,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/1281/thumb/thumb_1281f5b53772-b752-41af-952b-122891cf5741.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/1281/thumb/thumb_1281f5b53772-b752-41af-952b-122891cf5741.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/11/04/09/23/bananas-8364511_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/03/20/48/bananas-1642706_1280.jpg",
+        "https://media.istockphoto.com/id/1494763483/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%82%98%EB%82%98-%EC%BB%A8%EC%85%89.jpg?s=612x612&w=0&k=20&c=xYhdDx688DxqACgPUMBDj7Kx8kaszOcWOlvR9S5lA00=",
+        "https://cdn.pixabay.com/photo/2018/06/17/10/33/banana-3480267_1280.jpg"
+      ]
     },
     {
       "id": 3,
@@ -25,7 +37,13 @@
       "price": 4000,
       "discount_rate": 23,
       "discount_price": 3080,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/95060/detail/0_37f1a658-3bfc-41c1-b679-f0454877a063.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/95060/detail/0_37f1a658-3bfc-41c1-b679-f0454877a063.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/08/16/10/09/oranges-8193789_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/11/14/07/39/tangerine-5740951_640.jpg",
+        "https://cdn.pixabay.com/photo/2016/01/02/01/59/oranges-1117628_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/02/26/12/27/oranges-2100108_1280.jpg"
+      ]
     },
     {
       "id": 4,
@@ -34,16 +52,28 @@
       "price": 7000,
       "discount_rate": 14,
       "discount_price": 6020,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/94349/thumb/887b4b4f-74f2-4bde-92ab-94ec0fa508e4.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/94349/thumb/887b4b4f-74f2-4bde-92ab-94ec0fa508e4.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/10/10/16/05/grapes-8306833_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/04/26/09/38/grapes-7157943_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/07/20/14/02/grapes-3550733_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/08/09/16/59/grapes-7375445_1280.jpg"
+      ]
     },
     {
       "id": 5,
       "classification": "과일",
-      "title": "딸기 0.5kg",
+      "title": "딸기 1kg",
       "price": 8000,
       "discount_rate": 58,
       "discount_price": 3360,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/41704/detail/detail_41704_0_10aa2442-435b-41ab-8b6e-f306476a4c8f.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/41704/detail/detail_41704_0_10aa2442-435b-41ab-8b6e-f306476a4c8f.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2022/07/15/20/13/strawberries-7323943_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/18/17/23/strawberries-1835934_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/04/02/21/47/strawberries-99551_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/06/03/21/12/strawberry-361597_1280.jpg"
+      ]
     },
     {
       "id": 6,
@@ -52,7 +82,13 @@
       "price": 9000,
       "discount_rate": 59,
       "discount_price": 3690,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/72475/detail/detail_72475_0_2fa1788c-ea6f-4cb8-8011-28f089daf3aa.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/72475/detail/detail_72475_0_2fa1788c-ea6f-4cb8-8011-28f089daf3aa.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/06/18/22/36/cherries-1465801_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/12/17/18/50/cherry-1914118_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/07/08/10/27/cherries-1503977_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/07/26/03/42/cherry-167341_1280.jpg"
+      ]
     },
     {
       "id": 7,
@@ -61,7 +97,13 @@
       "price": 15000,
       "discount_rate": 70,
       "discount_price": 4500,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/92575/thumb/a969fbf3-6ddf-4614-ad61-caba17df5bea.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/92575/thumb/a969fbf3-6ddf-4614-ad61-caba17df5bea.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2020/06/19/21/44/watermelons-5318938_1280.jpg",
+        "https://cdn.pixabay.com/photo/2010/12/13/10/18/watermelons-2636_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/21/07/44/watermelon-3620725_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/07/17/01/water-melon-1652093_1280.jpg"
+      ]
     },
     {
       "id": 8,
@@ -70,7 +112,13 @@
       "price": 10000,
       "discount_rate": 13,
       "discount_price": 8700,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/4023/detail/detail_4023_0_dc3b9150-5585-45d5-9ba7-94ef70d18d28.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/4023/detail/detail_4023_0_dc3b9150-5585-45d5-9ba7-94ef70d18d28.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2018/11/11/15/42/pineapple-3808963_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/04/04/15/10/pineapple-5002675_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/04/01/15/57/pineapple-4991670_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/01/07/08/21/pineapple-4747018_1280.jpg"
+      ]
     },
     {
       "id": 9,
@@ -79,7 +127,13 @@
       "price": 12000,
       "discount_rate": 30,
       "discount_price": 8400,
-      "imgURL": "https://blog.kakaocdn.net/dn/JTcyp/btsIPmGybT1/lBhRpLkK5c7y5bRd7xeSUk/img.jpg"
+      "imgURL": "https://blog.kakaocdn.net/dn/JTcyp/btsIPmGybT1/lBhRpLkK5c7y5bRd7xeSUk/img.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/09/29/07/58/mango-8283268_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/05/31/14/31/mango-2360551_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/06/20/01/34/mango-3485606_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/06/25/14/59/mangos-5339934_1280.jpg"
+      ]
     },
     {
       "id": 10,
@@ -88,7 +142,13 @@
       "price": 8500,
       "discount_rate": 23,
       "discount_price": 6545,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/92426/thumb/66198e71-588b-4c3c-887b-7a4189337701.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/92426/thumb/66198e71-588b-4c3c-887b-7a4189337701.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/08/07/15/00/blueberries-1576403_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/07/31/17/11/bilberries-2559051_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/05/12/23/blueberry-2583141_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/02/09/18/27/blueberries-2053127_1280.jpg"
+      ]
     },
     {
       "id": 11,
@@ -97,7 +157,13 @@
       "price": 16000,
       "discount_rate": 19,
       "discount_price": 6860,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/18156/detail/detail_18156_0_a7a1a85e-ec98-41f6-b8b8-b2f878ed3a27.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/18156/detail/detail_18156_0_a7a1a85e-ec98-41f6-b8b8-b2f878ed3a27.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2021/01/05/23/58/grapefruits-5892709_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/12/21/12/33/orange-7669963_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/03/13/17/25/fruit-671980_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/03/23/21/34/grapefruit-2169541_1280.jpg"
+      ]
     },
     {
       "id": 12,
@@ -106,7 +172,13 @@
       "price": 3500,
       "discount_rate": 69,
       "discount_price": 1085,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/60894/detail/detail_60894_0_e33f6841-7164-4222-a4db-a399cf6db40a.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/60894/detail/detail_60894_0_e33f6841-7164-4222-a4db-a399cf6db40a.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2020/11/08/17/43/lemon-5724522_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/21/16/40/agriculture-1846358_1280.jpg",
+        "https://cdn.pixabay.com/photo/2024/02/24/17/37/lemons-8594421_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/03/30/00/50/lemon-4982692_1280.jpg"
+      ]
     },
     {
       "id": 13,
@@ -115,7 +187,13 @@
       "price": 9000,
       "discount_rate": 41,
       "discount_price": 5310,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/8130/detail/detail_8130_0_18b6aab7-6822-4512-8d8a-ebe9b3b8b57a.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/8130/detail/detail_8130_0_18b6aab7-6822-4512-8d8a-ebe9b3b8b57a.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2013/10/17/10/59/pomegranate-196800_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/10/14/21/53/pomegranate-2851994_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/01/18/15/57/fruits-3940021_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/11/06/15/05/pomegranate-1028703_1280.jpg"
+      ]
     },
     {
       "id": 14,
@@ -124,7 +202,13 @@
       "price": 9500,
       "discount_rate": 54,
       "discount_price": 4370,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/80723/thumb/395627ed-d708-407a-b369-83a5042f21b1.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/80723/thumb/395627ed-d708-407a-b369-83a5042f21b1.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2017/02/19/09/20/figs-2079166_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/03/10/21/04/fresh-figs-2133722_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/08/30/16/45/figs-7421496_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/09/14/19/56/fig-3678012_1280.jpg"
+      ]
     },
     {
       "id": 15,
@@ -133,16 +217,28 @@
       "price": 7000,
       "discount_rate": 52,
       "discount_price": 3360,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/3734/thumb/thumb_37341c0ae2a5-e6ef-462d-8cfa-55b8ece78b58.gif"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/3734/thumb/thumb_37341c0ae2a5-e6ef-462d-8cfa-55b8ece78b58.gif",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/08/03/04/34/kiwi-1565847_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/03/23/11/36/fruit-3253464_1280.jpg",
+        "https://cdn.pixabay.com/photo/2021/02/04/15/55/kiwi-5981758_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/02/09/11/00/fruit-7003140_1280.jpg"
+      ]
     },
     {
       "id": 16,
       "classification": "과일",
-      "title": "K3멜론 3kg",
+      "title": "멜론 3kg",
       "price": 8500,
       "discount_rate": 61,
       "discount_price": 3315,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/89107/thumb/98fdfcd8-ab11-481e-b242-1ca1067faae8.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/89107/thumb/98fdfcd8-ab11-481e-b242-1ca1067faae8.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/04/01/18/35/melon-1301315_1280.jpg",
+        "https://cdn.pixabay.com/photo/2012/11/11/03/00/melons-65652_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/08/12/12/melons-1808135_1280.jpg",
+        "https://cdn.pixabay.com/photo/2021/04/19/11/05/melon-6191133_1280.jpg"
+      ]
     },
     {
       "id": 17,
@@ -151,7 +247,13 @@
       "price": 5000,
       "discount_rate": 20,
       "discount_price": 4000,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/3701/thumb/thumb_3701eb66759d-21c6-4f8e-af5c-17606da64e33.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/3701/thumb/thumb_3701eb66759d-21c6-4f8e-af5c-17606da64e33.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/01/04/21/23/lemon-1121636_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/03/10/15/15/lime-2133091_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/10/17/12/58/lemon-7527539_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/06/24/17/16/kumquat-3494980_1280.jpg"
+      ]
     },
     {
       "id": 18,
@@ -160,7 +262,13 @@
       "price": 16000,
       "discount_rate": 31,
       "discount_price": 11040,
-      "imgURL": "https://i.namu.wiki/i/IOXTAdyAm0Vsqf3W7f7xxyDpinmjaYQV5-R4nOJwZEL8YrM0o0N_TqDtAGveBI38P3z1ihkaciNDNKFTVw_U2w.webp"
+      "imgURL": "https://i.namu.wiki/i/IOXTAdyAm0Vsqf3W7f7xxyDpinmjaYQV5-R4nOJwZEL8YrM0o0N_TqDtAGveBI38P3z1ihkaciNDNKFTVw_U2w.webp",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/07/06/20/56/coconut-1501334_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/06/13/01/49/coconut-7259124_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/08/10/13/40/coconut-1583223_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/05/13/07/21/india-coconut-2308864_1280.jpg"
+      ]
     },
     {
       "id": 19,
@@ -169,7 +277,13 @@
       "price": 8500,
       "discount_rate": 59,
       "discount_price": 3485,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/51059/thumb/thumb_510594c317edb-bc90-41a1-8d00-f1f9019480a4.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/51059/thumb/thumb_510594c317edb-bc90-41a1-8d00-f1f9019480a4.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2022/07/30/10/29/peaches-7353447_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/11/17/41/peach-2632182_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/02/18/10/17/peach-4859067_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/07/11/19/52/fruit-144753_1280.jpg"
+      ]
     },
     {
       "id": 20,
@@ -178,7 +292,13 @@
       "price": 7800,
       "discount_rate": 68,
       "discount_price": 2495,
-      "imgURL": "https://blog.kakaocdn.net/dn/cqUT1B/btsKb5ceHZP/maR24kIKC0aSkr4kDiLfFK/img.jpg"
+      "imgURL": "https://blog.kakaocdn.net/dn/cqUT1B/btsKb5ceHZP/maR24kIKC0aSkr4kDiLfFK/img.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2013/03/14/21/35/cranberry-93747_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/27/16/46/berries-2686747_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/10/02/19/10/food-4521744_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/01/20/19/38/fruit-6953246_1280.jpg"
+      ]
     },
     {
       "id": 21,
@@ -187,7 +307,13 @@
       "price": 11000,
       "discount_rate": 20,
       "discount_price": 8800,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/87140/thumb/dcfda865-d11c-4796-9232-71ac33d9ec60.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/87140/thumb/dcfda865-d11c-4796-9232-71ac33d9ec60.jpg",
+      "subImgUrls": [
+        "https://t1.daumcdn.net/news/202105/21/realfood/20210521161430127zvgk.jpg",
+        "https://thingool123.godohosting.com/gd5replace/thingotr4652/data/editor/goods/210721/19f05975794583fd7f586f75b4cb5d79_144402.jpg",
+        "https://image.hnsmall.com/images/goods/105/15131105_g.jpg",
+        "https://blog.kakaocdn.net/dn/tZvhA/btsFgNz6k1D/xxDdlTBMAm3ZeM2sUiJMzK/img.jpg"
+      ]
     },
     {
       "id": 22,
@@ -196,7 +322,13 @@
       "price": 8800,
       "discount_rate": 6,
       "discount_price": 8272,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/80713/thumb/e7958198-47cb-4666-ab2a-63a7f61419df.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/80713/thumb/e7958198-47cb-4666-ab2a-63a7f61419df.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2022/07/10/20/18/raspberry-7313702_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/07/18/54/fresh-1652341_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/11/04/22/24/raspberry-2919037_1280.jpg",
+        "https://cdn.pixabay.com/photo/2023/07/31/07/58/raspberry-8160472_1280.jpg"
+      ]
     },
     {
       "id": 23,
@@ -205,7 +337,13 @@
       "price": 9500,
       "discount_rate": 43,
       "discount_price": 5415,
-      "imgURL": "https://i.namu.wiki/i/n7mkMMaf4ZrgfsHZ5lRFdX5oGpf79ulpGu2ZRgmnJp6PopLIikPelgYwgRbgTuTL6QLvXOC0tD2adQ7PYfqNGQ.webp"
+      "imgURL": "https://i.namu.wiki/i/n7mkMMaf4ZrgfsHZ5lRFdX5oGpf79ulpGu2ZRgmnJp6PopLIikPelgYwgRbgTuTL6QLvXOC0tD2adQ7PYfqNGQ.webp",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2013/08/16/17/03/carambola-173172_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/04/28/17/04/carambola-3357744_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/11/29/01/45/green-4660410_1280.jpg",
+        "https://media.istockphoto.com/id/491117500/ko/%EC%82%AC%EC%A7%84/%EA%B1%B0%EC%88%98-%ED%9B%84%EB%A5%B4%ED%8A%B8.jpg?s=612x612&w=0&k=20&c=V4LSzyZw7JlWjdZaPapss8HbQXp4fL-rkzzOJ8BznAY="
+      ]
     },
     {
       "id": 24,
@@ -214,7 +352,13 @@
       "price": 12000,
       "discount_rate": 66,
       "discount_price": 4080,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/81073/thumb/f102cc9a-9eee-4c26-8dda-ee025f399b11.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/81073/thumb/f102cc9a-9eee-4c26-8dda-ee025f399b11.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2021/12/16/03/16/guava-6873684_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/03/06/06/14/guava-4037647_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/07/23/11/38/fruit-4357388_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/09/10/14/11/guava-5560528_1280.jpg"
+      ]
     }
   ],
   "vegetables": [
@@ -225,7 +369,13 @@
       "price": 3000,
       "discount_price": 2700,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/103852/detail/0_b0b198ad-4c96-47c7-8bb4-cd139f08a688.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/103852/detail/0_b0b198ad-4c96-47c7-8bb4-cd139f08a688.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2019/10/13/15/53/kohl-4546444_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/11/22/50/cabbage-2633033_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/12/20/21/42/cabbage-7668781_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/02/01/15/56/savoy-3969270_1280.jpg"
+      ]
     },
     {
       "id": 2,
@@ -234,7 +384,13 @@
       "price": 4500,
       "discount_price": 4050,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/84262/thumb/0bed1996-40b3-4eab-a0f1-8ac6c454507b.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/84262/thumb/0bed1996-40b3-4eab-a0f1-8ac6c454507b.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/07/11/00/18/carrots-1508847_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/11/28/13/39/vegetables-1067269_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/03/14/14/08/carrots-673201_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/04/01/12/56/carrots-4095322_1280.jpg"
+      ]
     },
     {
       "id": 3,
@@ -243,7 +399,13 @@
       "price": 5000,
       "discount_price": 4500,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/49436/thumb/thumb_49436effcd133-66b0-4a5b-895d-b3466300037b.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/49436/thumb/thumb_49436effcd133-66b0-4a5b-895d-b3466300037b.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2018/05/29/23/18/potato-3440360_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/07/27/01/09/potatoes-2543686_1280.jpg",
+        "https://cdn.pixabay.com/photo/2021/10/18/09/30/vegetable-6720516_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/08/06/20/32/potatoes-411975_1280.jpg"
+      ]
     },
     {
       "id": 4,
@@ -252,7 +414,13 @@
       "price": 4800,
       "discount_price": 4320,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/74775/detail/detail_74775_0_e5799696-9f62-46a3-933d-91fa889b2210.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/74775/detail/detail_74775_0_e5799696-9f62-46a3-933d-91fa889b2210.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/01/17/09/37/onion-1144620_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/05/16/22/47/onions-1397037_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/07/15/20/43/onion-3540502_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/11/15/13/32/onion-531974_1280.jpg"
+      ]
     },
     {
       "id": 5,
@@ -261,7 +429,13 @@
       "price": 3500,
       "discount_price": 3150,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/85945/thumb/f3663075-c792-47ca-af7f-d4fa1b63ffeb.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/85945/thumb/f3663075-c792-47ca-af7f-d4fa1b63ffeb.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/01/25/18/46/broccoli-7744338_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/03/14/13/59/vegetables-673181_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/08/30/12/05/broccoli-1630519_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/07/11/17/01/broccoli-390001_1280.jpg"
+      ]
     },
     {
       "id": 6,
@@ -270,7 +444,13 @@
       "price": 3200,
       "discount_price": 2880,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/99780/detail/0_d40a5aed-86d2-4764-863e-d1e1b529d437.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/99780/detail/0_d40a5aed-86d2-4764-863e-d1e1b529d437.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2024/04/03/14/17/lettuce-8673134_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/03/05/22/01/lettuce-1239155_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/05/20/21/48/lettuce-4217728_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/09/08/09/47/vegetable-5554160_1280.jpg"
+      ]
     },
     {
       "id": 7,
@@ -279,7 +459,13 @@
       "price": 7200,
       "discount_price": 6480,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/65670/detail/detail_65670_0_57a73304-3fc3-4283-a84c-7b06be3277eb.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/65670/detail/detail_65670_0_57a73304-3fc3-4283-a84c-7b06be3277eb.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/08/03/07/38/paprika-1566052_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/05/12/15/39/paprika-5163622_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/06/18/23/14/vegetable-371912_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/06/18/23/14/vegetable-371912_1280.jpg"
+      ]
     },
     {
       "id": 8,
@@ -288,7 +474,13 @@
       "price": 4600,
       "discount_price": 4140,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/77786/detail/detail_77786_3_d853283a-8a05-41d1-87a7-2c05dfc3c86d.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/77786/detail/detail_77786_3_d853283a-8a05-41d1-87a7-2c05dfc3c86d.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2015/07/15/23/39/zucchini-847094_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/29/13/42/zucchinis-1869941_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/08/30/12/05/zucchini-1630518_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/21/19/42/zucchini-3622003_1280.jpg"
+      ]
     },
     {
       "id": 9,
@@ -297,7 +489,13 @@
       "price": 7500,
       "discount_price": 6750,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/81737/detail/0_64bb165d-a327-4165-9333-f5e697f19c05.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/81737/detail/0_64bb165d-a327-4165-9333-f5e697f19c05.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2015/10/07/13/02/vegetables-976165_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/13/08/51/sweet-potato-1666707_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/03/07/07/44/sweet-potato-1241696_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/03/10/09/11/sweet-potato-1248078_1280.jpg"
+      ]
     },
     {
       "id": 10,
@@ -306,7 +504,13 @@
       "price": 2800,
       "discount_price": 2520,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/94156/detail/0_1488c1b2-f6c1-448a-b140-41d6e418cac2.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/94156/detail/0_1488c1b2-f6c1-448a-b140-41d6e418cac2.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2017/05/01/12/03/leaves-2275338_1280.jpg",
+        "https://blog.kakaocdn.net/dn/z58Ar/btqKBPUdf9x/ljME6hNBrJLzaC8pDUjZ41/img.png",
+        "https://blog.kakaocdn.net/dn/cj2IRX/btqFNQpJi8q/zIvnv1dvtqvl9FtumTIRG1/img.png",
+        "https://blog.kakaocdn.net/dn/brmj2s/btqFNspmL4U/PmsJKAdoecgqYjvxS2cj40/img.png"
+      ]
     },
     {
       "id": 11,
@@ -315,7 +519,13 @@
       "price": 6000,
       "discount_price": 5400,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/18711/detail/detail_18711_0_3d5c1957-ea1b-4dd8-9e93-9fa5bc764278.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/18711/detail/detail_18711_0_3d5c1957-ea1b-4dd8-9e93-9fa5bc764278.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2018/05/29/23/14/asparagus-3440348_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/04/26/13/42/vegetable-740446_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/04/15/17/23/green-asparagus-1331460_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/07/25/16/55/asparagus-2538848_1280.jpg"
+      ]
     },
     {
       "id": 12,
@@ -324,7 +534,13 @@
       "price": 14500,
       "discount_price": 9050,
       "discount_rate": 40,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/99823/thumb/75cb971c-75bd-499b-84d7-ebe16680a013.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/99823/thumb/75cb971c-75bd-499b-84d7-ebe16680a013.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2020/12/02/16/35/chinese-cabbage-5798137_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/10/02/08/39/plants-2808184_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/01/31/10/05/snow-4807601_1280.jpg",
+        "https://blog.kakaocdn.net/dn/6sMdh/btqPqluMsUH/kYDXQRgs0bkapgkhpqZeH0/img.jpg"
+      ]
     },
     {
       "id": 13,
@@ -333,7 +549,13 @@
       "price": 3500,
       "discount_price": 3150,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/34450/detail/0_5d4a4434-0df5-49bc-8736-ef788ab69643.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/34450/detail/0_5d4a4434-0df5-49bc-8736-ef788ab69643.jpg",
+      "subImgUrls": [
+        "https://media.istockphoto.com/id/825854380/ko/%EC%82%AC%EC%A7%84/%EB%B3%B5-%EC%B4%88%EC%9D%B4-%EC%A0%95%EC%9B%90-%EC%95%BC%EC%B1%84%EC%97%90-%EC%84%B1%EC%9E%A5.jpg?s=612x612&w=0&k=20&c=LAOzt6n4hh-oSNUVD10epP1v_jDVHcoBN2v0opBChvE=",
+        "https://media.istockphoto.com/id/1311303489/ko/%EC%82%AC%EC%A7%84/%EC%95%BC%EC%83%9D-%EB%A7%88%EB%8A%98-%EB%B0%AD%EC%9D%98-%EB%B3%B5-%EC%B4%88%EC%9D%B4.jpg?s=612x612&w=0&k=20&c=NszYUJxo14XejdxRB_7mfbV5777OT01_Wq-_vFYW6rI=",
+        "https://media.istockphoto.com/id/1467548021/ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EC%84%A0%ED%95%9C-%EC%B2%AD%EA%B2%BD%EC%B1%84.jpg?s=612x612&w=0&k=20&c=YdQviS2tASG5i9zVRPd4zAC_HvfZyr5sZOBRUG0T2lc=",
+        "https://media.istockphoto.com/id/533297845/ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EC%84%A0%ED%95%9C-%EB%B0%B0%EC%B6%94-on-%EC%A0%84%EC%9B%90%EC%A3%BC%EC%9D%98-wood.jpg?s=612x612&w=0&k=20&c=cejR8QqR6OCN417pIC-JxZWntAFpzDClzLyTPPg_14o="
+      ]
     },
     {
       "id": 14,
@@ -342,7 +564,13 @@
       "price": 1200,
       "discount_price": 1080,
       "discount_rate": 10,
-      "imgURL": "https://shop.hansalim.or.kr/shopping/is/itm/050816001/050816001_1_568.jpg"
+      "imgURL": "https://shop.hansalim.or.kr/shopping/is/itm/050816001/050816001_1_568.jpg",
+      "subImgUrls": [
+        "https://thumb.photo-ac.com/ea/ea31235bb8bfe0f1aa9f8a98a013dcc3_t.jpeg",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/4d07f15504aa493ba89aa3c55f2eec0e.jpeg?type=big&res=3x&ext=jpg",
+        "https://image.hnsmall.com/images/goods/625/12196625_g.jpg",
+        "https://semie.cooking/image/contents/gm/wx/mmykompt/128784397ssbr.jpg"
+      ]
     },
     {
       "id": 15,
@@ -351,7 +579,13 @@
       "price": 5500,
       "discount_price": 4950,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/64185/thumb/thumb_6418521a7b39e-f004-48fa-b882-63e6846eca31.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/64185/thumb/thumb_6418521a7b39e-f004-48fa-b882-63e6846eca31.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2018/09/29/18/45/spinach-3711982_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/07/16/16/30/spinach-1522283_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/01/07/07/57/vegetables-1125420_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_1280.jpg"
+      ]
     },
     {
       "id": 16,
@@ -360,7 +594,13 @@
       "price": 2800,
       "discount_price": 2520,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/65215/detail/detail_65215_0_8443e20d-605b-4bb9-80a0-b6a2bea0e847.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/65215/detail/detail_65215_0_8443e20d-605b-4bb9-80a0-b6a2bea0e847.jpg",
+      "subImgUrls": [
+        "https://image.fmkorea.com/files/attach/new2/20210415/486616/3427998330/3526548370/febe16276843497462b4c6caed153dde.jpeg",
+        "https://blog.kakaocdn.net/dn/bklce8/btsJHYRkdkm/m7bECoJcb6zWh9nUPNUR4k/img.jpg",
+        "https://cdn.esocialtimes.com/news/photo/202403/35136_26342_5721.jpg",
+        "https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_1390298/1723600319871/88a5d4f503b26504ed25f8cf38a0b97ddfd234c4f024896a96a3fa363de0660b.jpeg?q=95&s=1440x1440&t=inside"
+      ]
     },
     {
       "id": 17,
@@ -369,7 +609,13 @@
       "price": 2500,
       "discount_price": 2250,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/69709/thumb/thumb_69709e48ef43f-6476-4c99-ba1f-7e7f94d2729f.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/69709/thumb/thumb_69709e48ef43f-6476-4c99-ba1f-7e7f94d2729f.jpg",
+      "subImgUrls": [
+        "https://thumb.photo-ac.com/72/72bb0031f50b4282b067f08696b5ab98_t.jpeg",
+        "https://png.pngtree.com/thumb_back/fh260/background/20220314/pngtree-photo-of-fresh-chrysanthemum-vegetables-on-the-vegetable-field-image_1012305.jpg",
+        "https://thumb.photo-ac.com/99/9968da8a08e3ad93a94a7bb81867610a_t.jpeg",
+        "https://png.pngtree.com/thumb_back/fh260/background/20220311/pngtree-photo-of-fresh-vegetable-chrysanthemum-image_1028123.jpg"
+      ]
     },
     {
       "id": 18,
@@ -378,16 +624,28 @@
       "price": 3800,
       "discount_price": 3420,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/56293/thumb/thumb_56293aefaec5e-9ebb-4c7b-92f0-488422987697.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/56293/thumb/thumb_56293aefaec5e-9ebb-4c7b-92f0-488422987697.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2014/04/07/01/40/turnip-318148_1280.jpg",
+        "https://cdn.pixabay.com/photo/2012/10/05/02/48/kohlrabi-59730_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/11/28/13/37/vegetables-1067264_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/06/14/19/vegetables-3727956_1280.jpg"
+      ]
     },
     {
       "id": 19,
       "classification": "채소",
-      "title": "얼갈이배추 4kg",
+      "title": "바질 1kg",
       "price": 14500,
       "discount_price": 8050,
       "discount_rate": 24,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/83545/thumb/5d90312d-4c05-412c-aebd-6f401b31dc10.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/83545/thumb/5d90312d-4c05-412c-aebd-6f401b31dc10.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2015/09/09/17/38/basil-932079_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/03/10/18/44/top-view-1248955_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/06/30/22/30/basil-2460043_1280.jpg",
+        "https://cdn.pixabay.com/photo/2021/09/28/18/58/herbs-6665308_1280.jpg"
+      ]
     },
     {
       "id": 20,
@@ -396,7 +654,13 @@
       "price": 8000,
       "discount_price": 7200,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/88574/thumb/43a3778b-2f7c-410a-ad67-82e084479abe.jpg"
+      "imgURL": "https://cdn.oasis.co.kr:48581/product/88574/thumb/43a3778b-2f7c-410a-ad67-82e084479abe.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2019/09/12/06/05/beet-4470670_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/01/20/09/beet-1637437_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/07/18/04/beetroot-3590360_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/02/23/08/53/burak-2091568_1280.jpg"
+      ]
     },
     {
       "id": 21,
@@ -405,7 +669,13 @@
       "price": 4200,
       "discount_price": 3780,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/69372/detail/detail_69372_3_1af2fa9b-eaae-43c7-b8d8-98189d7618b0.jpg"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/69372/detail/detail_69372_3_1af2fa9b-eaae-43c7-b8d8-98189d7618b0.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/10/04/00/04/kale-1713221_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/28/22/18/kale-3638691_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/04/19/09/kale-1644920_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/04/16/09/13/vegetable-3323983_1280.jpg"
+      ]
     },
     {
       "id": 22,
@@ -414,7 +684,13 @@
       "price": 1500,
       "discount_price": 1350,
       "discount_rate": 10,
-      "imgURL": "https://oasisprodproduct.edge.naverncp.com/60884/detail/detail_60884_0_fd5a721a-441b-4c13-932b-479f629fec1d.gif"
+      "imgURL": "https://oasisprodproduct.edge.naverncp.com/60884/detail/detail_60884_0_fd5a721a-441b-4c13-932b-479f629fec1d.gif",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2017/08/17/22/28/leek-2653127_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/04/07/01/54/leek-318158_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/12/30/00/35/vegetables-1939663_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/27/14/48/leeks-3776668_1280.jpg"
+      ]
     },
     {
       "id": 23,
@@ -423,7 +699,13 @@
       "price": 5500,
       "discount_price": 4950,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/83052/thumb/1965d76e-7077-4d53-8a3f-5bdc44e34510.jpg"
+      "imgURL": "https://img.wemep.co.kr/deal/5/762/3487625/c5301f5443ba01d25dede120b40ab652b06b6327.jpg",
+      "subImgUrls": [
+        "https://image.8dogam.com/resized/product/asset/v1/upload/34a7d4508e72440e9e99d5da0b5d3769.jpg?type=big&res=2x&ext=webp",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/2dfb9b926fc54967b369426a9df20475.jpg?type=big&res=2x&ext=webp",
+        "https://sitem.ssgcdn.com/08/27/34/item/1000275342708_i1_332.jpg",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/be4cc7e3f81e486eadd54fafdd66d9f3.jpg?type=big&res=2x&ext=webp"
+      ]
     },
     {
       "id": 24,
@@ -432,7 +714,13 @@
       "price": 4000,
       "discount_price": 3600,
       "discount_rate": 10,
-      "imgURL": "https://cdn.oasis.co.kr:48581/product/55954/thumb/thumb_55954c88f8c9d-8d48-478c-9b48-9594a72d9fac.jpg"
+      "imgURL": "https://cdn.pixabay.com/photo/2013/01/05/13/54/pepperoni-73908_1280.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2011/01/23/19/36/pepperoni-4640_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/04/25/21/22/serrano-peppers-1353233_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/03/27/12/01/green-3265805_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/08/12/23/00/chilies-7382628_1280.jpg"
+      ]
     }
   ],
   "processed_etc": [
@@ -443,7 +731,13 @@
       "price": 6500,
       "discount_price": 3250,
       "discount_rate": 50,
-      "imgURL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/05/20/f4615fb9be9814fb1922a9b532a96c94.jpg"
+      "imgURL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/05/20/f4615fb9be9814fb1922a9b532a96c94.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2020/06/24/07/34/strawberries-5335158_1280.jpg",
+        "https://img.freepik.com/free-photo/wooden-surface-with-strawberry-strawberry-jam_23-2147609710.jpg",
+        "https://img.freepik.com/free-photo/strawberry-jam-marble-background_1150-37971.jpg",
+        "https://media.istockphoto.com/id/469719848/ko/%EC%82%AC%EC%A7%84/%ED%99%88%EB%A9%94%EC%9D%B4%ED%8A%B8-%EC%9C%A0%EA%B8%B0-%EC%8A%A4%ED%8A%B8%EB%A1%9C%EC%9A%B0%EB%B2%A0%EB%A6%AC-%EC%A0%A4%EB%A6%AC.jpg?s=612x612&w=0&k=20&c=Woo-UlV7YJOkio9SVMCI3jwvaxgVu6-oljwYdxUmOCw="
+      ]
     },
     {
       "id": 2,
@@ -452,16 +746,28 @@
       "price": 5500,
       "discount_price": 3300,
       "discount_rate": 40,
-      "imgURL": "https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230526/gv40000700039_1.jpg"
+      "imgURL": "https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230526/gv40000700039_1.jpg",
+      "subImgUrls": [
+        "https://img.freepik.com/free-photo/front-view-fresh-apple-juice-with-fresh-apples-dark-color-drink-photo-cocktail-fruit_140725-92828.jpg?semt=ais_hybrid&w=740",
+        "https://img.freepik.com/free-photo/fresh-apple-juice-close-up-shot_53876-65292.jpg?semt=ais_hybrid&w=740",
+        "https://media.istockphoto.com/id/503096289/ko/%EC%82%AC%EC%A7%84/%EC%82%AC%EA%B3%BC-%EC%A3%BC%EC%8A%A4-%EC%A3%BC%EB%91%A5%EC%9D%B4-%EB%A0%88%EB%93%9C-%EC%82%AC%EA%B3%BC%EB%93%A4-%EC%9C%A0%EB%A6%AC.jpg?s=612x612&w=0&k=20&c=F9ApL4caoH6FUXK936UE00wMxq9W1qG5GkIkZNnGHKU=",
+        "https://png.pngtree.com/thumb_back/fh260/background/20230331/pngtree-apples-and-apple-juice-on-a-wooden-table-photo-image_2177065.jpg"
+      ]
     },
     {
       "id": 3,
       "classification": "가공식품",
-      "title": "동결건조 배칩 500g",
+      "title": "감말랭이 1kg",
       "price": 7000,
       "discount_price": 6300,
       "discount_rate": 10,
-      "imgURL": "https://webimage.10x10.co.kr/image/basic600/264/B002645655.jpg"
+      "imgURL": "https://img.danawa.com/prod_img/500000/964/544/img/18544964_1.jpg?_v=20221220152414",
+      "subImgUrls": [
+        "https://image.8dogam.com/resized/product/asset/v1/upload/62d8ff381bed466881e51c17aef32f0a.jpeg?type=big&res=3x&ext=jpg",
+        "https://ws.cconma.com/upload2/product/400x350/2021/12/P001002000-000398-61a8bf542b23e.jpeg",
+        "https://cdn.oasis.co.kr:48581/product/80077/thumb/30ffa722-6542-43bc-b675-f29c7e0090cc.jpg",
+        "https://m.2900.co.kr/web/product/big/202412/f206a5f1ff7f4aba626f0d8cdbc0b9b9.jpg"
+      ]
     },
     {
       "id": 4,
@@ -470,7 +776,13 @@
       "price": 6000,
       "discount_price": 4200,
       "discount_rate": 30,
-      "imgURL": "https://static.wtable.co.kr/image/production/service/recipe/747/90532c46-647e-4b9a-a88f-1bfbe76df0d5.jpg?size=800x800"
+      "imgURL": "https://static.wtable.co.kr/image/production/service/recipe/747/90532c46-647e-4b9a-a88f-1bfbe76df0d5.jpg?size=800x800",
+      "subImgUrls": [
+        "https://ocoo.co.kr/web/upload/NNEditor/20200908/EBB894EBA3A8EBB2A0EBA6AC_ECB2AD.jpg",
+        "https://mblogthumb-phinf.pstatic.net/MjAyMDA3MTVfNDAg/MDAxNTk0NzgwOTkzMjk2.SM4X1YuU1JfMSSn35npuor6j_SlRZ_cphFodQeP-n9kg.wr3L9rUOOGCRE_VD_yJGmX6Ee4xY1pkO8e349JLVUfog.JPEG.bongs1021/SE-535070fc-e8c6-4d85-9a42-9c12dbf0e0d5.jpg?type=w800",
+        "https://homecuisine.co.kr/files/attach/images/142/197/054/a40c47b0b0b34f2d87c351554586d675.JPG",
+        "https://www.saenong.com/assets/upload/mainimage/20230110_2267003051033.jpg"
+      ]
     },
     {
       "id": 5,
@@ -479,7 +791,13 @@
       "price": 5200,
       "discount_price": 4680,
       "discount_rate": 10,
-      "imgURL": "https://t1.daumcdn.net/cfile/tistory/244A2C4359342B392D"
+      "imgURL": "https://t1.daumcdn.net/cfile/tistory/244A2C4359342B392D",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/08/26/21/16/carrot-juice-1623157_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/08/12/01/57/juice-5481387_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/08/08/58/carrot-2610757_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/01/10/21/21/juice-595699_1280.jpg"
+      ]
     },
     {
       "id": 6,
@@ -488,7 +806,13 @@
       "price": 3000,
       "discount_price": 2100,
       "discount_rate": 30,
-      "imgURL": "https://m.woori-ga.com/web/product/big/201805/387_shop1_15266043229231.jpg"
+      "imgURL": "https://m.woori-ga.com/web/product/big/201805/387_shop1_15266043229231.jpg",
+      "subImgUrls": [
+        "https://thumb.photo-ac.com/be/be703c4e6a3b7847b4b5d6d34c4d6205_t.jpeg",
+        "https://previews.123rf.com/images/reika7/reika71403/reika7140300013/26695793-%EB%B0%94%EB%82%98%EB%82%98-%EC%B9%A9.jpg",
+        "https://media.istockphoto.com/id/1315105687/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%82%98%EB%82%98-%EC%B9%A9-%EA%B1%B4%EA%B0%95-%EC%8B%9D%ED%92%88-%EB%A7%88%EB%A5%B8-%EA%B3%BC%EC%9D%BC%EA%B3%BC-%EA%B1%B4%EA%B0%95%ED%95%9C-%EC%95%BC%EC%B1%84-%EC%B9%A9-%EB%85%B8%EB%9E%80%EC%83%89-%EA%BD%83%EC%9D%98-%EB%B0%B0%EA%B2%BD%EC%97%90-%EA%B1%B4%EA%B0%95%ED%95%9C-%EC%B1%84%EC%8B%9D%EC%A3%BC%EC%9D%98-%EC%9E%90-%EC%8B%9D-%EA%B0%84%EC%8B%9D.jpg?s=612x612&w=0&k=20&c=NNCdReBML5OuqPYGCAwjLKnqTqOdKcbTzCxRNI7MoeQ=",
+        "https://images.pexels.com/photos/9191924/pexels-photo-9191924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ]
     },
     {
       "id": 7,
@@ -497,7 +821,13 @@
       "price": 4500,
       "discount_price": 3150,
       "discount_rate": 30,
-      "imgURL": "https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230228/gv00000496984_1.jpg"
+      "imgURL": "https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230228/gv00000496984_1.jpg",
+      "subImgUrls": [
+        "https://thumb.photo-ac.com/54/5491740fb13fe76d769abc63f466408f_t.jpeg",
+        "https://static.wtable.co.kr/image-resize/production/service/recipe/544/16x9/d46103d8-a633-4dd8-8f4f-b4ebbbfac511.jpg",
+        "https://gd2.alicdn.com/imgextra/i2/1029823999/TB242uFqbuWBuNjSszgXXb8jVXa_!!1029823999.jpg_640x640.jpg",
+        "https://product-image.kurly.com/product/image/9ac56518-e4a5-4dc0-affc-6fb7c0c039ab.jpg"
+      ]
     },
     {
       "id": 8,
@@ -506,16 +836,28 @@
       "price": 4000,
       "discount_price": 1200,
       "discount_rate": 70,
-      "imgURL": "https://i.namu.wiki/i/ML9YT9DxA8r9gZwz_JCH-sCJhD8H3GFRFTtfWZAEeJyBcSl2dGS0QU950R7zOtX50BR-PyKT5CzMcOXZgCTD5w.webp"
+      "imgURL": "https://i.namu.wiki/i/ML9YT9DxA8r9gZwz_JCH-sCJhD8H3GFRFTtfWZAEeJyBcSl2dGS0QU950R7zOtX50BR-PyKT5CzMcOXZgCTD5w.webp",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2010/12/01/chips-643_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/09/11/17/09/food-5563700_1280.jpg",
+        "https://cdn.pixabay.com/photo/2023/11/03/14/58/food-8363208_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/03/08/07/38/potato-chips-4911645_1280.jpg"
+      ]
     },
     {
       "id": 9,
       "classification": "가공식품",
-      "title": "양배추즙 1L",
+      "title": "양배추 샐러드 500g",
       "price": 6200,
       "discount_price": 4960,
       "discount_rate": 20,
-      "imgURL": "https://healingfactory.co.kr/data/files/ca1d05f72c4d099a56e0145aeb176239.jpg"
+      "imgURL": "https://cdn.pixabay.com/photo/2020/03/28/14/53/salad-4977372_1280.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/05/15/15/43/white-cabbage-1393859_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/03/28/14/53/salad-4977374_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/12/20/17/14/sauerkraut-574170_1280.jpg",
+        "https://static.wtable.co.kr/image-resize/production/service/recipe/990/4x3/4a682245-9484-4f4d-8f19-dc770e7377d5.jpg"
+      ]
     },
     {
       "id": 10,
@@ -524,25 +866,43 @@
       "price": 5000,
       "discount_price": 4000,
       "discount_rate": 20,
-      "imgURL": "https://sahubconn001.blob.core.windows.net/ct-sahubconn001/img/newshop/goods/017598/017598_1.jpg"
+      "imgURL": "https://sahubconn001.blob.core.windows.net/ct-sahubconn001/img/newshop/goods/017598/017598_1.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2016/08/23/15/52/fresh-orange-juice-1614822_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/01/31/10/06/fruit-6983145_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/12/30/17/26/orange-3050552_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/01/10/12/47/citrus-6928239_1280.jpg"
+      ]
     },
     {
       "id": 11,
       "classification": "가공식품",
-      "title": "브로콜리 크림수프 500g",
+      "title": "브로콜리 크림스프 500g",
       "price": 7500,
       "discount_price": 5250,
       "discount_rate": 30,
-      "imgURL": "https://gomean.co.kr/wp-content/uploads/2023/08/gm-brocoli-soup3-1024x683.jpg"
+      "imgURL": "https://gomean.co.kr/wp-content/uploads/2023/08/gm-brocoli-soup3-1024x683.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2022/11/17/12/10/soup-7597909_1280.jpg",
+        "https://img.freepik.com/free-photo/delicious-green-homemade-broccoli-cream-soup_114579-35137.jpg",
+        "https://media.istockphoto.com/id/120538258/ko/%EC%82%AC%EC%A7%84/%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC-%EC%88%98%ED%94%84.jpg?s=612x612&w=0&k=20&c=9L_BI4KSBVXSkoOAW8xQ6FPHJ_kLFjhy2eMyMOd5TJU=",
+        "https://media.istockphoto.com/id/1304024963/ko/%EC%82%AC%EC%A7%84/%EB%82%98%EB%AC%B4-%EB%B0%B0%EA%B2%BD%EC%97%90-%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC-%ED%81%AC%EB%A6%BC-%EC%88%98%ED%94%84.jpg?s=612x612&w=0&k=20&c=zKt5tHyWVNrY3JEFukZBGTCIjnuc7pb8BZyWaitAR0k="
+      ]
     },
     {
       "id": 12,
       "classification": "가공식품",
       "title": "양파 분말 500g",
-      "price": 4300,
+      "price": 9300,
       "discount_price": 3870,
-      "discount_rate": 10,
-      "imgURL": "https://www.underextract.com/uploads/17112/info/202409011117283bc68.jpg?size=600x0"
+      "discount_rate": 60,
+      "imgURL": "https://www.underextract.com/uploads/17112/info/202409011117283bc68.jpg?size=600x0",
+      "subImgUrls": [
+        "https://s.alicdn.com/@sc04/kf/Hcd2f817f22df4ef388a3e003b6450666w.jpg_720x720q50.jpg",
+        "https://sitem.ssgcdn.com/78/56/18/item/1000455185678_i1_332.jpg",
+        "https://s.alicdn.com/@sc04/kf/H7c00ccf55e804ad88a2daceec7df2dc5L.jpg_720x720q50.jpg",
+        "https://cafe24.poxo.com/ec01/tlsdirch/pdHAR3Nfo463PahlnCQH4pufvhB+6s8cfPwyp/zWtfqgm0fwR8Kday3x0J12sQWO3jB4zvsIRz4StMgi2rIbpQ==/_/web/product/extra/big/202401/48f9f948fb320f3ced5978ee6fb1e2f6.jpg"
+      ]
     },
     {
       "id": 13,
@@ -551,7 +911,13 @@
       "price": 4700,
       "discount_price": 2350,
       "discount_rate": 50,
-      "imgURL": "https://img.waimaoniu.net/2279/2279-202103031055582610.jpg"
+      "imgURL": "https://img.waimaoniu.net/2279/2279-202103031055582610.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2023/05/07/10/13/powder-7976081_1280.jpg",
+        "https://lh3.googleusercontent.com/proxy/RUkq-1uJr1OQ11aehYPuMzIueUHOYGmHuqQaH8pZl08N4t4CktWt3mWj8x1SX3TkCTxJZZ_-Nc_E4cAsR1WeWM2VEfOcs1MOxZTbKVJCudA",
+        "https://img.freepik.com/premium-photo/red-paprika-powder-aroma-seasoning_1472-114927.jpg",
+        "https://s.alicdn.com/@sc04/kf/H26012a6896984b1f855aa9845ac7841f8.jpg_300x300.jpg"
+      ]
     },
     {
       "id": 14,
@@ -560,7 +926,13 @@
       "price": 8000,
       "discount_price": 6400,
       "discount_rate": 20,
-      "imgURL": "https://m.ssarijai.com/web/product/big/20231130/71ba04ecbfb5ec5d571d0c00b3ef058e.jpg"
+      "imgURL": "https://m.ssarijai.com/web/product/big/20231130/71ba04ecbfb5ec5d571d0c00b3ef058e.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2019/07/25/01/35/kimchi-4361465_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/11/24/02/06/kimchi-7613328_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/11/24/02/07/kimchi-7613331_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/01/04/07/07/korean-cabbage-in-chili-sauce-1120406_1280.jpg"
+      ]
     },
     {
       "id": 15,
@@ -569,25 +941,43 @@
       "price": 4500,
       "discount_price": 3825,
       "discount_rate": 15,
-      "imgURL": "https://i.ytimg.com/vi/pM-6dSpElBg/maxresdefault.jpg"
+      "imgURL": "https://i.ytimg.com/vi/pM-6dSpElBg/maxresdefault.jpg",
+      "subImgUrls": [
+        "https://recipekorea.com/data/editor/1811/372dac35921d18ac2fb4282a029685e2_1541508369_1198.jpg",
+        "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/23/b8cc5e5fd8bd50a3deaef497f1241dc71.jpg",
+        "https://shop.biumfood.com/upload/images/20211007112700_415015.jpg",
+        "https://shop.biumfood.com/upload/images/20211007112721_197711.jpg"
+      ]
     },
     {
       "id": 16,
       "classification": "가공식품",
-      "title": "시금치 된장국 1L",
+      "title": "시금치 무침 250g",
       "price": 5600,
       "discount_price": 3360,
       "discount_rate": 40,
-      "imgURL": "https://image.8dogam.com/resized/product/asset/v1/upload/e0177ed9090346cfae8df83205e05d63.jpg?type=big&res=2x&ext=webp"
+      "imgURL": "https://image.8dogam.com/resized/product/asset/v1/upload/e0177ed9090346cfae8df83205e05d63.jpg?type=big&res=2x&ext=webp",
+      "subImgUrls": [
+        "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/18/83d5b0a7dddcc3860440f04b6a046a54.jpg",
+        "https://shop.biumfood.com/upload/images/20191204095907_362479.jpg",
+        "https://zipbanchan.godohosting.com/800X800px/8_muchim/31_ZIP_P_5001_T.jpg",
+        "https://semie.cooking/image/board/cooking/mj/db/zosojnne/73324555uovg.jpg"
+      ]
     },
     {
       "id": 17,
       "classification": "가공식품",
-      "title": "청경채 볶음 500g",
+      "title": "소고기 청경채 볶음 500g",
       "price": 5000,
       "discount_price": 2500,
       "discount_rate": 50,
-      "imgURL": "https://i.pinimg.com/736x/6c/4f/6e/6c4f6e110e17a7c3223702aa34fba37d.jpg"
+      "imgURL": "https://i.pinimg.com/736x/6c/4f/6e/6c4f6e110e17a7c3223702aa34fba37d.jpg",
+      "subImgUrls": [
+        "https://recipe1.ezmember.co.kr/cache/recipe/2020/03/22/e73f41c300bc8417363d8dc50615afa91.jpg",
+        "https://thefoodmarket.co.kr/file_data/thefoodmarket/2020/07/10/49e99dbdc0d81d4ff31ea9e9e1dcef2b.png",
+        "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/01/eb70d472e7aff3349db185252c3809151.jpg",
+        "https://img1.daumcdn.net/thumb/R1280x0/?fname=https://t1.daumcdn.net/brunch/service/user/dIfq/image/KZuK6of__P8pvVeLc4qdZqEz0cI.jpg"
+      ]
     },
     {
       "id": 18,
@@ -596,7 +986,13 @@
       "price": 12800,
       "discount_price": 8960,
       "discount_rate": 30,
-      "imgURL": "https://image.8dogam.com/resized/product/asset/v1/upload/9cf3ac933aff4dcaa8f64c5029e48710.jpg?type=big&res=2x&ext=webp"
+      "imgURL": "https://image.8dogam.com/resized/product/asset/v1/upload/9cf3ac933aff4dcaa8f64c5029e48710.jpg?type=big&res=2x&ext=webp",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2014/12/01/08/57/sesame-552490_1280.jpg",
+        "https://static.wtable.co.kr/image/production/service/recipe/1950/1992afe1-a4ff-4ca8-bd32-e4db4d377966.jpg?size=800x800",
+        "https://www.gsjangter.go.kr/upload/item/G2000483945/20231205091122L.jpg",
+        "https://blog.kakaocdn.net/dn/xEzQw/btspGKrVQHG/g7zx0G9jWB5O7lHTtdjjlk/img.jpg"
+      ]
     },
     {
       "id": 19,
@@ -605,7 +1001,13 @@
       "price": 5300,
       "discount_price": 4240,
       "discount_rate": 20,
-      "imgURL": "https://cdn.mkhealth.co.kr/news/photo/202204/57477_60503_5412.jpg"
+      "imgURL": "https://cdn.mkhealth.co.kr/news/photo/202204/57477_60503_5412.jpg",
+      "subImgUrls": [
+        "https://image.8dogam.com/resized/product/asset/v1/upload/b5dd1cd031884d62af2522193f31070b.jpeg?type=big&res=1x&ext=jpg",
+        "https://recipe1.ezmember.co.kr/cache/recipe/2016/02/16/459923e62bf3eb1e6857f2cf96ddc2ce1.jpg",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/f08e0120f8364a3a93599c4d0f8ca46c.jpg?type=big&res=2x&ext=webp",
+        "https://i.ytimg.com/vi/nmp7ZvgI47I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRmNAcNZor9KvaFr5n-SDunHD3NA"
+      ]
     },
     {
       "id": 20,
@@ -614,7 +1016,13 @@
       "price": 6000,
       "discount_price": 3600,
       "discount_rate": 40,
-      "imgURL": "https://sitem.ssgcdn.com/30/18/98/item/1000020981830_i1_750.jpg"
+      "imgURL": "https://sitem.ssgcdn.com/30/18/98/item/1000020981830_i1_750.jpg",
+      "subImgUrls": [
+        "https://data.0app0.com/diet/shop/goods/20231106/20231106152029_5757204234.jpg?resize=500",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/392c939f6fa947ea9f66510b1c41d654.jpg?type=big&res=2x&ext=webp",
+        "https://sistersgarden.org/data/file/KakaoTalk_20191220_164820843.jpg",
+        "https://static.wtable.co.kr/image/production/service/recipe/984/65a89823-d257-4a74-b912-d6f7a286841b.jpg?size=800x800"
+      ]
     },
     {
       "id": 21,
@@ -623,7 +1031,13 @@
       "price": 7200,
       "discount_price": 6480,
       "discount_rate": 10,
-      "imgURL": "https://m.econenia.co.kr/web/product/big/201907/431dd32c7c894703c6f6f3d2b07a0496.jpg"
+      "imgURL": "https://m.econenia.co.kr/web/product/big/201907/431dd32c7c894703c6f6f3d2b07a0496.jpg",
+      "subImgUrls": [
+        "https://img.freepik.com/free-photo/tasty-fresh-tomato-sauce-small-bowl-with-ingredients-cooking-old-wooden-background-closeup_1220-6301.jpg",
+        "https://us.123rf.com/450wm/anawat/anawat1601/anawat160100716/50209664-%EB%82%98%EB%AC%B4-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%97%90-%EC%BC%80%EC%B2%A9%EC%9D%B4%EB%82%98-%ED%86%A0%EB%A7%88%ED%86%A0-%EC%86%8C%EC%8A%A4%EC%99%80-%EC%8B%A0%EC%84%A0%ED%95%9C-%ED%86%A0%EB%A7%88%ED%86%A0%EC%9D%98-%EA%B7%B8%EB%A6%87.jpg?ver=6",
+        "https://image.made-in-china.com/202f0j00srQoucZCfFpj/Famous-Tomato-Sauce-475g-Best-Choice-Ketchup-Made-with-Premium-Tomato.webp",
+        "https://mblogthumb-phinf.pstatic.net/MjAxOTA5MDRfMTc0/MDAxNTY3NTg2NzE1Njk4.iOcoFXnS-tNpO9PEAGJTH3Ay4gJNXd2Spi14KZvj5tsg.K9v9TusV9uRa1pdXnUW432vfIpdDwN9BUKMgzi4U1pwg.JPEG.kfdazzang/shutterstock_316337549.jpg?type=w800"
+      ]
     },
     {
       "id": 22,
@@ -632,7 +1046,13 @@
       "price": 10000,
       "discount_price": 5000,
       "discount_rate": 50,
-      "imgURL": "https://static.wtable.co.kr/image/production/service/recipe/1869/9f94416e-b380-4a75-8da1-3045c4a2865c.jpg"
+      "imgURL": "https://static.wtable.co.kr/image/production/service/recipe/1869/9f94416e-b380-4a75-8da1-3045c4a2865c.jpg",
+      "subImgUrls": [
+        "https://cdn.pixabay.com/photo/2017/04/06/18/39/carrot-cake-2209039_1280.jpg",
+        "https://img.freepik.com/free-photo/easter-carrot-cake-with-frosting-blue-background_1220-5219.jpg",
+        "https://us.123rf.com/450wm/cokemomo/cokemomo1206/cokemomo120600004/13898287-%EC%A0%9C-%EB%8B%B9%EA%B7%BC-%EC%BC%80%EC%9D%B4%ED%81%AC.jpg",
+        "https://us.123rf.com/450wm/greenartphotography/greenartphotography1503/greenartphotography150300037/38259844-%ED%9D%B0%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%83%9D%EA%B3%BC%EC%9E%90-%ED%81%AC%EB%A6%BC%EA%B3%BC-%EC%9E%91%EC%9D%80-%EC%98%A4%EB%A0%8C%EC%A7%80-%EB%8B%B9%EA%B7%BC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%A7%9B%EC%9E%88%EB%8A%94-%EB%8B%B9%EA%B7%BC-%EC%8A%A4%ED%8F%B0%EC%A7%80-%EC%BC%80%EC%9D%B4%ED%81%AC%EC%9D%98.jpg?ver=6"
+      ]
     },
     {
       "id": 23,
@@ -641,7 +1061,13 @@
       "price": 6800,
       "discount_price": 5440,
       "discount_rate": 20,
-      "imgURL": "https://i.ytimg.com/vi/BR2e38gUm6k/maxresdefault.jpg"
+      "imgURL": "https://i.ytimg.com/vi/BR2e38gUm6k/maxresdefault.jpg",
+      "subImgUrls": [
+        "https://contents.lotteon.com/itemimage/20250328032011/LM/88/09/01/97/07/52/6_/00/1/LM8809019707526_001_1.jpg",
+        "https://img.freepik.com/free-photo/side-view-dried-apple-slices-white-background_141793-7775.jpg?semt=ais_hybrid&w=740",
+        "https://image.hnsmall.com/images/goods/845/12549845_g.jpg",
+        "https://img.freepik.com/free-photo/green-apple-sitting-pile-dried-apple-slices-white-background_114579-23984.jpg?semt=ais_hybrid&w=740"
+      ]
     },
     {
       "id": 24,
@@ -650,7 +1076,13 @@
       "price": 4000,
       "discount_price": 3600,
       "discount_rate": 10,
-      "imgURL": "https://www.underextract.com/uploads/202117112/shiitake-mushroom-powder58171111448.jpg"
+      "imgURL": "https://www.underextract.com/uploads/202117112/shiitake-mushroom-powder58171111448.jpg",
+      "subImgUrls": [
+        "https://cafe24.poxo.com/ec01/createn/HOvhRhvOk+Cp2KY4JuusAq/T8TY/QpDXgUlIMAz6LUVC1mFa1OJpcGLebItcYzovVkpd538Za8K9VlDaIQO31g==/_/web/product/big/201808/1954e87e6e3ba4b3eb03803590eaa28f.jpg",
+        "https://cdn.imweb.me/thumbnail/20240828/14965e09ccd20.jpg",
+        "https://image.auction.co.kr/itemimage/25/93/0f/25930faee6.jpg",
+        "https://image.8dogam.com/resized/product/asset/v1/upload/b030e971d9374789a2bf5af657fe48a7.JPG?type=big&res=2x&ext=webp"
+      ]
     }
   ]
 }
