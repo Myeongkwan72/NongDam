@@ -103,6 +103,7 @@
     width: 32px;
     height: 20px;
     font-size: 1rem;
+    line-height: 110%;
     border-radius: 6px;
   }
   #container .mypage_inner .mypage_policy {
@@ -118,6 +119,7 @@
     width: 32px;
     height: 20px;
     font-size: 1rem;
+    line-height: 110%;
     border-radius: 6px;
   }
   #container .mypage_inner .mypage_policy .policy_service p {
@@ -127,6 +129,7 @@
     width: 32px;
     height: 20px;
     font-size: 1rem;
+    line-height: 110%;
     border-radius: 6px;
   }
   #container .mypage_inner .mypage_quit {

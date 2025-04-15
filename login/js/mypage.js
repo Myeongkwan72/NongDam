@@ -17,22 +17,21 @@ if (currentUser) {
   console.log("유저를 찾을 수 없습니다.");
 }
 
-// // 눈 아이콘
-// const eye = document.querySelector(".fa-eye-slash");
+// 유저 정보 수정
+const modifyButton = document.querySelectorAll(".mypage_modify");
+const modalPage = document.querySelector(".mypage_modal");
 
-// // 최초 비밀번호 가림상태
-// const myPw = document.querySelector(".mypage_pw");
-// const realPw = currentUser.pw;
-// let showPw = false;
+// 스크롤 이벤트 방지
+preventScroll = (e) => {
+  e.preventDefault();
+};
 
-// eye.addEventListener("click", () => {
-//   showPw = !showPw;
-
-//   if (showPw) {
-//     eye.classList.toggle("fa-eye");
-//     myPw.textContent = realPw;
-//   } else {
-//     eye.classList.toggle("fa-eye");
-//     myPw.textContent = "*".repeat(realPw.length);
-//   }
-// });
+// 모달창 출력
+modifyButton.forEach((Button) => {
+  Button.addEventListener("click", () => {
+    modalPage.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    document.body.style.background = "rgba(0, 0, 0, 0.5));";
+    document.addEventListener("wheel", preventScroll, { passive: false });
+  });
+});
