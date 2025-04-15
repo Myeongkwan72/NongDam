@@ -853,12 +853,13 @@ body.modal-open {
 .detail_review .review_member > div:first-child .member_content > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 .detail_review .review_member > div:first-child .member_content > div p {
   font-size: 1.4rem;
   color: #999;
-  margin: 30px 0px 0px;
+  margin: 20px 0px 0px;
 }
 .detail_review .review_member > div:last-child {
   cursor: pointer;
@@ -1104,12 +1105,13 @@ body.modal-open {
 .detail_review .review_member > div:last-child .member_content > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 .detail_review .review_member > div:last-child .member_content > div p {
   font-size: 1.4rem;
   color: #999;
-  margin: 30px 0px 0px;
+  margin: 20px 0px 0px;
 }
 .detail_review .hide_members {
   overflow: hidden;
@@ -1161,7 +1163,7 @@ body.modal-open {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-width: 930px;
+  max-width: 1050px;
   height: auto;
   aspect-ratio: 930/605;
 }
