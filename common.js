@@ -339,6 +339,7 @@ const handleResize = () => {
     resInputWrapper.classList.add("hidden");
     resInputWrapper.style.display = "none";
     if (inputEl) inputEl.value = "";
+    removeDocumentClickListener();
   }
 };
 
@@ -347,11 +348,36 @@ const moveToSearchPage = (searchData) => {
   window.location.href = `../pages/search.html?searchData=${encode}`;
 };
 
+// input 바깥 클릭 시 닫히는 이벤트
+const handleDocumentClick = (e) => {
+  if (
+    resInputWrapper &&
+    !resInputWrapper.contains(e.target) &&
+    !resSearchBtn.contains(e.target)
+  ) {
+    resInputWrapper.classList.remove("show");
+    resInputWrapper.classList.add("hidden");
+    resInputWrapper.style.display = "none";
+    if (inputEl) inputEl.value = "";
+    removeDocumentClickListener();
+  }
+};
+
+const addDocumentClickListener = () => {
+  document.addEventListener("click", handleDocumentClick);
+};
+
+const removeDocumentClickListener = () => {
+  document.removeEventListener("click", handleDocumentClick);
+};
+
 if (resSearchBtn && resInputWrapper && inputEl) {
-  resSearchBtn.addEventListener("click", () => {
+  resSearchBtn.addEventListener("click", (e) => {
     console.log("클릭");
 
     if (window.innerWidth <= 767) {
+      e.stopPropagation();
+
       if (resInputWrapper.classList.contains("hidden")) {
         resInputWrapper.classList.remove("hidden");
         resInputWrapper.style.display = "block";
@@ -359,11 +385,15 @@ if (resSearchBtn && resInputWrapper && inputEl) {
           resInputWrapper.classList.add("show");
           console.log(resInputWrapper.classList, "2");
         }, 10);
+        // 열렸을때 클릭 감지 시작
+        addDocumentClickListener();
       } else {
         resInputWrapper.classList.toggle("show");
 
         if (!resInputWrapper.classList.contains("show")) {
           inputEl.value = "";
+          // 닫히면 클릭 감지 종료
+          removeDocumentClickListener();
         }
 
         console.log(resInputWrapper.classList, "3");

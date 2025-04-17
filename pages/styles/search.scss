@@ -6,7 +6,6 @@
 @import "../../styles/footer.scss";
 @import "../../styles/res_header.scss";
 @import "../../styles/res_footer.scss";
-@import "../../res_style.scss";
 
 html {
   font-size: 62.5%;
@@ -29,8 +28,8 @@ main {
     height: auto;
     display: flex;
     justify-content: center;
+    margin: 100px 0;
     .search_inner {
-      margin: 120px 0;
       width: 100%;
       max-width: 1050px;
       display: flex;
@@ -41,7 +40,6 @@ main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px; // 간격을 주는 게 더 보기 좋아요
-
         .main_type1,
         .main_type2 {
           display: flex;
@@ -83,7 +81,6 @@ main {
               -webkit-box-orient: vertical;
               overflow: hidden;
               text-overflow: ellipsis;
-              // font-size: 1.8rem;
               cursor: pointer;
             }
             .main_shopping,
@@ -152,4 +149,324 @@ main {
 }
 footer {
   position: absolute;
+}
+
+//desktop
+@media screen and (max-width: 1440px) {
+  main {
+    #search {
+      .search_inner {
+        padding: 0 50px;
+        .search_it {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .main_type1,
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.6rem;
+                min-height: 0;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.8rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.4rem;
+                      b {
+                        font-size: 2.8rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.4rem;
+                    }
+                    p {
+                      font-size: 1.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1024px) {
+  main {
+    gap: 80px;
+
+    #search {
+      .search_inner {
+        h1 {
+          font-size: 2.2rem;
+        }
+        .search_it {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .main_type1,
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.6rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.5rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  gap: 2px;
+                  .main_percent {
+                    p {
+                      font-size: 1.4rem;
+                      b {
+                        font-size: 1.9rem;
+                        margin-right: -3px;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.2rem;
+                    }
+                    p {
+                      font-size: 1.5rem;
+                    }
+                  }
+                }
+                .icon {
+                  gap: 3px;
+                  .fa-heart,
+                  .fa-cart-shopping {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// sub
+@media screen and (max-width: 767px) {
+  main {
+    #search {
+      .search_inner {
+        h1 {
+          font-size: 2rem;
+        }
+        .search_it {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          .main_type1,
+          .main_type2 {
+            gap: 6px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.4rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.6rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.2rem;
+                      b {
+                        font-size: 2.1rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.2rem;
+                    }
+                    p {
+                      font-size: 1.6rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//subsub
+@media screen and (max-width: 600px) {
+  main {
+    #search {
+      .search_inner {
+        h1 {
+          font-size: 2rem;
+        }
+        .search_it {
+          grid-template-columns: repeat(3, 1fr);
+          .main_type1,
+          .main_type2 {
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.4rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.2rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.2rem;
+                      b {
+                        font-size: 1.3rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1rem;
+                    }
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+                .icon {
+                  gap: 2px;
+                  .fa-heart,
+                  .fa-cart-shopping {
+                    font-size: 0.7rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 500px) {
+  main {
+    gap: 60px;
+    #vegetables {
+      .vegetable_inner {
+        h1 {
+          font-size: 1.8rem;
+        }
+        .vegetable_it {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          .main_type1,
+          .main_type2 {
+            gap: 15px;
+            .img {
+              img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+              button {
+                font-size: 1rem;
+              }
+            }
+            .main_info {
+              h3,
+              .main_title {
+                font-size: 1.4rem;
+              }
+              .main_shopping,
+              .main_tag {
+                p {
+                  font-size: 1.6rem;
+                }
+                flex-direction: row;
+                align-items: flex-end;
+                .main_sale {
+                  .main_percent {
+                    p {
+                      font-size: 1.2rem;
+                      b {
+                        font-size: 2.4rem;
+                      }
+                    }
+                  }
+                  .main_price {
+                    span {
+                      font-size: 1.2rem;
+                    }
+                    p {
+                      font-size: 1.6rem;
+                    }
+                  }
+                }
+                .icon {
+                  .fa-heart,
+                  .fa-cart-shopping {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
