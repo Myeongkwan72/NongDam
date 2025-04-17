@@ -37,6 +37,12 @@
   header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
     font-size: 1.4rem;
   }
+  header .header_inner .header_inner_right .inner_right_bottom .search_bar .res_search_wrap {
+    display: none;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .search_bar .res_search_wrap.show {
+    display: none;
+  }
   header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
     width: 32px;
     height: 30px;
@@ -85,6 +91,12 @@
   }
   header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-magnifying-glass {
     font-size: 1.3rem;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .search_bar .res_dropdown_input {
+    display: none;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .search_bar .res_dropdown_input.show {
+    display: none;
   }
   header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
     width: 30px;
@@ -165,6 +177,33 @@
     font-size: 2rem;
     margin-bottom: 6px;
     cursor: pointer;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    padding: 10px;
+    pointer-events: none;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input input[type=text] {
+    padding: 5px 14px;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid #ff9900;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input.hidden {
+    display: none;
   }
   header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
     width: 28px;
@@ -255,6 +294,33 @@
   header .header_inner .header_inner_right .inner_right_bottom .res_magnify {
     font-size: 1.7rem;
     margin-bottom: 6px;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    padding: 10px;
+    pointer-events: none;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input input[type=text] {
+    padding: 5px 14px;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid #ff9900;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input.hidden {
+    display: none;
   }
   header .header_inner .header_inner_right .inner_right_bottom .basket .fa-cart-shopping {
     width: 24px;

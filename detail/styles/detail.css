@@ -217,6 +217,9 @@ header .header_inner .header_inner_right .inner_right_bottom .search_bar .fa-mag
 header .header_inner .header_inner_right .inner_right_bottom .res_magnify {
   display: none;
 }
+header .header_inner .header_inner_right .inner_right_bottom .res_dropdown_input {
+  display: none;
+}
 header .header_inner .header_inner_right .inner_right_bottom .basket {
   position: relative;
 }
