@@ -15,6 +15,7 @@ fetch("../../food_dataset.json")
         discount_price: item.discount_price,
         discount_rate: item.discount_rate,
         imgURL: item.imgURL,
+        subImgUrls: item.subImgUrls,
       };
     });
 
@@ -74,6 +75,21 @@ fetch("../../food_dataset.json")
       const linkImg = section.querySelector(".img_link");
       linkImg.addEventListener("click", () => {
         window.location.href = `/detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
+      // 마우스오버 시 이미지 교체
+      linkImg.addEventListener("mouseover", () => {
+        if (item.subImgUrls && item.subImgUrls.length > 0) {
+          const randomIndex = Math.floor(
+            Math.random() * item.subImgUrls.length
+          );
+          linkImg.src = item.subImgUrls[randomIndex];
+        }
+      });
+
+      // 원래 이미지로 복구
+      linkImg.addEventListener("mouseout", () => {
+        linkImg.src = item.imgURL;
       });
 
       /* Icon button start */

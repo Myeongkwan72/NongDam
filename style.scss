@@ -214,9 +214,27 @@ main {
         }
       }
     }
-    .slick-arrow {
-      display: none;
+
+    .slick-prev {
+      position: absolute;
+      left: 5%;
+      z-index: 2;
     }
+    .slick-next {
+      position: absolute;
+      right: 5%;
+      z-index: 2;
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 5%;
+      li button:before {
+        font-size: 8px;
+      }
+    }
+    // .slick-arrow {
+    //   display: none;
+    // }
   }
 
   #main_con1 {
@@ -252,11 +270,13 @@ main {
           .img {
             position: relative;
             width: 100%;
+
             img {
               width: 100%;
               aspect-ratio: 1 / 1; // 정사각형 비율 유지
               object-fit: cover;
               cursor: pointer;
+              transition: opacity 0.3s;
             }
             // 할인 버튼은 type2에서만 존재
             button {
@@ -343,7 +363,6 @@ main {
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     .main_inner {
       width: 100%;
       max-width: 1050px;

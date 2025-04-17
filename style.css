@@ -2470,8 +2470,22 @@ main .main_banner .slick-list .slick-track .main_innerbanner4 .banner4_text .ban
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main_banner .slick-arrow {
-  display: none;
+main .main_banner .slick-prev {
+  position: absolute;
+  left: 5%;
+  z-index: 2;
+}
+main .main_banner .slick-next {
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+main .main_banner .slick-dots {
+  position: absolute;
+  bottom: 5%;
+}
+main .main_banner .slick-dots li button:before {
+  font-size: 8px;
 }
 main #main_con1 {
   width: 100%;
@@ -2516,6 +2530,7 @@ main #main_con1 .main_inner .main_it .main_type2 .img img {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
 main #main_con1 .main_inner .main_it .main_type1 .img button,
 main #main_con1 .main_inner .main_it .main_type2 .img button {
@@ -2640,7 +2655,6 @@ main #main_con2 {
   height: auto;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 main #main_con2 .main_inner {
   width: 100%;
