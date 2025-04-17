@@ -6,7 +6,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplayspeed: 6000,
-    arrows: false,
+    arrows: true,
+    dots: true,
     pauseOnFoucus: true,
     pauseOnHover: true,
     responsive: [
@@ -31,6 +32,13 @@ $(document).ready(function () {
     ],
   });
 });
+
+// 이벤트배너 클릭 시 페이지 이동
+$(".main_innerbanner4")
+  .css("cursor", "pointer")
+  .on("click", () => {
+    window.location.href = "/eventpromotion/event.html";
+  });
 
 // recipe 슬라이드
 $(document).ready(function () {
@@ -86,6 +94,7 @@ fetch("./food_dataset.json")
         discount_price: item.discount_price,
         discount_rate: item.discount_rate,
         imgURL: item.imgURL,
+        subImgUrls: item.subImgUrls,
       };
     });
     const vegetables = data.vegetables.map((item) => {
@@ -97,6 +106,7 @@ fetch("./food_dataset.json")
         discount_price: item.discount_price,
         discount_rate: item.discount_rate,
         imgURL: item.imgURL,
+        subImgUrls: item.subImgUrls,
       };
     });
     const etcs = data.processed_etc.map((item) => {
@@ -108,6 +118,7 @@ fetch("./food_dataset.json")
         discount_price: item.discount_price,
         discount_rate: item.discount_rate,
         imgURL: item.imgURL,
+        subImgUrls: item.subImgUrls,
       };
     });
 
@@ -188,6 +199,21 @@ fetch("./food_dataset.json")
       const linkImg = section1.querySelector(".img_link");
       linkImg.addEventListener("click", () => {
         window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
+      // 마우스오버 시 이미지 교체
+      linkImg.addEventListener("mouseover", () => {
+        if (item.subImgUrls && item.subImgUrls.length > 0) {
+          const randomIndex = Math.floor(
+            Math.random() * item.subImgUrls.length
+          );
+          linkImg.src = item.subImgUrls[randomIndex];
+        }
+      });
+
+      // 원래 이미지로 복구
+      linkImg.addEventListener("mouseout", () => {
+        linkImg.src = item.imgURL;
       });
       /* Icon button start */
       const cartIconBtn = section1.querySelector(".fa-cart-shopping");
@@ -314,6 +340,21 @@ fetch("./food_dataset.json")
         window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
       });
 
+      // 마우스오버 시 이미지 교체
+      linkImg.addEventListener("mouseover", () => {
+        if (item.subImgUrls && item.subImgUrls.length > 0) {
+          const randomIndex = Math.floor(
+            Math.random() * item.subImgUrls.length
+          );
+          linkImg.src = item.subImgUrls[randomIndex];
+        }
+      });
+
+      // 원래 이미지로 복구
+      linkImg.addEventListener("mouseout", () => {
+        linkImg.src = item.imgURL;
+      });
+
       /* Icon button start */
       const cartIconBtn = section2.querySelector(".fa-cart-shopping");
       const heartIconBtn = section2.querySelector(".fa-heart");
@@ -415,6 +456,21 @@ fetch("./food_dataset.json")
       const linkImg = saleItem.querySelector(".img_link");
       linkImg.addEventListener("click", () => {
         window.location.href = `./detail/detail.html?id=${item.id}&type=${item.classification}`;
+      });
+
+      // 마우스오버 시 이미지 교체
+      linkImg.addEventListener("mouseover", () => {
+        if (item.subImgUrls && item.subImgUrls.length > 0) {
+          const randomIndex = Math.floor(
+            Math.random() * item.subImgUrls.length
+          );
+          linkImg.src = item.subImgUrls[randomIndex];
+        }
+      });
+
+      // 원래 이미지로 복구
+      linkImg.addEventListener("mouseout", () => {
+        linkImg.src = item.imgURL;
       });
 
       /* Icon button start */
