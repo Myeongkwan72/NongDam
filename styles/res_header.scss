@@ -43,6 +43,13 @@
             .fa-magnifying-glass {
               font-size: 1.4rem;
             }
+            .res_search_wrap {
+              display: none;
+
+              &.show {
+                display: none;
+              }
+            }
           }
           .basket {
             .fa-cart-shopping {
@@ -102,6 +109,13 @@
             }
             .fa-magnifying-glass {
               font-size: 1.3rem;
+            }
+            .res_dropdown_input {
+              display: none;
+
+              &.show {
+                display: none;
+              }
             }
           }
           .basket {
@@ -198,6 +212,36 @@
             font-size: 2rem;
             margin-bottom: 6px;
             cursor: pointer;
+          }
+          .res_dropdown_input {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            padding: 10px;
+            pointer-events: none; // 숨겨졌을 때 클릭 막기
+
+            &.show {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+            }
+
+            input[type="text"] {
+              padding: 5px 14px;
+              background-color: map-get($map: $color, $key: light);
+              height: 30px;
+              border: 1px solid map-get($map: $color, $key: main-02);
+              outline: none;
+              border-radius: 20px;
+              box-shadow: 0 2px 8px rgba(#000000, 0.7);
+            }
+
+            &.hidden {
+              display: none; // js로 초기상태에만 사용
+            }
           }
           .basket {
             .fa-cart-shopping {
@@ -307,6 +351,36 @@
           .res_magnify {
             font-size: 1.7rem;
             margin-bottom: 6px;
+          }
+          .res_dropdown_input {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            position: absolute;
+            top: 90px;
+            right: 50px;
+            padding: 10px;
+            pointer-events: none;
+
+            &.show {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+            }
+
+            input[type="text"] {
+              padding: 5px 14px;
+              background-color: map-get($map: $color, $key: light);
+              height: 30px;
+              border: 1px solid map-get($map: $color, $key: main-02);
+              outline: none;
+              border-radius: 20px;
+              box-shadow: 0 2px 8px rgba(#000000, 0.7);
+            }
+
+            &.hidden {
+              display: none;
+            }
           }
           .basket {
             .fa-cart-shopping {

@@ -328,6 +328,66 @@ up_btn.addEventListener("click", (e) => {
   });
 });
 
+/* 반응형 767size부터 검색바 드롭다운 start */
+const resSearchBtn = document.querySelector(".res_magnify");
+const resInputWrapper = document.querySelector(".res_dropdown_input");
+const inputEl = resInputWrapper?.querySelector("input");
+
+const handleResize = () => {
+  if (window.innerWidth > 767) {
+    resInputWrapper.classList.remove("show");
+    resInputWrapper.classList.add("hidden");
+    resInputWrapper.style.display = "none";
+    if (inputEl) inputEl.value = "";
+  }
+};
+
+const moveToSearchPage = (searchData) => {
+  const encode = encodeURIComponent(searchData);
+  window.location.href = `../pages/search.html?searchData=${encode}`;
+};
+
+if (resSearchBtn && resInputWrapper && inputEl) {
+  resSearchBtn.addEventListener("click", () => {
+    console.log("클릭");
+
+    if (window.innerWidth <= 767) {
+      if (resInputWrapper.classList.contains("hidden")) {
+        resInputWrapper.classList.remove("hidden");
+        resInputWrapper.style.display = "block";
+        setTimeout(() => {
+          resInputWrapper.classList.add("show");
+          console.log(resInputWrapper.classList, "2");
+        }, 10);
+      } else {
+        resInputWrapper.classList.toggle("show");
+
+        if (!resInputWrapper.classList.contains("show")) {
+          inputEl.value = "";
+        }
+
+        console.log(resInputWrapper.classList, "3");
+      }
+
+      if (resInputWrapper.classList.contains("show")) {
+        inputEl.focus();
+      }
+    }
+  });
+
+  window.addEventListener("resize", handleResize);
+
+  inputEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && window.innerWidth <= 767) {
+      const searchData = inputEl.value.trim();
+      if (searchData) {
+        moveToSearchPage(searchData);
+      }
+    }
+  });
+}
+/* 반응형 767size부터 검색바 드롭다운 end */
+
 // footer button bottom event
 document.addEventListener("scroll", function () {
   const button = document.querySelector(".up_btn");

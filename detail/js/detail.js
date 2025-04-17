@@ -83,7 +83,7 @@ const productExMap = {
 fetch("../food_dataset.json")
   .then((r) => r.json())
   .then((d) => {
-    console.log("json 안의 타입 키들:", Object.keys(d));
+    // console.log("json 안의 타입 키들:", Object.keys(d));
 
     // review (random)
     const randomRating = (Math.random() * 2 + 3).toFixed(1); // 별점 최소 3.0 ~ 최대 5.0
